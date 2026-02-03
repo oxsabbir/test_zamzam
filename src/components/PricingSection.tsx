@@ -65,9 +65,13 @@ export default function PricingSection() {
           {/* Basic Plan */}
           <div className="w-full lg:w-1/3 flex flex-col p-8 bg-card rounded-2xl shadow-lg transition-transform transform hover:scale-105 duration-300">
             <div className="text-center mb-6">
-              <h3 className="text-2xl font-bold text-foreground">{pricePlan.basic.title}</h3>
+              <h3 className="text-2xl font-bold text-foreground">
+                {pricePlan.basic.title}
+              </h3>
               <p className="mt-2">
-                <span className="text-4xl font-bold text-primary">{pricePlan.basic.price} SAR</span>
+                <span className="text-4xl font-bold text-primary">
+                  {pricePlan.basic.price} SAR
+                </span>
                 <span className="text-lg text-muted-foreground">/kg</span>
               </p>
             </div>
@@ -83,7 +87,12 @@ export default function PricingSection() {
             <div className="mt-auto pt-6">
               <Button
                 id="generate_lead"
-                onClick={() => handlePlanBooking(pricePlan.basic.price, pricePlan.basic.title)}
+                onClick={() =>
+                  handlePlanBooking(
+                    pricePlan.basic.price,
+                    pricePlan.basic.title,
+                  )
+                }
                 className="w-full bg-primary text-white hover:bg-primary/90"
               >
                 Choose Basic
@@ -92,7 +101,7 @@ export default function PricingSection() {
           </div>
 
           {/* Premium Plan (Featured) */}
-          <div className="w-full lg:w-1/3 flex flex-col p-8 bg-primary text-primary-foreground rounded-2xl shadow-2xl relative">
+          <div className="w-full lg:w-1/3 flex flex-col p-8 bg-gradient-to-br from-green-500 to-green-600 text-primary-foreground rounded-2xl shadow-2xl relative">
             <div className="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2">
               <div className="bg-gradient-to-r from-pink-500 to-orange-400 text-white text-xs font-semibold px-4 py-1 rounded-full uppercase">
                 Most Popular
@@ -101,7 +110,9 @@ export default function PricingSection() {
             <div className="text-center mb-6">
               <h3 className="text-2xl font-bold">{pricePlan.premium.title}</h3>
               <p className="mt-2">
-                <span className="text-4xl font-bold">{pricePlan.premium.price} SAR</span>
+                <span className="text-4xl font-bold">
+                  {pricePlan.premium.price} SAR
+                </span>
                 <span className="text-lg opacity-80">/kg</span>
               </p>
             </div>
@@ -117,7 +128,12 @@ export default function PricingSection() {
             <div className="mt-auto pt-6">
               <Button
                 id="generate_lead"
-                onClick={() => handlePlanBooking(pricePlan.premium.price, pricePlan.premium.title)}
+                onClick={() =>
+                  handlePlanBooking(
+                    pricePlan.premium.price,
+                    pricePlan.premium.title,
+                  )
+                }
                 className="w-full bg-background text-foreground hover:bg-background/90"
               >
                 Choose Premium
@@ -128,9 +144,13 @@ export default function PricingSection() {
           {/* VIP Plan */}
           <div className="w-full lg:w-1/3 flex flex-col p-8 bg-card rounded-2xl shadow-lg transition-transform transform hover:scale-105 duration-300">
             <div className="text-center mb-6">
-              <h3 className="text-2xl font-bold text-foreground">{pricePlan.vip.title}</h3>
+              <h3 className="text-2xl font-bold text-foreground">
+                {pricePlan.vip.title}
+              </h3>
               <p className="mt-2">
-                <span className="text-4xl font-bold text-primary">{pricePlan.vip.price} SAR</span>
+                <span className="text-4xl font-bold text-primary">
+                  {pricePlan.vip.price} SAR
+                </span>
                 <span className="text-lg text-muted-foreground">/kg</span>
               </p>
             </div>
@@ -146,7 +166,9 @@ export default function PricingSection() {
             <div className="mt-auto pt-6">
               <Button
                 id="generate_lead"
-                onClick={() => handlePlanBooking(pricePlan.vip.price, pricePlan.vip.title)}
+                onClick={() =>
+                  handlePlanBooking(pricePlan.vip.price, pricePlan.vip.title)
+                }
                 className="w-full bg-primary text-white hover:bg-primary/90"
               >
                 Choose VIP

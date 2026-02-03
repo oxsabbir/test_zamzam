@@ -84,12 +84,7 @@ const Footer = () => {
 
       <div className="w-full h-[400px] relative transition-all duration-700 ease-in-out group">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1857.0822836720376!2d39.81824474420289!3d21.422775592674554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjHCsDI1JzIxLjgiTiAzOcKwNDknMDguMiJF!5e0!3m2!1sen!2sbd!4v1766483505701!5m2!1sen!2sbd"
-          width="100%"
-          height="100%"
-          allowFullScreen
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3714.2755285666544!2d39.82684161093366!3d21.418412480248108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c21b4ced818775%3A0x2d76359a530f0ade!2sCR9H%2B9Q7%2C%20Makkah%20Saudi%20Arabia!5e0!3m2!1sen!2sbd!4v1770120606326!5m2!1sen!2sbd"
           className="w-full h-full opacity-80 group-hover:opacity-100 border-0 transition-opacity"
           title="Hajj Care Laundry Location"
         />
@@ -113,9 +108,9 @@ const Footer = () => {
                 />
               </div>
               <p className="text-gray-300 text-lg leading-relaxed mb-8">
-                Hajj Care Laundry is the most trusted laundry service in Makkah,
-                specializing in the care of Pilgrim garments with speed, purity,
-                and precision.
+                At Makkah ZamZam Express Laundry, we provide reliable,
+                high-quality laundry care in Makkah with a focus on cleanliness,
+                speed, and professional handling.
               </p>
 
               <div className="flex gap-3">
@@ -227,7 +222,9 @@ const Footer = () => {
                     href={`mailto:${managerInfo.email}`}
                     className="text-white hover:text-emerald-400 transition-colors font-medium"
                   >
-                    {managerInfo.email}
+                    info@makkahzamzam
+                    <br />
+                    expreslaundry.com
                   </a>
                 </div>
               </li>
@@ -304,8 +301,9 @@ const Footer = () => {
       {/* Bottom Bar */}
       <div className="bg-slate-800 border-t border-slate-900 py-8">
         <div className="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-slate-300 text-sm">
-            © {currentYear} Hajj Care Laundry. All rights reserved.
+          <p className="text-slate-300 in text-center text-sm">
+            © {currentYear} Makkah ZamZam Express Laundry{" "}
+            <br className="sm:hidden" /> All rights reserved
           </p>
           <div className="flex items-center gap-6 text-sm font-medium">
             <a

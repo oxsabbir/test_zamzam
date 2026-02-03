@@ -18,7 +18,7 @@ const PrivacyPolicy = () => {
             transition={{ duration: 0.6 }}
             className="text-center max-w-3xl mx-auto"
           >
-            <Shield className="w-16 h-16 text-success mx-auto mb-6" />
+            <Shield className="w-16 h-16 text-primary mx-auto mb-6" />
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6">
               Privacy Policy
             </h1>
@@ -51,7 +51,7 @@ const PrivacyPolicy = () => {
               className="mb-12"
             >
               <p className="text-muted-foreground leading-relaxed text-lg">
-                At Hajj Care Laundry, we are committed to protecting
+                At Makkah ZamZam Express Laundry, we are committed to protecting
                 your privacy and handling your personal information with care
                 and respect. This Privacy Policy explains what information we
                 collect, why we collect it, and how we use it.
@@ -67,8 +67,8 @@ const PrivacyPolicy = () => {
               className="mb-12"
             >
               <div className="flex items-start gap-4 mb-6">
-                <div className="w-12 h-12 bg-success/10 rounded-xl flex items-center justify-center flex-shrink-0">
-                  <Eye className="w-6 h-6 text-success" />
+                <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <Eye className="w-6 h-6 text-primary" />
                 </div>
                 <div>
                   <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
@@ -145,8 +145,8 @@ const PrivacyPolicy = () => {
               className="mb-12"
             >
               <div className="flex items-start gap-4 mb-6">
-                <div className="w-12 h-12 bg-success/10 rounded-xl flex items-center justify-center flex-shrink-0">
-                  <Lock className="w-6 h-6 text-success" />
+                <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <Lock className="w-6 h-6 text-primary" />
                 </div>
                 <div>
                   <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
@@ -207,7 +207,7 @@ const PrivacyPolicy = () => {
               <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
                 Your Data Protection
               </h2>
-              <div className="bg-gradient-to-br from-success/5 to-primary/5 p-8 rounded-2xl border border-border">
+              <div className="bg-gradient-to-br from-primary/5 to-primary/5 p-8 rounded-2xl border border-border">
                 <div className="space-y-6">
                   <div>
                     <h3 className="text-xl font-bold text-foreground mb-3">
@@ -340,8 +340,8 @@ const PrivacyPolicy = () => {
               className="mb-12"
             >
               <div className="flex items-start gap-4 mb-6">
-                <div className="w-12 h-12 bg-success/10 rounded-xl flex items-center justify-center flex-shrink-0">
-                  <Mail className="w-6 h-6 text-success" />
+                <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <Mail className="w-6 h-6 text-primary" />
                 </div>
                 <div>
                   <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
@@ -349,7 +349,7 @@ const PrivacyPolicy = () => {
                   </h2>
                 </div>
               </div>
-              <div className="bg-gradient-to-r from-primary/10 to-success/10 p-8 rounded-2xl border border-border">
+              <div className="bg-gradient-to-r from-primary/10 to-primary/10 p-8 rounded-2xl border border-border">
                 <p className="text-muted-foreground leading-relaxed mb-4">
                   If you have any questions or concerns about how we handle your
                   personal information, please don't hesitate to contact us:
@@ -359,7 +359,7 @@ const PrivacyPolicy = () => {
                     <strong>Email:</strong>{" "}
                     <a
                       href={`mailto:${managerInfo.email}`}
-                      className="text-success hover:underline"
+                      className="text-primary hover:underline"
                     >
                       {managerInfo.email}
                     </a>
@@ -368,7 +368,7 @@ const PrivacyPolicy = () => {
                     <strong>WhatsApp:</strong>{" "}
                     <a
                       href={`https://wa.me/${managerInfo.onlyNumber.whatsApp}`}
-                      className="text-success hover:underline"
+                      className="text-primary hover:underline"
                     >
                       {managerInfo.whatsApp}
                     </a>

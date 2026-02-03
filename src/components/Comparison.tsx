@@ -65,16 +65,13 @@ const Comparison = () => {
             <table className="w-full text-sm text-left text-gray-400">
               <thead className="text-xs uppercase bg-gray-700 text-gray-400">
                 <tr>
-                  <th scope="col" className="px-6 py-3">
+                  <th scope="col" className="px-6 py-3 bg-primary text-white">
                     Feature
                   </th>
-                  <th
-                    scope="col"
-                    className="px-6 py-3 min-w-20 bg-green-900/50 text-white"
-                  >
+                  <th scope="col" className="px-6 py-3 bg-primary text-white">
                     Our Services
                   </th>
-                  <th scope="col" className="px-6 py-3">
+                  <th scope="col" className="px-6 py-3 bg-primary text-white">
                     Other Services
                   </th>
                 </tr>

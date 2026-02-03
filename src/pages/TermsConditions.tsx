@@ -25,7 +25,7 @@ const TermsConditions = () => {
             transition={{ duration: 0.6 }}
             className="text-center max-w-3xl mx-auto"
           >
-            <FileText className="w-16 h-16 text-success mx-auto mb-6" />
+            <FileText className="w-16 h-16 text-primary mx-auto mb-6" />
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6">
               Terms & Conditions
             </h1>
@@ -58,7 +58,7 @@ const TermsConditions = () => {
               className="mb-12"
             >
               <p className="text-muted-foreground leading-relaxed text-lg">
-                By using Hajj Care Laundry, you agree to these Terms
+                By using Makkah ZamZam Express Laundry, you agree to these Terms
                 and Conditions. These terms govern your use of our pickup and
                 delivery laundry services in Makkah, Saudi Arabia.
               </p>
@@ -73,8 +73,8 @@ const TermsConditions = () => {
               className="mb-12"
             >
               <div className="flex items-start gap-4 mb-6">
-                <div className="w-12 h-12 bg-success/10 rounded-xl flex items-center justify-center flex-shrink-0">
-                  <CheckCircle className="w-6 h-6 text-success" />
+                <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <CheckCircle className="w-6 h-6 text-primary" />
                 </div>
                 <div>
                   <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
@@ -146,8 +146,8 @@ const TermsConditions = () => {
               className="mb-12"
             >
               <div className="flex items-start gap-4 mb-6">
-                <div className="w-12 h-12 bg-success/10 rounded-xl flex items-center justify-center flex-shrink-0">
-                  <DollarSign className="w-6 h-6 text-success" />
+                <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <DollarSign className="w-6 h-6 text-primary" />
                 </div>
                 <div>
                   <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
@@ -222,8 +222,8 @@ const TermsConditions = () => {
               className="mb-12"
             >
               <div className="flex items-start gap-4 mb-6">
-                <div className="w-12 h-12 bg-success/10 rounded-xl flex items-center justify-center flex-shrink-0">
-                  <Clock className="w-6 h-6 text-success" />
+                <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <Clock className="w-6 h-6 text-primary" />
                 </div>
                 <div>
                   <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
@@ -297,8 +297,8 @@ const TermsConditions = () => {
               className="mb-12"
             >
               <div className="flex items-start gap-4 mb-6">
-                <div className="w-12 h-12 bg-success/10 rounded-xl flex items-center justify-center flex-shrink-0">
-                  <AlertTriangle className="w-6 h-6 text-success" />
+                <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <AlertTriangle className="w-6 h-6 text-primary" />
                 </div>
                 <div>
                   <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
@@ -389,8 +389,8 @@ const TermsConditions = () => {
               className="mb-12"
             >
               <div className="flex items-start gap-4 mb-6">
-                <div className="w-12 h-12 bg-success/10 rounded-xl flex items-center justify-center flex-shrink-0">
-                  <Shield className="w-6 h-6 text-success" />
+                <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <Shield className="w-6 h-6 text-primary" />
                 </div>
                 <div>
                   <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
@@ -496,7 +496,7 @@ const TermsConditions = () => {
               <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
                 Questions About These Terms?
               </h2>
-              <div className="bg-gradient-to-r from-primary/10 to-success/10 p-8 rounded-2xl border border-border">
+              <div className="bg-gradient-to-r from-primary/10 to-primary/10 p-8 rounded-2xl border border-border">
                 <p className="text-muted-foreground leading-relaxed mb-4">
                   If you have any questions about these Terms and Conditions,
                   please contact us:
@@ -506,7 +506,7 @@ const TermsConditions = () => {
                     <strong>Email:</strong>{" "}
                     <a
                       href={`mailto:${managerInfo.email}`}
-                      className="text-success hover:underline"
+                      className="text-primary hover:underline"
                     >
                       {managerInfo.email}
                     </a>
@@ -515,7 +515,7 @@ const TermsConditions = () => {
                     <strong>WhatsApp:</strong>{" "}
                     <a
                       href={`https://wa.me/${managerInfo.onlyNumber.whatsApp}`}
-                      className="text-success hover:underline"
+                      className="text-primary hover:underline"
                     >
                       {managerInfo.onlyNumber.whatsApp}
                     </a>
@@ -524,7 +524,7 @@ const TermsConditions = () => {
                     <strong>Phone:</strong>{" "}
                     <a
                       href={`tel:+${managerInfo.onlyNumber.phoneNumber}`}
-                      className="text-success hover:underline"
+                      className="text-primary hover:underline"
                     >
                       {managerInfo.onlyNumber.whatsApp}
                     </a>

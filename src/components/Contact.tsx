@@ -40,9 +40,12 @@ const Contact = () => {
 
   const handleWhatsApp = () => {
     const message = encodeURIComponent(
-      "Hi, I'd like to book a laundry service."
+      "Hi, I'd like to book a laundry service.",
     );
-    window.open(`https://wa.me/${managerInfo.onlyNumber.whatsApp}?text=${message}`, "_blank");
+    window.open(
+      `https://wa.me/${managerInfo.onlyNumber.whatsApp}?text=${message}`,
+      "_blank",
+    );
   };
 
   return (

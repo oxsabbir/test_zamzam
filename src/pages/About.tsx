@@ -56,22 +56,18 @@ const About = () => {
                 Who We Are
               </h2>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                Makkah ZamZam Express Laundry is a trusted provider of pickup and delivery
-                laundry services, dedicated to serving pilgrims, residents, and
-                visitors throughout the holy city of Makkah with the utmost care
-                and professionalism.
-              </p>
-              <p className="text-muted-foreground mb-4 leading-relaxed">
-                Located near the central areas of Makkah and Masjid al-Haram, we
-                have a deep understanding of the unique schedules and needs of
-                Umrah and Hajj pilgrims, as well as the daily requirements of
-                local residents. Our services are designed to be flexible and
-                convenient, fitting seamlessly into your busy schedule.
-              </p>
-              <p className="text-muted-foreground leading-relaxed">
-                With our 15-minute express pickup, 24/7 availability, and expert
-                garment care, we handle your laundry needs so you can focus on
-                what matters most during your time in Makkah.
+                Makkah ZamZam Express Laundry is a trusted provider of pickup
+                and delivery laundry services in Makkah, serving pilgrims,
+                residents, and visitors with reliable care and professional
+                handling. Conveniently located near central Makkah and Masjid
+                Al-Haram, we understand the unique schedules of Umrah and Hajj
+                pilgrims as well as the everyday needs of local residents.
+                <p className="text-muted-foreground mb-4 leading-relaxed"></p>
+                Our services are designed to be flexible, efficient, and easy to
+                fit into your daily routine. With fast express pickup,
+                round-the-clock availability, and careful garment handling, we
+                take care of your laundry so you can focus on your worship,
+                stay, and peace of mind in Makkah.
               </p>
             </motion.div>
           </div>
@@ -92,9 +88,11 @@ const About = () => {
               Our Mission
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              To provide exceptional laundry care that respects your time, your
-              garments, and the environment — allowing you to focus on what
-              truly matters during your time in Makkah.
+              Our mission is to provide pilgrims and residents with a seamless
+              and reliable laundry experience, ensuring their garments are
+              treated with the utmost care. We aim to deliver convenience,
+              quality, and peace of mind, so our clients can focus on their
+              spiritual journey and daily lives.
             </p>
           </motion.div>
 
@@ -106,15 +104,15 @@ const About = () => {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="bg-card p-8 rounded-2xl border border-border shadow-sm hover:shadow-md transition-shadow"
             >
-              <div className="w-14 h-14 bg-success/10 rounded-xl flex items-center justify-center mb-6">
-                <Clock className="w-7 h-7 text-success" />
+              <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
+                <Clock className="w-7 h-7 text-primary" />
               </div>
               <h3 className="text-xl font-bold text-foreground mb-3">
-                Speed & Convenience
+                Efficiency & Reliability
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                15-minute pickup guaranteed, with express turnaround options as
-                fast as 1 hour for urgent needs.
+                With a guaranteed 15-minute pickup and express turnaround, we
+                respect your time and deliver on our promises.
               </p>
             </motion.div>
 
@@ -125,15 +123,15 @@ const About = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="bg-card p-8 rounded-2xl border border-border shadow-sm hover:shadow-md transition-shadow"
             >
-              <div className="w-14 h-14 bg-success/10 rounded-xl flex items-center justify-center mb-6">
-                <Heart className="w-7 h-7 text-success" />
+              <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
+                <Heart className="w-7 h-7 text-primary" />
               </div>
               <h3 className="text-xl font-bold text-foreground mb-3">
-                Premium Care
+                Unmatched Quality
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                Every garment receives gentle, professional treatment using
-                quality detergents and modern equipment.
+                From high-quality detergents to professional handling, we
+                ensure your clothes receive the best care possible.
               </p>
             </motion.div>
 
@@ -144,15 +142,15 @@ const About = () => {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="bg-card p-8 rounded-2xl border border-border shadow-sm hover:shadow-md transition-shadow"
             >
-              <div className="w-14 h-14 bg-success/10 rounded-xl flex items-center justify-center mb-6">
-                <Leaf className="w-7 h-7 text-success" />
+              <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
+                <Leaf className="w-7 h-7 text-primary" />
               </div>
               <h3 className="text-xl font-bold text-foreground mb-3">
-                Eco-Friendly
+                Sustainable Practices
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                We use environmentally safe cleaning products that are gentle on
-                fabrics and kind to our planet.
+                Our eco-friendly cleaning solutions protect your garments and
+                our planet, reflecting our commitment to sustainability.
               </p>
             </motion.div>
           </div>
@@ -171,12 +169,13 @@ const About = () => {
               className="text-center mb-12"
             >
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-                Experienced Team, Customer-First Service
+                Our Team: The Heart of Our Service
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-                Our dedicated team consists of trained professionals who
-                understand the importance of trust, especially when handling
-                your personal belongings during your spiritual journey.
+                Our professionals are the backbone of Makkah ZamZam Express
+                Laundry. Carefully selected and extensively trained, they are
+                committed to upholding our values of integrity, respect, and
+                excellence in every task they perform.
               </p>
             </motion.div>
 
@@ -186,28 +185,28 @@ const About = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
-                className="bg-gradient-to-br from-primary/5 to-success/5 p-8 rounded-2xl border border-border"
+                className="bg-gradient-to-br from-primary/5 to-background p-8 rounded-2xl border border-border"
               >
-                <Users className="w-10 h-10 text-success mb-4" />
+                <Users className="w-10 h-10 text-primary mb-4" />
                 <h3 className="text-2xl font-bold text-foreground mb-4">
-                  Trained Professionals
+                  Expertise & Dedication
                 </h3>
                 <p className="text-muted-foreground leading-relaxed mb-4">
-                  Every member of our team is carefully trained in fabric care,
-                  stain removal, and customer service excellence.
+                  Our team's expertise in modern fabric care is matched only by
+                  their dedication to serving our clients with a personal touch.
                 </p>
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2 text-muted-foreground">
-                    <span className="w-1.5 h-1.5 rounded-full bg-success mt-2 flex-shrink-0"></span>
-                    Certified in professional laundry techniques
+                    <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></span>
+                    Skilled in handling delicate and traditional garments
                   </li>
                   <li className="flex items-start gap-2 text-muted-foreground">
-                    <span className="w-1.5 h-1.5 rounded-full bg-success mt-2 flex-shrink-0"></span>
-                    Understanding of cultural and religious sensitivities
+                    <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></span>
+                    Deep understanding of our clients' unique needs
                   </li>
                   <li className="flex items-start gap-2 text-muted-foreground">
-                    <span className="w-1.5 h-1.5 rounded-full bg-success mt-2 flex-shrink-0"></span>
-                    Multilingual support for international guests
+                    <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></span>
+                    Fluent in multiple languages for clear communication
                   </li>
                 </ul>
               </motion.div>
@@ -217,28 +216,29 @@ const About = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
-                className="bg-gradient-to-br from-success/5 to-primary/5 p-8 rounded-2xl border border-border"
+                className="bg-gradient-to-br from-background to-primary/5 p-8 rounded-2xl border border-border"
               >
-                <Award className="w-10 h-10 text-success mb-4" />
+                <Award className="w-10 h-10 text-primary mb-4" />
                 <h3 className="text-2xl font-bold text-foreground mb-4">
-                  Quality Guarantee
+                  Commitment to Satisfaction
                 </h3>
                 <p className="text-muted-foreground leading-relaxed mb-4">
-                  We stand behind our work with a complete satisfaction
-                  guarantee on every order.
+                  Your trust is our priority. We guarantee your satisfaction
+                  with our transparent, reliable, and high-quality service.
                 </p>
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2 text-muted-foreground">
-                    <span className="w-1.5 h-1.5 rounded-full bg-success mt-2 flex-shrink-0"></span>
-                    Money-back guarantee if not satisfied
+                    <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></span>
+                    Satisfaction guarantee on all our services
                   </li>
                   <li className="flex items-start gap-2 text-muted-foreground">
-                    <span className="w-1.5 h-1.5 rounded-full bg-success mt-2 flex-shrink-0"></span>
-                    Free re-wash if you're not happy
+                    <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></span>
+                    Hassle-free re-wash if our service does not meet your
+                    expectations
                   </li>
                   <li className="flex items-start gap-2 text-muted-foreground">
-                    <span className="w-1.5 h-1.5 rounded-full bg-success mt-2 flex-shrink-0"></span>
-                    Transparent pricing with no hidden fees
+                    <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></span>
+                    Clear and upfront pricing, always
                   </li>
                 </ul>
               </motion.div>

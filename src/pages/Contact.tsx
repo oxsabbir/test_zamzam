@@ -23,7 +23,8 @@ const Contact = () => {
               Contact Us
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              Have questions or ready to book? We're here to help with all your laundry needs in Makkah, 24/7!
+              Have questions or ready to book? We're here to help with all your
+              laundry needs in Makkah, 24/7!
             </p>
           </motion.div>
         </div>
@@ -131,7 +132,7 @@ const Contact = () => {
                 href={`https://wa.me/${
                   managerInfo.onlyNumber.whatsApp
                 }?text=${encodeURIComponent(
-                  "Hi! I'd like to book a laundry pickup."
+                  "Hi! I'd like to book a laundry pickup.",
                 )}`}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -157,23 +158,21 @@ const Contact = () => {
               </h2>
               <div className="flex items-center justify-center gap-2 text-muted-foreground">
                 <MapPin className="w-5 h-5 text-success" />
-                <p className="text-lg">
-                  {managerInfo.address}
-                </p>
+                <p className="text-lg">{managerInfo.address}</p>
               </div>
             </div>
 
             {/* Map */}
             <div className="relative h-[400px] rounded-2xl overflow-hidden border border-border shadow-lg group">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1857.0822836720376!2d39.81824474420289!3d21.422775592674554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjHCsDI1JzIxLjgiTiAzOcKwNDknMDguMiJF!5e0!3m2!1sen!2sbd!4v1766483505701!5m2!1sen!2sbd"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3714.2755285666544!2d39.82684161093366!3d21.418412480248108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c21b4ced818775%3A0x2d76359a530f0ade!2sCR9H%2B9Q7%2C%20Makkah%20Saudi%20Arabia!5e0!3m2!1sen!2sbd!4v1770120606326!5m2!1sen!2sbd"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                className="grayscale-[30%] group-hover:grayscale-0 transition-all duration-500"
+                className=" group-hover:grayscale-0 transition-all duration-500"
                 title="Makkah ZamZam Express Laundry Location"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none" />
