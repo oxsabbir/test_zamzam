@@ -27,22 +27,22 @@ export default function PickupManager() {
         <div className="text-center mb-10 sm:mb-14">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-green-50 border border-green-100 text-green-700 text-sm font-semibold mb-6">
             <BadgeCheck size={16} className="text-green-600" />
-            Verified Customer Support
+            Trusted Customer Support
           </div>
           <h2
             id="manager-heading"
             className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-4"
           >
-            Personalized Support from a Dedicated Partner.{" "}
+            Dedicated Support for a Better Laundry Experience.
             <br className="hidden sm:block" />
             <span className="text-green-600">
-              Your Go-To for Laundry in Makkah.
+              Reliable Care You Can Trust in Makkah.
             </span>
           </h2>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-            Enjoy a seamless laundry experience with personalized service. Our
-            dedicated manager is your direct contact, ensuring your needs are
-            met from start to finish.
+            Experience smooth and stress-free laundry service with a dedicated
+            support team ready to assist you. From pickup to delivery, we ensure
+            clear communication and dependable care at every step.
           </p>
         </div>
 
@@ -50,15 +50,15 @@ export default function PickupManager() {
           <div className="bg-white rounded-3xl shadow-xl overflow-hidden border border-slate-100">
             <div className="grid grid-cols-1 lg:grid-cols-12">
               {/* Left Column: Profile & Photo */}
-              <div className="lg:col-span-5 bg-gradient-to-br from-green-600 to-emerald-700 p-8 sm:p-10 text-white flex flex-col justify-between relative overflow-hidden">
+              <div className="lg:col-span-5 bg-gradient-to-br from-green-500 to-emerald-700 p-8 sm:p-10 text-white flex flex-col justify-between relative overflow-hidden">
                 {/* Decorative Pattern */}
                 <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
 
                 <div className="relative z-10">
                   <div className="flex items-center gap-2 mb-6 opacity-90">
                     <span className="relative flex h-3 w-3">
-                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                      <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
+                      <span className="relative inline-flex rounded-full h-3 w-3 bg-white"></span>
                     </span>
                     <span className="text-xs font-bold tracking-wider uppercase">
                       Online Now in Makkah
@@ -72,9 +72,7 @@ export default function PickupManager() {
                     <h3 className="text-3xl font-bold mb-1">
                       {managerInfo.fullName}
                     </h3>
-                    <p className="text-green-100 text-lg">
-                      Senior Logistics Manager
-                    </p>
+                    <p className="text-green-100 text-lg">Logistics Manager</p>
                   </div>
 
                   <div className="space-y-3">
@@ -99,7 +97,7 @@ export default function PickupManager() {
                 {/* Stats Row */}
                 <div className="flex flex-wrap gap-4 sm:gap-8 mb-8 pb-8 border-b border-slate-100">
                   <div>
-                    <div className="text-3xl font-bold text-slate-900">1k+</div>
+                    <div className="text-3xl font-bold text-slate-900">2k+</div>
                     <div className="text-xs text-slate-500 font-medium uppercase tracking-wide">
                       Pickups
                     </div>
@@ -127,16 +125,16 @@ export default function PickupManager() {
                 {/* Testimonial Quote */}
                 <div className="mb-8 bg-slate-50 p-5 rounded-xl border border-slate-100 relative">
                   <div className="text-slate-700 italic text-sm leading-relaxed relative z-10">
-                    "{managerInfo.fullName} is amazing! He picked up our laundry
-                    within 10 minutes and even helped us with directions to the
-                    Haram. True hospitality."
+                    "{managerInfo.fullName} provided exceptional service. Fast
+                    pickup and genuine help made our experience smooth and
+                    stress-free."
                   </div>
                   <div className="mt-3 flex items-center gap-2">
                     <div className="w-6 h-6 rounded-full bg-slate-300 flex items-center justify-center text-[10px] font-bold text-slate-600">
-                      AF
+                      {managerInfo.fullName.slice(0, 2).toUpperCase()}
                     </div>
                     <div className="text-xs font-bold text-slate-900">
-                      Ahmed F.
+                      {managerInfo.fullName.split(" ")[0]}
                     </div>
                     <div className="text-xs text-slate-400">
                       • Pilgrim from Saudi

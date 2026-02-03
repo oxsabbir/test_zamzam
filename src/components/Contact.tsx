@@ -120,7 +120,7 @@ const Contact = () => {
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Hajj Care Laundry Location"
+                  title="Makkah ZamZam Express Laundry Location"
                 />
               </div>
             </div>

@@ -93,8 +93,10 @@ const PricingGrid = () => {
             >
               <CardHeader className="text-center">
                 <div className="text-6xl mb-4">{item.emoji}</div>
-                <CardTitle className="text-2xl mb-2">{item.title}</CardTitle>
-                <CardDescription className="text-base">
+                <CardTitle className="text-2xl text-gray-700 mb-2">
+                  {item.title}
+                </CardTitle>
+                <CardDescription className="text-base ">
                   {item.subtitle}
                 </CardDescription>
               </CardHeader>

@@ -8,5 +8,5 @@ export const managerInfo = {
   },
   address: `Ajyad St, Ajyad District, Makkah 24231, Saudi Arabia
 `,
-  email: "info@hajjcarelaundry.com",
+  email: "info@makkahzamzamexpress.com",
 };

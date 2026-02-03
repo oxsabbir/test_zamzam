@@ -34,7 +34,7 @@ const testimonials = [
     rating: 5,
     service: "Family Laundry Service",
     review:
-      "With a big family, laundry can be a challenge. Makkah ZamZam Express Laundry made it effortless. Their multi-language support and free pickup saved us time and money. Highly recommended for families!",
+      "With a big family, laundry can be a challenge. Makkah ZamZam Express Laundry made it effortless. Their multi-language support and free pickup saved us time and effort. Highly recommended for families!",
     avatar: "IA",
     flag: "🇴🇲",
   },
@@ -45,7 +45,7 @@ const testimonials = [
     rating: 5,
     service: "Express Service",
     review:
-      "The 24/7 service is a game-changer! We needed laundry done late at night, and they were responsive and efficient. Makkah ZamZam Express Laundry exceeded all our expectations.",
+      "The 24/7 service is a game-changer. We needed laundry done late at night, and Makkah ZamZam Express Laundry was responsive and efficient. They exceeded all our expectations.",
     avatar: "SN",
     flag: "🇲🇾",
   },
@@ -56,7 +56,7 @@ const testimonials = [
     rating: 5,
     service: "Premium Wash & Fold",
     review:
-      "Their premium service is worth every penny. My clothes were returned beautifully folded and smelling fresh. The quality is far better than any hotel service I've used.",
+      "The premium service from Makkah ZamZam Express Laundry is worth it. My clothes were returned beautifully folded and smelling fresh. The quality is far better than any hotel service I’ve used.",
     avatar: "AR",
     flag: "🇮🇷",
   },
@@ -67,7 +67,7 @@ const testimonials = [
     rating: 5,
     service: "Thobe & Formal Wear",
     review:
-      "I trusted Hajj Care Laundry with my husband's formal thobes, and they did an amazing job. The pressing was perfect, and the fabric was handled with care. A five-star experience!",
+      "I trusted Makkah ZamZam Express Laundry with my husband’s formal thobes, and they did an amazing job. The pressing was perfect, and the fabric was handled with great care. A five-star experience!",
     avatar: "FA",
     flag: "🇯🇴",
   },
@@ -78,7 +78,7 @@ const testimonials = [
     rating: 5,
     service: "Regular Wash",
     review:
-      "Affordable, fast, and convenient. Booking through WhatsApp was easy, and the free pickup and delivery made everything so simple. The best laundry choice for pilgrims near Haram.",
+      "Affordable, fast, and very convenient. Booking through WhatsApp was easy, and the free pickup and delivery made everything simple. Makkah ZamZam Express Laundry is the best choice near the Haram.",
     avatar: "MA",
     flag: "🇹🇷",
   },
@@ -89,7 +89,7 @@ const testimonials = [
     rating: 5,
     service: "Blanket & Heavy Items",
     review:
-      "Cleaning our heavy blankets was a breeze with Hajj Care Laundry. They picked them up from our hotel and returned them fresh and clean the next day. Excellent service and great value!",
+      "Cleaning heavy blankets was effortless with Makkah ZamZam Express Laundry. They picked them up from our hotel and returned them fresh and clean the next day. Excellent service and great value.",
     avatar: "NB",
     flag: "🇧🇩",
   },
@@ -100,7 +100,7 @@ const testimonials = [
     rating: 5,
     service: "Stain Removal",
     review:
-      "I accidentally spilled coffee on my favorite thobe, but Hajj Care Laundry's stain removal service saved the day! The stain is completely gone, and the fabric is as good as new.",
+      "I spilled coffee on my favorite thobe, but Makkah ZamZam Express Laundry’s stain removal service saved it completely. The fabric looks as good as new. Truly professional work.",
     avatar: "MS",
     flag: "🇪🇬",
   },
@@ -138,8 +138,10 @@ const Testimonials = () => {
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.6, delay: 0.3 }}
           >
-            7500+ happy pilgrims from over 50 countries have trusted us with their laundry needs.
+            Trusted by thousands of pilgrims and residents from across the world
+            for reliable, hygienic, and timely laundry services in Makkah.
           </motion.p>
+
           <motion.div
             className="flex items-center justify-center gap-2 mt-4"
             initial={{ opacity: 0, scale: 0.8 }}
@@ -154,7 +156,7 @@ const Testimonials = () => {
               ))}
             </div>
             <span className="text-xl font-bold text-foreground">4.9/5</span>
-            <span className="text-muted-foreground">(7500+ reviews)</span>
+            <span className="text-muted-foreground">(10,000+ reviews)</span>
           </motion.div>
         </motion.div>
 
@@ -184,9 +186,9 @@ const Testimonials = () => {
                   <div className="text-xs text-muted-foreground">
                     {review.flag} {review.location}
                   </div>
-                  <div className="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent hover:bg-primary/80 mt-1 text-xs bg-primary/10 text-primary">
+                  {/* <div className="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent hover:bg-primary/80 mt-1 text-xs bg-primary/10 text-primary">
                     {review.service}
-                  </div>
+                  </div> */}
                 </div>
               </div>
             ))}
@@ -202,14 +204,14 @@ const Testimonials = () => {
           <button
             onClick={() => {
               const message = encodeURIComponent(
-                "Hi! I want to book your 5-star laundry service."
+                "Hi! I want to book your 5-star laundry service.",
               );
               window.open(
                 `https://wa.me/${managerInfo.onlyNumber.whatsApp}?text=${message}`,
-                "_blank"
+                "_blank",
               );
             }}
-            className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-success hover:bg-success/90 rounded-full shadow-lg hover:shadow-xl transition-all"
+            className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-primary hover:bg-primary/90 rounded-full shadow-lg hover:shadow-xl transition-all"
           >
             Get Your 5-Star Service Now
           </button>

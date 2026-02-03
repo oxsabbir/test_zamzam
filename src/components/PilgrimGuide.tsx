@@ -15,68 +15,68 @@ import { Button } from "./ui/button";
 const guideItems = [
   {
     icon: <Shirt className="h-7 w-7 text-primary" />,
-    title: "Caring for Your Ihram",
+    title: "Proper Ihram Care",
     content:
-      "Ihram garments are sacred. To maintain their purity, wash them gently with fragrance-free detergents and air dry them in the shade.",
+      "Ihram garments require gentle and respectful care. Washing with fragrance-free detergents and proper drying helps maintain purity and fabric quality.",
     tips: [
-      "Use a gentle machine cycle or hand wash.",
-      "Opt for mild, unscented detergent.",
-      "Avoid direct sunlight to prevent yellowing.",
+      "Wash Ihram separately using a gentle cycle.",
+      "Use mild, fragrance-free detergent only.",
+      "Air dry in a shaded area to protect the fabric.",
     ],
   },
   {
     icon: <UserCheck className="h-7 w-7 text-primary" />,
-    title: "Abaya & Thobe Care",
+    title: "Abaya & Thobe Maintenance",
     content:
-      "Your traditional garments require special care. We recommend dry cleaning for delicate items and professional pressing for a crisp look.",
+      "Traditional garments benefit from professional cleaning and pressing to maintain appearance, comfort, and fabric strength.",
     tips: [
-      "Dry clean embroidered or delicate abayas.",
-      "Machine wash and press thobes professionally.",
-      "Use our express service for urgent needs.",
+      "Dry clean delicate or embroidered abayas.",
+      "Machine wash thobes using suitable fabric settings.",
+      "Use professional pressing for a clean finish.",
     ],
   },
   {
     icon: <Clock className="h-7 w-7 text-primary" />,
-    title: "Smart Laundry Timing",
+    title: "Planning Laundry Around Your Schedule",
     content:
-      "Our flexible services are designed around your worship schedule. Plan your laundry efficiently so you can focus on what matters.",
+      "Laundry services in Makkah are designed to fit around prayer times and daily routines, allowing you to manage your time efficiently.",
     tips: [
-      "Use our same-day service (drop off before 10 AM).",
-      "A 3-hour express option is perfect for between rituals.",
-      "We offer 24/7 pickup and delivery.",
+      "Schedule pickups early in the day for faster service.",
+      "Use express options for urgent requirements.",
+      "Plan laundry before long visits to the Haram.",
     ],
   },
   {
     icon: <Package className="h-7 w-7 text-primary" />,
-    title: "Packing for Your Pilgrimage",
+    title: "Packing Smart for Your Stay",
     content:
-      "Packing smart reduces laundry stress. Experienced pilgrims recommend bringing just enough, focusing on lightweight and quick-drying fabrics.",
+      "Packing wisely helps reduce laundry load and stress. Lightweight, breathable fabrics are easier to clean and dry quickly.",
     tips: [
-      "Pack 3-4 sets of Ihram.",
-      "Bring 2-3 comfortable thobes or abayas.",
-      "Choose light, quick-drying undergarments.",
+      "Carry a limited number of essential garments.",
+      "Choose breathable and easy-care fabrics.",
+      "Avoid overpacking heavy clothing items.",
     ],
   },
   {
     icon: <DollarSign className="h-7 w-7 text-primary" />,
-    title: "Understanding Laundry Costs",
+    title: "Managing Laundry Costs",
     content:
-      "Our transparent pricing helps you budget effectively. Hotel laundry can be 3x more expensive, so plan ahead to save.",
+      "Understanding laundry pricing helps you plan better. Professional laundry services offer better value compared to hotel laundry options.",
     tips: [
-      "Expect to pay around 12-18 SAR per kg.",
-      "An average 3-5 kg load costs about 45-75 SAR.",
-      "Avoid expensive hotel services to save up to 70%.",
+      "Laundry pricing is usually based on weight.",
+      "Professional services are more affordable than hotel laundry.",
+      "Plan regular laundry to avoid urgent charges.",
     ],
   },
   {
     icon: <Wind className="h-7 w-7 text-primary" />,
-    title: "Keeping Clothes Fresh",
+    title: "Keeping Clothes Fresh in Makkah",
     content:
-      "Makkah's heat means frequent washing is essential. Airing out clothes and scheduling timely laundry service makes all the difference.",
+      "Frequent washing and proper airing help keep clothes fresh in Makkah’s warm climate. Timely laundry service ensures comfort throughout your stay.",
     tips: [
-      "Plan to change Ihram after Tawaf or Sa'i.",
-      "Air-dry garments between wears.",
-      "Schedule pickups before you leave for the Haram.",
+      "Air garments between uses when possible.",
+      "Change clothes regularly due to heat.",
+      "Arrange laundry pickups before busy schedules.",
     ],
   },
 ];
@@ -96,7 +96,8 @@ export default function PilgrimGuide() {
             Essential Laundry Guide for Pilgrims
           </h2>
           <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
-            Let us handle the laundry, so you can focus on your spiritual journey. Here are some essential tips for Hajj & Umrah.
+            Let us handle the laundry, so you can focus on your spiritual
+            journey. Here are some essential tips for Hajj & Umrah.
           </p>
         </header>
 
@@ -124,7 +125,7 @@ export default function PilgrimGuide() {
                 <ul className="space-y-3">
                   {item.tips.map((tip, i) => (
                     <li key={i} className="flex items-start gap-3">
-                      <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
+                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                       <span className="text-muted-foreground">{tip}</span>
                     </li>
                   ))}
@@ -145,7 +146,7 @@ export default function PilgrimGuide() {
             </p>
             <Button
               onClick={() => handleWhatsApp(whatsappMessages.faq)}
-              className="bg-[#25D366] text-white hover:bg-[#128C7E] shadow-lg hover:shadow-xl transition-all h-12 px-6 text-base font-semibold"
+              className="bg-primary text-white hover:bg-primary/80 shadow-lg hover:shadow-xl transition-all h-12 px-6 text-base font-semibold"
             >
               <WhatsAppIcon className="mr-2" />
               Ask a Question on WhatsApp

@@ -119,7 +119,7 @@ const HowItWorks = () => {
             size="lg"
             id="generate_lead"
             onClick={handleStart}
-            className="bg-success hover:bg-success/90 text-white md:text-lg px-4 py-3 text-base md:px-8 md:py-6"
+            className="bg-primary hover:bg-primary/90 text-white md:text-lg px-4 py-3 text-base md:px-8 md:py-6"
           >
             Start Your First Order - FREE Pickup
           </Button>

@@ -17,7 +17,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import WhatsAppIcon from "./icons/Whatsapp";
 import { motion } from "motion/react"; // Ensure this matches your installed package (framer-motion vs motion)
-import brandLogo from "@/assets/hajj_care_logo_dark.webp"; // Ensure you have a version that looks good on dark bg, or use filter invert
+import brandLogo from "@/assets/new_zamzam_logo.webp"; // Ensure you have a version that looks good on dark bg, or use filter invert
 import { managerInfo } from "@/constants";
 // import SnapChatIcon from "./icons/SnapChat";
 
@@ -50,11 +50,11 @@ const Footer = () => {
     }
 
     const message = encodeURIComponent(
-      `*New Laundry Booking*\n\n *Name:* ${formData.name}\n *Phone:* ${formData.phone}\n *Hotel Name:* ${formData.hotel}`
+      `*New Laundry Booking*\n\n *Name:* ${formData.name}\n *Phone:* ${formData.phone}\n *Hotel Name:* ${formData.hotel}`,
     );
     window.open(
       `https://wa.me/+${managerInfo.onlyNumber.whatsApp}?text=${message}`,
-      "_blank"
+      "_blank",
     );
 
     toast({
