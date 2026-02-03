@@ -20,7 +20,7 @@ const About = () => {
             className="text-center max-w-3xl mx-auto"
           >
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6">
-              About Hajj Care Laundry
+              About Makkah ZamZam Express Laundry
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
               Dedicated to providing exceptional laundry services for pilgrims
@@ -56,7 +56,7 @@ const About = () => {
                 Who We Are
               </h2>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                Hajj Care Laundry is a trusted provider of pickup and delivery
+                Makkah ZamZam Express Laundry is a trusted provider of pickup and delivery
                 laundry services, dedicated to serving pilgrims, residents, and
                 visitors throughout the holy city of Makkah with the utmost care
                 and professionalism.

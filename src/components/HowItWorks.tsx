@@ -49,7 +49,7 @@ const HowItWorks = () => {
             id="services-heading"
             className="text-2xl sm:text-4xl font-bold mb-4 text-foreground"
           >
-            How Hajj Care Laundry Works
+            How Makkah ZamZam Express Laundry Works
           </h2>
           <p className="text-base sm:text-xl font-medium mb-1 text-muted-foreground max-w-3xl mx-auto">
             Your simple three-step process for fresh laundry in Makkah.

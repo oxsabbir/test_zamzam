@@ -1,10 +1,10 @@
 export const managerInfo = {
-  fullName: "Foysal Mahmud",
-  phoneNumber: "+966 50 136 2135",
-  whatsApp: "+966 50 136 2135",
+  fullName: "Muhammad Arif Uddin",
+  phoneNumber: "+966 53 774 0367",
+  whatsApp: "+966 53 774 0367",
   onlyNumber: {
-    whatsApp: 966501362135,
-    phoneNumber: 966501362135,
+    whatsApp: 966537740367,
+    phoneNumber: 966537740367,
   },
   address: `Ajyad St, Ajyad District, Makkah 24231, Saudi Arabia
 `,

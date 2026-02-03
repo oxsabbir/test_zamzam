@@ -18,18 +18,18 @@ export default function EmergencyService() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
               </span>
-              Live: 24/7 Emergency Response Team
+              Urgent: Makkah's Fastest Emergency Laundry!
             </div>
 
             <h2 className="text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight mb-4">
-              Urgent Laundry Needs? <br className="hidden sm:block" />
+              Emergency Laundry in Makkah? <br className="hidden sm:block" />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-rose-500">
-                We'll Be Right There.
+                We're On Our Way!
               </span>
             </h2>
 
             <p className="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
-              No need to worry. Whether it's a last-minute spill or an early flight, our <strong>Rapid Response Team</strong> is ready to handle your laundry with speed and care.
+              Unexpected laundry crisis? From last-minute needs to crucial garments, our <strong>Rapid Response Team</strong> delivers swift, professional care.
             </p>
           </div>
 
@@ -41,11 +41,10 @@ export default function EmergencyService() {
                 <Zap size={24} strokeWidth={2.5} />
               </div>
               <h3 className="text-xl font-bold text-slate-900 mb-2">
-                1-Hour Express
+                60-Minute Express
               </h3>
               <p className="text-slate-600 text-sm">
-                Fast-track cleaning and steam pressing. We prioritize your order
-                above all others instantly.
+                Unbeatable speed for those critical moments. Your laundry is cleaned, pressed, and ready in just one hour.
               </p>
             </div>
 
@@ -55,11 +54,10 @@ export default function EmergencyService() {
                 <Clock size={24} strokeWidth={2.5} />
               </div>
               <h3 className="text-xl font-bold text-slate-900 mb-2">
-                Anytime, Anywhere
+                24/7 Availability
               </h3>
               <p className="text-slate-600 text-sm">
-                3 AM or Public Holiday? Our emergency lines are open. We pick up
-                and deliver while you sleep.
+                Day or night, weekday or holiday, our emergency lines are always open. We pick up and deliver around your schedule.
               </p>
             </div>
 
@@ -69,11 +67,10 @@ export default function EmergencyService() {
                 <ShieldCheck size={24} strokeWidth={2.5} />
               </div>
               <h3 className="text-xl font-bold text-slate-900 mb-2">
-                Results Guaranteed
+                Quality Assurance
               </h3>
               <p className="text-slate-600 text-sm">
-                Speed doesn't mean cutting corners. If the stain isn't gone
-                (where possible), you don't pay.
+                We guarantee meticulous care and exceptional results. If you're not satisfied, we'll make it right, free of charge.
               </p>
             </div>
           </div>
@@ -88,14 +85,14 @@ export default function EmergencyService() {
                 </h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-3 gap-x-8">
                   {[
-                    "Flight scheduled tomorrow",
-                    "Wedding outfit rescue",
-                    "Urgent business meeting",
-                    "Tough stain removal",
-                    "Special occasion prep",
-                    "Ihram / Hajj urgency",
-                    "Spills & accidents",
-                    "Last-minute ironing",
+                    "Time-sensitive travel plans",
+                    "Special event attire",
+                    "Critical business wear",
+                    "Stubborn stain challenges",
+                    "Wardrobe emergencies",
+                    "Last-minute presentation prep",
+                    "Unexpected garment mishaps",
+                    "Quick-turnaround ironing",
                   ].map((item, index) => (
                     <div
                       key={index}
@@ -116,10 +113,10 @@ export default function EmergencyService() {
                 <div className="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full -mr-10 -mt-10 blur-2xl"></div>
 
                 <h3 className="text-white text-xl font-bold mb-2 relative z-10">
-                  Need Help Right Now?
+                  Crisis Laundry? Contact Us Now!
                 </h3>
                 <p className="text-slate-400 text-sm mb-6 relative z-10">
-                  Tap below to chat with our emergency dispatcher immediately.
+                  Tap below to connect with our dedicated emergency team for immediate assistance.
                 </p>
 
                 <button
@@ -133,7 +130,7 @@ export default function EmergencyService() {
                     size={24}
                     className="text-white group-hover:scale-110 transition-transform"
                   />
-                  <span>EMERGENCY PICKUP</span>
+                  <span>GET URGENT SERVICE</span>
                 </button>
 
                 <p className="text-xs text-slate-500 mt-4 text-center">

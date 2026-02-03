@@ -174,7 +174,7 @@ const Contact = () => {
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 className="grayscale-[30%] group-hover:grayscale-0 transition-all duration-500"
-                title="Hajj Care Laundry Location"
+                title="Makkah ZamZam Express Laundry Location"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none" />
             </div>

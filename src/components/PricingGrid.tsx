@@ -67,9 +67,15 @@ const PricingGrid = () => {
     <section className="py-20 bg-muted/60">
       <div className="container mx-auto px-4">
         <div className="text-center mb-8 sm:mb-12">
-                                  <h2 id="services-heading" className="text-2xl sm:text-4xl font-bold mb-4 text-foreground">Hajj Care Laundry: Clear & Affordable Pricing</h2>
+          <h2
+            id="services-heading"
+            className="text-2xl sm:text-4xl font-bold mb-4 text-foreground"
+          >
+            Makkah ZamZam Express Laundry Pricing
+          </h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
-            Fair and transparent pricing for all our laundry services in Makkah. High-quality care starts from just{" "}
+            Reliable laundry services in Makkah with honest pricing and
+            professional care.
             <span className="text-primary ml-1 font-semibold">12 SAR/kg!</span>
           </p>
         </div>
@@ -79,7 +85,8 @@ const PricingGrid = () => {
             <Card
               key={index}
               className={`border-2 hover:border-primary transition-all duration-300 hover:shadow-xl group ${
-                item.title === "Ihram Clothes" || item.title === "Regular Clothes"
+                item.title === "Ihram Clothes" ||
+                item.title === "Regular Clothes"
                   ? "card-pulse-effect"
                   : ""
               }`}
@@ -103,7 +110,7 @@ const PricingGrid = () => {
                 <Button
                   id="generate_lead"
                   onClick={() => handleOrder(item.title, item.price)}
-                  className="w-full bg-success hover:bg-success/90"
+                  className="w-full bg-primary hover:bg-primary/90"
                 >
                   Order Now
                 </Button>

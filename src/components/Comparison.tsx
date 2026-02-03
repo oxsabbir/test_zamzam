@@ -12,33 +12,33 @@ import {
 const comparisonData = [
   {
     feature: "Pickup Time",
-    us: "In as little as 15 Minutes",
-    others: "Typically 2-4 Hours",
+    us: "Swift 15-Minute Pickup",
+    others: "Usually 2-4 Hours",
   },
   {
     feature: "Operating Hours",
-    us: "24/7 (Always Open)",
-    others: "Standard Business Hours",
+    us: "Round-the-clock 24/7 service",
+    others: "Limited to standard hours",
   },
   {
     feature: "Starting Price",
-    us: "From 12 SAR/kg (Hotel prices are typically 25 SAR/kg)",
-    others: "Often Higher (e.g., 25 SAR/kg at hotels)",
+    us: "As low as 12 SAR/kg",
+    others: "Higher, around 25 SAR/kg",
   },
   {
     feature: "Customer Support",
-    us: "Multi-language (English, Arabic, Urdu)",
-    others: "Limited Language Options",
+    us: "Multilingual support in English, Arabic, Urdu",
+    others: "Single language support",
   },
   {
     feature: "Delivery Charge",
-    us: "Always FREE",
-    others: "Additional Charges Apply",
+    us: "Completely FREE delivery",
+    others: "Extra delivery charges apply",
   },
   {
     feature: "Urgent Orders",
-    us: "Fresh & Ready in 1 Hour",
-    others: "24-Hour Minimum Wait",
+    us: "Ready in 1 Hour",
+    others: "Minimum 24-hour wait",
   },
 ];
 
@@ -51,42 +51,63 @@ const Comparison = () => {
             id="benefits-heading"
             className="text-2xl sm:text-4xl font-bold mb-4 text-foreground"
           >
-            The Hajj Care Laundry Difference: A Clear Choice
+            Makkah ZamZam Express Laundry And Others
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
-            Discover why Hajj Care Laundry stands out from other services in
-            Makkah, offering unparalleled convenience and value for pilgrims.
+            Discover why Makkah ZamZam Express Laundry stands out from other
+            services in Makkah, offering unparalleled convenience and value for
+            pilgrims.
           </p>
         </header>
-        <div className="bg-gradient-to-r from-slate-700 via-slate-800 to-slate-900 rounded-xl sm:rounded-2xl p-4 sm:p-8 mb-8 sm:mb-12 max-w-6xl mx-auto">
-          <h3 className="text-xl sm:text-2xl font-bold text-center mb-6 sm:mb-8 text-white">
-            Hajj Care Laundry vs. Other Services
-          </h3>
-          <div className="space-y-4">
-            <div className="grid grid-cols-3 gap-2 sm:gap-4 text-center font-bold text-sm sm:text-base text-slate-300">
-              <div>Feature</div>
-              <div>Hajj Care Laundry</div>
-              <div>Other Services</div>
-            </div>
-            {comparisonData.map((item, i) => (
-              <div
-                key={i}
-                className="grid grid-cols-3 gap-2 sm:gap-4 items-center text-center border-t border-slate-600 pt-4"
-              >
-                <div className="text-sm font-semibold text-left text-slate-100">
-                  {item.feature}
-                </div>
-                <div className="flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 text-green-400 font-bold text-xs sm:text-sm">
-                  <span>{item.us}</span>
-                </div>
-                <div className="flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 text-red-400 font-semibold text-xs sm:text-sm">
-                  <span>{item.others}</span>
-                </div>
-              </div>
-            ))}
+
+        <div className="max-w-6xl mx-auto">
+          <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
+            <table className="w-full text-sm text-left text-gray-400">
+              <thead className="text-xs uppercase bg-gray-700 text-gray-400">
+                <tr>
+                  <th scope="col" className="px-6 py-3">
+                    Feature
+                  </th>
+                  <th
+                    scope="col"
+                    className="px-6 py-3 min-w-20 bg-green-900/50 text-white"
+                  >
+                    Our Services
+                  </th>
+                  <th scope="col" className="px-6 py-3">
+                    Other Services
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {comparisonData.map((item, i) => (
+                  <tr key={i} className="border-b bg-gray-800 border-gray-700">
+                    <th
+                      scope="row"
+                      className="px-6 py-4 font-medium whitespace-nowrap text-white"
+                    >
+                      {item.feature}
+                    </th>
+                    <td className="px-6 py-4 text-green-400">
+                      <div className="flex items-center">
+                        <Check className="w-4 h-4 mr-2" />
+                        {item.us}
+                      </div>
+                    </td>
+                    <td className="px-6 py-4 text-red-400">
+                      <div className="flex items-center">
+                        <X className="w-4 h-4 mr-2" />
+                        {item.others}
+                      </div>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-6xl mx-auto">
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-6xl mx-auto mt-8 sm:mt-12">
           <div className="rounded-lg bg-card text-card-foreground shadow-sm p-4 sm:p-6 hover:shadow-xl transition-all hover:-translate-y-1 border border-border">
             <div className="flex flex-col items-center text-center">
               <div className="mb-3 sm:mb-4">

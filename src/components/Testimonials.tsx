@@ -12,7 +12,7 @@ const testimonials = [
     rating: 5,
     service: "Urgent Wash & Iron",
     review:
-      "Hajj Care Laundry provided an incredibly fast and reliable service. My clothes were picked up, cleaned, and delivered in just a few hours. A true blessing for any pilgrim on a tight schedule!",
+      "Makkah ZamZam Express Laundry provided an incredibly fast and reliable service. My clothes were picked up, cleaned, and delivered in just a few hours. A true blessing for any pilgrim on a tight schedule!",
     avatar: "YA",
     flag: "🇳🇬",
   },
@@ -23,7 +23,7 @@ const testimonials = [
     rating: 5,
     service: "Ihram & Abaya Cleaning",
     review:
-      "I was worried about cleaning my abayas and Ihram, but Hajj Care Laundry handled them perfectly. The clothes came back fresh and impeccably clean. Their attention to detail is outstanding.",
+      "I was worried about cleaning my abayas and Ihram, but Makkah ZamZam Express Laundry handled them perfectly. The clothes came back fresh and impeccably clean. Their attention to detail is outstanding.",
     avatar: "AK",
     flag: "🇮🇳",
   },
@@ -34,7 +34,7 @@ const testimonials = [
     rating: 5,
     service: "Family Laundry Service",
     review:
-      "With a big family, laundry can be a challenge. Hajj Care Laundry made it effortless. Their multi-language support and free pickup saved us time and money. Highly recommended for families!",
+      "With a big family, laundry can be a challenge. Makkah ZamZam Express Laundry made it effortless. Their multi-language support and free pickup saved us time and money. Highly recommended for families!",
     avatar: "IA",
     flag: "🇴🇲",
   },
@@ -45,7 +45,7 @@ const testimonials = [
     rating: 5,
     service: "Express Service",
     review:
-      "The 24/7 service is a game-changer! We needed laundry done late at night, and they were responsive and efficient. Hajj Care Laundry exceeded all our expectations.",
+      "The 24/7 service is a game-changer! We needed laundry done late at night, and they were responsive and efficient. Makkah ZamZam Express Laundry exceeded all our expectations.",
     avatar: "SN",
     flag: "🇲🇾",
   },

@@ -65,17 +65,19 @@ export default function OurServices() {
             id="areas-heading"
             className="text-2xl sm:text-4xl font-bold mb-3 sm:mb-4 text-foreground"
           >
-            Comprehensive Laundry Services in Makkah
+            Laundry Services Across Makkah
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto mb-6 sm:mb-8">
-            We offer a wide range of reliable laundry services throughout Makkah.
+            We provide reliable and professional laundry services throughout
+            Makkah.
             <br />
-            <span className="">
-              With our fast{" "}
+            <span>
+              Enjoy fast{" "}
               <strong className="text-primary font-semibold">
                 pickup and delivery
               </strong>{" "}
-              for hotels, apartments, and areas near the Haram—making your laundry experience hassle-free.
+              for hotels, apartments, and areas near Masjid Al-Haram—making
+              laundry simple and stress-free.
             </span>
           </p>
         </div>

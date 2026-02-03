@@ -9,7 +9,7 @@ import Footer from "@/components/Footer";
 import PickupManager from "@/components/PickupManager";
 import UrgentService from "@/components/UrgentService";
 import PricingSection from "@/components/PricingSection";
-import FinalCTO from "@/components/FinalCTA";
+import FinalCTA from "@/components/FinalCTA";
 import PilgrimGuide from "@/components/PilgrimGuide";
 import Faq from "@/components/Faq";
 import EmergencyService from "@/components/EmergencyService";
@@ -38,7 +38,7 @@ const Index = () => {
       </div>
       <Faq />
       <EmergencyService />
-      <FinalCTO />
+      <FinalCTA />
       <div id="contact">
         <PickupManager />
       </div>
