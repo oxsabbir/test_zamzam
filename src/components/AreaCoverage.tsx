@@ -8,7 +8,7 @@ import { whatsappMessages } from "@/constants/messages";
 import { handleWhatsApp } from "@/lib/utils";
 const areas = [
   {
-    emoji: "🕋",
+    emoji: "🕌",
     title: "Clock Towers & Abraj Al Bait",
     description:
       "Fast and reliable laundry service for hotels and residences surrounding the Clock Towers and Masjid Al-Haram, ideal for pilgrims and visitors.",
@@ -19,7 +19,7 @@ const areas = [
     ],
   },
   {
-    emoji: "🕌",
+    emoji: "🕋",
     title: "Makkatul Mukarramah (Central Area)",
     description:
       "Comprehensive laundry coverage across central Makkatul Mukarramah, serving residents, pilgrims, and commercial accommodations.",

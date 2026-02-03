@@ -248,9 +248,12 @@ const Footer = () => {
           {/* Form Column (3 Cols) */}
           <div className="lg:col-span-3">
             <div className="bg-gradient-to-r from-slate-900 to-slate-700 p-6 rounded-2xl border border-slate-800 shadow-xl">
-              <h4 className="text-white font-bold text-lg mb-2">Book Now</h4>
+              <h4 className="text-white font-bold text-lg mb-2">
+                Quick Booking
+              </h4>
               <p className="text-slate-300 text-sm mb-4">
-                Fill This Form To Book Your Laundry Instantly
+                Get your laundry done fast. Submit your details and we'll
+                contact you shortly.
               </p>
 
               <form onSubmit={handleSubmit} className="space-y-4">

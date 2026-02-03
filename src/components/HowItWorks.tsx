@@ -5,7 +5,6 @@ import delivery from "@/assets/delivery.webp";
 import pickup from "@/assets/pickup.webp";
 import { handleWhatsApp } from "@/lib/utils";
 import { whatsappMessages } from "@/constants/messages";
-
 const steps = [
   {
     number: "1",
@@ -13,7 +12,7 @@ const steps = [
     image: phone,
     title: "WhatsApp Us",
     description:
-      "Send a message with your location. We'll confirm pickup time (usually 15 minutes).",
+      "Contact us via WhatsApp with your details and we'll arrange pickup at your preferred time.",
     time: "30 seconds",
   },
   {
@@ -22,7 +21,7 @@ const steps = [
     image: pickup,
     title: "We Pickup & Clean",
     description:
-      "Our professional team collects your clothes and processes them with care.",
+      "We collect your laundry and clean it using premium detergents and modern equipment.",
     time: "15 min pickup",
   },
   {
@@ -31,7 +30,7 @@ const steps = [
     image: delivery,
     title: "Fresh Delivery",
     description:
-      "Your clothes return clean, pressed, and ready to wear. Pay on delivery.",
+      "Receive your perfectly cleaned and ironed clothes delivered to your doorstep the same day.",
     time: "Same day back",
   },
 ];

@@ -140,7 +140,7 @@ const HeroNew = () => {
               </span>{" "}
               is my go-to in Makkah!”
             </p>
-            <div className="grid grid-cols-3 gap-2 sm:gap-4 text-center">
+            <div className="grid grid-cols-2  sm:grid-cols-3 gap-2 sm:gap-4 text-center">
               <div className="bg-accent/20 rounded-lg p-2 sm:p-3">
                 <div className="text-lg sm:text-2xl font-bold text-accent">
                   From 12 SAR
@@ -157,7 +157,7 @@ const HeroNew = () => {
                   Guaranteed Pickup
                 </div>
               </div>
-              <div className="bg-accent/20 rounded-lg p-2 sm:p-3">
+              <div className="bg-accent/20 col-span-full sm:col-span-1 rounded-lg p-2 sm:p-3">
                 <div className="text-lg sm:text-2xl font-bold text-accent">
                   FREE
                 </div>
