@@ -1,10 +1,10 @@
 export const managerInfo = {
   fullName: "Muhammad Arif Uddin",
-  phoneNumber: "+966 55 467 3699",
-  whatsApp: "+966 55 467 3699",
+  phoneNumber: "+966 537740367",
+  whatsApp: "+966 537740367",
   onlyNumber: {
-    whatsApp: 966554673699,
-    phoneNumber: 966554673699,
+    whatsApp: 966537740367,
+    phoneNumber: 966537740367,
   },
   address: `CR9H+9Q7 Makkah Saudi Arabia`,
   email: "info@makkahzamzamexpreslaundry.com",
