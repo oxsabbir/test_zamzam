@@ -50,7 +50,7 @@ export default function UrgentService() {
           <div className="rounded-lg text-card-foreground shadow-sm p-6 text-center hover:shadow-xl transition-all hover:-translate-y-1 border bg-primary/10  dark:bg-green-900/10 hover:opacity-90">
             <div className="text-5xl mb-4">🚀</div>
             <div className="text-3xl font-bold mb-2 text-foreground">
-              5 Hours
+              24 Hours
             </div>
             <h3 className="text-lg font-bold mb-2 text-foreground">
               Express Service
@@ -58,7 +58,7 @@ export default function UrgentService() {
             <p className="text-sm text-slate-700 mb-4">Between prayers</p>
             <button
               id="generate_lead"
-              onClick={() => handleBooking("5 Hour", "Express Service")}
+              onClick={() => handleBooking("24 Hour", "Express Service")}
               className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-white hover:bg-primary/90 h-10 px-4 py-2 w-full"
             >
               Book Now

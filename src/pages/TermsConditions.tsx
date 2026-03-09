@@ -254,7 +254,7 @@ const TermsConditions = () => {
                       <span className="text-muted-foreground">
                         {" "}
                         Standard service is completed within 12-24 hours.
-                        Express services (1-5 hours) are available at additional
+                        Express services (1-24 hours) are available at additional
                         cost.
                       </span>
                     </div>

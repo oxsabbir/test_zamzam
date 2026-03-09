@@ -5,9 +5,9 @@ const urgentServices = [
     price: "12 Riyals",
     unit: "Kg",
     description:
-      "Professional pressing, ironing, and folding service with delivery within 5 hours or as per client’s request.",
+      "Professional pressing, ironing, and folding service with delivery within 24 hours or as per client’s request.",
     highlight: "Free Pickup & Delivery Included",
-    deliveryTime: "Up to 5 Hours",
+    deliveryTime: "Up to 24 Hours",
   },
   {
     title: "Urgent Wash, Dry & Iron",
@@ -28,13 +28,13 @@ const urgentServices = [
     deliveryTime: "12 Hours",
   },
   {
-    title: "5 Hours Wash & Delivery",
+    title: "24 Hours Wash & Delivery",
     price: "30 Riyals",
     unit: "Kg",
     description:
-      "Wash, dry, press/ironing, and folding or hanger service with express delivery within 5 hours.",
+      "Wash, dry, press/ironing, and folding or hanger service with express delivery within 24 hours.",
     highlight: "Free Pickup & Delivery Included",
-    deliveryTime: "5 Hours",
+    deliveryTime: "24 Hours",
   },
   {
     title: "Premium Ihram Care",

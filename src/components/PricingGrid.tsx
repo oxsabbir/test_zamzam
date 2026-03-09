@@ -29,7 +29,7 @@ const pricingItems = [
     title: "Ihram Clothes",
     subtitle: "Special care for holy garments",
     price: "14 SAR/piece",
-    time: "3 hours",
+    time: "24 hours",
   },
   {
     emoji: "🧥",

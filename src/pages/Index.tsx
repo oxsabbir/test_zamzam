@@ -25,13 +25,14 @@ const Index = () => {
       </div>
       <AreaCoverage />
 
+      <PricingSection />
       <Comparison />
-      <OurServices />
+      {/* <OurServices /> */}
+
       <div id="pricing">
         <PricingGrid />
       </div>
       <HowItWorks />
-      <PricingSection />
       <PilgrimGuide />
       <div id="testimonials">
         <Testimonials />
