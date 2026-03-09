@@ -14,14 +14,14 @@ const pricingItems = [
     emoji: "👕",
     title: "Regular Clothes",
     subtitle: "Shirts, pants, casual wear",
-    price: "12 SAR/kg",
+    price: "20 SAR/kg",
     time: "Same day",
   },
   {
     emoji: "👔",
     title: "Formal Wear",
     subtitle: "Suits, dress shirts, formal attire",
-    price: "18 SAR/kg",
+    price: "25 SAR/kg",
     time: "Same day",
   },
   {
@@ -76,7 +76,7 @@ const PricingGrid = () => {
           <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
             Reliable laundry services in Makkah with honest pricing and
             professional care.
-            <span className="text-primary ml-1 font-semibold">12 SAR/kg!</span>
+            <span className="text-primary ml-1 font-semibold">20 SAR/kg!</span>
           </p>
         </div>
 

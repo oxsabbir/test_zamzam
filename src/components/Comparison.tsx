@@ -22,8 +22,8 @@ const comparisonData = [
   },
   {
     feature: "Starting Price",
-    us: "As low as 12 SAR/kg",
-    others: "Higher, around 25 SAR/kg",
+    us: "As low as 20 SAR/kg",
+    others: "Higher, around 30 SAR/kg",
   },
   {
     feature: "Customer Support",
@@ -128,7 +128,7 @@ const Comparison = () => {
                 Economical & Transparent
               </h3>
               <p className="text-sm sm:text-base text-muted-foreground">
-                Start from 12 SAR/kg with free pickup and delivery. Save
+                Start from 20 SAR/kg with free pickup and delivery. Save
                 significantly compared to hotel laundry services.
               </p>
             </div>

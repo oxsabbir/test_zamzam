@@ -16,7 +16,7 @@ const faqData = [
   {
     question: "How much does it cost?",
     answer:
-      "Our pricing is simple and transparent. We charge by the kilogram, starting from 12 SAR/kg. Special garments like thobes and abayas have per-piece pricing.",
+      "Our pricing is simple and transparent. We charge by the kilogram, starting from 20 SAR/kg. Special garments like thobes and abayas have per-piece pricing.",
   },
   {
     question: "What is the turnaround time?",

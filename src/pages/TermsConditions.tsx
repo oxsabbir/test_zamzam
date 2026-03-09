@@ -163,7 +163,7 @@ const TermsConditions = () => {
                       <strong className="text-foreground">Pricing:</strong>
                       <span className="text-muted-foreground">
                         {" "}
-                        Our standard rate starts at 12 SAR per kg. Final pricing
+                        Our standard rate starts at 20 SAR per kg. Final pricing
                         depends on the weight and type of items, as well as any
                         special services requested.
                       </span>

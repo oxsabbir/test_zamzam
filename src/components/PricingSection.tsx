@@ -1,178 +1,223 @@
-import { Check, CheckCircle } from "lucide-react";
+import { CheckCircle, Clock, Truck, Info } from "lucide-react";
 import { Button } from "./ui/button";
 import { whatsappMessages } from "@/constants/messages";
 import { handleWhatsApp } from "@/lib/utils";
+import { Badge } from "./ui/badge";
 
-const pricePlan = {
-  basic: {
-    title: "Basic",
-    price: 12,
-    feature: [
-      "Regular clothes wash & dry",
-      "FREE pickup & delivery",
-      "Same day service",
-      "Basic pressing included",
-      "24/7 availability",
-    ],
+const laundryPackages = [
+  {
+    id: 1,
+    title: "Package 1",
+    type: "Normal",
+    deliveryTime: "12 Hours",
+    price: 20,
+    pickup: "Included",
+    featured: false,
   },
-  premium: {
-    title: "Premium",
-    price: 18,
-    feature: [
-      "Everything in Basic",
-      "Professional pressing",
-      "Stain removal treatment",
-      "Fabric conditioner",
-      "Plastic packaging",
-      "3-hour express option",
-    ],
-  },
-  vip: {
-    title: "VIP",
+  {
+    id: 2,
+    title: "Package 2",
+    type: "Normal",
+    deliveryTime: "10 Hours",
     price: 25,
-    feature: [
-      "Everything in Premium",
-      "Premium detergents",
-      "Hand-finished pressing",
-      "1-hour emergency service",
-      "Special garment care",
-      "Delivery scheduling",
-    ],
+    pickup: "Included",
+    featured: false,
   },
+  {
+    id: 3,
+    title: "Package 3",
+    type: "Normal",
+    deliveryTime: "8 Hours",
+    price: 28,
+    pickup: "Included",
+    featured: true,
+  },
+  {
+    id: 4,
+    title: "Package 4",
+    type: "Urgent",
+    deliveryTime: "5 Hours",
+    price: 30,
+    pickup: "SAR 10 Extra",
+    featured: false,
+  },
+  {
+    id: 5,
+    title: "Package 5",
+    type: "Urgent",
+    deliveryTime: "3 Hours",
+    price: 35,
+    pickup: "SAR 10 Extra",
+    featured: false,
+  },
+  {
+    id: 6,
+    title: "Package 6",
+    type: "Urgent",
+    deliveryTime: "1 Hour*",
+    price: 40,
+    pickup: "SAR 10 Extra",
+    featured: false,
+    note: "*Available in Makkah area only",
+  },
+];
+
+const ironingService = {
+  title: "Ironing & Pressing Only",
+  price: 15,
+  deliveryTime: "Within 5 Hours",
+  pickup: "Included",
 };
 
 export default function PricingSection() {
-  const handlePlanBooking = (price: number, plan: string) => {
-    const message = whatsappMessages.pricePlan
-      .replace("<price>", String(price))
-      .replace("<plan>", plan);
+  const handleBooking = (price: number, plan: string, time: string) => {
+    const message = whatsappMessages.package
+      .replace("<package>", `${plan} (${time})`)
+      .replace("<price>", `${price} SAR/KG`);
 
     handleWhatsApp(message, true);
   };
 
   return (
-    <section className="py-16 sm:py-20 bg-muted">
+    <section className="py-16 sm:py-20 bg-muted/50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-10 sm:mb-16">
-          <h2 className="text-2xl sm:text-4xl font-bold mb-4 text-foreground">
-            Select the Perfect Plan for Your Needs
+          <Badge className="mb-4 bg-primary/10 text-primary hover:bg-primary/20 border-none px-4 py-1">
+            New Pricing
+          </Badge>
+          <h2 className="text-3xl sm:text-5xl font-bold mb-4 text-foreground tracking-tight">
+            Laundry Packages
           </h2>
-          <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto">
-            Transparent and affordable pricing to suit every pilgrim's needs.
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            Professional Wash, Dry, and Press/Fold service. 
+            Price per KG adjusted for your convenience.
           </p>
         </div>
-        <div className="flex flex-col lg:flex-row justify-center items-center lg:items-stretch gap-8 max-w-5xl mx-auto">
-          {/* Basic Plan */}
-          <div className="w-full lg:w-1/3 flex flex-col p-8 bg-card rounded-2xl shadow-lg transition-transform transform hover:scale-105 duration-300">
-            <div className="text-center mb-6">
-              <h3 className="text-2xl font-bold text-foreground">
-                {pricePlan.basic.title}
-              </h3>
-              <p className="mt-2">
-                <span className="text-4xl font-bold text-primary">
-                  {pricePlan.basic.price} SAR
-                </span>
-                <span className="text-lg text-muted-foreground">/kg</span>
-              </p>
-            </div>
-            <hr className="border-border" />
-            <ul className="mt-6 space-y-4 text-muted-foreground flex-grow">
-              {pricePlan.basic.feature.map((feature, i) => (
-                <li key={i} className="flex items-center">
-                  <CheckCircle className="w-5 h-5 text-primary mr-3" />
-                  <span>{feature}</span>
-                </li>
-              ))}
-            </ul>
-            <div className="mt-auto pt-6">
-              <Button
-                id="generate_lead"
-                onClick={() =>
-                  handlePlanBooking(
-                    pricePlan.basic.price,
-                    pricePlan.basic.title,
-                  )
-                }
-                className="w-full bg-primary text-white hover:bg-primary/90"
-              >
-                Choose Basic
-              </Button>
-            </div>
-          </div>
 
-          {/* Premium Plan (Featured) */}
-          <div className="w-full lg:w-1/3 flex flex-col p-8 bg-gradient-to-br from-green-500 to-green-600 text-primary-foreground rounded-2xl shadow-2xl relative">
-            <div className="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2">
-              <div className="bg-gradient-to-r from-pink-500 to-orange-400 text-white text-xs font-semibold px-4 py-1 rounded-full uppercase">
-                Most Popular
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto mb-16">
+          {laundryPackages.map((pkg) => (
+            <div
+              key={pkg.id}
+              className={`group flex flex-col rounded-3xl border transition-all duration-500 hover:-translate-y-2 ${
+                pkg.featured
+                  ? "bg-card border-primary shadow-[0_20px_50px_rgba(0,0,0,0.1)] ring-1 ring-primary/20 scale-[1.03]"
+                  : "bg-background border-border/60 shadow-sm hover:shadow-[0_20px_50px_rgba(0,0,0,0.08)] hover:border-primary/30"
+              }`}
+            >
+              {/* Header section with specific color based on type */}
+              <div className={`p-6 rounded-t-[22px] ${
+                pkg.type === "Urgent" 
+                  ? "bg-gradient-to-br from-red-50 to-orange-50/50" 
+                  : "bg-gradient-to-br from-primary/5 to-transparent"
+              }`}>
+                <div className="flex justify-between items-start mb-4">
+                  <div>
+                    <Badge 
+                      className={`mb-2 font-bold px-3 ${
+                        pkg.type === "Urgent" 
+                          ? "bg-red-500 hover:bg-red-600 text-white" 
+                          : "bg-primary text-white hover:bg-primary/90"
+                      }`}
+                    >
+                      {pkg.type}
+                    </Badge>
+                    <h3 className="text-2xl font-extrabold text-foreground tracking-tight">{pkg.title}</h3>
+                  </div>
+                  <div className="flex flex-col items-end">
+                    <div className="flex items-baseline">
+                      <span className="text-4xl font-black text-primary">{pkg.price}</span>
+                      <span className="text-sm font-bold text-muted-foreground ml-1">SAR</span>
+                    </div>
+                    <span className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground/70">Per Kilogram</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="p-6 flex flex-col flex-grow">
+                <div className="space-y-4 mb-8">
+                  <div className="flex items-center group/item">
+                    <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mr-4 transition-colors group-hover/item:bg-primary/20">
+                      <Clock className="w-5 h-5 text-primary" />
+                    </div>
+                    <div>
+                      <p className="text-[10px] uppercase font-bold text-muted-foreground tracking-wider">Delivery Time</p>
+                      <p className="text-sm font-bold text-foreground">{pkg.deliveryTime}</p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center group/item">
+                    <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mr-4 transition-colors group-hover/item:bg-primary/20">
+                      <Truck className="w-5 h-5 text-primary" />
+                    </div>
+                    <div>
+                      <p className="text-[10px] uppercase font-bold text-muted-foreground tracking-wider">Pickup & Delivery</p>
+                      <p className="text-sm font-bold text-foreground">{pkg.pickup}</p>
+                    </div>
+                  </div>
+
+                  {pkg.note && (
+                    <div className="flex items-start gap-2 bg-orange-50/80 border border-orange-100 p-3 rounded-xl">
+                      <Info className="w-4 h-4 text-orange-500 mt-0.5 shrink-0" />
+                      <span className="text-xs font-medium text-orange-700 leading-tight">{pkg.note}</span>
+                    </div>
+                  )}
+                </div>
+
+                <Button
+                  id="generate_lead"
+                  onClick={() => handleBooking(pkg.price, pkg.title, pkg.deliveryTime)}
+                  className={`w-full font-black text-sm uppercase tracking-widest h-14 rounded-2xl transition-all duration-300 ${
+                    pkg.featured 
+                      ? "bg-primary text-white hover:bg-primary/90 shadow-[0_10px_20px_rgba(var(--primary-rgb),0.3)] hover:shadow-[0_15px_25px_rgba(var(--primary-rgb),0.4)]" 
+                      : "bg-muted text-foreground hover:bg-primary hover:text-white"
+                  }`}
+                >
+                  Choose {pkg.title}
+                </Button>
               </div>
             </div>
-            <div className="text-center mb-6">
-              <h3 className="text-2xl font-bold">{pricePlan.premium.title}</h3>
-              <p className="mt-2">
-                <span className="text-4xl font-bold">
-                  {pricePlan.premium.price} SAR
-                </span>
-                <span className="text-lg opacity-80">/kg</span>
-              </p>
-            </div>
-            <hr className="border-primary-foreground/30" />
-            <ul className="mt-6 space-y-4 opacity-90 flex-grow">
-              {pricePlan.premium.feature.map((feature, i) => (
-                <li key={i} className="flex items-center">
-                  <CheckCircle className="w-5 h-5 mr-3" />
-                  <span>{feature}</span>
-                </li>
-              ))}
-            </ul>
-            <div className="mt-auto pt-6">
-              <Button
-                id="generate_lead"
-                onClick={() =>
-                  handlePlanBooking(
-                    pricePlan.premium.price,
-                    pricePlan.premium.title,
-                  )
-                }
-                className="w-full bg-background text-foreground hover:bg-background/90"
-              >
-                Choose Premium
-              </Button>
-            </div>
-          </div>
+          ))}
+        </div>
 
-          {/* VIP Plan */}
-          <div className="w-full lg:w-1/3 flex flex-col p-8 bg-card rounded-2xl shadow-lg transition-transform transform hover:scale-105 duration-300">
-            <div className="text-center mb-6">
-              <h3 className="text-2xl font-bold text-foreground">
-                {pricePlan.vip.title}
-              </h3>
-              <p className="mt-2">
-                <span className="text-4xl font-bold text-primary">
-                  {pricePlan.vip.price} SAR
-                </span>
-                <span className="text-lg text-muted-foreground">/kg</span>
-              </p>
-            </div>
-            <hr className="border-border" />
-            <ul className="mt-6 space-y-4 text-muted-foreground flex-grow">
-              {pricePlan.vip.feature.map((feature, i) => (
-                <li key={i} className="flex items-center">
-                  <CheckCircle className="w-5 h-5 text-primary mr-3" />
-                  <span>{feature}</span>
-                </li>
-              ))}
-            </ul>
-            <div className="mt-auto pt-6">
-              <Button
-                id="generate_lead"
-                onClick={() =>
-                  handlePlanBooking(pricePlan.vip.price, pricePlan.vip.title)
-                }
-                className="w-full bg-primary text-white hover:bg-primary/90"
-              >
-                Choose VIP
-              </Button>
+        {/* Ironing Service Section */}
+        <div className="max-w-3xl mx-auto">
+          <div className="bg-gradient-to-br from-primary/5 to-primary/10 rounded-3xl p-8 border border-primary/20 shadow-inner relative overflow-hidden">
+            <div className="relative z-10">
+              <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div className="text-center md:text-left">
+                  <h3 className="text-2xl font-bold text-foreground mb-2 flex items-center justify-center md:justify-start gap-2">
+                    <CheckCircle className="text-primary w-6 h-6" />
+                    {ironingService.title}
+                  </h3>
+                  <p className="text-muted-foreground mb-4">
+                    Perfect for when you only need professional ironing and pressing.
+                  </p>
+                  <div className="flex flex-wrap justify-center md:justify-start gap-4">
+                    <div className="flex items-center text-sm font-medium bg-background/80 px-3 py-1.5 rounded-full border">
+                      <Clock className="w-4 h-4 mr-2 text-primary" />
+                      {ironingService.deliveryTime}
+                    </div>
+                    <div className="flex items-center text-sm font-medium bg-background/80 px-3 py-1.5 rounded-full border">
+                      <Truck className="w-4 h-4 mr-2 text-primary" />
+                      Pickup {ironingService.pickup}
+                    </div>
+                  </div>
+                </div>
+                <div className="text-center bg-background rounded-2xl p-6 shadow-sm border border-primary/10 min-w-[160px]">
+                  <div className="text-4xl font-black text-primary mb-1">
+                    {ironingService.price}
+                  </div>
+                  <div className="text-sm font-bold text-muted-foreground uppercase tracking-wider">
+                    SAR / KG
+                  </div>
+                  <Button
+                    onClick={() => handleBooking(ironingService.price, "Ironing Only", ironingService.deliveryTime)}
+                    className="mt-4 w-full bg-primary text-white"
+                  >
+                    Book Now
+                  </Button>
+                </div>
+              </div>
             </div>
           </div>
         </div>

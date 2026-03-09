@@ -9,7 +9,7 @@ const reasons = [
   {
     icon: DollarSign,
     title: "Best Prices in Makkah",
-    description: "From just 12 SAR/kg with FREE pickup & delivery. Save up to 50% compared to hotel prices.",
+    description: "From just 20 SAR/kg with FREE pickup & delivery. Save up to 50% compared to hotel prices.",
   },
   {
     icon: Clock,
