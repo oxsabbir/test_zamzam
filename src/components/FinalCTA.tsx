@@ -38,7 +38,7 @@ export default function FinalCTA() {
             <button
               id="generate_lead"
               onClick={() => handleWhatsApp(whatsappMessages.pickup, true)}
-              className="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none bg-gradient-accent text-accent-foreground hover:opacity-90 duration-300 w-full text-base sm:text-xl px-6 py-4 sm:py-6 h-auto rounded-xl bg-blue-600 text-white hover:bg-blue-700 font-bold shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all"
+              className="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none duration-300 w-full text-base sm:text-xl px-6 py-4 sm:py-6 h-auto rounded-xl bg-green-600 text-white hover:bg-green-700 font-bold shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all"
             >
               <WhatsAppIcon size={32} />
               <div className="text-left ml-2">

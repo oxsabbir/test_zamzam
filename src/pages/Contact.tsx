@@ -125,8 +125,8 @@ const Contact = () => {
               </h2>
               <p className="text-muted-foreground mb-6 leading-relaxed">
                 Ready for premium laundry service? Contact us via WhatsApp and
-                we'll be at your location promptly. Available 24/7 for
-                your convenience.
+                we'll be at your location promptly. Available 24/7 for your
+                convenience.
               </p>
               <a
                 href={`https://wa.me/${
@@ -165,7 +165,7 @@ const Contact = () => {
             {/* Map */}
             <div className="relative h-[400px] rounded-2xl overflow-hidden border border-border shadow-lg group">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3714.2755285666544!2d39.82684161093366!3d21.418412480248108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c21b4ced818775%3A0x2d76359a530f0ade!2sCR9H%2B9Q7%2C%20Makkah%20Saudi%20Arabia!5e0!3m2!1sen!2sbd!4v1770120606326!5m2!1sen!2sbd"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d232.13523490196707!2d39.820248449322996!3d21.422807396862932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c204b45652ae21%3A0x2b222b823c26269a!2sHilton%20Hotel%20%26%20Convention%20Jabal%20Omar%20Makkah!5e0!3m2!1sen!2sbd!4v1774447917190!5m2!1sen!2sbd"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

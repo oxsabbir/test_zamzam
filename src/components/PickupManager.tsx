@@ -61,35 +61,35 @@ const PickupManager = () => {
 
               <div className="mt-12 pt-8 border-t border-white/10 relative z-10">
                 <div className="flex items-center gap-3">
-                  <div className="flex -space-x-3">
-                    {[1, 2, 3].map((i) => (
-                      <div key={i} className="w-10 h-10 rounded-full border-2 border-blue-700 bg-blue-100 flex items-center justify-center text-blue-800 text-xs font-bold">
-                        U{i}
-                      </div>
+                  <div className="flex text-yellow-400">
+                    {[1, 2, 3, 4, 5].map((i) => (
+                      <svg key={i} xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
+                        <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                      </svg>
                     ))}
                   </div>
-                  <p className="text-sm font-medium text-blue-100">
-                    Join 12,000+ happy customers
+                  <p className="text-sm font-bold text-blue-100">
+                    12,000+ Happy Customers
                   </p>
                 </div>
               </div>
             </div>
 
             {/* Actions Side */}
-            <div className="lg:col-span-7 p-8 sm:p-10 lg:p-14 flex flex-col justify-center">
+            <div className="lg:col-span-7 p-8 sm:p-10 lg:p-14 flex flex-col justify-center bg-background/50 backdrop-blur-sm">
               <div className="grid sm:grid-cols-2 gap-8 mb-12">
-                <div className="space-y-4">
-                  <div className="w-12 h-12 rounded-2xl bg-blue-50 flex items-center justify-center text-blue-600">
-                    <Clock className="w-6 h-6" />
+                <div className="space-y-4 group">
+                  <div className="w-14 h-14 rounded-2xl bg-blue-50 flex items-center justify-center text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300">
+                    <Clock className="w-7 h-7" />
                   </div>
                   <h3 className="text-xl font-bold text-foreground">Fastest Pickup</h3>
                   <p className="text-muted-foreground leading-relaxed">
                     We arrive at your location within minutes of your request.
                   </p>
                 </div>
-                <div className="space-y-4">
-                  <div className="w-12 h-12 rounded-2xl bg-blue-50 flex items-center justify-center text-blue-600">
-                    <Truck className="w-6 h-6" />
+                <div className="space-y-4 group">
+                  <div className="w-14 h-14 rounded-2xl bg-blue-50 flex items-center justify-center text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300">
+                    <Truck className="w-7 h-7" />
                   </div>
                   <h3 className="text-xl font-bold text-foreground">Free Delivery</h3>
                   <p className="text-muted-foreground leading-relaxed">
@@ -101,7 +101,7 @@ const PickupManager = () => {
               <div className="space-y-4">
                 <button 
                   onClick={() => handleWhatsApp(whatsappMessages.pickup, true)}
-                  className="w-full bg-blue-600 text-white text-lg font-bold py-4 px-6 rounded-xl shadow-lg shadow-blue-600/20 transition-all active:scale-[0.98] flex items-center justify-center gap-2 group"
+                  className="w-full bg-green-600 text-white text-lg font-bold py-5 px-6 rounded-2xl shadow-xl shadow-green-600/20 hover:bg-green-700 transition-all active:scale-[0.98] flex items-center justify-center gap-2 group"
                 >
                   <WhatsAppIcon size={24} />
                   Book Instant Pickup
@@ -109,7 +109,7 @@ const PickupManager = () => {
                 </button>
                 <a 
                   href={`tel:${managerInfo.onlyNumber.phoneNumber}`}
-                  className="w-full bg-muted text-foreground hover:bg-muted/80 text-lg font-bold py-4 px-6 rounded-xl transition-all flex items-center justify-center gap-2"
+                  className="w-full bg-blue-50 text-blue-700 hover:bg-blue-100 text-lg font-bold py-5 px-6 rounded-2xl transition-all flex items-center justify-center gap-2 border border-blue-100"
                 >
                   <Phone className="w-5 h-5" />
                   Call Now
