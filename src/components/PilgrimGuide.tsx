@@ -96,7 +96,7 @@ export default function PilgrimGuide() {
             Essential Laundry Guide for Pilgrims
           </h2>
           <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
-            Let us handle the laundry, so you can focus on your spiritual
+            Let Makkah Al Baraka Laundry handle the work, so you can focus on your spiritual
             journey. Here are some essential tips for Hajj & Umrah.
           </p>
         </header>
@@ -141,7 +141,7 @@ export default function PilgrimGuide() {
               Have More Questions?
             </h3>
             <p className="text-base sm:text-lg text-muted-foreground mb-6">
-              Our team understands the unique needs of pilgrims. WhatsApp us
+              Our team understands the unique needs of pilgrims. WhatsApp Al Baraka 
               anytime for personalized laundry advice.
             </p>
             <Button

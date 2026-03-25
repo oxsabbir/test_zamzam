@@ -14,42 +14,42 @@ const pricingItems = [
     emoji: "👕",
     title: "Regular Clothes",
     subtitle: "Shirts, pants, casual wear",
-    price: "20 SAR/kg",
+    price: "18 SAR/kg",
     time: "Same day",
   },
   {
     emoji: "👔",
     title: "Formal Wear",
     subtitle: "Suits, dress shirts, formal attire",
-    price: "25 SAR/kg",
+    price: "22 SAR/kg",
     time: "Same day",
   },
   {
     emoji: "🕋",
     title: "Ihram Clothes",
     subtitle: "Special care for holy garments",
-    price: "14 SAR/piece",
+    price: "12 SAR/piece",
     time: "24 hours",
   },
   {
     emoji: "🧥",
     title: "Heavy Items",
     subtitle: "Jackets, blankets, curtains",
-    price: "25 SAR/kg",
+    price: "28 SAR/kg",
     time: "Next day",
   },
   {
     emoji: "👟",
     title: "Shoes Cleaning",
     subtitle: "Professional shoe cleaning service",
-    price: "20 SAR/pair",
+    price: "25 SAR/pair",
     time: "4 hours",
   },
   {
     emoji: "🔧",
     title: "Alterations",
     subtitle: "Hemming, repairs, adjustments",
-    price: "From 15 SAR",
+    price: "From 12 SAR",
     time: "Same day",
   },
 ];
@@ -71,12 +71,12 @@ const PricingGrid = () => {
             id="services-heading"
             className="text-2xl sm:text-4xl font-bold mb-4 text-foreground"
           >
-            Makkah ZamZam Express Laundry Pricing
+            Makkah Al Baraka Laundry Pricing
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
-            Reliable laundry services in Makkah with honest pricing and
-            professional care.
-            <span className="text-primary ml-1 font-semibold">20 SAR/kg!</span>
+            Premium laundry services in Makkah with competitive pricing and
+            expert care.
+            <span className="text-primary ml-1 font-semibold">18 SAR/kg!</span>
           </p>
         </div>
 

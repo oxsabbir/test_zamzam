@@ -16,41 +16,41 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 160 45% 20%;
 
-    --primary: 144 92% 30%;
+    --primary: 217 91% 60%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 160 35% 35%;
+    --secondary: 215 25% 27%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 160 10% 95%;
-    --muted-foreground: 215 19% 35%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 45 100% 55%;
-    --accent-foreground: 160 45% 20%;
+    --accent: 199 89% 48%;
+    --accent-foreground: 222.2 47.4% 11.2%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 100%;
+    --destructive-foreground: 210 40% 98%;
 
     --success: 142 76% 45%;
-    --success-foreground: 0 0% 100%;
+    --success-foreground: 355.7 100% 97.3%;
 
     --urgent: 0 100% 65%;
     --urgent-foreground: 0 0% 100%;
 
-    --border: 160 15% 85%;
-    --input: 160 15% 92%;
-    --ring: 160 65% 45%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 221.2 83.2% 53.3%;
 
     --radius: 0.75rem;
 
-    /* Hero gradient - green teal theme */
+    /* Hero gradient - blue theme */
     --hero-gradient: linear-gradient(
       135deg,
-      hsl(160 50% 35%) 0%,
-      hsl(165 45% 40%) 100%
+      hsl(217 91% 60%) 0%,
+      hsl(199 89% 48%) 100%
     );
-    --shadow-soft: 0 4px 20px -2px hsl(160 65% 45% / 0.15);
-    --shadow-glow: 0 0 40px hsl(160 65% 45% / 0.2);
+    --shadow-soft: 0 4px 20px -2px hsl(217 91% 60% / 0.15);
+    --shadow-glow: 0 0 40px hsl(217 91% 60% / 0.2);
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     --sidebar-background: 0 0% 98%;

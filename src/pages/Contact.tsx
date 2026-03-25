@@ -42,7 +42,7 @@ const Contact = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="group bg-success hover:bg-success/90 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all hover:scale-105"
+              className="group bg-primary hover:bg-primary/90 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all hover:scale-105"
             >
               <div className="w-14 h-14 bg-white/20 rounded-xl flex items-center justify-center mb-4">
                 <WhatsAppIcon size={28} className="text-white" />
@@ -60,8 +60,8 @@ const Contact = () => {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="group bg-card hover:bg-muted/50 p-8 rounded-2xl border border-border shadow-sm hover:shadow-md transition-all hover:scale-105"
             >
-              <div className="w-14 h-14 bg-success/10 rounded-xl flex items-center justify-center mb-4">
-                <Phone className="w-7 h-7 text-success" />
+              <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-4">
+                <Phone className="w-7 h-7 text-primary" />
               </div>
               <h3 className="text-xl font-bold text-foreground mb-2">Phone</h3>
               <p className="text-muted-foreground text-sm mb-3">
@@ -80,8 +80,8 @@ const Contact = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="group bg-card hover:bg-muted/50 p-8 rounded-2xl border border-border shadow-sm hover:shadow-md transition-all hover:scale-105"
             >
-              <div className="w-14 h-14 bg-success/10 rounded-xl flex items-center justify-center mb-4">
-                <Mail className="w-7 h-7 text-success" />
+              <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-4">
+                <Mail className="w-7 h-7 text-primary" />
               </div>
               <h3 className="text-xl font-bold text-foreground mb-2">Email</h3>
               <p className="text-muted-foreground text-sm mb-3">
@@ -99,8 +99,8 @@ const Contact = () => {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="bg-card p-8 rounded-2xl border border-border shadow-sm"
             >
-              <div className="w-14 h-14 bg-success/10 rounded-xl flex items-center justify-center mb-4">
-                <Clock className="w-7 h-7 text-success" />
+              <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-4">
+                <Clock className="w-7 h-7 text-primary" />
               </div>
               <h3 className="text-xl font-bold text-foreground mb-2">Hours</h3>
               <p className="text-muted-foreground text-sm mb-3">
@@ -118,14 +118,14 @@ const Contact = () => {
             transition={{ duration: 0.6 }}
             className="max-w-3xl mx-auto text-center mb-16"
           >
-            <div className="bg-gradient-to-r from-primary/10 to-success/10 p-10 rounded-3xl border border-border">
-              <MessageCircle className="w-16 h-16 text-success mx-auto mb-6" />
+            <div className="bg-gradient-to-r from-primary/10 to-primary/20 p-10 rounded-3xl border border-border">
+              <MessageCircle className="w-16 h-16 text-primary mx-auto mb-6" />
               <h2 className="text-3xl font-bold text-foreground mb-4">
                 Book Your Pickup Now
               </h2>
               <p className="text-muted-foreground mb-6 leading-relaxed">
-                Ready for express laundry service? Contact us via WhatsApp and
-                we'll be at your location in just 15 minutes. Available 24/7 for
+                Ready for premium laundry service? Contact us via WhatsApp and
+                we'll be at your location promptly. Available 24/7 for
                 your convenience.
               </p>
               <a
@@ -136,7 +136,7 @@ const Contact = () => {
                 )}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-3 bg-success hover:bg-success/90 text-white px-8 py-4 rounded-xl font-bold text-lg shadow-lg hover:shadow-xl transition-all hover:scale-105"
+                className="inline-flex items-center gap-3 bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-xl font-bold text-lg shadow-lg hover:shadow-xl transition-all hover:scale-105"
               >
                 <WhatsAppIcon size={24} />
                 Book Pickup via WhatsApp
@@ -157,7 +157,7 @@ const Contact = () => {
                 Our Service Area
               </h2>
               <div className="flex items-center justify-center gap-2 text-muted-foreground">
-                <MapPin className="w-5 h-5 text-success" />
+                <MapPin className="w-5 h-5 text-primary" />
                 <p className="text-lg">{managerInfo.address}</p>
               </div>
             </div>
@@ -173,7 +173,7 @@ const Contact = () => {
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 className=" group-hover:grayscale-0 transition-all duration-500"
-                title="Makkah ZamZam Express Laundry Location"
+                title="Makkah Al Baraka Laundry Location"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none" />
             </div>
@@ -185,19 +185,19 @@ const Contact = () => {
                 </h3>
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2 text-muted-foreground">
-                    <span className="w-1.5 h-1.5 rounded-full bg-success mt-2 flex-shrink-0"></span>
+                    <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></span>
                     Clock Tower & Abraj Al Bait (5-10 min)
                   </li>
                   <li className="flex items-start gap-2 text-muted-foreground">
-                    <span className="w-1.5 h-1.5 rounded-full bg-success mt-2 flex-shrink-0"></span>
+                    <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></span>
                     Jabal Omar & Aziziyah (10-15 min)
                   </li>
                   <li className="flex items-start gap-2 text-muted-foreground">
-                    <span className="w-1.5 h-1.5 rounded-full bg-success mt-2 flex-shrink-0"></span>
+                    <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></span>
                     Kudai & Misfalah (12-18 min)
                   </li>
                   <li className="flex items-start gap-2 text-muted-foreground">
-                    <span className="w-1.5 h-1.5 rounded-full bg-success mt-2 flex-shrink-0"></span>
+                    <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></span>
                     All areas near Masjid al-Haram
                   </li>
                 </ul>
@@ -209,20 +209,20 @@ const Contact = () => {
                 </h3>
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2 text-muted-foreground">
-                    <span className="w-1.5 h-1.5 rounded-full bg-success mt-2 flex-shrink-0"></span>
-                    15-minute express pickup guaranteed
+                    <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></span>
+                    Fast express pickup guaranteed
                   </li>
                   <li className="flex items-start gap-2 text-muted-foreground">
-                    <span className="w-1.5 h-1.5 rounded-full bg-success mt-2 flex-shrink-0"></span>
+                    <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></span>
                     Free pickup and delivery
                   </li>
                   <li className="flex items-start gap-2 text-muted-foreground">
-                    <span className="w-1.5 h-1.5 rounded-full bg-success mt-2 flex-shrink-0"></span>
+                    <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></span>
                     Professional care for all fabrics
                   </li>
                   <li className="flex items-start gap-2 text-muted-foreground">
-                    <span className="w-1.5 h-1.5 rounded-full bg-success mt-2 flex-shrink-0"></span>
-                    Money-back satisfaction guarantee
+                    <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></span>
+                    Customer satisfaction guarantee
                   </li>
                 </ul>
               </div>

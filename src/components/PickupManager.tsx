@@ -1,177 +1,133 @@
-import {
-  MessageCircleMoreIcon,
-  PhoneCallIcon,
-  Clock,
-  Globe,
-  MapPin,
-  Star,
-  BadgeCheck,
-} from "lucide-react";
+import { Phone, MessageCircle, Clock, CheckCircle, ChevronRight, MapPin, Truck } from "lucide-react";
 import WhatsAppIcon from "./icons/Whatsapp";
 import { managerInfo } from "@/constants";
-import { handleCall, handleWhatsApp } from "@/lib/utils";
+import { handleWhatsApp } from "@/lib/utils";
 import { whatsappMessages } from "@/constants/messages";
 
-export default function PickupManager() {
+const PickupManager = () => {
   return (
-    <section
-      className="relative py-12 sm:py-20 bg-slate-50 overflow-hidden"
-      aria-labelledby="manager-heading"
-    >
-      {/* Background Abstract Shapes */}
-      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-green-100/40 rounded-full blur-3xl -z-10 translate-x-1/2 -translate-y-1/2" />
-      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-emerald-100/40 rounded-full blur-3xl -z-10 -translate-x-1/2 translate-y-1/2" />
+    <section id="pickup" className="py-20 bg-background relative overflow-hidden">
+      <div className="container mx-auto px-4 relative z-10">
+        <div className="max-w-6xl mx-auto bg-card rounded-[2.5rem] border border-border shadow-2xl overflow-hidden">
+          <div className="grid lg:grid-cols-12">
+            {/* Contact Info Side */}
+            <div className="lg:col-span-5 bg-gradient-to-br from-blue-600 to-blue-800 p-8 sm:p-10 text-white flex flex-col justify-between relative overflow-hidden">
+              <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
+              
+              <div className="relative z-10">
+                <div className="bg-white/20 w-fit px-4 py-1.5 rounded-full text-sm font-bold backdrop-blur-md mb-8 flex items-center gap-2">
+                  <div className="w-2 h-2 bg-blue-300 rounded-full animate-pulse"></div>
+                  Available 24/7
+                </div>
+                
+                <h2 className="text-4xl sm:text-5xl font-black mb-6 leading-[1.1]">
+                  Need a Pickup? <br />
+                  <span className="text-blue-200">Talk to us!</span>
+                </h2>
+                <p className="text-blue-50 text-lg font-medium leading-relaxed mb-10 opacity-90">
+                  Our professional team is ready to assist you. Contact us directly for rapid response across Makkah.
+                </p>
 
-      <div className="container mx-auto px-4 sm:px-6">
-        {/* Section Header */}
-        <div className="text-center mb-10 sm:mb-14">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-green-50 border border-green-100 text-green-700 text-sm font-semibold mb-6">
-            <BadgeCheck size={16} className="text-green-600" />
-            Trusted Customer Support
-          </div>
-          <h2
-            id="manager-heading"
-            className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-4"
-          >
-            Dedicated Support for a Better Laundry Experience.
-            <br className="hidden sm:block" />
-            <span className="text-green-600">
-              Reliable Care You Can Trust in Makkah.
-            </span>
-          </h2>
-          <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-            Experience smooth and stress-free laundry service with a dedicated
-            support team ready to assist you. From pickup to delivery, we ensure
-            clear communication and dependable care at every step.
-          </p>
-        </div>
-
-        <div className="max-w-5xl mx-auto">
-          <div className="bg-white rounded-3xl shadow-xl overflow-hidden border border-slate-100">
-            <div className="grid grid-cols-1 lg:grid-cols-12">
-              {/* Left Column: Profile & Photo */}
-              <div className="lg:col-span-5 bg-gradient-to-br from-green-500 to-emerald-700 p-8 sm:p-10 text-white flex flex-col justify-between relative overflow-hidden">
-                {/* Decorative Pattern */}
-                <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
-
-                <div className="relative z-10">
-                  <div className="flex items-center gap-2 mb-6 opacity-90">
-                    <span className="relative flex h-3 w-3">
-                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
-                      <span className="relative inline-flex rounded-full h-3 w-3 bg-white"></span>
-                    </span>
-                    <span className="text-xs font-bold tracking-wider uppercase">
-                      Online Now in Makkah
-                    </span>
+                <div className="space-y-6">
+                  <div className="flex items-center gap-5 group">
+                    <div className="bg-white/15 p-3 rounded-xl group-hover:bg-white/25 transition-all">
+                      <Phone className="w-6 h-6" />
+                    </div>
+                    <div>
+                      <p className="text-blue-200 text-xs font-bold uppercase tracking-widest">Call Directly</p>
+                      <p className="text-xl font-bold">{managerInfo.phoneNumber}</p>
+                    </div>
                   </div>
-
-                  <div className="mb-6">
-                    <div className="w-24 h-24 sm:w-32 sm:h-32 bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 flex items-center justify-center text-4xl font-bold mb-4 shadow-lg">
-                      {managerInfo.fullName.slice(0, 2).toUpperCase()}
+                  <div className="flex items-center gap-5 group">
+                    <div className="bg-white/15 p-3 rounded-xl group-hover:bg-white/25 transition-all">
+                      <WhatsAppIcon size={24} />
                     </div>
-                    <h3 className="text-3xl font-bold mb-1">
-                      {managerInfo.fullName}
-                    </h3>
-                    <p className="text-green-100 text-lg">Logistics Manager</p>
+                    <div>
+                      <p className="text-blue-200 text-xs font-bold uppercase tracking-widest">WhatsApp</p>
+                      <p className="text-xl font-bold">{managerInfo.whatsApp}</p>
+                    </div>
                   </div>
-
-                  <div className="space-y-3">
-                    <div className="flex items-center gap-3 text-sm font-medium text-green-50 bg-white/10 p-3 rounded-lg backdrop-blur-sm">
-                      <Globe size={18} /> Speaks Arabic, English, Urdu
+                  <div className="flex items-center gap-5 group">
+                    <div className="bg-white/15 p-3 rounded-xl group-hover:bg-white/25 transition-all">
+                      <MapPin className="w-6 h-6" />
                     </div>
-                    <div className="flex items-center gap-3 text-sm font-medium text-green-50 bg-white/10 p-3 rounded-lg backdrop-blur-sm">
-                      <MapPin size={18} /> Expert in Hotel Zones & Haram Area
-                    </div>
-                    <div className="flex items-center gap-3 text-sm font-medium text-green-50 bg-white/10 p-3 rounded-lg backdrop-blur-sm">
-                      <WhatsAppIcon size={18} /> {managerInfo.whatsApp}
-                    </div>
-                    <div className="flex items-center gap-3 text-sm font-medium text-green-50 bg-white/10 p-3 rounded-lg backdrop-blur-sm">
-                      <PhoneCallIcon size={18} /> {managerInfo.phoneNumber}
+                    <div>
+                      <p className="text-blue-200 text-xs font-bold uppercase tracking-widest">Location</p>
+                      <p className="text-lg font-bold">Makkah, Saudi Arabia</p>
                     </div>
                   </div>
                 </div>
               </div>
 
-              {/* Right Column: Actions & Social Proof */}
-              <div className="lg:col-span-7 p-8 sm:p-10 flex flex-col justify-center">
-                {/* Stats Row */}
-                <div className="flex flex-wrap gap-4 sm:gap-8 mb-8 pb-8 border-b border-slate-100">
-                  <div>
-                    <div className="text-3xl font-bold text-slate-900">2k+</div>
-                    <div className="text-xs text-slate-500 font-medium uppercase tracking-wide">
-                      Pickups
-                    </div>
+              <div className="mt-12 pt-8 border-t border-white/10 relative z-10">
+                <div className="flex items-center gap-3">
+                  <div className="flex -space-x-3">
+                    {[1, 2, 3].map((i) => (
+                      <div key={i} className="w-10 h-10 rounded-full border-2 border-blue-700 bg-blue-100 flex items-center justify-center text-blue-800 text-xs font-bold">
+                        U{i}
+                      </div>
+                    ))}
                   </div>
-                  <div>
-                    <div className="text-3xl font-bold text-slate-900 flex items-center gap-1">
-                      4.9{" "}
-                      <Star
-                        size={20}
-                        className="fill-yellow-400 text-yellow-400"
-                      />
-                    </div>
-                    <div className="text-xs text-slate-500 font-medium uppercase tracking-wide">
-                      Rating
-                    </div>
-                  </div>
-                  <div>
-                    <div className="text-3xl font-bold text-slate-900">15m</div>
-                    <div className="text-xs text-slate-500 font-medium uppercase tracking-wide">
-                      Avg Response
-                    </div>
-                  </div>
-                </div>
-
-                {/* Testimonial Quote */}
-                <div className="mb-8 bg-slate-50 p-5 rounded-xl border border-slate-100 relative">
-                  <div className="text-slate-700 italic text-sm leading-relaxed relative z-10">
-                    "{managerInfo.fullName} provided exceptional service. Fast
-                    pickup and genuine help made our experience smooth and
-                    stress-free."
-                  </div>
-                  <div className="mt-3 flex items-center gap-2">
-                    <div className="w-6 h-6 rounded-full bg-slate-300 flex items-center justify-center text-[10px] font-bold text-slate-600">
-                      {managerInfo.fullName.slice(0, 2).toUpperCase()}
-                    </div>
-                    <div className="text-xs font-bold text-slate-900">
-                      {managerInfo.fullName.split(" ")[0]}
-                    </div>
-                    <div className="text-xs text-slate-400">
-                      • Pilgrim from Saudi
-                    </div>
-                  </div>
-                </div>
-
-                {/* Actions */}
-                <div className="space-y-3">
-                  <button
-                    id="generate_lead_manager"
-                    onClick={() =>
-                      handleWhatsApp(whatsappMessages.pickup, true)
-                    }
-                    className="w-full bg-green-500 text-white text-lg font-bold py-4 px-6 rounded-xl shadow-lg shadow-green-500/20 transition-all active:scale-[0.98] flex items-center justify-center gap-2 group"
-                  >
-                    <WhatsAppIcon
-                      size={24}
-                      className="group-hover:animate-pulse"
-                    />
-                    WhatsApp Message
-                  </button>
-
-                  <button
-                    onClick={handleCall}
-                    className="w-full bg-gray-700 hover:bg-gray-600 text-white border-2 border-slate-200 font-bold py-4 px-6 rounded-xl transition-all active:scale-[0.98] flex items-center justify-center gap-2"
-                  >
-                    <PhoneCallIcon size={20} />
-                    Call Us Now
-                  </button>
-                </div>
-
-                <div className="mt-4 text-center">
-                  <p className="text-xs text-slate-400 flex items-center justify-center gap-1">
-                    <Clock size={12} />
-                    <span>Usually responds in under 2 minutes</span>
+                  <p className="text-sm font-medium text-blue-100">
+                    Join 12,000+ happy customers
                   </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Actions Side */}
+            <div className="lg:col-span-7 p-8 sm:p-10 lg:p-14 flex flex-col justify-center">
+              <div className="grid sm:grid-cols-2 gap-8 mb-12">
+                <div className="space-y-4">
+                  <div className="w-12 h-12 rounded-2xl bg-blue-50 flex items-center justify-center text-blue-600">
+                    <Clock className="w-6 h-6" />
+                  </div>
+                  <h3 className="text-xl font-bold text-foreground">Fastest Pickup</h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    We arrive at your location within minutes of your request.
+                  </p>
+                </div>
+                <div className="space-y-4">
+                  <div className="w-12 h-12 rounded-2xl bg-blue-50 flex items-center justify-center text-blue-600">
+                    <Truck className="w-6 h-6" />
+                  </div>
+                  <h3 className="text-xl font-bold text-foreground">Free Delivery</h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Always free collection and delivery for all your laundry.
+                  </p>
+                </div>
+              </div>
+
+              <div className="space-y-4">
+                <button 
+                  onClick={() => handleWhatsApp(whatsappMessages.pickup, true)}
+                  className="w-full bg-blue-600 text-white text-lg font-bold py-4 px-6 rounded-xl shadow-lg shadow-blue-600/20 transition-all active:scale-[0.98] flex items-center justify-center gap-2 group"
+                >
+                  <WhatsAppIcon size={24} />
+                  Book Instant Pickup
+                  <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </button>
+                <a 
+                  href={`tel:${managerInfo.onlyNumber.phoneNumber}`}
+                  className="w-full bg-muted text-foreground hover:bg-muted/80 text-lg font-bold py-4 px-6 rounded-xl transition-all flex items-center justify-center gap-2"
+                >
+                  <Phone className="w-5 h-5" />
+                  Call Now
+                </a>
+              </div>
+
+              <div className="mt-8 flex flex-wrap items-center justify-center lg:justify-start gap-x-6 gap-y-2">
+                <div className="flex items-center gap-2 text-sm font-medium text-muted-foreground">
+                  <CheckCircle className="w-4 h-4 text-blue-600" />
+                  24/7 Service
+                </div>
+                <div className="flex items-center gap-2 text-sm font-medium text-muted-foreground">
+                  <CheckCircle className="w-4 h-4 text-blue-600" />
+                  Premium Quality
+                </div>
+                <div className="flex items-center gap-2 text-sm font-medium text-muted-foreground">
+                  <CheckCircle className="w-4 h-4 text-blue-600" />
+                  Trusted Service
                 </div>
               </div>
             </div>
@@ -180,4 +136,6 @@ export default function PickupManager() {
       </div>
     </section>
   );
-}
+};
+
+export default PickupManager;

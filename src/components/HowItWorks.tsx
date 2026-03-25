@@ -1,127 +1,68 @@
-import { MessageCircle, Truck, Sparkles } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import phone from "@/assets/phone.webp";
-import delivery from "@/assets/delivery.webp";
-import pickup from "@/assets/pickup.webp";
-import { handleWhatsApp } from "@/lib/utils";
-import { whatsappMessages } from "@/constants/messages";
+import { MessageCircle, Truck, Sparkles, ShoppingBag } from "lucide-react";
+
 const steps = [
   {
-    number: "1",
-    icon: MessageCircle,
-    image: phone,
-    title: "WhatsApp Us",
+    icon: <MessageCircle className="w-10 h-10 text-primary" />,
+    title: "1. Request Pickup",
     description:
-      "Contact us via WhatsApp with your details and we'll arrange pickup at your preferred time.",
-    time: "30 seconds",
+      "Send us a quick message on WhatsApp with your location in Makkah. We'll confirm the pickup instantly.",
   },
   {
-    number: "2",
-    icon: Truck,
-    image: pickup,
-    title: "We Pickup & Clean",
+    icon: <Truck className="w-10 h-10 text-primary" />,
+    title: "2. We Collect",
     description:
-      "We collect your laundry and clean it using premium detergents and modern equipment.",
-    time: "15 min pickup",
+      "Our professional driver will arrive at your hotel or residence within minutes to collect your laundry.",
   },
   {
-    number: "3",
-    icon: Sparkles,
-    image: delivery,
-    title: "Fresh Delivery",
+    icon: <Sparkles className="w-10 h-10 text-primary" />,
+    title: "3. Professional Cleaning",
     description:
-      "Receive your perfectly cleaned and ironed clothes delivered to your doorstep the same day.",
-    time: "Same day back",
+      "Your clothes are washed, dried, and pressed using the best equipment and eco-friendly products.",
+  },
+  {
+    icon: <ShoppingBag className="w-10 h-10 text-primary" />,
+    title: "4. Delivered to You",
+    description:
+      "We deliver your fresh, clean garments back to you at your preferred time, anywhere in Makkah.",
   },
 ];
 
 const HowItWorks = () => {
-  const handleStart = () => {
-    handleWhatsApp(whatsappMessages.firstOrder, true);
-  };
-
   return (
-    <section className="py-20 bg-background">
+    <section id="how-it-works" className="py-20 bg-background overflow-hidden">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-8 sm:mb-12">
-          <h2
-            id="services-heading"
-            className="text-2xl sm:text-4xl font-bold mb-4 text-foreground"
-          >
-            How Makkah ZamZam Express Laundry Works
+        <div className="text-center mb-16">
+          <h2 className="text-3xl sm:text-5xl font-bold mb-6 text-foreground tracking-tight">
+            How Makkah Al Baraka Laundry Works
           </h2>
-          <p className="text-base sm:text-xl font-medium mb-1 text-muted-foreground max-w-3xl mx-auto">
-            Your simple three-step process for fresh laundry in Makkah.
-            <br />
-            <span className="text-primary  mt-2">
-              Fast, reliable, and convenient service.
-            </span>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            Get your laundry done in four easy steps. We make it simple so you
+            can focus on your journey.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-12">
-          {steps.map((step, index) => {
-            const Icon = step.icon;
-            return (
-              <div key={index} className="relative">
-                {/* Connecting Line */}
-                {index < steps.length - 1 && (
-                  <div className="hidden md:block absolute top-24 left-[60%] w-[80%] h-0.5 bg-primary/30 z-0" />
-                )}
-
-                <div className="relative z-10 bg-card rounded-2xl pb-8 shadow-lg hover:shadow-xl transition-all border-2 border-primary/20 hover:border-primary">
-                  <div>
-                    <div className=" relative">
-                      <img
-                        src={step.image}
-                        alt={`how-it-work-step-${index + 1}-image`}
-                        width={350}
-                        height={180}
-                        className="object-cover w-full h-[260px] rounded-t-xl"
-                      />
-                      <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 w-12 h-12 bg-primary font-bold text-lg text-white rounded-full flex items-center  justify-center">
-                        {step.number}
-                      </div>
-                    </div>
-                  </div>
-                  <div className=" px-4 pt-5">
-                    <div className="text-center mt-4 relative flex items-center flex-col">
-                      <h3 className="text-2xl font-bold text-foreground mb-3">
-                        {step.title}
-                      </h3>
-                      <p className="text-muted-foreground mb-4 leading-relaxed">
-                        {step.description}
-                      </p>
-                      <div className="inline-flex items-center gap-2 bg-primary/90 text-white px-4 py-2 rounded-full font-semibold">
-                        ⚡ {step.time}
-                      </div>
-                    </div>
+        <div className="relative">
+          <div className="hidden lg:block absolute top-1/2 left-0 right-0 h-1 bg-primary/20 -translate-y-1/2 -z-10"></div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+            {steps.map((step, index) => (
+              <div
+                key={index}
+                className="bg-card p-10 rounded-3xl border border-border/60 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 group"
+              >
+                <div className="mb-8 bg-primary/10 w-24 h-24 rounded-full flex items-center justify-center group-hover:bg-primary group-hover:scale-110 transition-all duration-500 mx-auto shadow-inner">
+                  <div className="group-hover:text-white transition-colors duration-500">
+                    {step.icon}
                   </div>
                 </div>
+                <h3 className="text-2xl font-black mb-4 text-foreground text-center group-hover:text-primary transition-colors">
+                  {step.title}
+                </h3>
+                <p className="text-muted-foreground leading-relaxed text-center font-medium">
+                  {step.description}
+                </p>
               </div>
-            );
-          })}
-        </div>
-
-        {/* Guarantee Box */}
-        <div className="bg-gradient-to-br from-gray-900 via-indigo-500 to-gray-900 text-white rounded-2xl p-8 md:p-12 text-center max-w-3xl mx-auto shadow-xl">
-          <h3 className=" text-2xl md:text-3xl font-bold mb-4">
-            Try Our Service Risk-Free!
-          </h3>
-          <p className="md:text-xl text-lg mb-6 opacity-95">
-            Not satisfied? We'll redo your laundry for FREE or refund 100% of
-            your money.
-            <br />
-            <span className="font-bold">That's our promise to you!</span>
-          </p>
-          <Button
-            size="lg"
-            id="generate_lead"
-            onClick={handleStart}
-            className="bg-primary hover:bg-primary/90 text-white md:text-lg px-4 py-3 text-base md:px-8 md:py-6"
-          >
-            Start Your First Order - FREE Pickup
-          </Button>
+            ))}
+          </div>
         </div>
       </div>
     </section>

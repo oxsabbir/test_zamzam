@@ -7,65 +7,65 @@ import { Badge } from "./ui/badge";
 const laundryPackages = [
   {
     id: 1,
-    title: "Package 1",
+    title: "Standard Care",
     type: "Normal",
     deliveryTime: "12 Hours",
-    price: 20,
+    price: 19,
     pickup: "Included",
     featured: false,
   },
   {
     id: 2,
-    title: "Package 2",
+    title: "Eco Wash",
     type: "Normal",
     deliveryTime: "10 Hours",
-    price: 25,
+    price: 24,
     pickup: "Included",
     featured: false,
   },
   {
     id: 3,
-    title: "Package 3",
+    title: "Premium Clean",
     type: "Normal",
     deliveryTime: "8 Hours",
-    price: 28,
+    price: 29,
     pickup: "Included",
     featured: true,
   },
   {
     id: 4,
-    title: "Package 4",
+    title: "Express",
     type: "Urgent",
     deliveryTime: "5 Hours",
-    price: 30,
-    pickup: "SAR 10 Extra",
+    price: 32,
+    pickup: "SAR 15 Extra",
     featured: false,
   },
   {
     id: 5,
-    title: "Package 5",
+    title: "Flash",
     type: "Urgent",
     deliveryTime: "3 Hours",
-    price: 35,
-    pickup: "SAR 10 Extra",
+    price: 38,
+    pickup: "SAR 15 Extra",
     featured: false,
   },
   {
     id: 6,
-    title: "Package 6",
+    title: "Instant*",
     type: "Urgent",
     deliveryTime: "1 Hour*",
-    price: 40,
-    pickup: "SAR 10 Extra",
+    price: 45,
+    pickup: "SAR 15 Extra",
     featured: false,
-    note: "*Available in Makkah area only",
+    note: "*Subject to availability in Makkah central area",
   },
 ];
 
 const ironingService = {
-  title: "Ironing & Pressing Only",
-  price: 15,
-  deliveryTime: "Within 5 Hours",
+  title: "Professional Ironing",
+  price: 14,
+  deliveryTime: "Within 4 Hours",
   pickup: "Included",
 };
 
@@ -89,8 +89,8 @@ export default function PricingSection() {
             Laundry Packages
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Professional Wash, Dry, and Press/Fold service. 
-            Price per KG adjusted for your convenience.
+            Professional Wash, Dry, and Press service. 
+            Competitive rates per KG tailored for your needs.
           </p>
         </div>
 
@@ -104,7 +104,6 @@ export default function PricingSection() {
                   : "bg-background border-border/60 shadow-sm hover:shadow-[0_20px_50px_rgba(0,0,0,0.08)] hover:border-primary/30"
               }`}
             >
-              {/* Header section with specific color based on type */}
               <div className={`p-6 rounded-t-[22px] ${
                 pkg.type === "Urgent" 
                   ? "bg-gradient-to-br from-red-50 to-orange-50/50" 
@@ -179,7 +178,6 @@ export default function PricingSection() {
           ))}
         </div>
 
-        {/* Ironing Service Section */}
         <div className="max-w-3xl mx-auto">
           <div className="bg-gradient-to-br from-primary/5 to-primary/10 rounded-3xl p-8 border border-primary/20 shadow-inner relative overflow-hidden">
             <div className="relative z-10">
@@ -190,7 +188,7 @@ export default function PricingSection() {
                     {ironingService.title}
                   </h3>
                   <p className="text-muted-foreground mb-4">
-                    Perfect for when you only need professional ironing and pressing.
+                    Expert pressing and ironing service for a crisp, professional look.
                   </p>
                   <div className="flex flex-wrap justify-center md:justify-start gap-4">
                     <div className="flex items-center text-sm font-medium bg-background/80 px-3 py-1.5 rounded-full border">

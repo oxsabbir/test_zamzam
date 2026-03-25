@@ -92,7 +92,7 @@ const Navigation = () => {
                 <a href="/">
                   <img
                     src={isScrolled ? logo_light : logo_dark}
-                    alt="Zamzam Express logo"
+                    alt="Al Baraka Laundry logo"
                     width={200}
                     height={100}
                     className="w-full h-full object-contain"
@@ -109,7 +109,7 @@ const Navigation = () => {
                 key={item.id}
                 variant="ghost"
                 onClick={() => scrollToSection(item.id, item?.url)}
-                className={`hover:text-success hover:bg-success/10 transition-all font-medium ${
+                className={`hover:text-primary hover:bg-primary/10 transition-all font-medium ${
                   isScrolled ? "text-foreground" : "text-white"
                 }`}
               >
@@ -119,7 +119,7 @@ const Navigation = () => {
             <Button
               id="generate_lead"
               onClick={() => handleWhatsApp(whatsappMessages.pickup, true)}
-              className="ml-2 bg-success hover:bg-success/90 text-white font-semibold shadow-lg hover:shadow-xl transition-all"
+              className="ml-2 bg-primary hover:bg-primary/90 text-white font-semibold shadow-lg hover:shadow-xl transition-all"
             >
               <WhatsAppIcon size={18} className="mr-2" />
               Book Now
@@ -149,7 +149,7 @@ const Navigation = () => {
                     <a href="/">
                       <img
                         src={isScrolled ? logo_light : logo_dark}
-                        alt="Hajj Care Laundry logo"
+                        alt="Al Baraka Laundry logo"
                         width={200}
                         height={100}
                         className="w-full h-full object-contain"
@@ -170,7 +170,7 @@ const Navigation = () => {
                       <Button
                         variant="ghost"
                         onClick={() => scrollToSection(item.id, item?.url)}
-                        className="w-full justify-start text-lg font-medium hover:bg-success/10 hover:text-success transition-all"
+                        className="w-full justify-start text-lg font-medium hover:bg-primary/10 hover:text-primary transition-all"
                       >
                         {item.label}
                       </Button>
@@ -189,7 +189,7 @@ const Navigation = () => {
                     onClick={() =>
                       handleWhatsApp(whatsappMessages.pickup, true)
                     }
-                    className="w-full bg-success hover:bg-success/90 text-white font-semibold shadow-lg text-base h-12"
+                    className="w-full bg-primary hover:bg-primary/90 text-white font-semibold shadow-lg text-base h-12"
                   >
                     <WhatsAppIcon size={20} className="mr-2" />
                     Book Now on WhatsApp
@@ -208,7 +208,7 @@ const Navigation = () => {
                       24/7 Service Available
                     </p>
                     <p>📞 {managerInfo.whatsApp}</p>
-                    <p>⏱️ 15 Min Pickup Time</p>
+                    <p>⏱️ Fast Pickup Time</p>
                   </div>
                 </motion.div>
               </div>

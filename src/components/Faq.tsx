@@ -6,7 +6,7 @@ const faqData = [
   {
     question: "How do I schedule a pickup?",
     answer:
-      "You can schedule a pickup easily through our website, by calling us, or by sending a message on WhatsApp. We'll be at your location in as little as 15 minutes.",
+      "You can schedule a pickup easily through our website, by calling us, or by sending a message on WhatsApp. We'll be at your location promptly across Makkah.",
   },
   {
     question: "What are your operating hours?",
@@ -16,12 +16,12 @@ const faqData = [
   {
     question: "How much does it cost?",
     answer:
-      "Our pricing is simple and transparent. We charge by the kilogram, starting from 20 SAR/kg. Special garments like thobes and abayas have per-piece pricing.",
+      "Our pricing is simple and transparent. We charge by the kilogram, starting from 18 SAR/kg. Special garments like thobes and abayas have per-piece pricing.",
   },
   {
     question: "What is the turnaround time?",
     answer:
-      "For standard laundry, our turnaround time is typically 24 hours. We also offer an express service that can have your clothes ready in as little as 1 hour for urgent needs.",
+      "For standard laundry, our turnaround time is typically same-day or 24 hours. We also offer an express service that can have your clothes ready in as little as 1-3 hours for urgent needs.",
   },
   {
     question: "Do you clean special garments like Ihram?",
@@ -55,7 +55,7 @@ export default function Faq() {
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
             Here are answers to some of the most common questions we receive
-            from pilgrims.
+            from pilgrims and residents in Makkah.
           </p>
         </div>
         <div className="max-w-4xl mx-auto">

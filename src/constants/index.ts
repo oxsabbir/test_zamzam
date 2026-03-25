@@ -7,10 +7,10 @@ export const managerInfo = {
     phoneNumber: 966537740367,
   },
   address: `CR9H+9Q7 Makkah Saudi Arabia`,
-  email: "info@makkahzamzamexpreslaundry.com",
+  email: "info@makkahalbarakalaundry.com",
 };
 
 export const siteInfo = {
-  siteTitle: "Makkah ZamZam Express Laundry",
-  domain: "https://makkahzamzamexpreslaundry.com/",
+  siteTitle: "Makkah Al Baraka Laundry",
+  domain: "https://makkahalbarakalaundry.com/",
 };
