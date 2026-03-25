@@ -2,25 +2,25 @@ import { MessageCircle, Truck, Sparkles, ShoppingBag } from "lucide-react";
 
 const steps = [
   {
-    icon: <MessageCircle className="w-10 h-10 text-primary" />,
+    icon: <MessageCircle className="w-10 h-10" />,
     title: "1. Request Pickup",
     description:
       "Send us a quick message on WhatsApp with your location in Makkah. We'll confirm the pickup instantly.",
   },
   {
-    icon: <Truck className="w-10 h-10 text-primary" />,
+    icon: <Truck className="w-10 h-10" />,
     title: "2. We Collect",
     description:
       "Our professional driver will arrive at your hotel or residence within minutes to collect your laundry.",
   },
   {
-    icon: <Sparkles className="w-10 h-10 text-primary" />,
+    icon: <Sparkles className="w-10 h-10" />,
     title: "3. Professional Cleaning",
     description:
       "Your clothes are washed, dried, and pressed using the best equipment and eco-friendly products.",
   },
   {
-    icon: <ShoppingBag className="w-10 h-10 text-primary" />,
+    icon: <ShoppingBag className="w-10 h-10" />,
     title: "4. Delivered to You",
     description:
       "We deliver your fresh, clean garments back to you at your preferred time, anywhere in Makkah.",
@@ -50,7 +50,7 @@ const HowItWorks = () => {
                 className="bg-card p-10 rounded-3xl border border-border/60 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 group"
               >
                 <div className="mb-8 bg-primary/10 w-24 h-24 rounded-full flex items-center justify-center group-hover:bg-primary group-hover:scale-110 transition-all duration-500 mx-auto shadow-inner">
-                  <div className="group-hover:text-white transition-colors duration-500">
+                  <div className="text-primary group-hover:text-white transition-colors duration-500">
                     {step.icon}
                   </div>
                 </div>

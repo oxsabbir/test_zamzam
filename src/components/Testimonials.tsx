@@ -71,20 +71,22 @@ const Testimonials = () => {
           </p>
         </div>
 
-        <div className="flex animate-marquee-slow space-x-8 hover:pause">
-          {[...testimonials, ...testimonials].map((testimonial, index) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="flex-shrink-0 w-[350px] bg-card p-8 rounded-3xl border border-border/60 shadow-sm hover:shadow-xl transition-all duration-300"
+              className="bg-card p-8 rounded-3xl border border-border/60 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
             >
-              <div className="flex text-yellow-400 mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 fill-current" />
-                ))}
+              <div>
+                <div className="flex text-yellow-400 mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-5 h-5 fill-current" />
+                  ))}
+                </div>
+                <p className="text-muted-foreground mb-6 leading-relaxed italic">
+                  "{testimonial.text}"
+                </p>
               </div>
-              <p className="text-muted-foreground mb-6 leading-relaxed italic">
-                "{testimonial.text}"
-              </p>
               <div>
                 <h4 className="font-bold text-foreground">
                   {testimonial.author}

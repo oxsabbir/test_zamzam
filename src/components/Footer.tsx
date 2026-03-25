@@ -11,6 +11,7 @@ import {
 } from "lucide-react";
 import WhatsAppIcon from "./icons/Whatsapp";
 import { useNavigate, useLocation } from "react-router-dom";
+import logo_dark from "@/assets/al-baraka-dark.webp";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -57,11 +58,21 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           <div className="space-y-6">
-            <h3 className="text-2xl font-bold text-white tracking-tight">
+            {/* <h3 className="text-2xl font-bold text-white tracking-tight">
               {siteInfo.siteTitle}
-            </h3>
+            </h3> */}
+            <a href="/">
+              <img
+                src={logo_dark}
+                alt="Al Baraka Laundry Logo"
+                className="w-40 h-auto"
+              />
+            </a>
+
             <p className="text-muted-foreground leading-relaxed">
-              At Makkah Al Baraka Laundry, we provide reliable, fast, and high-quality laundry services across the holy city of Makkah. Trust us with your garments for a fresh and clean experience.
+              At Makkah Al Baraka Laundry, we provide reliable, fast, and
+              high-quality laundry services across the holy city of Makkah.
+              Trust us with your garments for a fresh and clean experience.
             </p>
             <div className="flex space-x-4">
               <a
@@ -93,7 +104,11 @@ const Footer = () => {
               {quickLinks.map((link) => (
                 <li key={link.label}>
                   <button
-                    onClick={() => link.path ? navigate(link.path) : scrollToSection(link.id!)}
+                    onClick={() =>
+                      link.path
+                        ? navigate(link.path)
+                        : scrollToSection(link.id!)
+                    }
                     className="text-muted-foreground hover:text-primary flex items-center group transition-colors text-left"
                   >
                     <ChevronRight
@@ -169,8 +184,18 @@ const Footer = () => {
             © {currentYear} {siteInfo.siteTitle}. All rights reserved.
           </p>
           <div className="flex justify-center space-x-6 mt-4 text-xs font-medium uppercase tracking-widest">
-            <a href="/privacy-policy" className="hover:text-primary transition-colors">Privacy Policy</a>
-            <a href="/terms-of-service" className="hover:text-primary transition-colors">Terms & Conditions</a>
+            <a
+              href="/privacy-policy"
+              className="hover:text-primary transition-colors"
+            >
+              Privacy Policy
+            </a>
+            <a
+              href="/terms-of-service"
+              className="hover:text-primary transition-colors"
+            >
+              Terms & Conditions
+            </a>
           </div>
         </div>
       </div>

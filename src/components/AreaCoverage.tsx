@@ -1,5 +1,7 @@
+import { useState } from "react";
 import { MapPin, CheckCircle, Info, Truck } from "lucide-react";
 import { Badge } from "./ui/badge";
+import { Input } from "./ui/input";
 import { whatsappMessages } from "@/constants/messages";
 import { handleWhatsApp } from "@/lib/utils";
 
@@ -43,6 +45,13 @@ const coverageAreas = [
 ];
 
 const AreaCoverage = () => {
+  const [location, setLocation] = useState("");
+
+  const handleCheckLocation = () => {
+    const finalMessage = whatsappMessages.checkPickUpTime.replace("*<location>*", location || "Makkah Area");
+    handleWhatsApp(finalMessage, true);
+  };
+
   return (
     <section id="coverage" className="py-20 bg-muted/30">
       <div className="container mx-auto px-4">
@@ -63,10 +72,10 @@ const AreaCoverage = () => {
           {coverageAreas.map((area, index) => (
             <div
               key={index}
-              className={`p-8 rounded-[2rem] border transition-all duration-300 hover:shadow-2xl group ${
+              className={`p-8 rounded-[2rem] transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 group ${
                 area.featured
-                  ? "bg-card border-primary shadow-xl ring-1 ring-primary/20"
-                  : "bg-background border-border/60 hover:border-primary/30"
+                  ? "bg-card border-none shadow-2xl shadow-primary/10"
+                  : "bg-background border border-border/40 shadow-sm hover:border-primary/20"
               }`}
             >
               <div className="flex justify-between items-start mb-6">
@@ -96,25 +105,35 @@ const AreaCoverage = () => {
           ))}
         </div>
 
-        <div className="max-w-3xl mx-auto bg-primary rounded-[2.5rem] p-8 sm:p-12 text-white relative overflow-hidden shadow-2xl shadow-primary/20">
+        <div className="max-w-4xl mx-auto bg-primary rounded-[2.5rem] p-8 sm:p-12 text-white relative overflow-hidden shadow-2xl shadow-primary/20">
           <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
           
-          <div className="relative z-10 flex flex-col md:flex-row items-center gap-8 text-center md:text-left">
-            <div className="w-20 h-20 rounded-3xl bg-white/20 backdrop-blur-md flex items-center justify-center shrink-0">
+          <div className="relative z-10 flex flex-col md:flex-row items-center gap-10 text-center md:text-left">
+            <div className="w-20 h-20 rounded-3xl bg-white/20 backdrop-blur-md flex items-center justify-center shrink-0 mx-auto md:mx-0">
               <Truck className="w-10 h-10" />
             </div>
-            <div className="flex-1">
+            <div className="flex-1 w-full">
               <h3 className="text-2xl sm:text-3xl font-bold mb-3 tracking-tight">Don't See Your Area?</h3>
-              <p className="text-blue-50/90 font-medium leading-relaxed mb-6">
-                Don't worry! We serve almost every corner of Makkah. Message us on WhatsApp 
-                and we'll confirm if we can pick up from your exact location.
+              <p className="text-blue-50/90 font-medium leading-relaxed mb-8">
+                Don't worry! We serve almost every corner of Makkah. Type your hotel or area 
+                below and we'll confirm the pickup time instantly.
               </p>
-              <button 
-                onClick={() => handleWhatsApp(whatsappMessages.checkPickUpTime, true)}
-                className="w-full bg-white text-primary text-lg font-bold py-3 px-6 rounded-xl shadow-lg shadow-blue-900/20 transition-all duration-300 hover:scale-[1.02] flex items-center justify-center gap-2 group"
-              >
-                Check My Location
-              </button>
+              
+              <div className="flex flex-col sm:flex-row gap-3 p-2 bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 max-w-2xl">
+                <Input 
+                  placeholder="Enter your hotel or area name..."
+                  className="bg-white text-primary border-none h-14 rounded-xl placeholder:text-muted-foreground/60 focus-visible:ring-0 focus-visible:ring-offset-0 text-base sm:text-lg font-medium"
+                  value={location}
+                  onChange={(e) => setLocation(e.target.value)}
+                  onKeyDown={(e) => e.key === "Enter" && handleCheckLocation()}
+                />
+                <button 
+                  onClick={handleCheckLocation}
+                  className="bg-white text-primary text-lg font-bold py-3 px-8 rounded-xl shadow-lg transition-all duration-300 hover:bg-blue-50 hover:scale-[1.02] active:scale-95 flex items-center justify-center gap-2 shrink-0"
+                >
+                  Check Now
+                </button>
+              </div>
             </div>
           </div>
         </div>
