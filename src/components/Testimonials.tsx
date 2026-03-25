@@ -3,57 +3,57 @@ import { Star } from "lucide-react";
 const testimonials = [
   {
     text:
-      "Makkah Al Baraka Laundry provided an incredibly fast and reliable service. My clothes were picked up, cleaned, and delivered in just a few hours. A true blessing for any pilgrim on a tight schedule!",
-    author: "Fatima Ahmed",
-    location: "Saudi Arabia",
+      "Makkah ZamZam Express Laundry provided an incredibly fast and reliable service. My clothes were picked up, cleaned, and delivered in just a few hours. A true blessing for anyone on a tight schedule in Makkah!",
+    author: "Abdullah Mansour",
+    location: "Hotel Manager, Makkah",
   },
   {
     text:
-      "I was worried about cleaning my abayas and Ihram, but Makkah Al Baraka Laundry handled them perfectly. The clothes came back fresh and impeccably clean. Their attention to detail is outstanding.",
-    author: "Zainab Khan",
-    location: "Pakistan",
+      "I was worried about cleaning my premium abayas and Ihram, but Makkah ZamZam Express handled them perfectly. The clothes came back fresh and impeccably clean. Their attention to detail is outstanding.",
+    author: "Sarah Al-Otaibi",
+    location: "Makkah Resident",
   },
   {
     text:
-      "With a big family, laundry can be a challenge. Makkah Al Baraka Laundry made it effortless. Their multi-language support and free pickup saved us time and effort. Highly recommended for families!",
-    author: "Ibrahim Yusuf",
-    location: "Indonesia",
+      "Managing a large household means a lot of laundry. Makkah ZamZam Express Laundry made it effortless with their free pickup and fast delivery. Highly recommended for families in the city!",
+    author: "Mohammed Al-Zahrani",
+    location: "Business Owner, Jeddah",
   },
   {
     text:
-      "The 24/7 service is a game-changer. We needed laundry done late at night, and Makkah Al Baraka Laundry was responsive and efficient. They exceeded all our expectations.",
-    author: "Suleiman Ali",
-    location: "Egypt",
+      "The 24/7 service is a game-changer. I needed my thobes pressed late at night, and Makkah ZamZam Express was responsive and efficient. They exceeded all my expectations.",
+    author: "Fahad Bin Khalid",
+    location: "Makkah Resident",
   },
   {
     text:
-      "The premium service from Makkah Al Baraka Laundry is worth it. My clothes were returned beautifully folded and smelling fresh. The quality is far better than any hotel service I’ve used.",
-    author: "Ayesha Malik",
-    location: "United Kingdom",
+      "The premium service from Makkah ZamZam Express is worth it. My formal wear was returned beautifully folded and smelling fresh. The quality is far better than any other service I’ve used.",
+    author: "Lujain Al-Harbi",
+    location: "Guest House Owner, Makkah",
   },
   {
     text:
-      "I trusted Makkah Al Baraka Laundry with my husband’s formal thobes, and they did an amazing job. The pressing was perfect, and the fabric was handled with great care. A five-star experience!",
-    author: "Maryam Hassan",
-    location: "Jordan",
+      "I trusted Makkah ZamZam Express with my high-quality formal thobes, and they did an amazing job. The pressing was perfect, and the fabric was handled with great care. A five-star experience!",
+    author: "Sultan Al-Amri",
+    location: "Riyadh (Frequent Visitor)",
   },
   {
     text:
-      "Affordable, fast, and very convenient. Booking through WhatsApp was easy, and the free pickup and delivery made everything simple. Makkah Al Baraka Laundry is the best choice near the Haram.",
-    author: "Mustafa Kamal",
-    location: "Turkey",
+      "Affordable, fast, and very convenient. Booking through WhatsApp was easy, and the free pickup and delivery made everything simple. Makkah ZamZam Express is the best choice near the Haram.",
+    author: "Amal Al-Dossari",
+    location: "Makkah Resident",
   },
   {
     text:
-      "Cleaning heavy blankets was effortless with Makkah Al Baraka Laundry. They picked them up from our hotel and returned them fresh and clean the next day. Excellent service and great value.",
-    author: "Khaled Saeed",
-    location: "Kuwait",
+      "Cleaning heavy blankets and linens was effortless with Makkah ZamZam Express. They picked them up from our residence and returned them fresh and clean the next day. Excellent service.",
+    author: "Waleed Al-Sudairi",
+    location: "Makkah Resident",
   },
   {
     text:
-      "I spilled coffee on my favorite thobe, but Makkah Al Baraka Laundry’s stain removal service saved it completely. The fabric looks as good as new. Truly professional work.",
-    author: "Omar Farooq",
-    location: "India",
+      "I spilled coffee on my favorite thobe, but Makkah ZamZam Express’s stain removal service saved it completely. The fabric looks as good as new. Truly professional work.",
+    author: "Nourah Al-Saud",
+    location: "Local Resident, Makkah",
   },
 ];
 
