@@ -1,13 +1,13 @@
 export const managerInfo = {
   fullName: "Muhammad Arif Uddin",
-  phoneNumber: "+966 537740367",
-  whatsApp: "+966 537740367",
+  phoneNumber: "+966 535337025",
+  whatsApp: "+966 535337025",
   onlyNumber: {
-    whatsApp: 966537740367,
-    phoneNumber: 966537740367,
+    whatsApp: 966535337025,
+    phoneNumber: 966535337025,
   },
-  address: `CR9H+9Q7 Makkah Saudi Arabia`,
-  email: "info@makkahalbarakalaundry.com",
+  address: `Misfalah, Near Hilton Convention Jabal Omar, Makkah, Saudi Arabia`,
+  email: "hossainmohammadm16@gmail.com",
 };
 
 export const siteInfo = {
