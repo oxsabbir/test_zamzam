@@ -57,7 +57,7 @@ const AreaCoverage = () => {
       {/* Background Decorative Elements */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none opacity-20">
         <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-primary/10 rounded-full blur-[120px]"></div>
-        <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-blue-400/10 rounded-full blur-[120px]"></div>
+        <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-primary-400/10 rounded-full blur-[120px]"></div>
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
@@ -150,7 +150,7 @@ const AreaCoverage = () => {
         </div>
 
         {/* Bottom Banner Replacement */}
-        <div className="max-w-4xl mx-auto bg-gradient-to-br from-primary to-blue-700 rounded-[3rem] p-8 sm:p-12 text-white relative overflow-hidden shadow-2xl shadow-primary/30 group">
+        <div className="max-w-4xl mx-auto bg-gradient-to-br from-primary to-primary-700 rounded-[3rem] p-8 sm:p-12 text-white relative overflow-hidden shadow-2xl shadow-primary/30 group">
           <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 w-96 h-96 bg-white/10 rounded-full blur-3xl group-hover:scale-110 transition-transform duration-700"></div>
           
           <div className="relative z-10 flex flex-col md:flex-row items-center gap-10 text-center md:text-left">
@@ -161,13 +161,13 @@ const AreaCoverage = () => {
               <h3 className="text-3xl sm:text-4xl font-black mb-4 tracking-tight leading-tight">
                 Anywhere in Makkah,<br /> We Reach You.
               </h3>
-              <p className="text-blue-50/90 text-lg font-medium leading-relaxed mb-0 opacity-90">
+              <p className="text-primary-50/90 text-lg font-medium leading-relaxed mb-0 opacity-90">
                 Our fleet is strategically positioned across the city to ensure the fastest response times for pilgrims and residents alike. No area is too far for Makkah Al Baraka.
               </p>
             </div>
             <button 
               onClick={() => handleWhatsApp(whatsappMessages.pickup, true)}
-              className="bg-white text-primary text-xl font-black py-5 px-10 rounded-[1.5rem] shadow-2xl transition-all duration-300 hover:bg-blue-50 hover:scale-105 active:scale-95 flex items-center justify-center gap-3 shrink-0"
+              className="bg-white text-primary text-xl font-black py-5 px-10 rounded-[1.5rem] shadow-2xl transition-all duration-300 hover:bg-primary-50 hover:scale-105 active:scale-95 flex items-center justify-center gap-3 shrink-0"
             >
               Order Pickup Now
             </button>

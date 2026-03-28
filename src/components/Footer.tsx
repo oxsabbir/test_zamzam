@@ -55,24 +55,21 @@ const Footer = () => {
 
   return (
     <footer className="">
-      <div className="bg-foreground text-background pt-20 pb-10">
+      <div className="bg-[#0a120b] text-white pt-20 pb-10">
         {/* Map Section - Full Width Banner Style */}
 
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
             <div className="space-y-6">
-              {/* <h3 className="text-2xl font-bold text-white tracking-tight">
-              {siteInfo.siteTitle}
-            </h3> */}
               <a href="/">
                 <img
                   src={logo_dark}
                   alt="Al Baraka Laundry Logo"
-                  className="w-40 h-auto"
+                  className="h-[75px] w-auto object-contain brightness-110"
                 />
               </a>
 
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-zinc-400 leading-relaxed text-sm sm:text-base max-w-sm">
                 At Makkah Al Baraka Laundry, we provide reliable, fast, and
                 high-quality laundry services across the holy city of Makkah.
                 Trust us with your garments for a fresh and clean experience.
@@ -80,30 +77,30 @@ const Footer = () => {
               <div className="flex space-x-4">
                 <a
                   href="#"
-                  className="bg-white/10 hover:bg-primary p-3 rounded-full transition-all hover:scale-110"
+                  className="bg-white/5 hover:bg-primary p-3 rounded-full transition-all hover:scale-110 border border-white/5"
                 >
-                  <Facebook size={20} className="text-white" />
+                  <Facebook size={18} className="text-white" />
                 </a>
                 <a
                   href="#"
-                  className="bg-white/10 hover:bg-primary p-3 rounded-full transition-all hover:scale-110"
+                  className="bg-white/5 hover:bg-primary p-3 rounded-full transition-all hover:scale-110 border border-white/5"
                 >
-                  <Twitter size={20} className="text-white" />
+                  <Twitter size={18} className="text-white" />
                 </a>
                 <a
                   href="#"
-                  className="bg-white/10 hover:bg-primary p-3 rounded-full transition-all hover:scale-110"
+                  className="bg-white/5 hover:bg-primary p-3 rounded-full transition-all hover:scale-110 border border-white/5"
                 >
-                  <Instagram size={20} className="text-white" />
+                  <Instagram size={18} className="text-white" />
                 </a>
               </div>
             </div>
 
             <div className="space-y-6">
-              <h4 className="text-lg font-bold text-white uppercase tracking-widest border-l-4 border-primary pl-4">
+              <h4 className="text-sm font-bold text-white uppercase tracking-[0.2em] border-l-2 border-primary pl-4">
                 Quick Links
               </h4>
-              <ul className="space-y-4">
+              <ul className="space-y-3">
                 {quickLinks.map((link) => (
                   <li key={link.label}>
                     <button
@@ -112,11 +109,11 @@ const Footer = () => {
                           ? navigate(link.path)
                           : scrollToSection(link.id!)
                       }
-                      className="text-muted-foreground hover:text-primary flex items-center group transition-colors text-left"
+                      className="text-zinc-400 hover:text-primary flex items-center group transition-colors text-left text-sm"
                     >
                       <ChevronRight
-                        size={16}
-                        className="mr-2 group-hover:translate-x-1 transition-transform"
+                        size={14}
+                        className="mr-2 group-hover:translate-x-1 transition-transform text-primary/50"
                       />
                       {link.label}
                     </button>
@@ -126,19 +123,19 @@ const Footer = () => {
             </div>
 
             <div className="space-y-6">
-              <h4 className="text-lg font-bold text-white uppercase tracking-widest border-l-4 border-primary pl-4">
+              <h4 className="text-sm font-bold text-white uppercase tracking-[0.2em] border-l-2 border-primary pl-4">
                 Our Services
               </h4>
-              <ul className="space-y-4">
+              <ul className="space-y-3">
                 {servicesLinks.map((service) => (
                   <li key={service.label}>
                     <button
                       onClick={() => scrollToSection(service.id)}
-                      className="text-muted-foreground hover:text-primary flex items-center group transition-colors text-left"
+                      className="text-zinc-400 hover:text-primary flex items-center group transition-colors text-left text-sm"
                     >
                       <ChevronRight
-                        size={16}
-                        className="mr-2 group-hover:translate-x-1 transition-transform"
+                        size={14}
+                        className="mr-2 group-hover:translate-x-1 transition-transform text-primary/50"
                       />
                       {service.label}
                     </button>
@@ -148,61 +145,62 @@ const Footer = () => {
             </div>
 
             <div className="space-y-6">
-              <h4 className="text-lg font-bold text-white uppercase tracking-widest border-l-4 border-primary pl-4">
+              <h4 className="text-sm font-bold text-white uppercase tracking-[0.2em] border-l-2 border-primary pl-4">
                 Contact Us
               </h4>
               <div className="space-y-4">
                 <div className="flex items-start space-x-4 group">
-                  <div className="bg-primary/20 p-2 rounded-lg text-primary group-hover:bg-primary group-hover:text-white transition-colors">
-                    <MapPin size={20} />
+                  <div className="bg-primary/10 p-2.5 rounded-lg text-primary border border-primary/10 transition-colors">
+                    <MapPin size={18} />
                   </div>
-                  <p className="text-muted-foreground">{managerInfo.address}</p>
+                  <p className="text-zinc-400 text-sm leading-snug">{managerInfo.address}</p>
                 </div>
                 <div className="flex items-center space-x-4 group">
-                  <div className="bg-primary/20 p-2 rounded-lg text-primary group-hover:bg-primary group-hover:text-white transition-colors">
-                    <Phone size={20} />
+                  <div className="bg-primary/10 p-2.5 rounded-lg text-primary border border-primary/10 transition-colors">
+                    <Phone size={18} />
                   </div>
-                  <p className="text-muted-foreground">
+                  <p className="text-zinc-400 text-sm">
                     {managerInfo.phoneNumber}
                   </p>
                 </div>
                 <div className="flex items-center space-x-4 group">
-                  <div className="bg-primary/20 p-2 rounded-lg text-primary group-hover:bg-primary group-hover:text-white transition-colors">
-                    <Mail size={20} />
+                  <div className="bg-primary/10 p-2.5 rounded-lg text-primary border border-primary/10 transition-colors">
+                    <Mail size={18} />
                   </div>
-                  <p className="text-muted-foreground">{managerInfo.email}</p>
+                  <p className="text-zinc-400 text-sm truncate">{managerInfo.email}</p>
                 </div>
                 <div className="flex items-center space-x-4 group">
-                  <div className="bg-primary/20 p-2 rounded-lg text-primary group-hover:bg-primary group-hover:text-white transition-colors">
-                    <Clock size={20} />
+                  <div className="bg-primary/10 p-2.5 rounded-lg text-primary border border-primary/10 transition-colors">
+                    <Clock size={18} />
                   </div>
-                  <p className="text-muted-foreground">Open 24/7</p>
+                  <p className="text-zinc-400 text-sm">Open 24/7</p>
                 </div>
               </div>
             </div>
           </div>
-          <div className="w-full h-[360px] rounded-3xl relative transition-all duration-700 ease-in-out group">
+          
+          <div className="w-full h-[360px] rounded-3xl relative transition-all duration-700 ease-in-out group border border-white/5 overflow-hidden mb-12">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d232.13523490196707!2d39.820248449322996!3d21.422807396862932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c204b45652ae21%3A0x2b222b823c26269a!2sHilton%20Hotel%20%26%20Convention%20Jabal%20Omar%20Makkah!5e0!3m2!1sen!2sbd!4v1774447917190!5m2!1sen!2sbd"
-              className="w-full h-full opacity-80 rounded-3xl group-hover:opacity-100 border-0 transition-opacity"
-              title="Hajj Care Laundry Location"
+              className="w-full h-full opacity-60 rounded-3xl group-hover:opacity-100 border-0 transition-opacity"
+              title="Al Baraka Laundry Location"
             />
           </div>
 
-          <div className="pt-10 border-t border-white/10 text-center">
-            <p className="text-muted-foreground text-sm">
+          <div className="pt-10 border-t border-white/5 text-center">
+            <p className="text-zinc-500 text-xs">
               © {currentYear} {siteInfo.siteTitle}. All rights reserved.
             </p>
-            <div className="flex justify-center space-x-6 mt-4 text-xs font-medium uppercase tracking-widest">
+            <div className="flex justify-center space-x-6 mt-4 text-[10px] font-bold uppercase tracking-widest">
               <a
                 href="/privacy-policy"
-                className="hover:text-primary transition-colors"
+                className="text-zinc-500 hover:text-white transition-colors"
               >
                 Privacy Policy
               </a>
               <a
                 href="/terms-of-service"
-                className="hover:text-primary transition-colors"
+                className="text-zinc-500 hover:text-white transition-colors"
               >
                 Terms & Conditions
               </a>
