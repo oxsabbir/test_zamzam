@@ -87,8 +87,8 @@ const Navigation = () => {
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             className="flex items-center gap-2 group"
           >
-            <div className="py-2">
-              <div className="w-fit h-[60px] md:h-[65px]">
+            <div className="py-4">
+              <div className="w-fit h-[60px] md:h-[80px]">
                 <a href="/">
                   <img
                     src={isScrolled ? logo_light : logo_dark}
