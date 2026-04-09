@@ -94,11 +94,12 @@ export default function PilgrimGuide() {
             id="guide-heading"
             className="text-3xl sm:text-4xl font-bold mb-4 text-foreground"
           >
-            Essential Laundry Guide for Pilgrims
+            Helpful Laundry Tips for Visitors and Pilgrims
           </h2>
           <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
-            Let {siteInfo.siteTitle} handle the work, so you can focus on your spiritual
-            journey. Here are some essential tips for Hajj & Umrah.
+            A few practical care tips can make clothing easier to manage during
+            a busy stay in Makkah. Here are simple ideas for Hajj and Umrah
+            travel.
           </p>
         </header>
 
@@ -139,11 +140,11 @@ export default function PilgrimGuide() {
         <div className="mt-12 sm:mt-16 text-center">
           <div className="max-w-2xl mx-auto bg-card border rounded-xl p-6 shadow-sm">
             <h3 className="text-xl sm:text-2xl font-bold mb-3 text-foreground">
-              Have More Questions?
+              Need Advice Before Booking?
             </h3>
             <p className="text-base sm:text-lg text-muted-foreground mb-6">
-              Our team understands the unique needs of pilgrims. WhatsApp {siteInfo.shortName} 
-              anytime for personalized laundry advice.
+              Our team can help you choose the right service for Ihram, abayas,
+              thobes, or everyday clothes during your stay.
             </p>
             <Button
               onClick={() => handleWhatsApp(whatsappMessages.faq)}

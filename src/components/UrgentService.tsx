@@ -16,17 +16,17 @@ export default function UrgentService() {
       <div className="container mx-auto px-3 sm:px-4">
         <header className="text-center mb-8 sm:mb-12">
           <div className="inline-flex items-center rounded-full border font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent hover:bg-primary/80 mb-4 bg-primary text-white text-sm px-4 py-2 animate-pulse">
-            ⚡ MAKKAH'S FASTEST LAUNDRY SERVICE
+            ⚡ EXPRESS OPTIONS FOR BUSY DAYS
           </div>
           <h2
             id="emergency-times-heading"
             className="text-2xl sm:text-4xl font-bold mb-4 text-foreground"
           >
-            Urgent Laundry Needs in Makkah? Get it Done Fast!
+            Need Clean Clothes Soon? Choose a Faster Turnaround
           </h2>
           <p className="text-base sm:text-lg text-slate-700 max-w-3xl mx-auto">
-            Offering rapid express and same-day laundry services tailored for
-            your schedule and convenience.
+            Pick the service speed that matches your plans, whether you need a
+            quick refresh, same-day return, or a rush order in central Makkah.
           </p>
         </header>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 max-w-4xl mx-auto">
@@ -36,9 +36,9 @@ export default function UrgentService() {
               1 Hour
             </div>
             <h3 className="text-lg font-bold mb-2 text-foreground">
-              Emergency Service
+              Rush Response
             </h3>
-            <p className="text-sm text-slate-700 mb-4">For urgent situations</p>
+            <p className="text-sm text-slate-700 mb-4">Best for last-minute needs</p>
             <button
               id="generate_lead"
               onClick={() => handleBooking("1 Hour", "Emergency Service")}
@@ -53,9 +53,9 @@ export default function UrgentService() {
               24 Hours
             </div>
             <h3 className="text-lg font-bold mb-2 text-foreground">
-              Express Service
+              Express Care
             </h3>
-            <p className="text-sm text-slate-700 mb-4">Between prayers</p>
+            <p className="text-sm text-slate-700 mb-4">Great for packed schedules</p>
             <button
               id="generate_lead"
               onClick={() => handleBooking("24 Hour", "Express Service")}
@@ -70,9 +70,9 @@ export default function UrgentService() {
               12 Hours
             </div>
             <h3 className="text-lg font-bold mb-2 text-foreground">
-              Same Day Service
+              Same-Day Return
             </h3>
-            <p className="text-sm text-slate-700 mb-4">Standard turnaround</p>
+            <p className="text-sm text-slate-700 mb-4">Balanced speed and value</p>
             <button
               id="generate_lead"
               onClick={() => handleBooking("12 Hour", "Same Day Service")}

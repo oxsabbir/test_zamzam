@@ -18,18 +18,19 @@ export default function EmergencyService() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
               </span>
-              Urgent: Makkah's Fastest Emergency Laundry!
+              Urgent laundry support when timing really matters
             </div>
 
             <h2 className="text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight mb-4">
-              Emergency Laundry in Makkah? <br className="hidden sm:block" />
+              Last-Minute Laundry in Makkah? <br className="hidden sm:block" />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-rose-500">
-                We're On Our Way!
+                We Can Move Quickly.
               </span>
             </h2>
 
             <p className="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
-              Unexpected laundry crisis? From last-minute needs to crucial garments, our <strong>Rapid Response Team</strong> delivers swift, professional care.
+              When plans change suddenly, our rush team can help with quick
+              cleaning, pressing, and return options for important garments.
             </p>
           </div>
 
@@ -44,7 +45,8 @@ export default function EmergencyService() {
                 60-Minute Express
               </h3>
               <p className="text-slate-600 text-sm">
-                Unbeatable speed for those critical moments. Your laundry is cleaned, pressed, and ready in just one hour.
+                A fast option for urgent clothing needs when available in
+                central service zones.
               </p>
             </div>
 
@@ -57,7 +59,8 @@ export default function EmergencyService() {
                 24/7 Availability
               </h3>
               <p className="text-slate-600 text-sm">
-                Day or night, weekday or holiday, our emergency lines are always open. We pick up and deliver around your schedule.
+                Reach out any time to check urgent availability and arrange the
+                best turnaround for your request.
               </p>
             </div>
 
@@ -70,7 +73,8 @@ export default function EmergencyService() {
                 Quality Assurance
               </h3>
               <p className="text-slate-600 text-sm">
-                We guarantee meticulous care and exceptional results. If you're not satisfied, we'll make it right, free of charge.
+                Even rush orders are handled carefully so important garments are
+                returned tidy, wearable, and properly finished.
               </p>
             </div>
           </div>
@@ -81,7 +85,7 @@ export default function EmergencyService() {
               {/* Left Side: Checklist */}
               <div className="lg:col-span-3 p-8 sm:p-10">
                 <h3 className="text-xl font-bold text-slate-900 mb-6">
-                  We Handle All Emergencies:
+                  Rush Orders We Commonly Help With
                 </h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-3 gap-x-8">
                   {[
@@ -113,10 +117,11 @@ export default function EmergencyService() {
                 <div className="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full -mr-10 -mt-10 blur-2xl"></div>
 
                 <h3 className="text-white text-xl font-bold mb-2 relative z-10">
-                  Crisis Laundry? Contact Us Now!
+                  Need Priority Service?
                 </h3>
                 <p className="text-slate-400 text-sm mb-6 relative z-10">
-                  Tap below to connect with our dedicated emergency team for immediate assistance.
+                  Contact us on WhatsApp to confirm the fastest available
+                  pickup and return slot.
                 </p>
 
                 <button
@@ -130,7 +135,7 @@ export default function EmergencyService() {
                     size={24}
                     className="text-white group-hover:scale-110 transition-transform"
                   />
-                  <span>GET URGENT SERVICE</span>
+                  <span>REQUEST URGENT SERVICE</span>
                 </button>
 
                 <p className="text-xs text-slate-500 mt-4 text-center">

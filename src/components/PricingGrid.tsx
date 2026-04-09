@@ -72,11 +72,11 @@ const PricingGrid = () => {
             id="services-heading"
             className="text-2xl sm:text-4xl font-bold mb-4 text-foreground"
           >
-            {siteInfo.siteTitle} Pricing
+            Popular Laundry Categories
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
-            Premium laundry services in Makkah with competitive pricing and
-            expert care.
+            Estimated rates for common garments and household items, prepared
+            with practical care for daily use.
             <span className="text-primary ml-1 font-semibold">18 SAR/kg!</span>
           </p>
         </div>

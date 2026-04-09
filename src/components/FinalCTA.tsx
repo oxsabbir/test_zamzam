@@ -21,14 +21,14 @@ export default function FinalCTA() {
       <div className="relative container mx-auto px-3 sm:px-4">
         <div className="text-center mb-6 sm:mb-12">
           <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-primary-foreground mb-4 sm:mb-6">
-            Fresh, Clean Laundry with Fast Pickup
+            Book a Pickup Without Leaving Your Hotel or Home
           </h2>
           <p className="text-base sm:text-xl text-primary-foreground/95 max-w-3xl mx-auto mb-6 sm:mb-8 leading-relaxed">
-            Trusted by thousands of pilgrims and residents for premium, hygienic,
-            and reliable laundry care across Makkah.
+            Reliable collection, careful cleaning, and timely delivery for
+            daily wear, travel clothing, and family laundry across Makkah.
             <span className="text-primary-300 font-bold">
               {" "}
-              Professional garment care is just a message away.
+              A clean return starts with one message.
             </span>
           </p>
         </div>
@@ -44,7 +44,7 @@ export default function FinalCTA() {
               <div className="text-left ml-2">
                 <div>WhatsApp Pickup</div>
                 <div className="text-xs sm:text-sm opacity-90">
-                  Rapid response
+                  Quick booking
                 </div>
               </div>
             </button>
@@ -56,7 +56,7 @@ export default function FinalCTA() {
               <div className="text-left ml-2">
                 <div>Call Now</div>
                 <div className="text-xs sm:text-sm opacity-90">
-                  Instant response
+                  Direct support
                 </div>
               </div>
             </button>
@@ -66,7 +66,7 @@ export default function FinalCTA() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 text-center sm:text-left">
                 <div>
                   <h3 className="text-lg sm:text-xl font-bold mb-2 text-primary-300 border-b border-primary-300/60 pb-2">
-                    Contact Details
+                    Reach Us
                   </h3>
                   <div className="space-y-2 text-sm sm:text-base">
                     <div className="flex items-center justify-center sm:justify-start">
@@ -125,7 +125,7 @@ export default function FinalCTA() {
                 </div>
                 <div>
                   <h3 className="text-lg sm:text-xl font-bold mb-2 text-primary-300 border-b border-primary-300/60 pb-2">
-                    Service Hours
+                    Service Info
                   </h3>
                   <div className="space-y-2 text-sm sm:text-base">
                     <div className="flex items-center justify-center sm:justify-start">
@@ -161,7 +161,7 @@ export default function FinalCTA() {
                       >
                         <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
                       </svg>
-                      <span>Fast Pickup Guarantee</span>
+                      <span>Flexible Pickup Scheduling</span>
                     </div>
                     <div className="flex items-center justify-center sm:justify-start">
                       <svg
@@ -178,7 +178,7 @@ export default function FinalCTA() {
                       >
                         <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
                       </svg>
-                      <span>100% Satisfaction Guarantee</span>
+                      <span>Careful Garment Handling</span>
                     </div>
                   </div>
                 </div>
@@ -191,12 +191,12 @@ export default function FinalCTA() {
                 <Zap className=" text-white" size={24} />
               </div>
               <h3 className="text-lg sm:text-2xl font-bold text-primary-foreground text-center">
-                Don't Wait - Experience {siteInfo.shortName} Quality Today!
+                Schedule Your Laundry with {siteInfo.shortName}
               </h3>
             </div>
             <p className="text-sm sm:text-base text-primary-foreground/90 mb-4 text-center">
-              Our professional team is dedicated to providing the best laundry 
-              experience in Makkah with focus on hygiene and speed.
+              We keep the process simple so you can arrange pickup, confirm
+              timing, and get your clothes returned fresh with less hassle.
             </p>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
               <div className="bg-primary-foreground/10 rounded-lg p-2 sm:p-3">
@@ -204,7 +204,7 @@ export default function FinalCTA() {
                   12,000+
                 </div>
                 <div className="text-xs text-white sm:text-sm">
-                  Happy Customers
+                  Orders Served
                 </div>
               </div>
               <div className="bg-primary-foreground/10 rounded-lg p-2 sm:p-3">
@@ -212,7 +212,7 @@ export default function FinalCTA() {
                   Rapid
                 </div>
                 <div className="text-xs text-white sm:text-sm">
-                  Pickup Promise
+                  Pickup Support
                 </div>
               </div>
               <div className="bg-primary-foreground/10 rounded-lg p-2 sm:p-3">

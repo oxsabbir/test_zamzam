@@ -51,11 +51,11 @@ export default function Faq() {
       <div className="container mx-auto px-3 sm:px-4">
         <div className="text-center mb-8 sm:mb-12">
           <h2 className="text-2xl sm:text-4xl font-bold mb-4 text-foreground">
-            Your Questions Answered
+            Common Questions
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
-            Here are answers to some of the most common questions we receive
-            from pilgrims and residents in Makkah.
+            Here are quick answers about pickup, timing, pricing, and garment
+            care for customers in Makkah.
           </p>
         </div>
         <div className="max-w-4xl mx-auto">
@@ -77,11 +77,11 @@ export default function Faq() {
           <div className="rounded-lg bg-card text-card-foreground shadow-sm mt-8 sm:mt-12 bg-gradient-to-r from-primary/5 to-accent/5 border-2 border-primary/30">
             <div className="p-4 sm:p-6 text-center">
               <h3 className="text-lg sm:text-xl font-bold mb-3 text-foreground">
-                💬 Still Have Questions?
+                Need a Quick Answer?
               </h3>
               <p className="text-sm sm:text-base text-muted-foreground mb-4">
-                Our friendly team is available 24/7 to answer any questions in
-                Arabic, English, or Urdu.
+                Message or call our team any time if you want help choosing a
+                service or arranging a pickup.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <button

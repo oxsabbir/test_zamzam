@@ -19,7 +19,7 @@ import { useEffect } from "react";
 
 const Index = () => {
   useEffect(() => {
-    document.title = `${siteInfo.siteTitle}: Premium Laundry & Dry Cleaning in Makkah`;
+    document.title = `${siteInfo.siteTitle} | Pickup Laundry Service in Makkah`;
   }, []);
 
   return (

@@ -4,32 +4,32 @@ import { siteInfo } from "@/constants";
 const comparisonFeatures = [
   {
     feature: "Pickup & Delivery",
-    alBaraka: "Fast & Free Across Makkah",
+    ours: "Fast & Free Across Makkah",
     others: "Slow or Not Available",
   },
   {
     feature: "24/7 Availability",
-    alBaraka: "Yes, Anytime Anywhere",
+    ours: "Yes, Anytime Anywhere",
     others: "Limited Hours",
   },
   {
     feature: "Garment Protection",
-    alBaraka: "Expert Cleaning Guarantee",
+    ours: "Expert Cleaning Guarantee",
     others: "Standard Washing",
   },
   {
     feature: "Transparent Pricing",
-    alBaraka: "Honest Rates No Extra Costs",
+    ours: "Honest Rates No Extra Costs",
     others: "Hidden Fees",
   },
   {
     feature: "Service Support",
-    alBaraka: "Multi-language Support",
+    ours: "Multi-language Support",
     others: "Limited Support",
   },
   {
     feature: "Stain Removal",
-    alBaraka: "Special Stain Treatments",
+    ours: "Special Stain Treatments",
     others: "Standard Wash Only",
   },
 ];
@@ -40,11 +40,11 @@ const Comparison = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-5xl font-bold mb-6 text-foreground tracking-tight">
-            {siteInfo.siteTitle} And Others
+            Why Customers Book With {siteInfo.shortName}
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Discover why {siteInfo.siteTitle} stands out from other
-            services in the holy city.
+            A quick look at the service details people usually compare before
+            booking their laundry pickup in Makkah.
           </p>
         </div>
 
@@ -65,7 +65,7 @@ const Comparison = () => {
                 </div>
                 <div className="text-center flex items-center justify-center gap-2 text-primary font-medium">
                   <Check className="w-5 h-5" />
-                  <span className="hidden sm:inline">{item.alBaraka}</span>
+                  <span className="hidden sm:inline">{item.ours}</span>
                 </div>
                 <div className="text-center flex items-center justify-center gap-2 text-muted-foreground">
                   <X className="w-5 h-5 text-red-500" />

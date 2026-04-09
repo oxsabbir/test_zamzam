@@ -34,11 +34,11 @@ const HowItWorks = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-5xl font-bold mb-6 text-foreground tracking-tight">
-            How {siteInfo.siteTitle} Works
+            How Pickup Laundry Works
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Get your laundry done in four easy steps. We make it simple so you
-            can focus on your journey.
+            Send your location, hand over your laundry, and receive it back
+            fresh without making time for a laundry stop.
           </p>
         </div>
 

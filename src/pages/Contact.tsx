@@ -23,8 +23,8 @@ const Contact = () => {
               Contact Us
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              Have questions or ready to book? We're here to help with all your
-              laundry needs in Makkah, 24/7!
+              Ask about coverage, pricing, or turnaround times, or contact us
+              directly to arrange your laundry pickup in Makkah.
             </p>
           </motion.div>
         </div>
@@ -121,12 +121,11 @@ const Contact = () => {
             <div className="bg-gradient-to-r from-primary/10 to-primary/20 p-10 rounded-3xl border border-border">
               <MessageCircle className="w-16 h-16 text-primary mx-auto mb-6" />
               <h2 className="text-3xl font-bold text-foreground mb-4">
-                Book Your Pickup Now
+                Arrange a Pickup in Minutes
               </h2>
               <p className="text-muted-foreground mb-6 leading-relaxed">
-                Ready for premium laundry service? Contact us via WhatsApp and
-                we'll be at your location promptly. Available 24/7 for your
-                convenience.
+                Send your location and service request on WhatsApp, and we will
+                confirm the next available pickup window for your area.
               </p>
               <a
                 href={`https://wa.me/${
@@ -139,7 +138,7 @@ const Contact = () => {
                 className="inline-flex items-center gap-3 bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-xl font-bold text-lg shadow-lg hover:shadow-xl transition-all hover:scale-105"
               >
                 <WhatsAppIcon size={24} />
-                Book Pickup via WhatsApp
+                Request Pickup via WhatsApp
               </a>
             </div>
           </motion.div>
@@ -154,7 +153,7 @@ const Contact = () => {
           >
             <div className="text-center mb-8">
               <h2 className="text-3xl font-bold text-foreground mb-4">
-                Our Service Area
+                Pickup Area
               </h2>
               <div className="flex items-center justify-center gap-2 text-muted-foreground">
                 <MapPin className="w-5 h-5 text-primary" />
@@ -181,7 +180,7 @@ const Contact = () => {
             <div className="mt-8 grid md:grid-cols-2 gap-6">
               <div className="bg-card p-6 rounded-xl border border-border">
                 <h3 className="text-lg font-bold text-foreground mb-3">
-                  Coverage Areas
+                  Common Pickup Zones
                 </h3>
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2 text-muted-foreground">
@@ -205,16 +204,16 @@ const Contact = () => {
 
               <div className="bg-card p-6 rounded-xl border border-border">
                 <h3 className="text-lg font-bold text-foreground mb-3">
-                  Why Choose Us?
+                  What Customers Like
                 </h3>
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></span>
-                    Fast express pickup guaranteed
+                    Easy WhatsApp booking
                   </li>
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></span>
-                    Free pickup and delivery
+                    Pickup across key Makkah districts
                   </li>
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></span>
@@ -222,7 +221,7 @@ const Contact = () => {
                   </li>
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></span>
-                    Customer satisfaction guarantee
+                    Helpful support for visitors and residents
                   </li>
                 </ul>
               </div>

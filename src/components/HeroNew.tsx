@@ -9,7 +9,7 @@ import { siteInfo } from "@/constants";
 
 const HeroNew = () => {
   const [displayedText, setDisplayedText] = useState("");
-  const fullText = "Quick";
+  const fullText = "Fresh";
 
   useEffect(() => {
     let currentIndex = 0;
@@ -34,7 +34,7 @@ const HeroNew = () => {
 
       <img
         src={heroImage}
-        alt={`${siteInfo.siteTitle} - Premium laundry pickup and delivery in Makkah for pilgrims and residents`}
+        alt={`${siteInfo.siteTitle} - reliable laundry pickup and delivery in Makkah for pilgrims, hotels, and residents`}
         className="absolute inset-0 w-full h-full object-cover opacity-30 "
         loading="eager"
         width="1920"
@@ -44,17 +44,19 @@ const HeroNew = () => {
         <div className="max-w-4xl mx-auto text-center">
           <div className="inline-flex items-center rounded-full border font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent hover:bg-primary/80 mb-4 sm:mb-6 bg-primary-500 text-white text-xs sm:text-base px-3 sm:px-4 py-2 animate-pulse">
             <Zap size={20} className="mr-1" />
-            PREMIUM & FRESH LAUNDRY!
+            CLEAN CLOTHES, COLLECTED FAST
           </div>
           <h1 className="text-2xl sm:text-4xl lg:text-6xl font-bold text-primary-foreground mb-3 sm:mb-6 leading-tight">
             <span className="block text-xl sm:text-2xl lg:text-3xl mb-1 sm:mb-2 text-primary-300">
               {siteInfo.siteTitle}
             </span>
-            <span className="text-primary-300 inline-block ">Fast Pickup</span> –
-            Premium Laundry Service
+            <span className="text-primary-300 inline-block ">
+              Doorstep Pickup
+            </span>{" "}
+            for Laundry That Fits Your Day
           </h1>
           <div className="bg-black/30 backdrop-blur-sm rounded-xl sm:rounded-2xl p-3 sm:p-6 mb-4 sm:mb-8">
-            <div className="flex items-center justify-center mb-2 sm:mb-3">
+            <div className="flex items-center flex-col gap-2 justify-center mb-2 sm:mb-3">
               <div className="flex text-yellow-400 text-sm sm:text-xl">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -128,17 +130,17 @@ const HeroNew = () => {
                 </svg>
               </div>
               <span className="text-primary-foreground ml-2 font-bold text-sm sm:text-base">
-                Over 12,000+ Satisfied Customers
+                Chosen by visitors and residents across Makkah
               </span>
             </div>
             <p className="text-sm sm:text-xl text-primary-foreground/95 font-medium mb-3 sm:mb-4 px-2">
-              “Exceptional service! My garments were collected promptly, cleaned
-              with care, and returned perfectly.
+              “Smooth pickup, careful washing, and neatly returned clothes made
+              the whole process simple.
               <span className="text-primary-300 font-bold">
                 {" "}
                 {siteInfo.siteTitle}
               </span>{" "}
-              is truly the best choice in Makkah!”
+              made laundry one less thing to worry about in Makkah.”
             </p>
             <div className="grid grid-cols-2  sm:grid-cols-3 gap-2 sm:gap-4 text-center">
               <div className="bg-primary-400/20 rounded-lg p-2 sm:p-3">
@@ -151,10 +153,10 @@ const HeroNew = () => {
               </div>
               <div className="bg-primary-400/20 rounded-lg p-2 sm:p-3">
                 <div className="text-lg sm:text-2xl font-bold text-primary-300">
-                  Quick Service
+                  Flexible
                 </div>
                 <div className="text-xs sm:text-sm text-primary-foreground/80">
-                  Guaranteed Pickup
+                  Pickup Options
                 </div>
               </div>
               <div className="bg-primary-400/20 col-span-full sm:col-span-1 rounded-lg p-2 sm:p-3">
@@ -175,21 +177,21 @@ const HeroNew = () => {
               className="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none  bg-primary-600 text-white hover:bg-primary-700 hover:shadow-xl transition-all w-full text-base sm:text-xl px-6 py-4 sm:py-6 h-auto rounded-xl font-bold shadow-lg"
             >
               <WhatsAppIcon size={24} />
-              WhatsApp NOW for Fast Pickup
+              WhatsApp for Pickup Booking
             </button>
 
             <div className="text-primary-foreground/90 flex flex-wrap pt-4 items-center justify-center gap-4 text-xs sm:text-base">
               <span className="flex items-center gap-2">
-                <Clock size={18} /> Always Open
+                <Clock size={18} /> Open Daily
               </span>
               <span>|</span>
               <span className="flex items-center gap-2">
-                <Quote size={18} /> Transparent Rates
+                <Quote size={18} /> Clear Pricing
               </span>
               <span>|</span>
               <span className="flex items-center gap-2">
                 <CircleDollarSign size={18} />
-                Professional Care
+                Careful Handling
               </span>
             </div>
           </div>

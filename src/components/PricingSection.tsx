@@ -83,14 +83,14 @@ export default function PricingSection() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-10 sm:mb-16">
           <Badge className="mb-4 bg-primary/10 text-primary hover:bg-primary/20 border-none px-4 py-1">
-            New Pricing
+            Service Options
           </Badge>
           <h2 className="text-3xl sm:text-5xl font-bold mb-4 text-foreground tracking-tight">
-            Laundry Packages
+            Laundry Packages for Different Timelines
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Professional Wash, Dry, and Press service. 
-            Competitive rates per KG tailored for your needs.
+            Choose from everyday, express, and rush turnaround packages with
+            straightforward per-kilogram pricing.
           </p>
         </div>
 
@@ -127,7 +127,7 @@ export default function PricingSection() {
                       <span className="text-4xl font-black text-primary">{pkg.price}</span>
                       <span className="text-sm font-bold text-muted-foreground ml-1">SAR</span>
                     </div>
-                    <span className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground/70">Per Kilogram</span>
+                    <span className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground/70">Per Kg</span>
                   </div>
                 </div>
               </div>
@@ -188,7 +188,8 @@ export default function PricingSection() {
                     {ironingService.title}
                   </h3>
                   <p className="text-muted-foreground mb-4">
-                    Expert pressing and ironing service for a crisp, professional look.
+                    Neat pressing and ironing for garments that need a sharper,
+                    ready-to-wear finish.
                   </p>
                   <div className="flex flex-wrap justify-center md:justify-start gap-4">
                     <div className="flex items-center text-sm font-medium bg-background/80 px-3 py-1.5 rounded-full border">
