@@ -24,8 +24,8 @@ export default function FinalCTA() {
             Book a Pickup Without Leaving Your Hotel or Home
           </h2>
           <p className="text-base sm:text-xl text-primary-foreground/95 max-w-3xl mx-auto mb-6 sm:mb-8 leading-relaxed">
-            Reliable collection, careful cleaning, and timely delivery for
-            daily wear, travel clothing, and family laundry across Makkah.
+            Reliable collection, careful cleaning, and timely delivery for daily
+            wear, travel clothing, and family laundry across Makkah.
             <span className="text-primary-300 font-bold">
               {" "}
               A clean return starts with one message.
@@ -38,7 +38,7 @@ export default function FinalCTA() {
             <button
               id="generate_lead"
               onClick={() => handleWhatsApp(whatsappMessages.pickup, true)}
-              className="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none duration-300 w-full text-base sm:text-xl px-6 py-4 sm:py-6 h-auto rounded-xl bg-green-600 text-white hover:bg-green-700 font-bold shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all"
+              className="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none duration-300 w-full text-base sm:text-xl px-6 py-4 sm:py-6 h-auto rounded-xl bg-primary text-white hover:bg-primary-600 font-bold shadow-2xl shadow-primary/30 transform hover:scale-105 transition-all"
             >
               <WhatsAppIcon size={32} />
               <div className="text-left ml-2">
@@ -50,7 +50,7 @@ export default function FinalCTA() {
             </button>
             <button
               onClick={handleCall}
-              className="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none bg-gradient-accent text-accent-foreground hover:opacity-90 duration-300 w-full text-base sm:text-xl px-6 py-4 sm:py-6 h-auto rounded-xl bg-primary-500 text-white hover:bg-primary-700 font-bold shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all"
+              className="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none duration-300 w-full text-base sm:text-xl px-6 py-4 sm:py-6 h-auto rounded-xl bg-white border border-slate-300/70 text-slate-900 hover:bg-slate-100 font-bold shadow-2xl shadow-black/15 transform hover:scale-105 transition-all"
             >
               <PhoneCallIcon size={32} />
               <div className="text-left ml-2">
@@ -219,9 +219,7 @@ export default function FinalCTA() {
                 <div className="text-lg sm:text-xl font-bold text-primary-300">
                   24/7
                 </div>
-                <div className="text-xs text-white sm:text-sm">
-                  Always Open
-                </div>
+                <div className="text-xs text-white sm:text-sm">Always Open</div>
               </div>
               <div className="bg-primary-foreground/10 rounded-lg p-2 sm:p-3">
                 <div className="text-lg sm:text-xl font-bold text-primary-300">
