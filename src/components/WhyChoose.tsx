@@ -1,4 +1,5 @@
 import { ShieldCheck, Truck, Clock, Sparkles } from "lucide-react";
+import { siteInfo } from "@/constants";
 
 const features = [
   {
@@ -33,7 +34,7 @@ const WhyChoose = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-5xl font-bold mb-6 text-foreground tracking-tight">
-            Why Choose Makkah Al Baraka Laundry?
+            Why Choose {siteInfo.siteTitle}?
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Experience the gold standard in professional laundry services in

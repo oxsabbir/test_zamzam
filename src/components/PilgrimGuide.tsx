@@ -1,6 +1,7 @@
 import { handleWhatsApp } from "@/lib/utils";
 import WhatsAppIcon from "./icons/Whatsapp";
 import { whatsappMessages } from "@/constants/messages";
+import { siteInfo } from "@/constants";
 import {
   Shirt,
   UserCheck,
@@ -96,7 +97,7 @@ export default function PilgrimGuide() {
             Essential Laundry Guide for Pilgrims
           </h2>
           <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
-            Let Makkah Al Baraka Laundry handle the work, so you can focus on your spiritual
+            Let {siteInfo.siteTitle} handle the work, so you can focus on your spiritual
             journey. Here are some essential tips for Hajj & Umrah.
           </p>
         </header>
@@ -141,7 +142,7 @@ export default function PilgrimGuide() {
               Have More Questions?
             </h3>
             <p className="text-base sm:text-lg text-muted-foreground mb-6">
-              Our team understands the unique needs of pilgrims. WhatsApp Al Baraka 
+              Our team understands the unique needs of pilgrims. WhatsApp {siteInfo.shortName} 
               anytime for personalized laundry advice.
             </p>
             <Button

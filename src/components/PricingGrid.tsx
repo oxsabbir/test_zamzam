@@ -8,6 +8,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { whatsappMessages } from "@/constants/messages";
 import { handleWhatsApp } from "@/lib/utils";
+import { siteInfo } from "@/constants";
 
 const pricingItems = [
   {
@@ -71,7 +72,7 @@ const PricingGrid = () => {
             id="services-heading"
             className="text-2xl sm:text-4xl font-bold mb-4 text-foreground"
           >
-            Makkah Al Baraka Laundry Pricing
+            {siteInfo.siteTitle} Pricing
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
             Premium laundry services in Makkah with competitive pricing and

@@ -64,13 +64,13 @@ const Footer = () => {
               <a href="/">
                 <img
                   src={logo_dark}
-                  alt="Al Baraka Laundry Logo"
+                  alt={`${siteInfo.shortName} Laundry Logo`}
                   className="h-[75px] w-auto object-contain brightness-110"
                 />
               </a>
 
               <p className="text-zinc-400 leading-relaxed text-sm sm:text-base max-w-sm">
-                At Makkah Al Baraka Laundry, we provide reliable, fast, and
+                At {siteInfo.siteTitle}, we provide reliable, fast, and
                 high-quality laundry services across the holy city of Makkah.
                 Trust us with your garments for a fresh and clean experience.
               </p>
@@ -183,7 +183,7 @@ const Footer = () => {
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d232.13523490196707!2d39.820248449322996!3d21.422807396862932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c204b45652ae21%3A0x2b222b823c26269a!2sHilton%20Hotel%20%26%20Convention%20Jabal%20Omar%20Makkah!5e0!3m2!1sen!2sbd!4v1774447917190!5m2!1sen!2sbd"
               className="w-full h-full opacity-60 rounded-3xl group-hover:opacity-100 border-0 transition-opacity"
-              title="Al Baraka Laundry Location"
+              title={`${siteInfo.shortName} Laundry Location`}
             />
           </div>
 

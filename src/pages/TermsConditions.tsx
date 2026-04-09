@@ -69,7 +69,7 @@ const TermsConditions = () => {
               Contact Us
             </h2>
             <p>
-              If you have any queries regarding any of our terms, please contact us at info@makkahalbarakalaundry.com.
+              If you have any queries regarding any of our terms, please contact us at {siteInfo.contactEmail}.
             </p>
           </div>
         </div>

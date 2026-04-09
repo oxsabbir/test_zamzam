@@ -11,6 +11,10 @@ export const managerInfo = {
 };
 
 export const siteInfo = {
-  siteTitle: "Makkah Al Baraka Laundry",
+  siteTitle: "Makkah ZamZam Express Laundry",
+  shortName: "ZamZam Express",
   domain: "https://makkahalbarakalaundry.com/",
+  domainName: "makkahalbarakalaundry.com",
+  contactEmail: "info@makkahalbarakalaundry.com",
+  ogImage: "https://makkahalbarakalaundry.com/og-image.png",
 };

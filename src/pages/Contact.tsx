@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import { motion } from "motion/react";
 import { Phone, Mail, MapPin, Clock, MessageCircle } from "lucide-react";
 import WhatsAppIcon from "@/components/icons/Whatsapp";
-import { managerInfo } from "@/constants";
+import { managerInfo, siteInfo } from "@/constants";
 
 const Contact = () => {
   return (
@@ -173,7 +173,7 @@ const Contact = () => {
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 className=" group-hover:grayscale-0 transition-all duration-500"
-                title="Makkah Al Baraka Laundry Location"
+                title={`${siteInfo.shortName} Laundry Location`}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none" />
             </div>

@@ -4,6 +4,7 @@ import { Badge } from "./ui/badge";
 import { Input } from "./ui/input";
 import { whatsappMessages } from "@/constants/messages";
 import { handleWhatsApp } from "@/lib/utils";
+import { siteInfo } from "@/constants";
 
 const coverageAreas = [
   {
@@ -69,7 +70,7 @@ const AreaCoverage = () => {
             We Serve All of Makkah
           </h2>
           <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto mb-10">
-            Makkah Al Baraka Laundry provides the most extensive and reliable coverage across the holy city. 
+            {siteInfo.siteTitle} provides the most extensive and reliable coverage across the holy city. 
             Fast pickup, wherever you are.
           </p>
 
@@ -162,7 +163,7 @@ const AreaCoverage = () => {
                 Anywhere in Makkah,<br /> We Reach You.
               </h3>
               <p className="text-primary-50/90 text-lg font-medium leading-relaxed mb-0 opacity-90">
-                Our fleet is strategically positioned across the city to ensure the fastest response times for pilgrims and residents alike. No area is too far for Makkah Al Baraka.
+                Our fleet is strategically positioned across the city to ensure the fastest response times for pilgrims and residents alike. No area is too far for {siteInfo.shortName}.
               </p>
             </div>
             <button 

@@ -1,6 +1,6 @@
 import { Phone, Mail, MapPin, Clock, MessageCircle } from "lucide-react";
 import WhatsAppIcon from "@/components/icons/Whatsapp";
-import { managerInfo } from "@/constants";
+import { managerInfo, siteInfo } from "@/constants";
 import { motion } from "motion/react";
 
 const Contact = () => {
@@ -88,7 +88,7 @@ const Contact = () => {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Makkah Al Baraka Laundry Location"
+              title={`${siteInfo.shortName} Laundry Location`}
             />
           </div>
         </div>

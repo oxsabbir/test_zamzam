@@ -9,7 +9,7 @@ import logo_dark from "@/assets/al-baraka-dark.webp";
 import { motion } from "motion/react";
 import { handleWhatsApp } from "@/lib/utils";
 import { whatsappMessages } from "@/constants/messages";
-import { managerInfo } from "@/constants";
+import { managerInfo, siteInfo } from "@/constants";
 import { useNavigate, useResolvedPath } from "react-router-dom";
 
 const Navigation = () => {
@@ -92,7 +92,7 @@ const Navigation = () => {
                 <a href="/">
                   <img
                     src={isScrolled ? logo_light : logo_dark}
-                    alt="Al Baraka Laundry logo"
+                    alt={`${siteInfo.shortName} Laundry logo`}
                     width={200}
                     height={100}
                     className="w-full h-full object-contain"
@@ -149,7 +149,7 @@ const Navigation = () => {
                     <a href="/">
                       <img
                         src={isScrolled ? logo_light : logo_dark}
-                        alt="Al Baraka Laundry logo"
+                        alt={`${siteInfo.shortName} Laundry logo`}
                         width={200}
                         height={100}
                         className="w-full h-full object-contain"

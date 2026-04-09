@@ -1,4 +1,5 @@
 import { MessageCircle, Truck, Sparkles, ShoppingBag } from "lucide-react";
+import { siteInfo } from "@/constants";
 
 const steps = [
   {
@@ -33,7 +34,7 @@ const HowItWorks = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-5xl font-bold mb-6 text-foreground tracking-tight">
-            How Makkah Al Baraka Laundry Works
+            How {siteInfo.siteTitle} Works
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Get your laundry done in four easy steps. We make it simple so you

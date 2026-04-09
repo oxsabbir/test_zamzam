@@ -1,4 +1,5 @@
 import { Check, X } from "lucide-react";
+import { siteInfo } from "@/constants";
 
 const comparisonFeatures = [
   {
@@ -39,10 +40,10 @@ const Comparison = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-5xl font-bold mb-6 text-foreground tracking-tight">
-            Makkah Al Baraka Laundry And Others
+            {siteInfo.siteTitle} And Others
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Discover why Makkah Al Baraka Laundry stands out from other
+            Discover why {siteInfo.siteTitle} stands out from other
             services in the holy city.
           </p>
         </div>
@@ -50,7 +51,7 @@ const Comparison = () => {
         <div className="max-w-4xl mx-auto bg-card rounded-3xl border border-border/60 shadow-xl overflow-hidden">
           <div className="grid grid-cols-3 bg-primary text-white p-6 sm:p-8 font-bold text-center">
             <div className="text-left">Feature</div>
-            <div>Makkah Al Baraka</div>
+            <div>{siteInfo.shortName}</div>
             <div>Other Laundries</div>
           </div>
           <div className="divide-y divide-border/60">
