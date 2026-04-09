@@ -32,7 +32,7 @@ const About = () => {
         <section className="py-16">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, scale: 0.95 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
@@ -48,8 +48,8 @@ const About = () => {
               <div className="prose prose-lg max-w-none text-muted-foreground">
                 <p className="mb-6">
                   {siteInfo.siteTitle} was created to offer a smoother laundry
-                  experience in Makkah for pilgrims, families, hotel guests,
-                  and local residents. We focus on simple booking, dependable
+                  experience in Makkah for pilgrims, families, hotel guests, and
+                  local residents. We focus on simple booking, dependable
                   pickup, and consistent garment care so customers can spend
                   less time managing laundry logistics.
                 </p>
