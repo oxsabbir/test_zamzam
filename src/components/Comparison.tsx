@@ -1,77 +1,177 @@
-import { Check, X } from "lucide-react";
+import {
+  Award,
+  Check,
+  Clock,
+  DollarSign,
+  Shield,
+  Users,
+  X,
+  Zap,
+} from "lucide-react";
 
-const comparisonFeatures = [
+const comparisonData = [
   {
-    feature: "Pickup & Delivery",
-    alBaraka: "Fast & Free Across Makkah",
-    others: "Slow or Not Available",
+    feature: "Pickup Time",
+    us: "15 Minutes",
+    others: "2-4 Hours",
   },
   {
-    feature: "24/7 Availability",
-    alBaraka: "Yes, Anytime Anywhere",
+    feature: "Operating Hours",
+    us: "Around the Clock (24/7)",
     others: "Limited Hours",
   },
   {
-    feature: "Garment Protection",
-    alBaraka: "Expert Cleaning Guarantee",
-    others: "Standard Washing",
+    feature: "Starting Price",
+    us: "From 20 SAR/kg",
+    others: "From 35 SAR/kg",
   },
   {
-    feature: "Transparent Pricing",
-    alBaraka: "Honest Rates No Extra Costs",
-    others: "Hidden Fees",
+    feature: "Customer Support",
+    us: "Multi-language (En, Ar, Ur)",
+    others: "Primarily Arabic",
   },
   {
-    feature: "Service Support",
-    alBaraka: "Multi-language Support",
-    others: "Limited Support",
+    feature: "Delivery Charge",
+    us: "Always Free",
+    others: "Often Extra",
   },
   {
-    feature: "Stain Removal",
-    alBaraka: "Special Stain Treatments",
-    others: "Standard Wash Only",
+    feature: "Urgent Orders",
+    us: "Ready in 1 Hour",
+    others: "24-Hour Minimum",
   },
 ];
 
 const Comparison = () => {
   return (
-    <section className="py-20 bg-muted/60">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-5xl font-bold mb-6 text-foreground tracking-tight">
-            Makkah Al Baraka Laundry And Others
+    <section className="py-8 sm:py-16" aria-labelledby="benefits-heading">
+      <div className="container mx-auto px-3 sm:px-4">
+        <header className="text-center mb-8 sm:mb-12">
+          <h2
+            id="benefits-heading"
+            className="text-2xl sm:text-4xl font-bold mb-4 text-foreground"
+          >
+            The ZamZam Insaf Difference: A Clear Choice
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Discover why Makkah Al Baraka Laundry stands out from other
-            services in the holy city.
+          <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
+            See how our service excels against standard Makkah laundry options,
+            providing unmatched value for pilgrims near Haram.
           </p>
-        </div>
-
-        <div className="max-w-4xl mx-auto bg-card rounded-3xl border border-border/60 shadow-xl overflow-hidden">
-          <div className="grid grid-cols-3 bg-primary text-white p-6 sm:p-8 font-bold text-center">
-            <div className="text-left">Feature</div>
-            <div>Makkah Al Baraka</div>
-            <div>Other Laundries</div>
-          </div>
-          <div className="divide-y divide-border/60">
-            {comparisonFeatures.map((item, index) => (
+        </header>
+        <div className="bg-gradient-to-r from-slate-700 via-slate-800 to-slate-900 rounded-xl sm:rounded-2xl p-4 sm:p-8 mb-8 sm:mb-12 max-w-6xl mx-auto">
+          <h3 className="text-xl sm:text-2xl font-bold text-center mb-6 sm:mb-8 text-white">
+            ZamZam Insaf vs. The Rest
+          </h3>
+          <div className="space-y-4">
+            <div className="grid grid-cols-3 gap-2 sm:gap-4 text-center font-bold text-sm sm:text-base text-slate-300">
+              <div>Feature</div>
+              <div>ZamZam Insaf</div>
+              <div>Other Services</div>
+            </div>
+            {comparisonData.map((item, i) => (
               <div
-                key={index}
-                className="grid grid-cols-3 p-6 sm:p-8 hover:bg-muted/30 transition-colors"
+                key={i}
+                className="grid grid-cols-3 gap-2 sm:gap-4 items-center text-center border-t border-slate-600 pt-4"
               >
-                <div className="font-bold text-foreground flex items-center">
+                <div className="text-sm font-semibold text-left text-slate-100">
                   {item.feature}
                 </div>
-                <div className="text-center flex items-center justify-center gap-2 text-primary font-medium">
-                  <Check className="w-5 h-5" />
-                  <span className="hidden sm:inline">{item.alBaraka}</span>
+                <div className="flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 text-green-400 font-bold text-xs sm:text-sm">
+                  <Check size={16} className="shrink-0" />
+                  <span>{item.us}</span>
                 </div>
-                <div className="text-center flex items-center justify-center gap-2 text-muted-foreground">
-                  <X className="w-5 h-5 text-red-500" />
-                  <span className="hidden sm:inline">{item.others}</span>
+                <div className="flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 text-red-400 font-semibold text-xs sm:text-sm">
+                  <X size={16} className="shrink-0" />
+                  <span>{item.others}</span>
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-6xl mx-auto">
+          <div className="rounded-lg bg-card text-card-foreground shadow-sm p-4 sm:p-6 hover:shadow-xl transition-all hover:-translate-y-1 border border-border">
+            <div className="flex flex-col items-center text-center">
+              <div className="mb-3 sm:mb-4">
+                <Zap className="w-8 h-8 sm:w-10 sm:h-10 text-accent" />
+              </div>
+              <h3 className="text-base sm:text-lg font-bold mb-2 text-foreground">
+                Unmatched Speed
+              </h3>
+              <p className="text-sm sm:text-base text-muted-foreground">
+                Guaranteed 15-minute pickup. We operate on your schedule, not
+                ours. Ideal for time-sensitive needs.
+              </p>
+            </div>
+          </div>
+          <div className="rounded-lg bg-card text-card-foreground shadow-sm p-4 sm:p-6 hover:shadow-xl transition-all hover:-translate-y-1 border border-border">
+            <div className="flex flex-col items-center text-center">
+              <div className="mb-3 sm:mb-4">
+                <DollarSign className="w-8 h-8 sm:w-10 sm:h-10 text-green-500" />
+              </div>
+              <h3 className="text-base sm:text-lg font-bold mb-2 text-foreground">
+                Affordable Excellence
+              </h3>
+              <p className="text-sm sm:text-base text-muted-foreground">
+                Transparent pricing from 20 SAR/kg and completely free
+                pickup/delivery, offering savings up to 50% over hotels.
+              </p>
+            </div>
+          </div>
+          <div className="rounded-lg bg-card text-card-foreground shadow-sm p-4 sm:p-6 hover:shadow-xl transition-all hover:-translate-y-1 border border-border">
+            <div className="flex flex-col items-center text-center">
+              <div className="mb-3 sm:mb-4">
+                <Clock className="w-8 h-8 sm:w-10 sm:h-10 text-primary" />
+              </div>
+              <h3 className="text-base sm:text-lg font-bold mb-2 text-foreground">
+                Always Open
+              </h3>
+              <p className="text-sm sm:text-base text-muted-foreground">
+                Laundry emergencies don't wait. That's why we're here for you
+                24/7, even at 3 AM.
+              </p>
+            </div>
+          </div>
+          <div className="rounded-lg bg-card text-card-foreground shadow-sm p-4 sm:p-6 hover:shadow-xl transition-all hover:-translate-y-1 border border-border">
+            <div className="flex flex-col items-center text-center">
+              <div className="mb-3 sm:mb-4">
+                <Shield className="w-8 h-8 sm:w-10 sm:h-10 text-blue-500" />
+              </div>
+              <h3 className="text-base sm:text-lg font-bold mb-2 text-foreground">
+                Total Peace of Mind
+              </h3>
+              <p className="text-sm sm:text-base text-muted-foreground">
+                With digital tracking and professional handling, your garments
+                are secure. Backed by our money-back guarantee.
+              </p>
+            </div>
+          </div>
+          <div className="rounded-lg bg-card text-card-foreground shadow-sm p-4 sm:p-6 hover:shadow-xl transition-all hover:-translate-y-1 border border-border">
+            <div className="flex flex-col items-center text-center">
+              <div className="mb-3 sm:mb-4">
+                <Users className="w-8 h-8 sm:w-10 sm:h-10 text-purple-500" />
+              </div>
+              <h3 className="text-base sm:text-lg font-bold mb-2 text-foreground">
+                We Speak Your Language
+              </h3>
+              <p className="text-sm sm:text-base text-muted-foreground">
+                Our team is fluent in English, Arabic, and Urdu to ensure clear
+                and easy communication.
+              </p>
+            </div>
+          </div>
+          <div className="rounded-lg bg-card text-card-foreground shadow-sm p-4 sm:p-6 hover:shadow-xl transition-all hover:-translate-y-1 border border-border">
+            <div className="flex flex-col items-center text-center">
+              <div className="mb-3 sm:mb-4">
+                <Award className="w-8 h-8 sm:w-10 sm:h-10 text-orange-500" />
+              </div>
+              <h3 className="text-base sm:text-lg font-bold mb-2 text-foreground">
+                Proven & Trusted
+              </h3>
+              <p className="text-sm sm:text-base text-muted-foreground">
+                Serving over 7,500 pilgrims from 50+ countries. Our 4.9-star
+                rating speaks for itself.
+              </p>
+            </div>
           </div>
         </div>
       </div>

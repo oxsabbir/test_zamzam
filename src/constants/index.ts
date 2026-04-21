@@ -6,7 +6,7 @@ export const managerInfo = {
     whatsApp: 966535337025,
     phoneNumber: 966535337025,
   },
-  address: `Misfalah, Near Hilton Convention Jabal Omar, Makkah, Saudi Arabia`,
+  address: `Ibrahim Al Khalil Rd, Saudi Arabia`,
   email: "hossainmohammadm16@gmail.com",
 };
 

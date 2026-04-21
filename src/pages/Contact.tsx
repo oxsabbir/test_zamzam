@@ -165,7 +165,7 @@ const Contact = () => {
             {/* Map */}
             <div className="relative h-[400px] rounded-2xl overflow-hidden border border-border shadow-lg group">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d232.13523490196707!2d39.820248449322996!3d21.422807396862932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c204b45652ae21%3A0x2b222b823c26269a!2sHilton%20Hotel%20%26%20Convention%20Jabal%20Omar%20Makkah!5e0!3m2!1sen!2sbd!4v1774447917190!5m2!1sen!2sbd"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5654.269139982942!2d39.807984157977685!3d21.32567436410657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c211fd95fb43e3%3A0x9778d871460f3f88!2sIbrahim%20Al%20Khalil%20Rd%20Saudi%20Arabia!5e0!3m2!1sen!2sbd!4v1776776720225!5m2!1sen!2sbd"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

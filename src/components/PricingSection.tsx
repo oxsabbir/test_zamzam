@@ -10,7 +10,7 @@ const laundryPackages = [
     title: "Standard Care",
     type: "Normal",
     deliveryTime: "12 Hours",
-    price: 19,
+    price: 20,
     pickup: "Included",
     featured: false,
   },
@@ -19,7 +19,7 @@ const laundryPackages = [
     title: "Eco Wash",
     type: "Normal",
     deliveryTime: "10 Hours",
-    price: 24,
+    price: 25,
     pickup: "Included",
     featured: false,
   },
@@ -28,7 +28,7 @@ const laundryPackages = [
     title: "Premium Clean",
     type: "Normal",
     deliveryTime: "8 Hours",
-    price: 29,
+    price: 30,
     pickup: "Included",
     featured: true,
   },
@@ -37,7 +37,7 @@ const laundryPackages = [
     title: "Express",
     type: "Urgent",
     deliveryTime: "5 Hours",
-    price: 32,
+    price: 35,
     pickup: "SAR 15 Extra",
     featured: false,
   },
@@ -46,7 +46,7 @@ const laundryPackages = [
     title: "Flash",
     type: "Urgent",
     deliveryTime: "3 Hours",
-    price: 38,
+    price: 30,
     pickup: "SAR 15 Extra",
     featured: false,
   },
@@ -55,7 +55,7 @@ const laundryPackages = [
     title: "Instant*",
     type: "Urgent",
     deliveryTime: "1 Hour*",
-    price: 45,
+    price: 35,
     pickup: "SAR 15 Extra",
     featured: false,
     note: "*Subject to availability in Makkah central area",
@@ -89,8 +89,8 @@ export default function PricingSection() {
             Laundry Packages
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Professional Wash, Dry, and Press service. 
-            Competitive rates per KG tailored for your needs.
+            Professional Wash, Dry, and Press service. Competitive rates per KG
+            tailored for your needs.
           </p>
         </div>
 
@@ -104,30 +104,40 @@ export default function PricingSection() {
                   : "bg-background border-border/60 shadow-sm hover:shadow-[0_20px_50px_rgba(0,0,0,0.08)] hover:border-primary/30"
               }`}
             >
-              <div className={`p-6 rounded-t-[22px] ${
-                pkg.type === "Urgent" 
-                  ? "bg-gradient-to-br from-red-50 to-orange-50/50" 
-                  : "bg-gradient-to-br from-primary/5 to-transparent"
-              }`}>
+              <div
+                className={`p-6 rounded-t-[22px] ${
+                  pkg.type === "Urgent"
+                    ? "bg-gradient-to-br from-red-50 to-orange-50/50"
+                    : "bg-gradient-to-br from-primary/5 to-transparent"
+                }`}
+              >
                 <div className="flex justify-between items-start mb-4">
                   <div>
-                    <Badge 
+                    <Badge
                       className={`mb-2 font-bold px-3 ${
-                        pkg.type === "Urgent" 
-                          ? "bg-red-500 hover:bg-red-600 text-white" 
+                        pkg.type === "Urgent"
+                          ? "bg-red-500 hover:bg-red-600 text-white"
                           : "bg-primary text-white hover:bg-primary/90"
                       }`}
                     >
                       {pkg.type}
                     </Badge>
-                    <h3 className="text-2xl font-extrabold text-foreground tracking-tight">{pkg.title}</h3>
+                    <h3 className="text-2xl font-extrabold text-foreground tracking-tight">
+                      {pkg.title}
+                    </h3>
                   </div>
                   <div className="flex flex-col items-end">
                     <div className="flex items-baseline">
-                      <span className="text-4xl font-black text-primary">{pkg.price}</span>
-                      <span className="text-sm font-bold text-muted-foreground ml-1">SAR</span>
+                      <span className="text-4xl font-black text-primary">
+                        {pkg.price}
+                      </span>
+                      <span className="text-sm font-bold text-muted-foreground ml-1">
+                        SAR
+                      </span>
                     </div>
-                    <span className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground/70">Per Kilogram</span>
+                    <span className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground/70">
+                      Per Kilogram
+                    </span>
                   </div>
                 </div>
               </div>
@@ -139,8 +149,12 @@ export default function PricingSection() {
                       <Clock className="w-5 h-5 text-primary" />
                     </div>
                     <div>
-                      <p className="text-[10px] uppercase font-bold text-muted-foreground tracking-wider">Delivery Time</p>
-                      <p className="text-sm font-bold text-foreground">{pkg.deliveryTime}</p>
+                      <p className="text-[10px] uppercase font-bold text-muted-foreground tracking-wider">
+                        Delivery Time
+                      </p>
+                      <p className="text-sm font-bold text-foreground">
+                        {pkg.deliveryTime}
+                      </p>
                     </div>
                   </div>
 
@@ -149,25 +163,33 @@ export default function PricingSection() {
                       <Truck className="w-5 h-5 text-primary" />
                     </div>
                     <div>
-                      <p className="text-[10px] uppercase font-bold text-muted-foreground tracking-wider">Pickup & Delivery</p>
-                      <p className="text-sm font-bold text-foreground">{pkg.pickup}</p>
+                      <p className="text-[10px] uppercase font-bold text-muted-foreground tracking-wider">
+                        Pickup & Delivery
+                      </p>
+                      <p className="text-sm font-bold text-foreground">
+                        {pkg.pickup}
+                      </p>
                     </div>
                   </div>
 
                   {pkg.note && (
                     <div className="flex items-start gap-2 bg-orange-50/80 border border-orange-100 p-3 rounded-xl">
                       <Info className="w-4 h-4 text-orange-500 mt-0.5 shrink-0" />
-                      <span className="text-xs font-medium text-orange-700 leading-tight">{pkg.note}</span>
+                      <span className="text-xs font-medium text-orange-700 leading-tight">
+                        {pkg.note}
+                      </span>
                     </div>
                   )}
                 </div>
 
                 <Button
                   id="generate_lead"
-                  onClick={() => handleBooking(pkg.price, pkg.title, pkg.deliveryTime)}
+                  onClick={() =>
+                    handleBooking(pkg.price, pkg.title, pkg.deliveryTime)
+                  }
                   className={`w-full font-black text-sm uppercase tracking-widest h-14 rounded-2xl transition-all duration-300 ${
-                    pkg.featured 
-                      ? "bg-primary text-white hover:bg-primary/90 shadow-[0_10px_20px_rgba(var(--primary-rgb),0.3)] hover:shadow-[0_15px_25px_rgba(var(--primary-rgb),0.4)]" 
+                    pkg.featured
+                      ? "bg-primary text-white hover:bg-primary/90 shadow-[0_10px_20px_rgba(var(--primary-rgb),0.3)] hover:shadow-[0_15px_25px_rgba(var(--primary-rgb),0.4)]"
                       : "bg-muted text-foreground hover:bg-primary hover:text-white"
                   }`}
                 >
@@ -188,7 +210,8 @@ export default function PricingSection() {
                     {ironingService.title}
                   </h3>
                   <p className="text-muted-foreground mb-4">
-                    Expert pressing and ironing service for a crisp, professional look.
+                    Expert pressing and ironing service for a crisp,
+                    professional look.
                   </p>
                   <div className="flex flex-wrap justify-center md:justify-start gap-4">
                     <div className="flex items-center text-sm font-medium bg-background/80 px-3 py-1.5 rounded-full border">
@@ -209,7 +232,13 @@ export default function PricingSection() {
                     SAR / KG
                   </div>
                   <Button
-                    onClick={() => handleBooking(ironingService.price, "Ironing Only", ironingService.deliveryTime)}
+                    onClick={() =>
+                      handleBooking(
+                        ironingService.price,
+                        "Ironing Only",
+                        ironingService.deliveryTime,
+                      )
+                    }
                     className="mt-4 w-full bg-primary text-white"
                   >
                     Book Now
