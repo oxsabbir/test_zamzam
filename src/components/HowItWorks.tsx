@@ -49,7 +49,7 @@ const HowItWorks = () => {
             id="services-heading"
             className="text-2xl sm:text-4xl font-bold mb-4 text-foreground"
           >
-            How Zamzam Insaf Laundry Works
+            How Al Baraka Laundry Works
           </h2>
           <p className="text-base sm:text-xl font-medium mb-1 text-muted-foreground max-w-3xl mx-auto">
             Experience hassle-free laundry in Makkah.

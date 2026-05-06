@@ -51,7 +51,7 @@ const Comparison = () => {
             id="benefits-heading"
             className="text-2xl sm:text-4xl font-bold mb-4 text-foreground"
           >
-            The ZamZam Insaf Difference: A Clear Choice
+            The Al Baraka Laundry Difference: A Clear Choice
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
             See how our service excels against standard Makkah laundry options,
@@ -60,12 +60,12 @@ const Comparison = () => {
         </header>
         <div className="bg-gradient-to-r from-slate-700 via-slate-800 to-slate-900 rounded-xl sm:rounded-2xl p-4 sm:p-8 mb-8 sm:mb-12 max-w-6xl mx-auto">
           <h3 className="text-xl sm:text-2xl font-bold text-center mb-6 sm:mb-8 text-white">
-            ZamZam Insaf vs. The Rest
+            Al Baraka Laundry vs. The Rest
           </h3>
           <div className="space-y-4">
             <div className="grid grid-cols-3 gap-2 sm:gap-4 text-center font-bold text-sm sm:text-base text-slate-300">
               <div>Feature</div>
-              <div>ZamZam Insaf</div>
+              <div>Al Baraka Laundry</div>
               <div>Other Services</div>
             </div>
             {comparisonData.map((item, i) => (
