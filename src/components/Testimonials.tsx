@@ -3,57 +3,57 @@ import { Star } from "lucide-react";
 const testimonials = [
   {
     text:
-      "Makkah Al Baraka Laundry provided an incredibly fast and reliable service. My clothes were picked up, cleaned, and delivered in just a few hours. A true blessing for anyone on a tight schedule in Makkah!",
+      "Bismillah Laundry Mecca delivered an amazingly swift and dependable experience. They collected, washed, and returned my garments within hours. It's a lifesaver for those with busy plans in the city!",
     author: "Abdullah Mansour",
-    location: "Hotel Manager, Makkah",
+    location: "Hotel Manager, Mecca",
   },
   {
     text:
-      "I was worried about cleaning my premium abayas and Ihram, but Makkah Al Baraka handled them perfectly. The clothes came back fresh and impeccably clean. Their attention to detail is outstanding.",
+      "I was concerned about my high-quality abayas and Ihram, but Bismillah Laundry Mecca took care of them flawlessly. The items were returned pristine and fresh. Their precision is truly impressive.",
     author: "Sarah Al-Otaibi",
-    location: "Makkah Resident",
+    location: "Mecca Resident",
   },
   {
     text:
-      "Managing a large household means a lot of laundry. Makkah Al Baraka Laundry made it effortless with their free pickup and fast delivery. Highly recommended for families in the city!",
+      "With a big family, laundry piles up fast. Bismillah Laundry Mecca took the stress away with their complimentary collection and rapid service. A must-use for local residents!",
     author: "Mohammed Al-Zahrani",
     location: "Business Owner, Jeddah",
   },
   {
     text:
-      "The 24/7 service is a game-changer. I needed my thobes pressed late at night, and Makkah Al Baraka was responsive and efficient. They exceeded all my expectations.",
+      "The 24/7 availability is incredible. I needed my thobes pressed late at night, and Bismillah Laundry Mecca was there to help immediately. They really went above and beyond.",
     author: "Fahad Bin Khalid",
-    location: "Makkah Resident",
+    location: "Mecca Resident",
   },
   {
     text:
-      "The premium service from Makkah Al Baraka is worth it. My formal wear was returned beautifully folded and smelling fresh. The quality is far better than any other service I’ve used.",
+      "The premium options at Bismillah Laundry Mecca are definitely worth it. My formal clothes came back perfectly folded and smelling wonderful. The quality beats any other service I've tried.",
     author: "Lujain Al-Harbi",
-    location: "Guest House Owner, Makkah",
+    location: "Guest House Owner, Mecca",
   },
   {
     text:
-      "I trusted Makkah Al Baraka with my high-quality formal thobes, and they did an amazing job. The pressing was perfect, and the fabric was handled with great care. A five-star experience!",
+      "I entrusted Bismillah Laundry Mecca with my finest formal thobes, and they did a spectacular job. The pressing was sharp, and the material was handled with extreme care. A top-tier experience!",
     author: "Sultan Al-Amri",
     location: "Riyadh (Frequent Visitor)",
   },
   {
     text:
-      "Affordable, fast, and very convenient. Booking through WhatsApp was easy, and the free pickup and delivery made everything simple. Makkah Al Baraka is the best choice near the Haram.",
+      "Budget-friendly, quick, and very easy to use. Ordering via WhatsApp was a breeze, and the free pickup and delivery made it so convenient. Bismillah Laundry Mecca is the top choice near the Haram.",
     author: "Amal Al-Dossari",
-    location: "Makkah Resident",
+    location: "Mecca Resident",
   },
   {
     text:
-      "Cleaning heavy blankets and linens was effortless with Makkah Al Baraka. They picked them up from our residence and returned them fresh and clean the next day. Excellent service.",
+      "Washing heavy duvets and linens was simple with Bismillah Laundry Mecca. They collected them from my home and returned them fresh the following day. Outstanding work.",
     author: "Waleed Al-Sudairi",
-    location: "Makkah Resident",
+    location: "Mecca Resident",
   },
   {
     text:
-      "I spilled coffee on my favorite thobe, but Makkah Al Baraka’s stain removal service saved it completely. The fabric looks as good as new. Truly professional work.",
+      "I had a coffee stain on my favorite thobe, but the stain removal team at Bismillah Laundry Mecca cleared it right up. It looks brand new again. Highly professional service.",
     author: "Nourah Al-Saud",
-    location: "Local Resident, Makkah",
+    location: "Local Resident, Mecca",
   },
 ];
 
@@ -63,11 +63,11 @@ const Testimonials = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-5xl font-bold mb-6 text-foreground tracking-tight">
-            Happy Customers
+            Our Happy Clients
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            See what our customers say about our professional laundry services
-            in Makkah.
+            Discover what our users have to say about the expert cleaning
+            solutions at Bismillah Laundry Mecca.
           </p>
         </div>
 

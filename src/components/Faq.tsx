@@ -4,44 +4,44 @@ import { whatsappMessages } from "@/constants/messages";
 
 const faqData = [
   {
-    question: "How do I schedule a pickup?",
+    question: "How can I arrange a collection?",
     answer:
-      "You can schedule a pickup easily through our website, by calling us, or by sending a message on WhatsApp. We'll be at your location promptly across Makkah.",
+      "Simply book through our site, give us a ring, or text us on WhatsApp. Our team covers all of Mecca and will arrive promptly.",
   },
   {
-    question: "What are your operating hours?",
+    question: "When are you available?",
     answer:
-      "We are open 24/7, 365 days a year, including public holidays. We understand that your time is valuable, especially during Hajj and Umrah.",
+      "We operate around the clock, every single day of the year. We're here for you whenever you need us, including peak pilgrimage seasons.",
   },
   {
-    question: "How much does it cost?",
+    question: "What are the rates?",
     answer:
-      "Our pricing is simple and transparent. We charge by the kilogram, starting from 18 SAR/kg. Special garments like thobes and abayas have per-piece pricing.",
+      "We believe in clear pricing. Our weight-based service starts at 18 SAR per kg, with individual rates for specific items like abayas and thobes.",
   },
   {
-    question: "What is the turnaround time?",
+    question: "How long does it take?",
     answer:
-      "For standard laundry, our turnaround time is typically same-day or 24 hours. We also offer an express service that can have your clothes ready in as little as 1-3 hours for urgent needs.",
+      "Standard orders are usually finished within a day. For those in a hurry, our rapid express option can have items ready in just 1 to 3 hours.",
   },
   {
-    question: "Do you clean special garments like Ihram?",
+    question: "Can you handle sensitive items like Ihram?",
     answer:
-      "Yes, we specialize in cleaning delicate and traditional clothing, including Ihram, thobes, abayas, and shemaghs. We handle them with the utmost care to maintain their quality.",
+      "Definitely. We're experts in cleaning traditional and delicate fabrics, ensuring your Ihram, thobes, and shemaghs stay in perfect condition.",
   },
   {
-    question: "Which areas in Makkah do you serve?",
+    question: "What parts of Mecca do you cover?",
     answer:
-      "We provide free pickup and delivery to all hotels and residential areas within Makkah, ensuring convenient access to our services for all pilgrims and residents.",
+      "We offer free pickup and delivery to every hotel and home throughout the city, making our services easily accessible for everyone.",
   },
   {
-    question: "Is there a minimum order for pickup?",
+    question: "Is there a minimum weight requirement?",
     answer:
-      "No, there is no minimum order requirement. We are happy to serve you, whether you have a single item or a large family-sized load of laundry.",
+      "Not at all. We're happy to take any order, whether it's just a couple of pieces or a large load for the whole family.",
   },
   {
-    question: "What payment methods do you accept?",
+    question: "How do I pay?",
     answer:
-      "We accept cash on delivery as well as all major credit and debit cards. You can pay our delivery agent upon receiving your fresh, clean laundry.",
+      "You can pay with cash upon delivery or use any major debit or credit card. Settle the bill when you receive your fresh clothes.",
   },
 ];
 
@@ -51,11 +51,10 @@ export default function Faq() {
       <div className="container mx-auto px-3 sm:px-4">
         <div className="text-center mb-8 sm:mb-12">
           <h2 className="text-2xl sm:text-4xl font-bold mb-4 text-foreground">
-            Your Questions Answered
+            Frequently Asked Questions
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
-            Here are answers to some of the most common questions we receive
-            from pilgrims and residents in Makkah.
+            Find solutions to common inquiries from travelers and locals in Mecca.
           </p>
         </div>
         <div className="max-w-4xl mx-auto">
@@ -77,11 +76,10 @@ export default function Faq() {
           <div className="rounded-lg bg-card text-card-foreground shadow-sm mt-8 sm:mt-12 bg-gradient-to-r from-primary/5 to-accent/5 border-2 border-primary/30">
             <div className="p-4 sm:p-6 text-center">
               <h3 className="text-lg sm:text-xl font-bold mb-3 text-foreground">
-                💬 Still Have Questions?
+                💬 Need More Information?
               </h3>
               <p className="text-sm sm:text-base text-muted-foreground mb-4">
-                Our friendly team is available 24/7 to answer any questions in
-                Arabic, English, or Urdu.
+                Our multilingual team is here 24/7 to assist you in English, Arabic, or Urdu.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <button

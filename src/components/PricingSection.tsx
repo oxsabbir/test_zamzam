@@ -7,7 +7,7 @@ import { Badge } from "./ui/badge";
 const laundryPackages = [
   {
     id: 1,
-    title: "Standard Care",
+    title: "Essential Wash",
     type: "Normal",
     deliveryTime: "12 Hours",
     price: 20,
@@ -16,7 +16,7 @@ const laundryPackages = [
   },
   {
     id: 2,
-    title: "Eco Wash",
+    title: "Gentle Cycle",
     type: "Normal",
     deliveryTime: "10 Hours",
     price: 25,
@@ -25,7 +25,7 @@ const laundryPackages = [
   },
   {
     id: 3,
-    title: "Premium Clean",
+    title: "Elite Freshness",
     type: "Normal",
     deliveryTime: "8 Hours",
     price: 30,
@@ -34,7 +34,7 @@ const laundryPackages = [
   },
   {
     id: 4,
-    title: "Express",
+    title: "Rapid Care",
     type: "Urgent",
     deliveryTime: "5 Hours",
     price: 35,
@@ -43,7 +43,7 @@ const laundryPackages = [
   },
   {
     id: 5,
-    title: "Flash",
+    title: "Quick Spin",
     type: "Urgent",
     deliveryTime: "3 Hours",
     price: 30,
@@ -52,18 +52,18 @@ const laundryPackages = [
   },
   {
     id: 6,
-    title: "Instant*",
+    title: "Ultra-Fast*",
     type: "Urgent",
     deliveryTime: "1 Hour*",
     price: 35,
     pickup: "SAR 15 Extra",
     featured: false,
-    note: "*Subject to availability in Makkah central area",
+    note: "*Available within Mecca's central districts only.",
   },
 ];
 
 const ironingService = {
-  title: "Professional Ironing",
+  title: "Precision Pressing",
   price: 14,
   deliveryTime: "Within 4 Hours",
   pickup: "Included",
@@ -86,11 +86,11 @@ export default function PricingSection() {
             New Pricing
           </Badge>
           <h2 className="text-3xl sm:text-5xl font-bold mb-4 text-foreground tracking-tight">
-            Laundry Packages
+            Our Washing Plans
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Professional Wash, Dry, and Press service. Competitive rates per KG
-            tailored for your needs.
+            Expert Cleaning, Drying, and Ironing. Affordable price-per-kilogram options
+            customized to your schedule.
           </p>
         </div>
 
@@ -210,8 +210,7 @@ export default function PricingSection() {
                     {ironingService.title}
                   </h3>
                   <p className="text-muted-foreground mb-4">
-                    Expert pressing and ironing service for a crisp,
-                    professional look.
+                    Skilled steaming and pressing for a sharp, flawless appearance.
                   </p>
                   <div className="flex flex-wrap justify-center md:justify-start gap-4">
                     <div className="flex items-center text-sm font-medium bg-background/80 px-3 py-1.5 rounded-full border">

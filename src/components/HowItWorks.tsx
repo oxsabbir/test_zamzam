@@ -11,28 +11,28 @@ const steps = [
     number: "1",
     icon: MessageCircle,
     image: phone,
-    title: "WhatsApp Us",
+    title: "Reach Out via WhatsApp",
     description:
-      "Send a message with your location. We'll confirm pickup time (usually 15 minutes).",
-    time: "30 seconds",
+      "Text us your current spot. We'll quickly set a collection window, often within minutes.",
+    time: "Instant Chat",
   },
   {
     number: "2",
     icon: Truck,
     image: pickup,
-    title: "We Pickup & Clean",
+    title: "Collection & Care",
     description:
-      "Our professional team collects your clothes and processes them with care.",
-    time: "15 min pickup",
+      "Our expert staff picks up your items and handles them with high-end techniques.",
+    time: "Quick Collection",
   },
   {
     number: "3",
     icon: Sparkles,
     image: delivery,
-    title: "Fresh Delivery",
+    title: "Pristine Return",
     description:
-      "Your clothes return clean, pressed, and ready to wear. Pay on delivery.",
-    time: "Same day back",
+      "Your garments arrive back washed, folded, and perfect. Settle payment when they arrive.",
+    time: "Efficient Delivery",
   },
 ];
 
@@ -49,13 +49,13 @@ const HowItWorks = () => {
             id="services-heading"
             className="text-2xl sm:text-4xl font-bold mb-4 text-foreground"
           >
-            How Al Baraka Laundry Works
+            Simple Steps to Clean Clothes
           </h2>
           <p className="text-base sm:text-xl font-medium mb-1 text-muted-foreground max-w-3xl mx-auto">
-            Experience hassle-free laundry in Makkah.
+            Discover effortless washing solutions in Mecca.
             <br />
             <span className="text-primary  mt-2">
-              Fresh, clean clothes, delivered quickly.
+              Impeccable results, brought straight to your door.
             </span>
           </p>
         </div>
@@ -107,13 +107,12 @@ const HowItWorks = () => {
         {/* Guarantee Box */}
         <div className="bg-gradient-to-br from-gray-900 via-indigo-500 to-gray-900 text-white rounded-2xl p-8 md:p-12 text-center max-w-3xl mx-auto shadow-xl">
           <h3 className=" text-2xl md:text-3xl font-bold mb-4">
-            Try Our Service Risk-Free!
+            100% Satisfaction or It's On Us!
           </h3>
           <p className="md:text-xl text-lg mb-6 opacity-95">
-            Not satisfied? We'll redo your laundry for FREE or refund 100% of
-            your money.
+            If you're not happy, we provide a free re-wash or a full refund. 
             <br />
-            <span className="font-bold">That's our promise to you!</span>
+            <span className="font-bold">We stand behind our quality!</span>
           </p>
           <Button
             size="lg"
@@ -121,7 +120,7 @@ const HowItWorks = () => {
             onClick={handleStart}
             className="bg-success hover:bg-success/90 text-white md:text-lg px-4 py-3 text-base md:px-8 md:py-6"
           >
-            Start Your First Order - FREE Pickup
+            Begin Your Journey - Complimentary First Collection
           </Button>
         </div>
       </div>

@@ -33,7 +33,7 @@ const HeroNew = () => {
 
       <img
         src={heroImage}
-        alt="Makkah Al Baraka Laundry - Premium laundry pickup and delivery in Makkah for pilgrims and residents"
+        alt="Bismillah Laundry Mecca - Elite laundry collection and delivery in Mecca for visitors and locals"
         className="absolute inset-0 w-full h-full object-cover opacity-30 "
         loading="eager"
         width="1920"
@@ -43,15 +43,15 @@ const HeroNew = () => {
         <div className="max-w-4xl mx-auto text-center">
           <div className="inline-flex items-center rounded-full border font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent hover:bg-primary/80 mb-4 sm:mb-6 bg-primary-500 text-white text-xs sm:text-base px-3 sm:px-4 py-2 animate-pulse">
             <Zap size={20} className="mr-1" />
-            PREMIUM & FRESH LAUNDRY!
+            TOP-QUALITY WASH & FOLD!
           </div>
           <h1 className="text-2xl sm:text-4xl lg:text-6xl font-bold text-primary-foreground mb-3 sm:mb-6 leading-tight">
             <span className="block text-xl sm:text-2xl lg:text-3xl mb-1 sm:mb-2 text-primary-300">
-              Makkah Al Baraka <br />
-              Laundry
+              Bismillah Laundry <br />
+              Mecca
             </span>
-            <span className="text-primary-300 inline-block ">Fast Pickup</span> –
-            Premium Laundry Service
+            <span className="text-primary-300 inline-block ">Rapid Collection</span> –
+            Elite Cleaning Solutions
           </h1>
           <div className="bg-black/30 backdrop-blur-sm rounded-xl sm:rounded-2xl p-3 sm:p-6 mb-4 sm:mb-8">
             <div className="flex items-center justify-center mb-2 sm:mb-3">
@@ -128,22 +128,21 @@ const HeroNew = () => {
                 </svg>
               </div>
               <span className="text-primary-foreground ml-2 font-bold text-sm sm:text-base">
-                Over 12,000+ Satisfied Customers
+                More than 12k Happy Clients
               </span>
             </div>
             <p className="text-sm sm:text-xl text-primary-foreground/95 font-medium mb-3 sm:mb-4 px-2">
-              “Exceptional service! My garments were collected promptly, cleaned
-              with care, and returned perfectly.
+              “Incredible experience! They picked up my laundry quickly, handled everything with professional detail, and brought it back spotless.
               <span className="text-primary-300 font-bold">
                 {" "}
-                Makkah Al Baraka Laundry
+                Bismillah Laundry Mecca
               </span>{" "}
-              is truly the best choice in Makkah!”
+              stands out as the premier service here!”
             </p>
             <div className="grid grid-cols-2  sm:grid-cols-3 gap-2 sm:gap-4 text-center">
               <div className="bg-primary-400/20 rounded-lg p-2 sm:p-3">
                 <div className="text-lg sm:text-2xl font-bold text-primary-300">
-                  From 18 SAR
+                  Starting at 18 SAR
                 </div>
                 <div className="text-xs sm:text-sm text-primary-foreground/80">
                   Per Kilogram
@@ -151,18 +150,18 @@ const HeroNew = () => {
               </div>
               <div className="bg-primary-400/20 rounded-lg p-2 sm:p-3">
                 <div className="text-lg sm:text-2xl font-bold text-primary-300">
-                  Quick Service
+                  Express Care
                 </div>
                 <div className="text-xs sm:text-sm text-primary-foreground/80">
-                  Guaranteed Pickup
+                  Reliable Pickup
                 </div>
               </div>
               <div className="bg-primary-400/20 col-span-full sm:col-span-1 rounded-lg p-2 sm:p-3">
                 <div className="text-lg sm:text-2xl font-bold text-primary-300">
-                  FREE
+                  COMPLIMENTARY
                 </div>
                 <div className="text-xs sm:text-sm text-primary-foreground/80">
-                  Collection/Delivery
+                  Pickup & Delivery
                 </div>
               </div>
             </div>
@@ -175,21 +174,21 @@ const HeroNew = () => {
               className="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none  bg-primary-600 text-white hover:bg-primary-700 hover:shadow-xl transition-all w-full text-base sm:text-xl px-6 py-4 sm:py-6 h-auto rounded-xl font-bold shadow-lg"
             >
               <WhatsAppIcon size={24} />
-              WhatsApp NOW for Fast Pickup
+              Message on WhatsApp for Immediate Collection
             </button>
 
             <div className="text-primary-foreground/90 flex flex-wrap pt-4 items-center justify-center gap-4 text-xs sm:text-base">
               <span className="flex items-center gap-2">
-                <Clock size={18} /> Always Open
+                <Clock size={18} /> 24/7 Availability
               </span>
               <span>|</span>
               <span className="flex items-center gap-2">
-                <Quote size={18} /> Transparent Rates
+                <Quote size={18} /> Clear Pricing
               </span>
               <span>|</span>
               <span className="flex items-center gap-2">
                 <CircleDollarSign size={18} />
-                Professional Care
+                Expert Fabric Care
               </span>
             </div>
           </div>

@@ -21,14 +21,14 @@ export default function FinalCTA() {
       <div className="relative container mx-auto px-3 sm:px-4">
         <div className="text-center mb-6 sm:mb-12">
           <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-primary-foreground mb-4 sm:mb-6">
-            Fresh, Clean Laundry with Fast Pickup
+            Spotless Results with Swift Collection
           </h2>
           <p className="text-base sm:text-xl text-primary-foreground/95 max-w-3xl mx-auto mb-6 sm:mb-8 leading-relaxed">
-            Trusted by thousands of pilgrims and residents for premium, hygienic,
-            and reliable laundry care across Makkah.
+            Chosen by countless visitors and residents for high-end, sanitary,
+            and dependable washing across Mecca.
             <span className="text-primary-300 font-bold">
               {" "}
-              Professional garment care is just a message away.
+              Expert fabric handling is only a message away.
             </span>
           </p>
         </div>
@@ -42,9 +42,9 @@ export default function FinalCTA() {
             >
               <WhatsAppIcon size={32} />
               <div className="text-left ml-2">
-                <div>WhatsApp Pickup</div>
+                <div>WhatsApp Collection</div>
                 <div className="text-xs sm:text-sm opacity-90">
-                  Rapid response
+                  Immediate reply
                 </div>
               </div>
             </button>
@@ -54,9 +54,9 @@ export default function FinalCTA() {
             >
               <PhoneCallIcon size={32} />
               <div className="text-left ml-2">
-                <div>Call Now</div>
+                <div>Dial Now</div>
                 <div className="text-xs sm:text-sm opacity-90">
-                  Instant response
+                  Quick contact
                 </div>
               </div>
             </button>
@@ -66,7 +66,7 @@ export default function FinalCTA() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 text-center sm:text-left">
                 <div>
                   <h3 className="text-lg sm:text-xl font-bold mb-2 text-primary-300 border-b border-primary-300/60 pb-2">
-                    Contact Details
+                    Reach Us
                   </h3>
                   <div className="space-y-2 text-sm sm:text-base">
                     <div className="flex items-center justify-center sm:justify-start">
@@ -119,7 +119,7 @@ export default function FinalCTA() {
                         <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path>
                         <circle cx="12" cy="10" r="3"></circle>
                       </svg>
-                      <span>All Makkah Areas Covered</span>
+                      <span>All Mecca Districts Served</span>
                     </div>
                   </div>
                 </div>
