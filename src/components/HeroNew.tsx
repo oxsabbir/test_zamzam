@@ -1,5 +1,5 @@
 import { Zap, Clock, Quote, CircleDollarSign } from "lucide-react";
-import heroImage from "@/assets/al-baraka-hero.webp";
+import heroImage from "@/assets/hero-bismillah.webp";
 import WhatsAppIcon from "./icons/Whatsapp";
 import { useEffect, useState } from "react";
 import { handleWhatsApp } from "@/lib/utils";
@@ -50,8 +50,10 @@ const HeroNew = () => {
               Bismillah Laundry <br />
               Makkah
             </span>
-            <span className="text-primary-300 inline-block ">Superior Care</span> –
-            Your Laundry, Our Priority
+            <span className="text-primary-300 inline-block ">
+              Superior Care
+            </span>{" "}
+            – Your Laundry, Our Priority
           </h1>
           <div className="bg-black/30 backdrop-blur-sm rounded-xl sm:rounded-2xl p-3 sm:p-6 mb-4 sm:mb-8">
             <div className="flex items-center justify-center mb-2 sm:mb-3">
@@ -63,7 +65,8 @@ const HeroNew = () => {
               </span>
             </div>
             <p className="text-sm sm:text-xl text-primary-foreground/95 font-medium mb-3 sm:mb-4 px-2">
-              “Exceptional care and speed! My clothes were collected and returned perfectly clean within hours. 
+              “Exceptional care and speed! My clothes were collected and
+              returned perfectly clean within hours.
               <span className="text-primary-300 font-bold">
                 {" "}
                 Bismillah Laundry Makkah
