@@ -113,7 +113,7 @@ const AreaCoverage = () => {
                     <span className="text-sm sm:text-base font-medium text-foreground">
                       {location.name}
                     </span>
-                    <Badge className="bg-success text-white">
+                    <Badge className="bg-primary text-primary-foreground">
                       ⏰ {location.time} Pickup
                     </Badge>
                   </div>
@@ -130,7 +130,7 @@ const AreaCoverage = () => {
                     )
                   }
                   id="generate_lead"
-                  className=" bg-success"
+                  className="bg-primary hover:bg-primary/90"
                 >
                   Book Pickup
                 </Button>
@@ -138,7 +138,7 @@ const AreaCoverage = () => {
             </div>
           ))}
         </div>
-        <div className="rounded-lg bg-card text-card-foreground max-w-2xl mx-auto shadow-xl border-2 border-primary/50 bg-gradient-to-r from-primary/5 to-accent/5">
+        <div className="rounded-lg bg-card text-card-foreground max-w-2xl mx-auto shadow-xl border-2 border-primary/30 bg-gradient-to-br from-primary/5 via-transparent to-accent/10">
           <div className="p-4 py-6 sm:p-6 text-center">
             <h3 className="text-lg md:text-xl font-bold mb-5 text-primary">
               Can't Find Your Hotel? Get Instant Confirmation!
@@ -149,12 +149,12 @@ const AreaCoverage = () => {
                 type="text"
                 minLength={1}
                 onChange={(e) => setLocation(e.target.value)}
-                className="flex w-full border-input bg-background px-3 py-2 ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm h-12 sm:h-14 text-base border-2 focus:border-accent rounded-xl"
+                className="flex w-full border-input bg-background px-3 py-2 ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm h-12 sm:h-14 text-base border-2 focus:border-primary rounded-xl"
                 placeholder="Enter your hotel or location"
               />
               <button
                 onClick={handleCheckArea}
-                className="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none  bg-green-500 text-white hover:bg-green-600 shadow-primary px-4 py-2 w-full h-12 sm:h-14 text-base sm:text-lg font-bold rounded-xl"
+                className="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg shadow-primary/20 px-4 py-2 w-full h-12 sm:h-14 text-base sm:text-lg font-bold rounded-xl"
               >
                 <WhatsAppIcon size={24} />
                 Check My Pickup Time - FREE
