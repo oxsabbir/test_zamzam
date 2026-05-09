@@ -7,8 +7,8 @@ import { Badge } from "./ui/badge";
 const laundryPackages = [
   {
     id: 1,
-    title: "Essential Wash",
-    type: "Normal",
+    title: "Standard Wash",
+    type: "Regular",
     deliveryTime: "12 Hours",
     price: 20,
     pickup: "Included",
@@ -16,8 +16,8 @@ const laundryPackages = [
   },
   {
     id: 2,
-    title: "Gentle Cycle",
-    type: "Normal",
+    title: "Delicate Care",
+    type: "Regular",
     deliveryTime: "10 Hours",
     price: 25,
     pickup: "Included",
@@ -25,8 +25,8 @@ const laundryPackages = [
   },
   {
     id: 3,
-    title: "Elite Freshness",
-    type: "Normal",
+    title: "Premium Refresh",
+    type: "Regular",
     deliveryTime: "8 Hours",
     price: 30,
     pickup: "Included",
@@ -34,7 +34,7 @@ const laundryPackages = [
   },
   {
     id: 4,
-    title: "Rapid Care",
+    title: "Express Pro",
     type: "Urgent",
     deliveryTime: "5 Hours",
     price: 35,
@@ -43,7 +43,7 @@ const laundryPackages = [
   },
   {
     id: 5,
-    title: "Quick Spin",
+    title: "Instant Spin",
     type: "Urgent",
     deliveryTime: "3 Hours",
     price: 30,
@@ -52,18 +52,18 @@ const laundryPackages = [
   },
   {
     id: 6,
-    title: "Ultra-Fast*",
+    title: "Hyper Speed*",
     type: "Urgent",
     deliveryTime: "1 Hour*",
     price: 35,
     pickup: "SAR 15 Extra",
     featured: false,
-    note: "*Available within Mecca's central districts only.",
+    note: "*Exclusive to central Makkah and hotel districts.",
   },
 ];
 
 const ironingService = {
-  title: "Precision Pressing",
+  title: "Professional Pressing",
   price: 14,
   deliveryTime: "Within 4 Hours",
   pickup: "Included",
@@ -83,14 +83,13 @@ export default function PricingSection() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-10 sm:mb-16">
           <Badge className="mb-4 bg-primary/10 text-primary hover:bg-primary/20 border-none px-4 py-1">
-            New Pricing
+            Transparent Pricing
           </Badge>
           <h2 className="text-3xl sm:text-5xl font-bold mb-4 text-foreground tracking-tight">
-            Our Washing Plans
+            Flexible Laundry Packages
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Expert Cleaning, Drying, and Ironing. Affordable price-per-kilogram options
-            customized to your schedule.
+            Meticulous washing, drying, and expert ironing. Choose a plan that fits your schedule and budget perfectly.
           </p>
         </div>
 
@@ -150,7 +149,7 @@ export default function PricingSection() {
                     </div>
                     <div>
                       <p className="text-[10px] uppercase font-bold text-muted-foreground tracking-wider">
-                        Delivery Time
+                        Turnaround Time
                       </p>
                       <p className="text-sm font-bold text-foreground">
                         {pkg.deliveryTime}
@@ -164,7 +163,7 @@ export default function PricingSection() {
                     </div>
                     <div>
                       <p className="text-[10px] uppercase font-bold text-muted-foreground tracking-wider">
-                        Pickup & Delivery
+                        Collection & Delivery
                       </p>
                       <p className="text-sm font-bold text-foreground">
                         {pkg.pickup}
@@ -193,7 +192,7 @@ export default function PricingSection() {
                       : "bg-muted text-foreground hover:bg-primary hover:text-white"
                   }`}
                 >
-                  Choose {pkg.title}
+                  Select {pkg.title}
                 </Button>
               </div>
             </div>
@@ -210,7 +209,7 @@ export default function PricingSection() {
                     {ironingService.title}
                   </h3>
                   <p className="text-muted-foreground mb-4">
-                    Skilled steaming and pressing for a sharp, flawless appearance.
+                    Expert steam pressing for crisp, sharp, and flawless results.
                   </p>
                   <div className="flex flex-wrap justify-center md:justify-start gap-4">
                     <div className="flex items-center text-sm font-medium bg-background/80 px-3 py-1.5 rounded-full border">
@@ -240,7 +239,7 @@ export default function PricingSection() {
                     }
                     className="mt-4 w-full bg-primary text-white"
                   >
-                    Book Now
+                    Order Now
                   </Button>
                 </div>
               </div>

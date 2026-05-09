@@ -64,15 +64,13 @@ const Footer = () => {
               <a href="/">
                 <img
                   src={logo_dark}
-                  alt="Al Baraka Laundry Logo"
+                  alt="Bismillah Laundry Mecca Logo"
                   className="h-[75px] w-auto object-contain brightness-110"
                 />
               </a>
 
               <p className="text-zinc-400 leading-relaxed text-sm sm:text-base max-w-sm">
-                At Makkah Al Baraka Laundry, we provide reliable, fast, and
-                high-quality laundry services across the holy city of Makkah.
-                Trust us with your garments for a fresh and clean experience.
+                At Bismillah Laundry Mecca, we are dedicated to providing the highest quality cleaning services for the pilgrims and residents of Makkah. We ensure your garments are fresh, pristine, and ready whenever you need them.
               </p>
               <div className="flex space-x-4">
                 <a
@@ -187,7 +185,7 @@ const Footer = () => {
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5654.269139982942!2d39.807984157977685!3d21.32567436410657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c211fd95fb43e3%3A0x9778d871460f3f88!2sIbrahim%20Al%20Khalil%20Rd%20Saudi%20Arabia!5e0!3m2!1sen!2sbd!4v1776776720225!5m2!1sen!2sbd"
               className="w-full h-full opacity-60 rounded-3xl group-hover:opacity-100 border-0 transition-opacity"
-              title="Al Baraka Laundry Location"
+              title="Bismillah Laundry Mecca Location"
             />
           </div>
 

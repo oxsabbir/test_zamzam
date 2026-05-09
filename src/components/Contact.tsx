@@ -10,11 +10,10 @@ const Contact = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           <div>
             <h2 className="text-3xl sm:text-5xl font-bold mb-6 text-foreground tracking-tight">
-              Get in Touch
+              Reach Out to Us
             </h2>
             <p className="text-lg text-muted-foreground mb-12 leading-relaxed">
-              We're available 24/7 to handle your laundry needs in Makkah.
-              Contact us via any of the channels below for fast pickup.
+              Our priority support team is available 24/7 to assist with your laundry requirements. Contact us through any channel for immediate pickup and professional care.
             </p>
 
             <div className="space-y-8">
@@ -23,7 +22,7 @@ const Contact = () => {
                   <Phone className="w-6 h-6" />
                 </div>
                 <div>
-                  <h3 className="font-bold text-lg mb-1">Phone</h3>
+                  <h3 className="font-bold text-lg mb-1">Direct Call</h3>
                   <p className="text-muted-foreground">{managerInfo.phoneNumber}</p>
                 </div>
               </div>
@@ -33,7 +32,7 @@ const Contact = () => {
                   <Mail className="w-6 h-6" />
                 </div>
                 <div>
-                  <h3 className="font-bold text-lg mb-1">Email</h3>
+                  <h3 className="font-bold text-lg mb-1">Email Support</h3>
                   <p className="text-muted-foreground">{managerInfo.email}</p>
                 </div>
               </div>
@@ -43,7 +42,7 @@ const Contact = () => {
                   <MapPin className="w-6 h-6" />
                 </div>
                 <div>
-                  <h3 className="font-bold text-lg mb-1">Location</h3>
+                  <h3 className="font-bold text-lg mb-1">Service Area</h3>
                   <p className="text-muted-foreground">{managerInfo.address}</p>
                 </div>
               </div>
@@ -53,8 +52,8 @@ const Contact = () => {
                   <Clock className="w-6 h-6" />
                 </div>
                 <div>
-                  <h3 className="font-bold text-lg mb-1">Service Hours</h3>
-                  <p className="text-muted-foreground">Open 24 Hours, 7 Days a Week</p>
+                  <h3 className="font-bold text-lg mb-1">Operating Hours</h3>
+                  <p className="text-muted-foreground">Open 24 Hours, Every Single Day</p>
                 </div>
               </div>
             </div>
@@ -62,10 +61,10 @@ const Contact = () => {
             <div className="mt-12 p-8 bg-primary/5 rounded-3xl border border-primary/10">
               <div className="flex items-center gap-4 mb-4">
                 <MessageCircle className="w-8 h-8 text-primary" />
-                <h3 className="text-xl font-bold">Fastest Response</h3>
+                <h3 className="text-xl font-bold">Priority WhatsApp</h3>
               </div>
               <p className="text-muted-foreground mb-6">
-                For the quickest service, message us on WhatsApp. We typically respond within seconds.
+                Connect with us on WhatsApp for a response within minutes. We prioritize all incoming messages for rapid collection.
               </p>
               <a
                 href={`https://wa.me/${managerInfo.onlyNumber.whatsApp}`}
@@ -74,7 +73,7 @@ const Contact = () => {
                 className="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-xl font-bold hover:bg-primary/90 transition-all"
               >
                 <WhatsAppIcon size={20} />
-                Message on WhatsApp
+                Message Us Now
               </a>
             </div>
           </div>
@@ -88,7 +87,7 @@ const Contact = () => {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Makkah Al Baraka Laundry Location"
+              title="Bismillah Laundry Mecca Location"
             />
           </div>
         </div>

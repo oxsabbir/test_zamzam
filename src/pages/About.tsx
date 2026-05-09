@@ -19,10 +19,10 @@ const About = () => {
               className="text-center max-w-4xl mx-auto"
             >
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 text-foreground">
-                About {siteInfo.siteTitle}
+                The Bismillah Laundry Mecca Story
               </h1>
               <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-                Dedicated to providing Makkah's most reliable and professional laundry care for pilgrims and residents.
+                Empowering your spiritual journey and daily life with Makkah's most professional laundry and textile care.
               </p>
             </motion.div>
           </div>
@@ -40,28 +40,28 @@ const About = () => {
               >
                 <img
                   src={aboutImage}
-                  alt="About Makkah Al Baraka Laundry"
+                  alt="About Bismillah Laundry Mecca"
                   className="w-full h-full object-cover"
                 />
               </motion.div>
               <div className="prose prose-lg max-w-none text-muted-foreground">
                 <p className="mb-6">
-                  {siteInfo.siteTitle} is a premier laundry service provider in Makkah, dedicated to offering top-tier garment care for both pilgrims and local residents. We understand the importance of fresh, clean clothing, especially during your spiritual journey, and we strive to make laundry the least of your concerns.
+                  Bismillah Laundry Mecca stands as a beacon of quality in the heart of the Holy City. We are dedicated to providing exceptional garment care for every visitor and resident, ensuring that your attire remains as pure and clean as your intentions. We understand that during your stay in Makkah, your focus should be on your spiritual path, not your laundry.
                 </p>
                 <p className="mb-6">
-                  Our team utilizes advanced cleaning technologies and eco-friendly detergents to ensure your clothes are treated with the utmost care. From delicate abayas and Ihram garments to everyday wear, we handle every item with professional precision.
+                  By combining state-of-the-art cleaning equipment with gentle, effective detergents, we ensure every piece of fabric is treated with individual attention. Whether it's the sacred Ihram, an elegant abaya, or your daily thobe, our experts deliver professional precision with every wash and fold.
                 </p>
                 <h2 className="text-2xl font-bold text-foreground mb-4">
-                  Our Mission
+                  Our Commitment
                 </h2>
                 <p className="mb-6">
-                  To provide the most reliable, efficient, and high-quality laundry service in the holy city of Makkah. We aim to support our customers by taking the burden of laundry off their shoulders, allowing them to focus on what truly matters.
+                  Our goal is to be the most trusted and efficient laundry provider in Makkah. We strive to serve our community by delivering convenience and peace of mind, allowing you to dedicate your time to worship, reflection, and family.
                 </p>
                 <h2 className="text-2xl font-bold text-foreground mb-4">
-                  Why We Are Different
+                  What Sets Us Apart
                 </h2>
                 <p>
-                  Unlike traditional laundry services, we offer a seamless digital experience with easy WhatsApp booking and lightning-fast pickup and delivery. Our commitment to quality, transparency in pricing, and 24/7 availability sets us apart as the most trusted laundry partner in Makkah.
+                  We redefine convenience by integrating modern WhatsApp booking with a dedicated rapid-response fleet. Unlike traditional services, we offer a level of speed and accessibility that matches the pace of life in Makkah. Our 24/7 availability and transparent pricing make us the first choice for those who value their time and their wardrobe.
                 </p>
               </div>
             </div>

@@ -4,44 +4,44 @@ import { whatsappMessages } from "@/constants/messages";
 
 const faqData = [
   {
-    question: "How can I arrange a collection?",
+    question: "How do I schedule a pickup?",
     answer:
-      "Simply book through our site, give us a ring, or text us on WhatsApp. Our team covers all of Mecca and will arrive promptly.",
+      "You can easily book via our website, call us directly, or send a message on WhatsApp. We provide prompt collection services throughout all districts of Makkah.",
   },
   {
-    question: "When are you available?",
+    question: "What are your operating hours?",
     answer:
-      "We operate around the clock, every single day of the year. We're here for you whenever you need us, including peak pilgrimage seasons.",
+      "We are open 24/7, every day of the year. Our team is always ready to assist, especially during the busy Hajj and Umrah seasons.",
   },
   {
-    question: "What are the rates?",
+    question: "How much do you charge?",
     answer:
-      "We believe in clear pricing. Our weight-based service starts at 18 SAR per kg, with individual rates for specific items like abayas and thobes.",
+      "Our rates are transparent and competitive, starting at 18 SAR per kg for standard washing. We also offer specific pricing for items like abayas and thobes.",
   },
   {
-    question: "How long does it take?",
+    question: "What is your turnaround time?",
     answer:
-      "Standard orders are usually finished within a day. For those in a hurry, our rapid express option can have items ready in just 1 to 3 hours.",
+      "Most orders are delivered within 24 hours. For those who need it sooner, our express service can have your clothes ready in as little as 1 to 3 hours.",
   },
   {
-    question: "Can you handle sensitive items like Ihram?",
+    question: "Do you clean delicate items like Ihram?",
     answer:
-      "Definitely. We're experts in cleaning traditional and delicate fabrics, ensuring your Ihram, thobes, and shemaghs stay in perfect condition.",
+      "Absolutely. We are experts in handling traditional and delicate fabrics, ensuring your Ihram, thobes, and abayas are returned in pristine condition.",
   },
   {
-    question: "What parts of Mecca do you cover?",
+    question: "Which areas in Makkah do you serve?",
     answer:
-      "We offer free pickup and delivery to every hotel and home throughout the city, making our services easily accessible for everyone.",
+      "We provide free collection and delivery to every hotel, residence, and neighborhood across Makkah, ensuring convenience wherever you stay.",
   },
   {
-    question: "Is there a minimum weight requirement?",
+    question: "Is there a minimum order size?",
     answer:
-      "Not at all. We're happy to take any order, whether it's just a couple of pieces or a large load for the whole family.",
+      "There is no minimum weight requirement. Whether you have just a few pieces or a large family load, we are happy to provide our services.",
   },
   {
-    question: "How do I pay?",
+    question: "What payment methods do you accept?",
     answer:
-      "You can pay with cash upon delivery or use any major debit or credit card. Settle the bill when you receive your fresh clothes.",
+      "We accept cash on delivery as well as all major credit and debit cards. You only settle the payment once your clean laundry is delivered back to you.",
   },
 ];
 
@@ -51,10 +51,10 @@ export default function Faq() {
       <div className="container mx-auto px-3 sm:px-4">
         <div className="text-center mb-8 sm:mb-12">
           <h2 className="text-2xl sm:text-4xl font-bold mb-4 text-foreground">
-            Frequently Asked Questions
+            Common Questions & Answers
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
-            Find solutions to common inquiries from travelers and locals in Mecca.
+            Everything you need to know about our premium laundry services for visitors and locals in Makkah.
           </p>
         </div>
         <div className="max-w-4xl mx-auto">
@@ -76,10 +76,10 @@ export default function Faq() {
           <div className="rounded-lg bg-card text-card-foreground shadow-sm mt-8 sm:mt-12 bg-gradient-to-r from-primary/5 to-accent/5 border-2 border-primary/30">
             <div className="p-4 sm:p-6 text-center">
               <h3 className="text-lg sm:text-xl font-bold mb-3 text-foreground">
-                💬 Need More Information?
+                💬 Still Have Questions?
               </h3>
               <p className="text-sm sm:text-base text-muted-foreground mb-4">
-                Our multilingual team is here 24/7 to assist you in English, Arabic, or Urdu.
+                We speak your language. Our support team is available 24/7 in English, Arabic, and Urdu to assist you.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <button
@@ -87,7 +87,7 @@ export default function Faq() {
                   className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-white hover:bg-primary/90 shadow-lg hover:shadow-xl transition-all h-10 px-4 py-2 w-full"
                 >
                   <WhatsAppIcon />
-                  WhatsApp Your Question
+                  Message Us on WhatsApp
                 </button>
                 <button
                   onClick={handleCall}
@@ -107,7 +107,7 @@ export default function Faq() {
                   >
                     <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
                   </svg>
-                  Call Us Now
+                  Give Us a Call
                 </button>
               </div>
             </div>

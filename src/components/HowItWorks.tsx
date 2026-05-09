@@ -11,28 +11,28 @@ const steps = [
     number: "1",
     icon: MessageCircle,
     image: phone,
-    title: "Reach Out via WhatsApp",
+    title: "Request via WhatsApp",
     description:
-      "Text us your current spot. We'll quickly set a collection window, often within minutes.",
-    time: "Instant Chat",
+      "Simply share your location with us on WhatsApp. We'll arrange a pickup time that fits your schedule.",
+    time: "Real-time Support",
   },
   {
     number: "2",
     icon: Truck,
     image: pickup,
-    title: "Collection & Care",
+    title: "Professional Pickup",
     description:
-      "Our expert staff picks up your items and handles them with high-end techniques.",
-    time: "Quick Collection",
+      "Our team arrives at your doorstep to collect your items, ensuring they are handled with expert care.",
+    time: "Fast Collection",
   },
   {
     number: "3",
     icon: Sparkles,
     image: delivery,
-    title: "Pristine Return",
+    title: "Express Delivery",
     description:
-      "Your garments arrive back washed, folded, and perfect. Settle payment when they arrive.",
-    time: "Efficient Delivery",
+      "Your clothes are returned fresh, clean, and perfectly folded. Pay conveniently upon delivery.",
+    time: "On-time Arrival",
   },
 ];
 
@@ -49,13 +49,13 @@ const HowItWorks = () => {
             id="services-heading"
             className="text-2xl sm:text-4xl font-bold mb-4 text-foreground"
           >
-            Simple Steps to Clean Clothes
+            How We Handle Your Laundry
           </h2>
           <p className="text-base sm:text-xl font-medium mb-1 text-muted-foreground max-w-3xl mx-auto">
-            Discover effortless washing solutions in Mecca.
+            Experience a seamless laundry process in Makkah.
             <br />
             <span className="text-primary  mt-2">
-              Impeccable results, brought straight to your door.
+              Exceptional quality delivered straight to your doorstep.
             </span>
           </p>
         </div>
@@ -107,12 +107,12 @@ const HowItWorks = () => {
         {/* Guarantee Box */}
         <div className="bg-gradient-to-br from-gray-900 via-indigo-500 to-gray-900 text-white rounded-2xl p-8 md:p-12 text-center max-w-3xl mx-auto shadow-xl">
           <h3 className=" text-2xl md:text-3xl font-bold mb-4">
-            100% Satisfaction or It's On Us!
+            Our Quality Guarantee
           </h3>
           <p className="md:text-xl text-lg mb-6 opacity-95">
-            If you're not happy, we provide a free re-wash or a full refund. 
+            Your satisfaction is our priority. If you aren't completely happy with the results, we'll re-wash for free or offer a full refund.
             <br />
-            <span className="font-bold">We stand behind our quality!</span>
+            <span className="font-bold">We stand behind our service!</span>
           </p>
           <Button
             size="lg"
@@ -120,7 +120,7 @@ const HowItWorks = () => {
             onClick={handleStart}
             className="bg-success hover:bg-success/90 text-white md:text-lg px-4 py-3 text-base md:px-8 md:py-6"
           >
-            Begin Your Journey - Complimentary First Collection
+            Get Started - Free First Collection
           </Button>
         </div>
       </div>

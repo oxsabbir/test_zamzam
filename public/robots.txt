@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://makkahalbarakalaundry.com/sitemap.xml
+Sitemap: https://bismillahlaunderymecca.com/sitemap.xml

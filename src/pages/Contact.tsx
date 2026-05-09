@@ -20,11 +20,10 @@ const Contact = () => {
             className="text-center max-w-3xl mx-auto"
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6">
-              Contact Us
+              Get in Touch
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              Have questions or ready to book? We're here to help with all your
-              laundry needs in Makkah, 24/7!
+              Questions about our service or ready for a pickup? Our Makkah support team is available 24/7 to assist you.
             </p>
           </motion.div>
         </div>
@@ -48,7 +47,7 @@ const Contact = () => {
                 <WhatsAppIcon size={28} className="text-white" />
               </div>
               <h3 className="text-xl font-bold text-white mb-2">WhatsApp</h3>
-              <p className="text-white/90 text-sm mb-3">Quick responses</p>
+              <p className="text-white/90 text-sm mb-3">Instant messaging</p>
               <p className="text-white font-semibold">{managerInfo.whatsApp}</p>
             </motion.a>
 
@@ -63,9 +62,9 @@ const Contact = () => {
               <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-4">
                 <Phone className="w-7 h-7 text-primary" />
               </div>
-              <h3 className="text-xl font-bold text-foreground mb-2">Phone</h3>
+              <h3 className="text-xl font-bold text-foreground mb-2">Direct Call</h3>
               <p className="text-muted-foreground text-sm mb-3">
-                Call us directly
+                Speak with us now
               </p>
               <p className="text-foreground font-semibold">
                 {managerInfo.phoneNumber}
@@ -83,7 +82,7 @@ const Contact = () => {
               <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-4">
                 <Mail className="w-7 h-7 text-primary" />
               </div>
-              <h3 className="text-xl font-bold text-foreground mb-2">Email</h3>
+              <h3 className="text-xl font-bold text-foreground mb-2">Email Support</h3>
               <p className="text-muted-foreground text-sm mb-3">
                 Send us a message
               </p>
@@ -102,11 +101,11 @@ const Contact = () => {
               <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-4">
                 <Clock className="w-7 h-7 text-primary" />
               </div>
-              <h3 className="text-xl font-bold text-foreground mb-2">Hours</h3>
+              <h3 className="text-xl font-bold text-foreground mb-2">Service Hours</h3>
               <p className="text-muted-foreground text-sm mb-3">
                 Always available
               </p>
-              <p className="text-foreground font-semibold">24/7 Service</p>
+              <p className="text-foreground font-semibold">Open 24/7</p>
             </motion.div>
           </div>
 
@@ -121,12 +120,10 @@ const Contact = () => {
             <div className="bg-gradient-to-r from-primary/10 to-primary/20 p-10 rounded-3xl border border-border">
               <MessageCircle className="w-16 h-16 text-primary mx-auto mb-6" />
               <h2 className="text-3xl font-bold text-foreground mb-4">
-                Book Your Pickup Now
+                Schedule Your Instant Pickup
               </h2>
               <p className="text-muted-foreground mb-6 leading-relaxed">
-                Ready for premium laundry service? Contact us via WhatsApp and
-                we'll be at your location promptly. Available 24/7 for your
-                convenience.
+                Experience Makkah's most reliable laundry care. Contact our priority team on WhatsApp and we'll be at your location promptly.
               </p>
               <a
                 href={`https://wa.me/${
@@ -139,7 +136,7 @@ const Contact = () => {
                 className="inline-flex items-center gap-3 bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-xl font-bold text-lg shadow-lg hover:shadow-xl transition-all hover:scale-105"
               >
                 <WhatsAppIcon size={24} />
-                Book Pickup via WhatsApp
+                Request Pickup on WhatsApp
               </a>
             </div>
           </motion.div>
@@ -154,7 +151,7 @@ const Contact = () => {
           >
             <div className="text-center mb-8">
               <h2 className="text-3xl font-bold text-foreground mb-4">
-                Our Service Area
+                Where We Operate
               </h2>
               <div className="flex items-center justify-center gap-2 text-muted-foreground">
                 <MapPin className="w-5 h-5 text-primary" />
@@ -173,7 +170,7 @@ const Contact = () => {
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 className=" group-hover:grayscale-0 transition-all duration-500"
-                title="Makkah Al Baraka Laundry Location"
+                title="Bismillah Laundry Mecca Location"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none" />
             </div>
@@ -181,48 +178,48 @@ const Contact = () => {
             <div className="mt-8 grid md:grid-cols-2 gap-6">
               <div className="bg-card p-6 rounded-xl border border-border">
                 <h3 className="text-lg font-bold text-foreground mb-3">
-                  Coverage Areas
+                  Regional Service Times
                 </h3>
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></span>
-                    Clock Tower & Abraj Al Bait (5-10 min)
+                    Haram & Clock Tower District (5-10 min)
                   </li>
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></span>
-                    Jabal Omar & Aziziyah (10-15 min)
+                    Jabal Omar & Aziziyah Area (10-15 min)
                   </li>
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></span>
-                    Kudai & Misfalah (12-18 min)
+                    Kudai, Misfalah & Surrounds (15-20 min)
                   </li>
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></span>
-                    All areas near Masjid al-Haram
+                    Full coverage across all Makkah districts
                   </li>
                 </ul>
               </div>
 
               <div className="bg-card p-6 rounded-xl border border-border">
                 <h3 className="text-lg font-bold text-foreground mb-3">
-                  Why Choose Us?
+                  Our Service Promise
                 </h3>
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></span>
-                    Fast express pickup guaranteed
+                    Rapid-response pickup team
                   </li>
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></span>
-                    Free pickup and delivery
+                    Zero-cost collection and return
                   </li>
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></span>
-                    Professional care for all fabrics
+                    Expert fabric handling and care
                   </li>
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></span>
-                    Customer satisfaction guarantee
+                    Complete satisfaction guarantee
                   </li>
                 </ul>
               </div>

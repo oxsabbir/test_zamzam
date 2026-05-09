@@ -21,14 +21,14 @@ export default function FinalCTA() {
       <div className="relative container mx-auto px-3 sm:px-4">
         <div className="text-center mb-6 sm:mb-12">
           <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-primary-foreground mb-4 sm:mb-6">
-            Spotless Results with Swift Collection
+            Pristine Cleaning with Rapid Collection
           </h2>
           <p className="text-base sm:text-xl text-primary-foreground/95 max-w-3xl mx-auto mb-6 sm:mb-8 leading-relaxed">
-            Chosen by countless visitors and residents for high-end, sanitary,
-            and dependable washing across Mecca.
+            The preferred choice for pilgrims and Makkah residents who value
+            hygiene, speed, and reliability.
             <span className="text-primary-300 font-bold">
               {" "}
-              Expert fabric handling is only a message away.
+              Your fresh wardrobe is just one tap away.
             </span>
           </p>
         </div>
@@ -42,9 +42,9 @@ export default function FinalCTA() {
             >
               <WhatsAppIcon size={32} />
               <div className="text-left ml-2">
-                <div>WhatsApp Collection</div>
+                <div>WhatsApp Pickup</div>
                 <div className="text-xs sm:text-sm opacity-90">
-                  Immediate reply
+                  2-min response
                 </div>
               </div>
             </button>
@@ -54,7 +54,7 @@ export default function FinalCTA() {
             >
               <PhoneCallIcon size={32} />
               <div className="text-left ml-2">
-                <div>Dial Now</div>
+                <div>Call Directly</div>
                 <div className="text-xs sm:text-sm opacity-90">
                   Quick contact
                 </div>
@@ -66,7 +66,7 @@ export default function FinalCTA() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 text-center sm:text-left">
                 <div>
                   <h3 className="text-lg sm:text-xl font-bold mb-2 text-primary-300 border-b border-primary-300/60 pb-2">
-                    Reach Us
+                    Get in Touch
                   </h3>
                   <div className="space-y-2 text-sm sm:text-base">
                     <div className="flex items-center justify-center sm:justify-start">
@@ -119,13 +119,13 @@ export default function FinalCTA() {
                         <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path>
                         <circle cx="12" cy="10" r="3"></circle>
                       </svg>
-                      <span>All Mecca Districts Served</span>
+                      <span>Serving All of Makkah</span>
                     </div>
                   </div>
                 </div>
                 <div>
                   <h3 className="text-lg sm:text-xl font-bold mb-2 text-primary-300 border-b border-primary-300/60 pb-2">
-                    Service Hours
+                    When We're Open
                   </h3>
                   <div className="space-y-2 text-sm sm:text-base">
                     <div className="flex items-center justify-center sm:justify-start">
@@ -144,7 +144,7 @@ export default function FinalCTA() {
                         <circle cx="12" cy="12" r="10"></circle>
                         <polyline points="12 6 12 12 16 14"></polyline>
                       </svg>
-                      <span>24/7 Service Available</span>
+                      <span>24/7 Service Every Day</span>
                     </div>
                     <div className="flex items-center justify-center sm:justify-start">
                       <svg
@@ -161,7 +161,7 @@ export default function FinalCTA() {
                       >
                         <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
                       </svg>
-                      <span>Fast Pickup Guarantee</span>
+                      <span>Fast Pickup Promise</span>
                     </div>
                     <div className="flex items-center justify-center sm:justify-start">
                       <svg
@@ -191,20 +191,20 @@ export default function FinalCTA() {
                 <Zap className=" text-white" size={24} />
               </div>
               <h3 className="text-lg sm:text-2xl font-bold text-primary-foreground text-center">
-                Don't Wait - Experience Al Baraka Quality Today!
+                Don't Wait – Experience Bismillah Quality Today!
               </h3>
             </div>
             <p className="text-sm sm:text-base text-primary-foreground/90 mb-4 text-center">
-              Our professional team is dedicated to providing the best laundry 
-              experience in Makkah with focus on hygiene and speed.
+              Our skilled team is committed to delivering Makkah's finest
+              laundry experience with a focus on deep cleaning and rapid speed.
             </p>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
               <div className="bg-primary-foreground/10 rounded-lg p-2 sm:p-3">
                 <div className="text-lg sm:text-xl font-bold text-primary-300">
-                  12,000+
+                  12K+
                 </div>
                 <div className="text-xs text-white sm:text-sm">
-                  Happy Customers
+                  Satisfied Clients
                 </div>
               </div>
               <div className="bg-primary-foreground/10 rounded-lg p-2 sm:p-3">
@@ -219,9 +219,7 @@ export default function FinalCTA() {
                 <div className="text-lg sm:text-xl font-bold text-primary-300">
                   24/7
                 </div>
-                <div className="text-xs text-white sm:text-sm">
-                  Always Open
-                </div>
+                <div className="text-xs text-white sm:text-sm">Always Open</div>
               </div>
               <div className="bg-primary-foreground/10 rounded-lg p-2 sm:p-3">
                 <div className="text-lg sm:text-xl font-bold text-primary-300">
@@ -230,6 +228,38 @@ export default function FinalCTA() {
                 <div className="text-xs text-white sm:text-sm">
                   Pickup &amp; Delivery
                 </div>
+              </div>
+            </div>
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
+            <div className="bg-primary-foreground/10 rounded-lg p-2 sm:p-3">
+              <div className="text-lg sm:text-xl font-bold text-primary-300">
+                12,000+
+              </div>
+              <div className="text-xs text-white sm:text-sm">
+                Happy Customers
+              </div>
+            </div>
+            <div className="bg-primary-foreground/10 rounded-lg p-2 sm:p-3">
+              <div className="text-lg sm:text-xl font-bold text-primary-300">
+                Rapid
+              </div>
+              <div className="text-xs text-white sm:text-sm">
+                Pickup Promise
+              </div>
+            </div>
+            <div className="bg-primary-foreground/10 rounded-lg p-2 sm:p-3">
+              <div className="text-lg sm:text-xl font-bold text-primary-300">
+                24/7
+              </div>
+              <div className="text-xs text-white sm:text-sm">Always Open</div>
+            </div>
+            <div className="bg-primary-foreground/10 rounded-lg p-2 sm:p-3">
+              <div className="text-lg sm:text-xl font-bold text-primary-300">
+                FREE
+              </div>
+              <div className="text-xs text-white sm:text-sm">
+                Pickup &amp; Delivery
               </div>
             </div>
           </div>

@@ -10,9 +10,9 @@ import { handleWhatsApp } from "@/lib/utils";
 const areas = [
   {
     emoji: "🕌",
-    title: "Haram Area & Abraj Al Bait",
+    title: "The Haram & Clock Tower District",
     description:
-      "Rapid laundry solutions for accommodations directly adjacent to Masjid al-Haram. Catering specifically to the needs of pilgrims.",
+      "Dedicated laundry care for pilgrims staying steps away from the Holy Mosque. We prioritize your spiritual journey by handling your garments with extreme care.",
     locations: [
       { name: "Clock Tower Hotels", time: "5-10 min" },
       { name: "Al Safwah Towers", time: "5-10 min" },
@@ -21,9 +21,9 @@ const areas = [
   },
   {
     emoji: "🏨",
-    title: "Jabal Omar & Hayatt Regency",
+    title: "Jabal Omar & Premium Suites",
     description:
-      "Tailored services for premium hotel districts, offering convenient 24/7 express pickup.",
+      "Professional cleaning solutions for Makkah's finest hotel districts, featuring round-the-clock collection for ultimate convenience.",
     locations: [
       { name: "Jabal Omar Towers", time: "10-15 min" },
       { name: "Swissotel Makkah", time: "10-15 min" },
@@ -33,9 +33,9 @@ const areas = [
 
   {
     emoji: "🌆",
-    title: "Kudai & Misfalah",
+    title: "Kudai, Misfalah & Visitor Zones",
     description:
-      "Efficient and affordable service for mid-tier lodging areas, ensuring quick turnaround and great value.",
+      "Reliable and budget-friendly laundry services for popular visitor areas, focused on rapid turnaround and exceptional value.",
     locations: [
       { name: "Kudai Area Hotels", time: "15-20 min" },
       { name: "Misfalah District", time: "15-20 min" },
@@ -43,9 +43,9 @@ const areas = [
   },
   {
     emoji: "🏨",
-    title: "Hilton Suites & Nearby Hotels",
+    title: "Hotel District & Luxury Stays",
     description:
-      "Premium laundry service tailored for hotel guests, with fast pickup and reliable delivery for a comfortable stay in Makkah.",
+      "Tailored services for hotel guests and long-term residents, ensuring your wardrobe remains pristine throughout your stay in Makkah.",
     locations: [
       { name: "Hilton Suites Makkah", time: "10-20 min" },
       { name: "Nearby Hotels & Residences", time: "15-25 min" },
@@ -53,9 +53,9 @@ const areas = [
   },
   {
     emoji: "🏘️",
-    title: "Maabda, Al Rusaifah & Al Awali",
+    title: "Residential Makkah & Suburbs",
     description:
-      "Dependable and extensive service across Makkah's diverse neighborhoods, complete with same-day delivery.",
+      "Broad coverage reaching the city's diverse residential communities, providing fresh laundry delivered right to your doorstep.",
     locations: [
       { name: "Maabda Area", time: "15-25 min" },
       { name: "Al Rusaifah & Al Awali", time: "20-30 min" },
@@ -82,12 +82,10 @@ const AreaCoverage = () => {
             id="areas-heading"
             className="text-2xl sm:text-4xl font-bold mb-3 sm:mb-4 text-foreground"
           >
-            Extensive Laundry Coverage Across Makkah
+            We Serve Every Corner of Makkah
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto mb-6 sm:mb-8">
-            From bustling hotel zones to residential areas, our express pickup
-            service reaches every corner of Makkah, ensuring fresh laundry
-            wherever you are.
+            Whether you're staying in a luxury hotel near the Haram or a quiet residential neighborhood, our express team is ready to assist you anywhere in the city.
           </p>
         </div>
 
@@ -134,7 +132,7 @@ const AreaCoverage = () => {
                   id="generate_lead"
                   className=" bg-success"
                 >
-                  Book Now
+                  Book Pickup
                 </Button>
               </div>
             </div>
@@ -143,7 +141,7 @@ const AreaCoverage = () => {
         <div className="rounded-lg bg-card text-card-foreground max-w-2xl mx-auto shadow-xl border-2 border-primary/50 bg-gradient-to-r from-primary/5 to-accent/5">
           <div className="p-4 py-6 sm:p-6 text-center">
             <h3 className="text-lg md:text-xl font-bold mb-5 text-primary">
-              Unsure About Your Location? Get Instant Pickup Confirmation!
+              Can't Find Your Hotel? Get Instant Confirmation!
             </h3>
             <div className="space-y-4 ">
               <input
@@ -152,7 +150,7 @@ const AreaCoverage = () => {
                 minLength={1}
                 onChange={(e) => setLocation(e.target.value)}
                 className="flex w-full border-input bg-background px-3 py-2 ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm h-12 sm:h-14 text-base border-2 focus:border-accent rounded-xl"
-                placeholder="Enter your hotel/location name"
+                placeholder="Enter your hotel or location"
               />
               <button
                 onClick={handleCheckArea}
@@ -163,7 +161,7 @@ const AreaCoverage = () => {
               </button>
             </div>
             <p className="text-xs sm:text-sm text-muted-foreground mt-3">
-              ✅ Fast Reply | ✅ No Obligation | ✅ Always Available
+              ✅ 2-Min Response | ✅ Free Consultation | ✅ Always Open
             </p>
           </div>
         </div>

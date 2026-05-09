@@ -63,8 +63,8 @@ const Navigation = () => {
 
   const menuItems = [
     { label: "Services", id: "services" },
-    { label: "Testimonials", id: "testimonials" },
-    { label: "Pricing", id: "pricing" },
+    { label: "Our Happy Clients", id: "testimonials" },
+    { label: "Our Rates", id: "pricing" },
     { label: "About", id: "contact", url: "/about" },
     { label: "Contact", id: "contact", url: "/contact" },
   ];
@@ -92,7 +92,7 @@ const Navigation = () => {
                 <a href="/">
                   <img
                     src={isScrolled ? logo_light : logo_dark}
-                    alt="Al Baraka Laundry logo"
+                    alt="Bismillah Laundry Mecca logo"
                     width={200}
                     height={100}
                     className="w-full h-full object-contain"
@@ -149,7 +149,7 @@ const Navigation = () => {
                     <a href="/">
                       <img
                         src={isScrolled ? logo_light : logo_dark}
-                        alt="Al Baraka Laundry logo"
+                        alt="Bismillah Laundry Mecca logo"
                         width={200}
                         height={100}
                         className="w-full h-full object-contain"
@@ -192,7 +192,7 @@ const Navigation = () => {
                     className="w-full bg-primary hover:bg-primary/90 text-white font-semibold shadow-lg text-base h-12"
                   >
                     <WhatsAppIcon size={20} className="mr-2" />
-                    Book Now on WhatsApp
+                    WhatsApp Pickup
                   </Button>
                 </motion.div>
 
@@ -205,10 +205,10 @@ const Navigation = () => {
                 >
                   <div className="space-y-2">
                     <p className="font-semibold text-foreground">
-                      24/7 Service Available
+                      Available 24/7 Every Day
                     </p>
                     <p>📞 {managerInfo.whatsApp}</p>
-                    <p>⏱️ Fast Pickup Time</p>
+                    <p>⏱️ Rapid Collection Response</p>
                   </div>
                 </motion.div>
               </div>
