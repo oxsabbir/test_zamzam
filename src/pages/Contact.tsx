@@ -23,7 +23,8 @@ const Contact = () => {
               Get in Touch
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              Questions about our service or ready for a pickup? Our Makkah support team is available 24/7 to assist you.
+              Questions about our service or ready for a pickup? Our Makkah
+              support team is available 24/7 to assist you.
             </p>
           </motion.div>
         </div>
@@ -62,7 +63,9 @@ const Contact = () => {
               <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-4">
                 <Phone className="w-7 h-7 text-primary" />
               </div>
-              <h3 className="text-xl font-bold text-foreground mb-2">Direct Call</h3>
+              <h3 className="text-xl font-bold text-foreground mb-2">
+                Direct Call
+              </h3>
               <p className="text-muted-foreground text-sm mb-3">
                 Speak with us now
               </p>
@@ -82,7 +85,9 @@ const Contact = () => {
               <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-4">
                 <Mail className="w-7 h-7 text-primary" />
               </div>
-              <h3 className="text-xl font-bold text-foreground mb-2">Email Support</h3>
+              <h3 className="text-xl font-bold text-foreground mb-2">
+                Email Support
+              </h3>
               <p className="text-muted-foreground text-sm mb-3">
                 Send us a message
               </p>
@@ -101,7 +106,9 @@ const Contact = () => {
               <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-4">
                 <Clock className="w-7 h-7 text-primary" />
               </div>
-              <h3 className="text-xl font-bold text-foreground mb-2">Service Hours</h3>
+              <h3 className="text-xl font-bold text-foreground mb-2">
+                Service Hours
+              </h3>
               <p className="text-muted-foreground text-sm mb-3">
                 Always available
               </p>
@@ -123,7 +130,9 @@ const Contact = () => {
                 Schedule Your Instant Pickup
               </h2>
               <p className="text-muted-foreground mb-6 leading-relaxed">
-                Experience Makkah's most reliable laundry care. Contact our priority team on WhatsApp and we'll be at your location promptly.
+                Experience Makkah's most reliable laundry care. Contact our
+                priority team on WhatsApp and we'll be at your location
+                promptly.
               </p>
               <a
                 href={`https://wa.me/${
@@ -162,7 +171,7 @@ const Contact = () => {
             {/* Map */}
             <div className="relative h-[400px] rounded-2xl overflow-hidden border border-border shadow-lg group">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5654.269139982942!2d39.807984157977685!3d21.32567436410657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c211fd95fb43e3%3A0x9778d871460f3f88!2sIbrahim%20Al%20Khalil%20Rd%20Saudi%20Arabia!5e0!3m2!1sen!2sbd!4v1776776720225!5m2!1sen!2sbd"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1857.132881685398!2d39.82445418878477!3d21.41879649204934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c204c82533f16f%3A0xca0cff6480eeca59!2sThe%20Clock%20Towers!5e0!3m2!1sen!2sbd!4v1778319501919!5m2!1sen!2sbd"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
@@ -172,6 +181,7 @@ const Contact = () => {
                 className=" group-hover:grayscale-0 transition-all duration-500"
                 title="Bismillah Laundry Makkah Location"
               />
+
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none" />
             </div>
 

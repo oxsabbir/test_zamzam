@@ -55,8 +55,25 @@ const Footer = () => {
 
   return (
     <footer className="">
-      <div className="bg-[#0a120b] text-white pt-20 pb-10">
+      <div className="bg-[#0a120b] text-white pt-10 pb-10">
         {/* Map Section - Full Width Banner Style */}
+
+        <div className="flex container pb-5 pt-5 px-0 mx-auto md:flex-row flex-col items-start gap-2 md:gap-6">
+          <div className="w-full h-[360px] rounded-3xl relative transition-all duration-700 ease-in-out group border border-white/5 overflow-hidden mb-12">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3714.2686373642277!2d39.81983897579298!3d21.418683474271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c2056938d0d737%3A0xaba713e6c60c74ea!2sJumeirah%20Jabal%20Omar%20Makkah!5e0!3m2!1sen!2sbd!4v1778319146760!5m2!1sen!2sbd"
+              className="w-full h-full opacity-60 rounded-3xl group-hover:opacity-100 border-0 transition-opacity"
+              title="Bismillah Laundry Makkah Location"
+            />
+          </div>
+          <div className="w-full h-[360px] rounded-3xl relative transition-all duration-700 ease-in-out group border border-white/5 overflow-hidden mb-12">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1857.132881685398!2d39.82445418878477!3d21.41879649204934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c204c82533f16f%3A0xca0cff6480eeca59!2sThe%20Clock%20Towers!5e0!3m2!1sen!2sbd!4v1778319501919!5m2!1sen!2sbd"
+              className="w-full h-full opacity-60 rounded-3xl group-hover:opacity-100 border-0 transition-opacity"
+              title="Bismillah Laundry Makkah Location"
+            />
+          </div>
+        </div>
 
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
@@ -182,14 +199,6 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-          </div>
-
-          <div className="w-full h-[360px] rounded-3xl relative transition-all duration-700 ease-in-out group border border-white/5 overflow-hidden mb-12">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5654.269139982942!2d39.807984157977685!3d21.32567436410657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c211fd95fb43e3%3A0x9778d871460f3f88!2sIbrahim%20Al%20Khalil%20Rd%20Saudi%20Arabia!5e0!3m2!1sen!2sbd!4v1776776720225!5m2!1sen!2sbd"
-              className="w-full h-full opacity-60 rounded-3xl group-hover:opacity-100 border-0 transition-opacity"
-              title="Bismillah Laundry Makkah Location"
-            />
           </div>
 
           <div className="pt-10 border-t border-white/5 text-center">
