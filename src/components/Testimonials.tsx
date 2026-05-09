@@ -3,19 +3,19 @@ import { Star } from "lucide-react";
 const testimonials = [
   {
     text:
-      "Bismillah Laundry Mecca provided a truly efficient and reliable service. My clothes were picked up and returned in record time. It's a game-changer for anyone visiting Makkah!",
+      "Bismillah Laundry Makkah provided a truly efficient and reliable service. My clothes were picked up and returned in record time. It's a game-changer for anyone visiting Makkah!",
     author: "Abdullah Mansour",
-    location: "Hotel Manager, Mecca",
+    location: "Hotel Manager, Makkah",
   },
   {
     text:
-      "I was hesitant about sending my expensive abayas and Ihram out, but Bismillah Laundry Mecca handled them with such care. Everything came back fresh and spotless.",
+      "I was hesitant about sending my expensive abayas and Ihram out, but Bismillah Laundry Makkah handled them with such care. Everything came back fresh and spotless.",
     author: "Sarah Al-Otaibi",
-    location: "Mecca Resident",
+    location: "Makkah Resident",
   },
   {
     text:
-      "Managing laundry for a large family is tough, but Bismillah Laundry Mecca made it so easy. Their free collection and fast turnaround saved us so much stress.",
+      "Managing laundry for a large family is tough, but Bismillah Laundry Makkah made it so easy. Their free collection and fast turnaround saved us so much stress.",
     author: "Mohammed Al-Zahrani",
     location: "Business Owner, Jeddah",
   },
@@ -23,17 +23,17 @@ const testimonials = [
     text:
       "The 24/7 service is a lifesaver. I needed my thobes pressed for a late-night meeting, and they were there to help immediately. Highly recommended!",
     author: "Fahad Bin Khalid",
-    location: "Mecca Resident",
+    location: "Makkah Resident",
   },
   {
     text:
-      "The quality at Bismillah Laundry Mecca is unmatched. My clothes came back smelling wonderful and perfectly folded. I won't use any other service.",
+      "The quality at Bismillah Laundry Makkah is unmatched. My clothes came back smelling wonderful and perfectly folded. I won't use any other service.",
     author: "Lujain Al-Harbi",
-    location: "Guest House Owner, Mecca",
+    location: "Guest House Owner, Makkah",
   },
   {
     text:
-      "I sent my best formal thobes to Bismillah Laundry Mecca, and the results were spectacular. The pressing was sharp, and the fabric was handled perfectly.",
+      "I sent my best formal thobes to Bismillah Laundry Makkah, and the results were spectacular. The pressing was sharp, and the fabric was handled perfectly.",
     author: "Sultan Al-Amri",
     location: "Riyadh (Frequent Visitor)",
   },
@@ -41,19 +41,19 @@ const testimonials = [
     text:
       "Affordable, fast, and very convenient. WhatsApp booking was effortless, and the free delivery made it even better. The best choice near the Haram!",
     author: "Amal Al-Dossari",
-    location: "Mecca Resident",
+    location: "Makkah Resident",
   },
   {
     text:
-      "Cleaning bulky linens was a breeze with Bismillah Laundry Mecca. They handled everything professionally and returned them fresh the next day.",
+      "Cleaning bulky linens was a breeze with Bismillah Laundry Makkah. They handled everything professionally and returned them fresh the next day.",
     author: "Waleed Al-Sudairi",
-    location: "Mecca Resident",
+    location: "Makkah Resident",
   },
   {
     text:
-      "They managed to remove a tough stain from my favorite garment. Bismillah Laundry Mecca's stain removal team is truly skilled. Very impressive!",
+      "They managed to remove a tough stain from my favorite garment. Bismillah Laundry Makkah's stain removal team is truly skilled. Very impressive!",
     author: "Nourah Al-Saud",
-    location: "Local Resident, Mecca",
+    location: "Local Resident, Makkah",
   },
 ];
 
@@ -66,7 +66,7 @@ const Testimonials = () => {
             Client Experiences
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Read the stories of pilgrims and residents who trust Bismillah Laundry Mecca for their premium fabric care.
+            Read the stories of pilgrims and residents who trust Bismillah Laundry Makkah for their premium fabric care.
           </p>
         </div>
 

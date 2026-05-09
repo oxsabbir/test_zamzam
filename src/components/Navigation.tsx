@@ -92,7 +92,7 @@ const Navigation = () => {
                 <a href="/">
                   <img
                     src={isScrolled ? logo_light : logo_dark}
-                    alt="Bismillah Laundry Mecca logo"
+                    alt="Bismillah Laundry Makkah logo"
                     width={200}
                     height={100}
                     className="w-full h-full object-contain"
@@ -149,7 +149,7 @@ const Navigation = () => {
                     <a href="/">
                       <img
                         src={isScrolled ? logo_light : logo_dark}
-                        alt="Bismillah Laundry Mecca logo"
+                        alt="Bismillah Laundry Makkah logo"
                         width={200}
                         height={100}
                         className="w-full h-full object-contain"

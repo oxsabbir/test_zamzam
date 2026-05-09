@@ -69,7 +69,7 @@ const TermsConditions = () => {
               Contact Us
             </h2>
             <p>
-              If you have any queries regarding any of our terms, please contact us at info@bismillahlaunderymecca.com.
+              If you have any queries regarding any of our terms, please contact us at info@bismillahlaundrymakkah.com.
             </p>
           </div>
         </div>

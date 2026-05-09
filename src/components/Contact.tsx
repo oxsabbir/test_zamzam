@@ -87,7 +87,7 @@ const Contact = () => {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Bismillah Laundry Mecca Location"
+              title="Bismillah Laundry Makkah Location"
             />
           </div>
         </div>

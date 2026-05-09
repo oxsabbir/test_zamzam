@@ -96,7 +96,7 @@ export default function PilgrimGuide() {
             Spiritual Journey Laundry Guide
           </h2>
           <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
-            Focus on your devotion while Bismillah Laundry Mecca handles the work. We've compiled these expert tips for our Hajj and Umrah visitors.
+            Focus on your devotion while Bismillah Laundry Makkah handles the work. We've compiled these expert tips for our Hajj and Umrah visitors.
           </p>
         </header>
 
@@ -140,7 +140,7 @@ export default function PilgrimGuide() {
               Need Specific Advice?
             </h3>
             <p className="text-base sm:text-lg text-muted-foreground mb-6">
-              Our team understands the unique needs of pilgrims. Contact Bismillah Laundry Mecca anytime for guidance on fabric care or scheduling.
+              Our team understands the unique needs of pilgrims. Contact Bismillah Laundry Makkah anytime for guidance on fabric care or scheduling.
             </p>
             <Button
               onClick={() => handleWhatsApp(whatsappMessages.faq)}

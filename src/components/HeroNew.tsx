@@ -33,7 +33,7 @@ const HeroNew = () => {
 
       <img
         src={heroImage}
-        alt="Bismillah Laundry Mecca - Premium laundry and delivery services for pilgrims and Mecca residents"
+        alt="Bismillah Laundry Makkah - Premium laundry and delivery services for pilgrims and Makkah residents"
         className="absolute inset-0 w-full h-full object-cover opacity-30 "
         loading="eager"
         width="1920"
@@ -48,7 +48,7 @@ const HeroNew = () => {
           <h1 className="text-2xl sm:text-4xl lg:text-6xl font-bold text-primary-foreground mb-3 sm:mb-6 leading-tight">
             <span className="block text-xl sm:text-2xl lg:text-3xl mb-1 sm:mb-2 text-primary-300">
               Bismillah Laundry <br />
-              Mecca
+              Makkah
             </span>
             <span className="text-primary-300 inline-block ">Superior Care</span> –
             Your Laundry, Our Priority
@@ -66,7 +66,7 @@ const HeroNew = () => {
               “Exceptional care and speed! My clothes were collected and returned perfectly clean within hours. 
               <span className="text-primary-300 font-bold">
                 {" "}
-                Bismillah Laundry Mecca
+                Bismillah Laundry Makkah
               </span>{" "}
               is truly the best in the city!”
             </p>

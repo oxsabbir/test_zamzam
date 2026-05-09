@@ -51,7 +51,7 @@ const Comparison = () => {
             id="benefits-heading"
             className="text-2xl sm:text-4xl font-bold mb-4 text-foreground"
           >
-            The Bismillah Laundry Mecca Advantage: Why Choose Us?
+            The Bismillah Laundry Makkah Advantage: Why Choose Us?
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
             Compare our premium benefits with typical local services. We offer better value, faster turnarounds, and superior care for every pilgrim.
@@ -59,12 +59,12 @@ const Comparison = () => {
         </header>
         <div className="bg-gradient-to-r from-slate-700 via-slate-800 to-slate-900 rounded-xl sm:rounded-2xl p-4 sm:p-8 mb-8 sm:mb-12 max-w-6xl mx-auto">
           <h3 className="text-xl sm:text-2xl font-bold text-center mb-6 sm:mb-8 text-white">
-            Bismillah Laundry Mecca vs. Traditional Services
+            Bismillah Laundry Makkah vs. Traditional Services
           </h3>
           <div className="space-y-4">
             <div className="grid grid-cols-3 gap-2 sm:gap-4 text-center font-bold text-sm sm:text-base text-slate-300">
               <div>Service Feature</div>
-              <div>Bismillah Laundry Mecca</div>
+              <div>Bismillah Laundry Makkah</div>
               <div>Other Services</div>
             </div>
             {comparisonData.map((item, i) => (
@@ -107,7 +107,7 @@ const Comparison = () => {
                 <DollarSign className="w-8 h-8 sm:w-10 sm:h-10 text-green-500" />
               </div>
               <h3 className="text-base sm:text-lg font-bold mb-2 text-foreground">
-                Best Value in Mecca
+                Best Value in Makkah
               </h3>
               <p className="text-sm sm:text-base text-muted-foreground">
                 Premium quality starting at just 18 SAR/kg. Save significantly compared to expensive hotel laundry charges.

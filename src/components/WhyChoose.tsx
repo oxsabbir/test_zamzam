@@ -33,7 +33,7 @@ const WhyChoose = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-5xl font-bold mb-6 text-foreground tracking-tight">
-            Why Trust Bismillah Laundry Mecca?
+            Why Trust Bismillah Laundry Makkah?
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Discover the difference that expert care and dedication make. We set the standard for professional laundry services in the Holy City.

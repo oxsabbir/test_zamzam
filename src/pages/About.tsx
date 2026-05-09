@@ -19,7 +19,7 @@ const About = () => {
               className="text-center max-w-4xl mx-auto"
             >
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 text-foreground">
-                The Bismillah Laundry Mecca Story
+                The Bismillah Laundry Makkah Story
               </h1>
               <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
                 Empowering your spiritual journey and daily life with Makkah's most professional laundry and textile care.
@@ -40,13 +40,13 @@ const About = () => {
               >
                 <img
                   src={aboutImage}
-                  alt="About Bismillah Laundry Mecca"
+                  alt="About Bismillah Laundry Makkah"
                   className="w-full h-full object-cover"
                 />
               </motion.div>
               <div className="prose prose-lg max-w-none text-muted-foreground">
                 <p className="mb-6">
-                  Bismillah Laundry Mecca stands as a beacon of quality in the heart of the Holy City. We are dedicated to providing exceptional garment care for every visitor and resident, ensuring that your attire remains as pure and clean as your intentions. We understand that during your stay in Makkah, your focus should be on your spiritual path, not your laundry.
+                  Bismillah Laundry Makkah stands as a beacon of quality in the heart of the Holy City. We are dedicated to providing exceptional garment care for every visitor and resident, ensuring that your attire remains as pure and clean as your intentions. We understand that during your stay in Makkah, your focus should be on your spiritual path, not your laundry.
                 </p>
                 <p className="mb-6">
                   By combining state-of-the-art cleaning equipment with gentle, effective detergents, we ensure every piece of fabric is treated with individual attention. Whether it's the sacred Ihram, an elegant abaya, or your daily thobe, our experts deliver professional precision with every wash and fold.
