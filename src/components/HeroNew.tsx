@@ -33,7 +33,7 @@ const HeroNew = () => {
 
       <img
         src={heroImage}
-        alt="Bismillah Laundry Makkah - Premium laundry and delivery services for pilgrims and Makkah residents"
+        alt="Makkah Royal Premium Laundry - Best laundry and fast pickup for pilgrims in Makkah"
         className="absolute inset-0 w-full h-full object-cover opacity-30 "
         loading="eager"
         width="1920"
@@ -43,40 +43,44 @@ const HeroNew = () => {
         <div className="max-w-4xl mx-auto text-center">
           <div className="inline-flex items-center rounded-full border font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent hover:bg-primary/80 mb-4 sm:mb-6 bg-primary-500 text-white text-xs sm:text-base px-3 sm:px-4 py-2 animate-pulse">
             <Zap size={20} className="mr-1" />
-            PREMIUM CLEANING GUARANTEED!
+            BEST CLEANING GUARANTEED!
           </div>
           <h1 className="text-2xl sm:text-4xl lg:text-6xl font-bold text-primary-foreground mb-3 sm:mb-6 leading-tight">
             <span className="block text-xl sm:text-2xl lg:text-3xl mb-1 sm:mb-2 text-primary-300">
-              Bismillah Laundry <br />
-              Makkah
+              Makkah Royal <br />
+              Premium Laundry
             </span>
             <span className="text-primary-300 inline-block ">
-              Superior Care
+              High Quality
             </span>{" "}
-            – Your Laundry, Our Priority
+            – Your Clothes, Our Priority
           </h1>
           <div className="bg-black/30 backdrop-blur-sm rounded-xl sm:rounded-2xl p-3 sm:p-6 mb-4 sm:mb-8">
             <div className="flex items-center justify-center mb-2 sm:mb-3">
               <div className="flex text-yellow-400 text-sm sm:text-xl">
-                {/* ... (stars svg) ... */}
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-star w-4 h-4 sm:w-5 sm:h-5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-star w-4 h-4 sm:w-5 sm:h-5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-star w-4 h-4 sm:w-5 sm:h-5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-star w-4 h-4 sm:w-5 sm:h-5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-star w-4 h-4 sm:w-5 sm:h-5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
               </div>
               <span className="text-primary-foreground ml-2 font-bold text-sm sm:text-base">
-                Trusted by 12,000+ Satisfied Pilgrims
+                Trusted by 12,000+ Happy Pilgrims
               </span>
             </div>
             <p className="text-sm sm:text-xl text-primary-foreground/95 font-medium mb-3 sm:mb-4 px-2">
-              “Exceptional care and speed! My clothes were collected and
-              returned perfectly clean within hours.
+              “Great service and very fast! My clothes were picked up and
+              returned perfectly clean in just a few hours.
               <span className="text-primary-300 font-bold">
                 {" "}
-                Bismillah Laundry Makkah
+                Makkah Royal Premium Laundry
               </span>{" "}
-              is truly the best in the city!”
+              is the best in the city!”
             </p>
             <div className="grid grid-cols-2  sm:grid-cols-3 gap-2 sm:gap-4 text-center">
               <div className="bg-primary-400/20 rounded-lg p-2 sm:p-3">
                 <div className="text-lg sm:text-2xl font-bold text-primary-300">
-                  From Just 18 SAR
+                  From 18 SAR
                 </div>
                 <div className="text-xs sm:text-sm text-primary-foreground/80">
                   Per Kilogram
@@ -84,10 +88,10 @@ const HeroNew = () => {
               </div>
               <div className="bg-primary-400/20 rounded-lg p-2 sm:p-3">
                 <div className="text-lg sm:text-2xl font-bold text-primary-300">
-                  Rapid Pickup
+                  Fast Pickup
                 </div>
                 <div className="text-xs sm:text-sm text-primary-foreground/80">
-                  Expert Textile Care
+                  Expert Washing
                 </div>
               </div>
               <div className="bg-primary-400/20 col-span-full sm:col-span-1 rounded-lg p-2 sm:p-3">
@@ -117,12 +121,12 @@ const HeroNew = () => {
               </span>
               <span>|</span>
               <span className="flex items-center gap-2">
-                <Quote size={18} /> Transparent Pricing
+                <Quote size={18} /> Simple Prices
               </span>
               <span>|</span>
               <span className="flex items-center gap-2">
                 <CircleDollarSign size={18} />
-                Expert Fabric Handling
+                Safe Fabric Care
               </span>
             </div>
           </div>

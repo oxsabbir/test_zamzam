@@ -87,8 +87,7 @@ const Contact = () => {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Bismillah Laundry Makkah Location"
-            />
+                              title="Makkah Royal Premium Laundry Location"            />
           </div>
         </div>
       </div>

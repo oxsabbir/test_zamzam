@@ -1,57 +1,57 @@
 import ServiceCard from "./ServiceCard";
 const urgentServices = [
   {
-    title: "Steam Press & Precision Fold",
+    title: "Steam Ironing & Folding",
     price: "12 Riyals",
     unit: "Kg",
     description:
-      "Expert steam pressing and neat folding to keep you looking distinguished. We work around your timeline for ultimate convenience.",
-    highlight: "Free Collection & Delivery Included",
+      "Good steam ironing and neat folding to keep you looking great. We pick up at a time that is best for you.",
+    highlight: "Free Pickup & Delivery Included",
     deliveryTime: "Up to 24 Hours",
   },
   {
-    title: "Super Express Wash & Iron",
+    title: "Super Fast Wash & Iron",
     price: "35 Riyals",
     unit: "Kg",
     description:
-      "Our quickest solution for those in a hurry. Rapid washing, drying, and pressing with a focus on speed and quality.",
-    highlight: "Priority Service – Makkah Wide",
+      "Our fastest service for people in a hurry. Very quick washing, drying, and ironing with high quality.",
+    highlight: "Priority Service – All Over Makkah",
     deliveryTime: "Within 1 Hour",
   },
   {
-    title: "12-Hour Same-Day Service",
+    title: "Same-Day 12-Hour Service",
     price: "18 Riyals",
     unit: "Kg",
     description:
-      "Efficient same-day care for your daily wardrobe. Your clothes are returned fresh and ready within half a day.",
-    highlight: "Free Collection & Delivery Included",
+      "Fast and good care for your daily clothes. Your laundry is returned clean and ready in half a day.",
+    highlight: "Free Pickup & Delivery Included",
     deliveryTime: "12 Hours",
   },
   {
-    title: "24-Hour Reliable Care",
+    title: "Standard 24-Hour Service",
     price: "30 Riyals",
     unit: "Kg",
     description:
-      "Our standard high-quality cycle. Thorough cleaning and expert pressing returned to you by the next day.",
-    highlight: "Free Collection & Delivery Included",
+      "Our best standard service. Thorough cleaning and expert ironing returned to you the next day.",
+    highlight: "Free Pickup & Delivery Included",
     deliveryTime: "24 Hours",
   },
   {
-    title: "Sacred Ihram Specialized Care",
+    title: "Special Ihram Cleaning",
     price: "20 Riyals",
     unit: "Kg",
     description:
-      "We treat your sacred garments with the highest respect, using gentle, fragrance-free processes to maintain purity.",
-    highlight: "Pilgrim-Safe & Respectful Care",
+      "We wash your sacred Ihram with great respect. We use gentle, fragrance-free soap to keep them pure.",
+    highlight: "Safe for Pilgrims & Respectful Care",
     deliveryTime: "Same Day",
   },
   {
-    title: "Advanced Stain Treatment",
+    title: "Removing Hard Stains",
     price: "20 Riyals",
     unit: "Kg",
     description:
-      "Specialized care for challenging spots. Our team uses safe, effective methods to restore your clothes to their best state.",
-    highlight: "Expert Stain Removal",
+      "Special care for clothes with hard stains. Our team uses safe and effective ways to clean your clothes.",
+    highlight: "Expert Stain Cleaning",
     deliveryTime: "Up to 24 Hours",
   },
 ];
@@ -65,17 +65,17 @@ export default function OurServices() {
             id="areas-heading"
             className="text-2xl sm:text-4xl font-bold mb-3 sm:mb-4 text-foreground"
           >
-            Comprehensive Textile Care in Makkah
+            All Your Washing Needs in Makkah
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto mb-6 sm:mb-8">
-            Trust our skilled team for all your garment needs. 
+            Trust our team with your important clothes. 
             <br />
             <span>
-              We deliver prompt{" "}
+              We provide fast{" "}
               <strong className="text-primary font-semibold">
-                collection and delivery
+                pickup and delivery
               </strong>{" "}
-              to hotels, suites, and residences near the Holy Mosque—making laundry simple.
+              to hotels and houses near the Holy Mosque—making laundry easy for you.
             </span>
           </p>
         </div>

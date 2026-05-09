@@ -8,7 +8,7 @@ const laundryPackages = [
   {
     id: 1,
     title: "Standard Wash",
-    type: "Regular",
+    type: "Normal",
     deliveryTime: "12 Hours",
     price: 20,
     pickup: "Included",
@@ -16,8 +16,8 @@ const laundryPackages = [
   },
   {
     id: 2,
-    title: "Delicate Care",
-    type: "Regular",
+    title: "Soft Wash",
+    type: "Normal",
     deliveryTime: "10 Hours",
     price: 25,
     pickup: "Included",
@@ -25,8 +25,8 @@ const laundryPackages = [
   },
   {
     id: 3,
-    title: "Premium Refresh",
-    type: "Regular",
+    title: "Best Quality Wash",
+    type: "Normal",
     deliveryTime: "8 Hours",
     price: 30,
     pickup: "Included",
@@ -34,38 +34,38 @@ const laundryPackages = [
   },
   {
     id: 4,
-    title: "Express Pro",
+    title: "Fast Wash",
     type: "Urgent",
     deliveryTime: "5 Hours",
     price: 35,
-    pickup: "SAR 15 Extra",
+    pickup: "SAR 15 Fee",
     featured: false,
   },
   {
     id: 5,
-    title: "Instant Spin",
+    title: "Very Fast Wash",
     type: "Urgent",
     deliveryTime: "3 Hours",
     price: 30,
-    pickup: "SAR 15 Extra",
+    pickup: "SAR 15 Fee",
     featured: false,
   },
   {
     id: 6,
-    title: "Hyper Speed*",
+    title: "Super Fast (1 Hour)*",
     type: "Urgent",
     deliveryTime: "1 Hour*",
     price: 35,
-    pickup: "SAR 15 Extra",
+    pickup: "SAR 15 Fee",
     featured: false,
-    note: "*Exclusive to central Makkah and hotel districts.",
+    note: "*Only for hotels near the Haram and central Makkah.",
   },
 ];
 
 const ironingService = {
-  title: "Professional Pressing",
+  title: "Ironing Only (Pressing)",
   price: 14,
-  deliveryTime: "Within 4 Hours",
+  deliveryTime: "In 4 Hours",
   pickup: "Included",
 };
 
@@ -83,13 +83,13 @@ export default function PricingSection() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-10 sm:mb-16">
           <Badge className="mb-4 bg-primary/10 text-primary hover:bg-primary/20 border-none px-4 py-1">
-            Transparent Pricing
+            Simple and Clear Prices
           </Badge>
           <h2 className="text-3xl sm:text-5xl font-bold mb-4 text-foreground tracking-tight">
-            Flexible Laundry Packages
+            Our Laundry Packages
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Meticulous washing, drying, and expert ironing. Choose a plan that fits your schedule and budget perfectly.
+            Good washing, drying, and ironing. Choose a plan that is best for your time and money.
           </p>
         </div>
 
@@ -149,7 +149,7 @@ export default function PricingSection() {
                     </div>
                     <div>
                       <p className="text-[10px] uppercase font-bold text-muted-foreground tracking-wider">
-                        Turnaround Time
+                        Return Time
                       </p>
                       <p className="text-sm font-bold text-foreground">
                         {pkg.deliveryTime}
@@ -163,7 +163,7 @@ export default function PricingSection() {
                     </div>
                     <div>
                       <p className="text-[10px] uppercase font-bold text-muted-foreground tracking-wider">
-                        Collection & Delivery
+                        Pickup & Delivery
                       </p>
                       <p className="text-sm font-bold text-foreground">
                         {pkg.pickup}
@@ -192,7 +192,7 @@ export default function PricingSection() {
                       : "bg-muted text-foreground hover:bg-primary hover:text-white"
                   }`}
                 >
-                  Select {pkg.title}
+                  Choose {pkg.title}
                 </Button>
               </div>
             </div>
@@ -209,7 +209,7 @@ export default function PricingSection() {
                     {ironingService.title}
                   </h3>
                   <p className="text-muted-foreground mb-4">
-                    Expert steam pressing for crisp, sharp, and flawless results.
+                    Good steam ironing to keep your clothes looking fresh.
                   </p>
                   <div className="flex flex-wrap justify-center md:justify-start gap-4">
                     <div className="flex items-center text-sm font-medium bg-background/80 px-3 py-1.5 rounded-full border">

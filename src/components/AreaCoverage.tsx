@@ -10,9 +10,9 @@ import { handleWhatsApp } from "@/lib/utils";
 const areas = [
   {
     emoji: "🕌",
-    title: "The Haram & Clock Tower District",
+    title: "The Haram & Clock Tower Area",
     description:
-      "Dedicated laundry care for pilgrims staying steps away from the Holy Mosque. We prioritize your spiritual journey by handling your garments with extreme care.",
+      "Best laundry care for pilgrims staying very close to the Holy Mosque. We take great care of your clothes while you focus on your worship.",
     locations: [
       { name: "Clock Tower Hotels", time: "5-10 min" },
       { name: "Al Safwah Towers", time: "5-10 min" },
@@ -21,9 +21,9 @@ const areas = [
   },
   {
     emoji: "🏨",
-    title: "Jabal Omar & Premium Suites",
+    title: "Jabal Omar & Big Hotels",
     description:
-      "Professional cleaning solutions for Makkah's finest hotel districts, featuring round-the-clock collection for ultimate convenience.",
+      "High-quality cleaning for Makkah's biggest hotels. We can pick up your laundry 24 hours a day for your convenience.",
     locations: [
       { name: "Jabal Omar Towers", time: "10-15 min" },
       { name: "Swissotel Makkah", time: "10-15 min" },
@@ -33,9 +33,9 @@ const areas = [
 
   {
     emoji: "🌆",
-    title: "Kudai, Misfalah & Visitor Zones",
+    title: "Kudai, Misfalah & Visitor Areas",
     description:
-      "Reliable and budget-friendly laundry services for popular visitor areas, focused on rapid turnaround and exceptional value.",
+      "Good and cheap laundry service for popular areas. We provide fast return and great value for your money.",
     locations: [
       { name: "Kudai Area Hotels", time: "15-20 min" },
       { name: "Misfalah District", time: "15-20 min" },
@@ -43,9 +43,9 @@ const areas = [
   },
   {
     emoji: "🏨",
-    title: "Hotel District & Luxury Stays",
+    title: "Hotel Areas & Luxury Stays",
     description:
-      "Tailored services for hotel guests and long-term residents, ensuring your wardrobe remains pristine throughout your stay in Makkah.",
+      "Special service for hotel guests and long-term stays. We make sure your clothes stay clean and fresh.",
     locations: [
       { name: "Hilton Suites Makkah", time: "10-20 min" },
       { name: "Nearby Hotels & Residences", time: "15-25 min" },
@@ -53,9 +53,9 @@ const areas = [
   },
   {
     emoji: "🏘️",
-    title: "Residential Makkah & Suburbs",
+    title: "Residential Makkah & Al Awali",
     description:
-      "Broad coverage reaching the city's diverse residential communities, providing fresh laundry delivered right to your doorstep.",
+      "We serve all residential areas in the city. We pick up and deliver fresh laundry right to your door.",
     locations: [
       { name: "Maabda Area", time: "15-25 min" },
       { name: "Al Rusaifah & Al Awali", time: "20-30 min" },
@@ -82,10 +82,10 @@ const AreaCoverage = () => {
             id="areas-heading"
             className="text-2xl sm:text-4xl font-bold mb-3 sm:mb-4 text-foreground"
           >
-            We Serve Every Corner of Makkah
+            We Serve All Parts of Makkah
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto mb-6 sm:mb-8">
-            Whether you're staying in a luxury hotel near the Haram or a quiet residential neighborhood, our express team is ready to assist you anywhere in the city.
+            Whether you are in a hotel near the Haram or a house in the city, we can come to pick up your laundry anywhere.
           </p>
         </div>
 
@@ -123,9 +123,9 @@ const AreaCoverage = () => {
                 <Button
                   onClick={() =>
                     handleWhatsApp(
-                      `Hi I need laundry service in ${encodeURIComponent(
+                      `Hello! I need laundry pickup in ${encodeURIComponent(
                         area.title,
-                      )}. Could you please share the pickup details and timing? Thank you! `,
+                      )}. Please tell me when you can come. Thank you! `,
                       true,
                     )
                   }
@@ -141,7 +141,7 @@ const AreaCoverage = () => {
         <div className="rounded-lg bg-card text-card-foreground max-w-2xl mx-auto shadow-xl border-2 border-primary/30 bg-gradient-to-br from-primary/5 via-transparent to-accent/10">
           <div className="p-4 py-6 sm:p-6 text-center">
             <h3 className="text-lg md:text-xl font-bold mb-5 text-primary">
-              Can't Find Your Hotel? Get Instant Confirmation!
+              Not on the list? Ask us now!
             </h3>
             <div className="space-y-4 ">
               <input
@@ -161,7 +161,7 @@ const AreaCoverage = () => {
               </button>
             </div>
             <p className="text-xs sm:text-sm text-muted-foreground mt-3">
-              ✅ 2-Min Response | ✅ Free Consultation | ✅ Always Open
+              ✅ Quick Response | ✅ Free Help | ✅ Always Open
             </p>
           </div>
         </div>

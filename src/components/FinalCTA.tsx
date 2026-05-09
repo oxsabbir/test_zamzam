@@ -21,14 +21,13 @@ export default function FinalCTA() {
       <div className="relative container mx-auto px-3 sm:px-4">
         <div className="text-center mb-6 sm:mb-12">
           <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-primary-foreground mb-4 sm:mb-6">
-            Pristine Cleaning with Rapid Collection
+            Very Clean Clothes and Fast Pickup
           </h2>
           <p className="text-base sm:text-xl text-primary-foreground/95 max-w-3xl mx-auto mb-6 sm:mb-8 leading-relaxed">
-            The preferred choice for pilgrims and Makkah residents who value
-            hygiene, speed, and reliability.
+            Pilgrims and Makkah residents choose us for clean clothes and fast service.
             <span className="text-primary-300 font-bold">
               {" "}
-              Your fresh wardrobe is just one tap away.
+              Get clean clothes with just one message.
             </span>
           </p>
         </div>
@@ -44,7 +43,7 @@ export default function FinalCTA() {
               <div className="text-left ml-2">
                 <div>WhatsApp Pickup</div>
                 <div className="text-xs sm:text-sm opacity-90">
-                  2-min response
+                  Quick response
                 </div>
               </div>
             </button>
@@ -66,7 +65,7 @@ export default function FinalCTA() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 text-center sm:text-left">
                 <div>
                   <h3 className="text-lg sm:text-xl font-bold mb-2 text-primary-300 border-b border-primary-300/60 pb-2">
-                    Get in Touch
+                    Contact Us
                   </h3>
                   <div className="space-y-2 text-sm sm:text-base">
                     <div className="flex items-center justify-center sm:justify-start">
@@ -125,7 +124,7 @@ export default function FinalCTA() {
                 </div>
                 <div>
                   <h3 className="text-lg sm:text-xl font-bold mb-2 text-primary-300 border-b border-primary-300/60 pb-2">
-                    When We're Open
+                    Open Hours
                   </h3>
                   <div className="space-y-2 text-sm sm:text-base">
                     <div className="flex items-center justify-center sm:justify-start">
@@ -191,12 +190,12 @@ export default function FinalCTA() {
                 <Zap className=" text-white" size={24} />
               </div>
               <h3 className="text-lg sm:text-2xl font-bold text-primary-foreground text-center">
-                Don't Wait – Experience Bismillah Quality Today!
+                Don't Wait – Try Our Service Today!
               </h3>
             </div>
             <p className="text-sm sm:text-base text-primary-foreground/90 mb-4 text-center">
-              Our skilled team is committed to delivering Makkah's finest
-              laundry experience with a focus on deep cleaning and rapid speed.
+              Our team works hard to give you the best laundry service in Makkah.
+              We focus on clean clothes and fast pickup.
             </p>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
               <div className="bg-primary-foreground/10 rounded-lg p-2 sm:p-3">
@@ -204,12 +203,12 @@ export default function FinalCTA() {
                   12K+
                 </div>
                 <div className="text-xs text-white sm:text-sm">
-                  Satisfied Clients
+                  Happy Customers
                 </div>
               </div>
               <div className="bg-primary-foreground/10 rounded-lg p-2 sm:p-3">
                 <div className="text-lg sm:text-xl font-bold text-primary-300">
-                  Rapid
+                  Fast
                 </div>
                 <div className="text-xs text-white sm:text-sm">
                   Pickup Promise
@@ -226,40 +225,8 @@ export default function FinalCTA() {
                   FREE
                 </div>
                 <div className="text-xs text-white sm:text-sm">
-                  Pickup &amp; Delivery
+                  Pickup & Delivery
                 </div>
-              </div>
-            </div>
-          </div>
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
-            <div className="bg-primary-foreground/10 rounded-lg p-2 sm:p-3">
-              <div className="text-lg sm:text-xl font-bold text-primary-300">
-                12,000+
-              </div>
-              <div className="text-xs text-white sm:text-sm">
-                Happy Customers
-              </div>
-            </div>
-            <div className="bg-primary-foreground/10 rounded-lg p-2 sm:p-3">
-              <div className="text-lg sm:text-xl font-bold text-primary-300">
-                Rapid
-              </div>
-              <div className="text-xs text-white sm:text-sm">
-                Pickup Promise
-              </div>
-            </div>
-            <div className="bg-primary-foreground/10 rounded-lg p-2 sm:p-3">
-              <div className="text-lg sm:text-xl font-bold text-primary-300">
-                24/7
-              </div>
-              <div className="text-xs text-white sm:text-sm">Always Open</div>
-            </div>
-            <div className="bg-primary-foreground/10 rounded-lg p-2 sm:p-3">
-              <div className="text-lg sm:text-xl font-bold text-primary-300">
-                FREE
-              </div>
-              <div className="text-xs text-white sm:text-sm">
-                Pickup &amp; Delivery
               </div>
             </div>
           </div>

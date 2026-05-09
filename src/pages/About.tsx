@@ -9,7 +9,7 @@ const About = () => {
     <div className="min-h-screen bg-background">
       <Navigation />
       <main>
-        {/* Hero Section with Gradient matching Contact page */}
+        {/* Hero Section */}
         <section className="pt-32 pb-16 bg-gradient-to-b from-primary to-background">
           <div className="container mx-auto px-4">
             <motion.div
@@ -19,10 +19,10 @@ const About = () => {
               className="text-center max-w-4xl mx-auto"
             >
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 text-foreground">
-                The Bismillah Laundry Makkah Story
+                Our Story
               </h1>
               <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-                Empowering your spiritual journey and daily life with Makkah's most professional laundry and textile care.
+                Helping you stay fresh and clean during your Hajj and Umrah journey with professional laundry service.
               </p>
             </motion.div>
           </div>
@@ -40,28 +40,28 @@ const About = () => {
               >
                 <img
                   src={aboutImage}
-                  alt="About Bismillah Laundry Makkah"
+                  alt="Makkah Royal Premium Laundry Team"
                   className="w-full h-full object-cover"
                 />
               </motion.div>
               <div className="prose prose-lg max-w-none text-muted-foreground">
                 <p className="mb-6">
-                  Bismillah Laundry Makkah stands as a beacon of quality in the heart of the Holy City. We are dedicated to providing exceptional garment care for every visitor and resident, ensuring that your attire remains as pure and clean as your intentions. We understand that during your stay in Makkah, your focus should be on your spiritual path, not your laundry.
+                  Makkah Royal Premium Laundry is a top-quality service in the heart of the Holy City. We work hard to provide the best cleaning for every guest and resident. We want your clothes to stay clean and fresh so you can focus on your worship.
                 </p>
                 <p className="mb-6">
-                  By combining state-of-the-art cleaning equipment with gentle, effective detergents, we ensure every piece of fabric is treated with individual attention. Whether it's the sacred Ihram, an elegant abaya, or your daily thobe, our experts deliver professional precision with every wash and fold.
+                  We use modern washing machines and safe, gentle soaps. Every piece of clothing is washed with care. Whether it is your sacred Ihram, an abaya, or a thobe, our team makes sure it is returned to you perfectly clean.
                 </p>
                 <h2 className="text-2xl font-bold text-foreground mb-4">
-                  Our Commitment
+                  Our Promise
                 </h2>
                 <p className="mb-6">
-                  Our goal is to be the most trusted and efficient laundry provider in Makkah. We strive to serve our community by delivering convenience and peace of mind, allowing you to dedicate your time to worship, reflection, and family.
+                  Our goal is to be the most trusted laundry service in Makkah. We help our community by making laundry easy and fast, so you can spend your time on prayer, reflection, and family.
                 </p>
                 <h2 className="text-2xl font-bold text-foreground mb-4">
-                  What Sets Us Apart
+                  Why We Are Different
                 </h2>
                 <p>
-                  We redefine convenience by integrating modern WhatsApp booking with a dedicated rapid-response fleet. Unlike traditional services, we offer a level of speed and accessibility that matches the pace of life in Makkah. Our 24/7 availability and transparent pricing make us the first choice for those who value their time and their wardrobe.
+                  We make laundry simple by using WhatsApp for easy booking and having a fast team for pickup. We are much faster than traditional services. We are open 24/7 and have simple prices, making us the best choice for people who value their time.
                 </p>
               </div>
             </div>

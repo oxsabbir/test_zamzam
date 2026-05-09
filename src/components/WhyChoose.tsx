@@ -3,27 +3,27 @@ import { ShieldCheck, Truck, Clock, Sparkles } from "lucide-react";
 const features = [
   {
     icon: <Clock className="w-8 h-8 text-primary" />,
-    title: "Rapid Collection Service",
+    title: "Fast Pickup Service",
     description:
-      "Experience Makkah's fastest turnaround. We arrive at your doorstep in minutes and return your clothes fresh and clean precisely when you need them.",
+      "We are very fast in Makkah. We come to your hotel in minutes and wash your clothes exactly how you want them.",
   },
   {
     icon: <Sparkles className="w-8 h-8 text-primary" />,
-    title: "Master Textile Care",
+    title: "Expert Washing",
     description:
-      "Each garment is handled by experts using advanced techniques and eco-friendly solutions to ensure longevity and a pristine, fresh finish.",
+      "Every piece of clothing is handled by experts using safe soaps and good machines to keep your clothes clean and fresh.",
   },
   {
     icon: <Truck className="w-8 h-8 text-primary" />,
-    title: "Complimentary Transport",
+    title: "FREE Pickup & Delivery",
     description:
-      "We provide free collection and delivery across all districts of Makkah. No hidden fees, just dedicated service for our valued guests.",
+      "We provide free collection and delivery across all areas of Makkah. No hidden fees, just great service for our guests.",
   },
   {
     icon: <ShieldCheck className="w-8 h-8 text-primary" />,
-    title: "Sanitary Processing",
+    title: "Clean & Safe Washing",
     description:
-      "Your health and purity are our priorities. We use individual washing cycles for every customer to ensure the highest standards of hygiene.",
+      "We care about your health and ritual purity. We wash every customer's clothes separately to keep everything very clean.",
   },
 ];
 
@@ -33,10 +33,10 @@ const WhyChoose = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-5xl font-bold mb-6 text-foreground tracking-tight">
-            Why Trust Bismillah Laundry Makkah?
+            Why Choose Makkah Royal Premium Laundry?
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Discover the difference that expert care and dedication make. We set the standard for professional laundry services in the Holy City.
+            Experience the difference of professional care. We provide the best laundry service for everyone in the Holy City.
           </p>
         </div>
 

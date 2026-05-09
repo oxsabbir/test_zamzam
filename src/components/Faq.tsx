@@ -4,44 +4,44 @@ import { whatsappMessages } from "@/constants/messages";
 
 const faqData = [
   {
-    question: "How do I schedule a pickup?",
+    question: "How do I book a pickup?",
     answer:
-      "You can easily book via our website, call us directly, or send a message on WhatsApp. We provide prompt collection services throughout all districts of Makkah.",
+      "You can book on our website, call us, or send a message on WhatsApp. We can come for pickup anywhere in Makkah.",
   },
   {
-    question: "What are your operating hours?",
+    question: "When are you open?",
     answer:
-      "We are open 24/7, every day of the year. Our team is always ready to assist, especially during the busy Hajj and Umrah seasons.",
+      "We are open 24/7, every day of the year. We are always ready to help pilgrims during Hajj and Umrah.",
   },
   {
-    question: "How much do you charge?",
+    question: "What are your prices?",
     answer:
-      "Our rates are transparent and competitive, starting at 18 SAR per kg for standard washing. We also offer specific pricing for items like abayas and thobes.",
+      "Our prices are fair. Normal washing starts at 18 SAR per kg. We also have special prices for thobes and abayas.",
   },
   {
-    question: "What is your turnaround time?",
+    question: "How long does it take?",
     answer:
-      "Most orders are delivered within 24 hours. For those who need it sooner, our express service can have your clothes ready in as little as 1 to 3 hours.",
+      "Most orders are returned in 24 hours. If you are in a hurry, our fast service can be ready in 1 to 3 hours.",
   },
   {
-    question: "Do you clean delicate items like Ihram?",
+    question: "Do you wash delicate clothes like Ihram?",
     answer:
-      "Absolutely. We are experts in handling traditional and delicate fabrics, ensuring your Ihram, thobes, and abayas are returned in pristine condition.",
+      "Yes. We are experts at washing Ihram, thobes, and abayas. We make sure they are very clean and fresh.",
   },
   {
-    question: "Which areas in Makkah do you serve?",
+    question: "Where do you provide service in Makkah?",
     answer:
-      "We provide free collection and delivery to every hotel, residence, and neighborhood across Makkah, ensuring convenience wherever you stay.",
+      "We provide free pickup and delivery to every hotel and house in Makkah. We come to you wherever you are.",
   },
   {
-    question: "Is there a minimum order size?",
+    question: "Is there a minimum order?",
     answer:
-      "There is no minimum weight requirement. Whether you have just a few pieces or a large family load, we are happy to provide our services.",
+      "No. You can send just a few clothes or a lot of clothes. We are happy to help you with any amount.",
   },
   {
-    question: "What payment methods do you accept?",
+    question: "How do I pay?",
     answer:
-      "We accept cash on delivery as well as all major credit and debit cards. You only settle the payment once your clean laundry is delivered back to you.",
+      "You can pay with cash or card when we deliver your clean clothes back to you.",
   },
 ];
 
@@ -51,10 +51,10 @@ export default function Faq() {
       <div className="container mx-auto px-3 sm:px-4">
         <div className="text-center mb-8 sm:mb-12">
           <h2 className="text-2xl sm:text-4xl font-bold mb-4 text-foreground">
-            Common Questions & Answers
+            Common Questions
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
-            Everything you need to know about our premium laundry services for visitors and locals in Makkah.
+            Everything you need to know about our laundry service in Makkah.
           </p>
         </div>
         <div className="max-w-4xl mx-auto">
@@ -79,7 +79,7 @@ export default function Faq() {
                 💬 Still Have Questions?
               </h3>
               <p className="text-sm sm:text-base text-muted-foreground mb-4">
-                We speak your language. Our support team is available 24/7 in English, Arabic, and Urdu to assist you.
+                We speak your language. Our team can help you in English, Arabic, and Urdu 24/7.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <button
@@ -87,7 +87,7 @@ export default function Faq() {
                   className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-white hover:bg-primary/90 shadow-lg hover:shadow-xl transition-all h-10 px-4 py-2 w-full"
                 >
                   <WhatsAppIcon />
-                  Message Us on WhatsApp
+                  Chat on WhatsApp
                 </button>
                 <button
                   onClick={handleCall}

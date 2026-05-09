@@ -12,43 +12,43 @@ import { handleWhatsApp } from "@/lib/utils";
 const pricingItems = [
   {
     emoji: "👕",
-    title: "Casual Attire",
-    subtitle: "Everyday shirts, trousers, and leisurewear",
+    title: "Normal Clothes",
+    subtitle: "Everyday shirts, pants, and t-shirts",
     price: "18 SAR/kg",
     time: "Same day",
   },
   {
     emoji: "👔",
-    title: "Formal & Executive",
-    subtitle: "Business suits, crisp shirts, and occasion wear",
+    title: "Formal Clothes",
+    subtitle: "Suits, shirts, and office wear",
     price: "22 SAR/kg",
     time: "Same day",
   },
   {
     emoji: "🕋",
-    title: "Sacred Ihram Set",
-    subtitle: "Meticulous, fragrance-free care for your sacred wear",
+    title: "Ihram Set",
+    subtitle: "Special fragrance-free washing for your sacred Ihram",
     price: "12 SAR/piece",
     time: "24 hours",
   },
   {
     emoji: "🧥",
-    title: "Bulky & Household",
-    subtitle: "Heavy coats, comforters, and home linens",
+    title: "Large Items",
+    subtitle: "Coats, blankets, and home linens",
     price: "28 SAR/kg",
     time: "Next day",
   },
   {
     emoji: "👟",
-    title: "Footwear Refresh",
-    subtitle: "Deep cleaning for sneakers, dress shoes, and more",
+    title: "Shoes Cleaning",
+    subtitle: "Deep cleaning for sneakers and formal shoes",
     price: "25 SAR/pair",
     time: "4 hours",
   },
   {
     emoji: "🔧",
-    title: "Stitching & Repair",
-    subtitle: "Quick fixes, hemming, and garment adjustments",
+    title: "Tailor Service",
+    subtitle: "Small repairs and fixing your clothes",
     price: "From 12 SAR",
     time: "Same day",
   },
@@ -71,10 +71,10 @@ const PricingGrid = () => {
             id="services-heading"
             className="text-2xl sm:text-4xl font-bold mb-4 text-foreground"
           >
-            Bismillah Laundry Makkah Rate Card
+            Makkah Royal Premium Price List
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
-            Exceptional fabric care at rates that respect your budget. Professional cleaning from just 
+            Great cleaning at prices that are good for you. Washing starting from 
             <span className="text-primary ml-1 font-semibold">18 SAR/kg!</span>
           </p>
         </div>

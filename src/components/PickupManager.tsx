@@ -17,15 +17,15 @@ const PickupManager = () => {
               <div className="relative z-10">
                 <div className="bg-white/20 w-fit px-4 py-1.5 rounded-full text-sm font-bold backdrop-blur-md mb-8 flex items-center gap-2">
                   <div className="w-2 h-2 bg-primary-300 rounded-full animate-pulse"></div>
-                  Available 24/7
+                  Open 24/7
                 </div>
                 
                 <h2 className="text-4xl sm:text-5xl font-black mb-6 leading-[1.1]">
-                  Ready for a Pickup? <br />
-                  <span className="text-primary-200">Get in Touch!</span>
+                  Need a Pickup? <br />
+                  <span className="text-primary-200">Talk to Us!</span>
                 </h2>
                 <p className="text-primary-50 text-lg font-medium leading-relaxed mb-10 opacity-90">
-                  Our dedicated service team is standing by. Reach out now for the fastest laundry collection in Makkah.
+                  Our team is ready to help you. Contact us now for the fastest laundry pickup in Makkah.
                 </p>
 
                 <div className="space-y-6">
@@ -34,7 +34,7 @@ const PickupManager = () => {
                       <Phone className="w-6 h-6" />
                     </div>
                     <div>
-                      <p className="text-primary-200 text-xs font-bold uppercase tracking-widest">Call Directly</p>
+                      <p className="text-primary-200 text-xs font-bold uppercase tracking-widest">Call Now</p>
                       <p className="text-xl font-bold">{managerInfo.phoneNumber}</p>
                     </div>
                   </div>
@@ -52,7 +52,7 @@ const PickupManager = () => {
                       <MapPin className="w-6 h-6" />
                     </div>
                     <div>
-                      <p className="text-primary-200 text-xs font-bold uppercase tracking-widest">Service Area</p>
+                      <p className="text-primary-200 text-xs font-bold uppercase tracking-widest">Where We Work</p>
                       <p className="text-lg font-bold">Makkah, Saudi Arabia</p>
                     </div>
                   </div>
@@ -82,16 +82,16 @@ const PickupManager = () => {
                   <div className="w-14 h-14 rounded-2xl bg-primary-50 flex items-center justify-center text-primary-600 group-hover:bg-primary-600 group-hover:text-white transition-all duration-300">
                     <Clock className="w-7 h-7" />
                   </div>
-                  <h3 className="text-xl font-bold text-foreground">Rapid Response</h3>
+                  <h3 className="text-xl font-bold text-foreground">Quick Service</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    We aim to be at your doorstep within 15-30 minutes of your request.
+                    We aim to arrive at your door within 15-30 minutes of your message.
                   </p>
                 </div>
                 <div className="space-y-4 group">
                   <div className="w-14 h-14 rounded-2xl bg-primary-50 flex items-center justify-center text-primary-600 group-hover:bg-primary-600 group-hover:text-white transition-all duration-300">
                     <Truck className="w-7 h-7" />
                   </div>
-                  <h3 className="text-xl font-bold text-foreground">No-Cost Transport</h3>
+                  <h3 className="text-xl font-bold text-foreground">Free Transport</h3>
                   <p className="text-muted-foreground leading-relaxed">
                     Enjoy the convenience of free collection and delivery with every order.
                   </p>
@@ -104,7 +104,7 @@ const PickupManager = () => {
                   className="w-full bg-green-600 text-white text-lg font-bold py-5 px-6 rounded-2xl shadow-xl shadow-green-600/20 hover:bg-green-700 transition-all active:scale-[0.98] flex items-center justify-center gap-2 group"
                 >
                   <WhatsAppIcon size={24} />
-                  Schedule Your Pickup
+                  Book Your Pickup Now
                   <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </button>
                 <a 
@@ -123,11 +123,11 @@ const PickupManager = () => {
                 </div>
                 <div className="flex items-center gap-2 text-sm font-medium text-muted-foreground">
                   <CheckCircle className="w-4 h-4 text-primary-600" />
-                  Elite Quality
+                  High Quality
                 </div>
                 <div className="flex items-center gap-2 text-sm font-medium text-muted-foreground">
                   <CheckCircle className="w-4 h-4 text-primary-600" />
-                  Highly Rated
+                  Best Service
                 </div>
               </div>
             </div>

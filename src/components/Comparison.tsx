@@ -16,8 +16,8 @@ const comparisonData = [
     others: "2-4 Hours",
   },
   {
-    feature: "Operating Hours",
-    us: "Around the Clock (24/7)",
+    feature: "Open Hours",
+    us: "24/7 (Always Open)",
     others: "Limited Hours",
   },
   {
@@ -26,19 +26,19 @@ const comparisonData = [
     others: "From 35 SAR/kg",
   },
   {
-    feature: "Customer Support",
-    us: "Multi-language (En, Ar, Ur)",
-    others: "Primarily Arabic",
+    feature: "Help Support",
+    us: "English, Arabic, Urdu",
+    others: "Only Arabic",
   },
   {
-    feature: "Delivery Charge",
+    feature: "Pickup Fee",
     us: "Always Free",
-    others: "Often Extra",
+    others: "Extra Charge",
   },
   {
-    feature: "Urgent Orders",
+    feature: "Fast Orders",
     us: "Ready in 1 Hour",
-    others: "24-Hour Minimum",
+    others: "24-Hour Wait",
   },
 ];
 
@@ -51,20 +51,20 @@ const Comparison = () => {
             id="benefits-heading"
             className="text-2xl sm:text-4xl font-bold mb-4 text-foreground"
           >
-            The Bismillah Laundry Makkah Advantage: Why Choose Us?
+            Why Choose Us Over Others?
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
-            Compare our premium benefits with typical local services. We offer better value, faster turnarounds, and superior care for every pilgrim.
+            See why we are the best choice for you. We offer better prices, faster service, and great care for every pilgrim.
           </p>
         </header>
         <div className="bg-gradient-to-r from-slate-700 via-slate-800 to-slate-900 rounded-xl sm:rounded-2xl p-4 sm:p-8 mb-8 sm:mb-12 max-w-6xl mx-auto">
           <h3 className="text-xl sm:text-2xl font-bold text-center mb-6 sm:mb-8 text-white">
-            Bismillah Laundry Makkah vs. Traditional Services
+            Makkah Royal Premium Laundry vs. Other Services
           </h3>
           <div className="space-y-4">
             <div className="grid grid-cols-3 gap-2 sm:gap-4 text-center font-bold text-sm sm:text-base text-slate-300">
-              <div>Service Feature</div>
-              <div>Bismillah Laundry Makkah</div>
+              <div>What You Get</div>
+              <div>Makkah Royal</div>
               <div>Other Services</div>
             </div>
             {comparisonData.map((item, i) => (
@@ -94,10 +94,10 @@ const Comparison = () => {
                 <Zap className="w-8 h-8 sm:w-10 sm:h-10 text-accent" />
               </div>
               <h3 className="text-base sm:text-lg font-bold mb-2 text-foreground">
-                Lightning Fast
+                Very Fast
               </h3>
               <p className="text-sm sm:text-base text-muted-foreground">
-                Our team arrives in just 15 minutes. We respect your schedule, especially during your busy Hajj or Umrah journey.
+                We come for pickup in just 15 minutes. We know you are busy with Hajj or Umrah.
               </p>
             </div>
           </div>
@@ -107,10 +107,10 @@ const Comparison = () => {
                 <DollarSign className="w-8 h-8 sm:w-10 sm:h-10 text-green-500" />
               </div>
               <h3 className="text-base sm:text-lg font-bold mb-2 text-foreground">
-                Best Value in Makkah
+                Best Prices
               </h3>
               <p className="text-sm sm:text-base text-muted-foreground">
-                Premium quality starting at just 18 SAR/kg. Save significantly compared to expensive hotel laundry charges.
+                High quality service starting at only 18 SAR/kg. Much cheaper than hotel laundry.
               </p>
             </div>
           </div>
@@ -120,10 +120,10 @@ const Comparison = () => {
                 <Clock className="w-8 h-8 sm:w-10 sm:h-10 text-primary" />
               </div>
               <h3 className="text-base sm:text-lg font-bold mb-2 text-foreground">
-                24/7 Availability
+                Always Open 24/7
               </h3>
               <p className="text-sm sm:text-base text-muted-foreground">
-                We are at your service day and night. Whether it's 2 PM or 2 AM, our express team is ready to assist.
+                We are here for you day and night. Any time you need us, we are ready to help.
               </p>
             </div>
           </div>
@@ -133,10 +133,10 @@ const Comparison = () => {
                 <Shield className="w-8 h-8 sm:w-10 sm:h-10 text-blue-500" />
               </div>
               <h3 className="text-base sm:text-lg font-bold mb-2 text-foreground">
-                Secure & Reliable
+                Safe and Reliable
               </h3>
               <p className="text-sm sm:text-base text-muted-foreground">
-                Your garments are treated with care. We use advanced tracking to ensure everything is returned perfectly.
+                We take good care of your clothes. We make sure everything is returned to you perfectly.
               </p>
             </div>
           </div>
@@ -146,10 +146,10 @@ const Comparison = () => {
                 <Users className="w-8 h-8 sm:w-10 sm:h-10 text-purple-500" />
               </div>
               <h3 className="text-base sm:text-lg font-bold mb-2 text-foreground">
-                Fluent Communication
+                Good Communication
               </h3>
               <p className="text-sm sm:text-base text-muted-foreground">
-                Communicate effortlessly in English, Arabic, or Urdu. We make sure your instructions are followed exactly.
+                Talk to us in English, Arabic, or Urdu. We follow your instructions exactly.
               </p>
             </div>
           </div>
@@ -159,10 +159,10 @@ const Comparison = () => {
                 <Award className="w-8 h-8 sm:w-10 sm:h-10 text-orange-500" />
               </div>
               <h3 className="text-base sm:text-lg font-bold mb-2 text-foreground">
-                Trusted Excellence
+                Top Quality Service
               </h3>
               <p className="text-sm sm:text-base text-muted-foreground">
-                Join 12,000+ happy pilgrims who trust us. Our 4.9-star rating is a testament to our quality and dedication.
+                More than 12,000 pilgrims trust us. Our great rating shows our hard work and quality.
               </p>
             </div>
           </div>

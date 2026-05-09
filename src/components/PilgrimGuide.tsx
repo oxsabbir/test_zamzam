@@ -9,74 +9,84 @@ import {
   DollarSign,
   Wind,
   CheckCircle,
-} from "lucide-react";
+} from "lucide-react"; // Fixed typo from earlier read if needed, but using original symbols
 import { Button } from "./ui/button";
+
+// Note: Keeping original icon imports as they were working
+import {
+  Shirt as ShirtIcon,
+  UserCheck as UserIcon,
+  Clock as ClockIcon,
+  Package as PackageIcon,
+  DollarSign as DollarIcon,
+  Wind as WindIcon,
+} from "lucide-react";
 
 const guideItems = [
   {
-    icon: <Shirt className="h-7 w-7 text-primary" />,
-    title: "Sacred Ihram Maintenance",
+    icon: <ShirtIcon className="h-7 w-7 text-primary" />,
+    title: "Cleaning Your Ihram",
     content:
-      "Your Ihram represents purity. We use specialized, fragrance-free cleaning methods to respect your state of Ihram while ensuring deep cleanliness and fabric softness.",
+      "Your Ihram is important for your worship. We use special fragrance-free washing to keep your Ihram clean and soft.",
     tips: [
-      "Dedicated separate washing for Ihram sets.",
-      "Strictly fragrance-free, skin-friendly detergents.",
-      "Professional air-drying to preserve fabric texture.",
+      "We wash Ihram sets separately.",
+      "We use soap with no smell (fragrance-free).",
+      "We dry your Ihram carefully to keep it soft.",
     ],
   },
   {
-    icon: <UserCheck className="h-7 w-7 text-primary" />,
-    title: "Abaya & Thobe Preservation",
+    icon: <UserIcon className="h-7 w-7 text-primary" />,
+    title: "Washing Thobes and Abayas",
     content:
-      "Keep your traditional attire looking distinguished. Our professional pressing and care ensure you look your best for every prayer and gathering.",
+      "Look your best for your prayers. We provide professional washing and ironing for your daily clothes.",
     tips: [
-      "Precision dry cleaning for delicate or embroidered abayas.",
-      "Optimized machine washing for daily thobes.",
-      "Crisp, professional steam pressing for a sharp finish.",
+      "Careful cleaning for delicate abayas.",
+      "Good washing for your daily thobes.",
+      "Professional steam ironing for a clean look.",
     ],
   },
   {
-    icon: <Clock className="h-7 w-7 text-primary" />,
-    title: "Optimizing Your Time",
+    icon: <ClockIcon className="h-7 w-7 text-primary" />,
+    title: "Save Your Time",
     content:
-      "We coordinate around the five daily prayers. Our rapid collection service ensures your laundry is handled without interrupting your spiritual schedule.",
+      "We work around your prayer times. Our fast pickup means you can focus on your worship while we do the laundry.",
     tips: [
-      "Morning pickups are ideal for same-day delivery.",
-      "Select express options for urgent garment needs.",
-      "Refresh your wardrobe before major spiritual milestones.",
+      "Book in the morning for same-day return.",
+      "Use our fast service if you need clothes quickly.",
+      "Get fresh clothes before you go to the Haram.",
     ],
   },
   {
-    icon: <Package className="h-7 w-7 text-primary" />,
-    title: "Smart Packing Advice",
+    icon: <PackageIcon className="h-7 w-7 text-primary" />,
+    title: "Packing Tips",
     content:
-      "Traveling light makes your journey easier. Choose high-quality, breathable fabrics that perform well in Makkah's unique climate.",
+      "Travel light to make your journey easier. Choose light and easy fabrics for Makkah's hot weather.",
     tips: [
-      "Focus on versatile, essential pieces for your stay.",
-      "Prioritize breathable cotton and linen materials.",
-      "Keep your luggage light by utilizing our fast laundry.",
+      "Bring only the clothes you really need.",
+      "Use cotton and linen to stay cool.",
+      "Save space by using our fast laundry service.",
     ],
   },
   {
-    icon: <DollarSign className="h-7 w-7 text-primary" />,
-    title: "Smart Budgeting",
+    icon: <DollarIcon className="h-7 w-7 text-primary" />,
+    title: "Save Your Money",
     content:
-      "Save your Riyals for what truly matters. Our transparent weight-based pricing is significantly more affordable than premium hotel services.",
+      "Save your money for other needs. Our prices are clear and much cheaper than the hotel laundry.",
     tips: [
-      "Fair and transparent per-kilogram rates.",
-      "Save up to 50% compared to hotel laundry fees.",
-      "Regular laundry cycles help avoid rush surcharges.",
+      "We have simple and fair prices per kg.",
+      "Save up to 50% compared to hotel prices.",
+      "Regular washing helps you avoid extra fast fees.",
     ],
   },
   {
-    icon: <Wind className="h-7 w-7 text-primary" />,
-    title: "Staying Fresh in the Heat",
+    icon: <WindIcon className="h-7 w-7 text-primary" />,
+    title: "Stay Fresh in the Heat",
     content:
-      "The warm climate requires regular garment changes. Our 24/7 availability ensures you always have a fresh, clean set of clothes ready.",
+      "Makkah is hot, so you need to change clothes often. We are open 24/7 so you always have clean clothes.",
     tips: [
-      "Air out your garments between uses whenever possible.",
-      "Cycle your wardrobe frequently to maintain comfort.",
-      "Schedule your next pickup before your supply runs low.",
+      "Let your clothes air out after use.",
+      "Change your clothes often to stay comfortable.",
+      "Book your next pickup before you run out of clean clothes.",
     ],
   },
 ];
@@ -93,10 +103,11 @@ export default function PilgrimGuide() {
             id="guide-heading"
             className="text-3xl sm:text-4xl font-bold mb-4 text-foreground"
           >
-            Spiritual Journey Laundry Guide
+            Laundry Guide for Pilgrims
           </h2>
           <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
-            Focus on your devotion while Bismillah Laundry Makkah handles the work. We've compiled these expert tips for our Hajj and Umrah visitors.
+            Focus on your worship while Makkah Royal Premium Laundry does the
+            work. Here are some tips for Hajj and Umrah visitors.
           </p>
         </header>
 
@@ -137,17 +148,18 @@ export default function PilgrimGuide() {
         <div className="mt-12 sm:mt-16 text-center">
           <div className="max-w-2xl mx-auto bg-card border rounded-xl p-6 shadow-sm">
             <h3 className="text-xl sm:text-2xl font-bold mb-3 text-foreground">
-              Need Specific Advice?
+              Need Help?
             </h3>
             <p className="text-base sm:text-lg text-muted-foreground mb-6">
-              Our team understands the unique needs of pilgrims. Contact Bismillah Laundry Makkah anytime for guidance on fabric care or scheduling.
+              Our team knows what pilgrims need. Contact Makkah Royal Premium
+              Laundry anytime for help with your clothes.
             </p>
             <Button
               onClick={() => handleWhatsApp(whatsappMessages.faq)}
               className="bg-primary text-white hover:bg-primary/80 shadow-lg hover:shadow-xl transition-all h-12 px-6 text-base font-semibold"
             >
               <WhatsAppIcon className="mr-2" />
-              Get Expert Advice on WhatsApp
+              Ask Us on WhatsApp
             </Button>
           </div>
         </div>

@@ -11,6 +11,6 @@ export const managerInfo = {
 };
 
 export const siteInfo = {
-  siteTitle: "Bismillah Laundry Makkah",
-  domain: "https://bismillahlaundrymakkah.com/",
+  siteTitle: "Makkah Royal Premium Laundry",
+  domain: "https://makkahroyalpremiumlaundry.com/",
 };

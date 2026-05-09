@@ -39,38 +39,36 @@ const Footer = () => {
 
   const quickLinks = [
     { label: "Home", id: "hero" },
-    { label: "Services", id: "services" },
-    { label: "Pricing", id: "pricing" },
+    { label: "Our Services", id: "services" },
+    { label: "Price List", id: "pricing" },
     { label: "How It Works", id: "how-it-works" },
     { label: "About Us", path: "/about" },
   ];
 
   const servicesLinks = [
-    { label: "Regular Laundry", id: "pricing" },
+    { label: "Normal Washing", id: "pricing" },
     { label: "Dry Cleaning", id: "services" },
-    { label: "Ihram Care", id: "pricing" },
+    { label: "Ihram Cleaning", id: "pricing" },
     { label: "Ironing & Pressing", id: "pricing" },
-    { label: "Express Delivery", id: "services" },
+    { label: "Fast Delivery", id: "services" },
   ];
 
   return (
     <footer className="">
       <div className="bg-[#0a120b] text-white pt-10 pb-10">
-        {/* Map Section - Full Width Banner Style */}
-
         <div className="flex container pb-5 pt-5 px-0 mx-auto md:flex-row flex-col items-start gap-2 md:gap-6">
           <div className="w-full h-[360px] rounded-3xl relative transition-all duration-700 ease-in-out group border border-white/5 overflow-hidden mb-12">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3714.2686373642277!2d39.81983897579298!3d21.418683474271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c2056938d0d737%3A0xaba713e6c60c74ea!2sJumeirah%20Jabal%20Omar%20Makkah!5e0!3m2!1sen!2sbd!4v1778319146760!5m2!1sen!2sbd"
               className="w-full h-full opacity-60 rounded-3xl group-hover:opacity-100 border-0 transition-opacity"
-              title="Bismillah Laundry Makkah Location"
+              title="Makkah Royal Premium Laundry Location"
             />
           </div>
           <div className="w-full h-[360px] rounded-3xl relative transition-all duration-700 ease-in-out group border border-white/5 overflow-hidden mb-12">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1857.132881685398!2d39.82445418878477!3d21.41879649204934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c204c82533f16f%3A0xca0cff6480eeca59!2sThe%20Clock%20Towers!5e0!3m2!1sen!2sbd!4v1778319501919!5m2!1sen!2sbd"
               className="w-full h-full opacity-60 rounded-3xl group-hover:opacity-100 border-0 transition-opacity"
-              title="Bismillah Laundry Makkah Location"
+              title="Makkah Royal Premium Laundry Location"
             />
           </div>
         </div>
@@ -81,32 +79,31 @@ const Footer = () => {
               <a href="/">
                 <img
                   src={logo_dark}
-                  alt="Bismillah Laundry Makkah Logo"
+                  alt="Makkah Royal Premium Laundry Logo"
                   className="h-[75px] w-auto object-contain brightness-110"
                 />
               </a>
 
               <p className="text-zinc-400 leading-relaxed text-sm sm:text-base max-w-sm">
-                At Bismillah Laundry Makkah, we are dedicated to providing the
-                highest quality cleaning services for the pilgrims and residents
-                of Makkah. We ensure your garments are fresh, pristine, and
-                ready whenever you need them.
+                Makkah Royal Premium Laundry provides the best washing 
+                service for pilgrims and residents in Makkah. We make sure 
+                your clothes are clean, fresh, and ready when you need them.
               </p>
               <div className="flex space-x-4">
                 <a
-                  href="#"
+                  href="https://www.facebook.com/makkahroyalpremiumlaundry"
                   className="bg-white/5 hover:bg-primary p-3 rounded-full transition-all hover:scale-110 border border-white/5"
                 >
                   <Facebook size={18} className="text-white" />
                 </a>
                 <a
-                  href="#"
+                  href="https://twitter.com/makkahroyalpremiumlaundry"
                   className="bg-white/5 hover:bg-primary p-3 rounded-full transition-all hover:scale-110 border border-white/5"
                 >
                   <Twitter size={18} className="text-white" />
                 </a>
                 <a
-                  href="#"
+                  href="https://www.instagram.com/makkahroyalpremiumlaundry"
                   className="bg-white/5 hover:bg-primary p-3 rounded-full transition-all hover:scale-110 border border-white/5"
                 >
                   <Instagram size={18} className="text-white" />

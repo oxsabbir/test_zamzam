@@ -92,7 +92,7 @@ const Navigation = () => {
                 <a href="/">
                   <img
                     src={isScrolled ? logo_light : logo_dark}
-                    alt="Bismillah Laundry Makkah logo"
+                    alt="Makkah Royal Premium Laundry logo"
                     width={200}
                     height={100}
                     className="w-full h-full object-contain"
@@ -149,7 +149,7 @@ const Navigation = () => {
                     <a href="/">
                       <img
                         src={isScrolled ? logo_light : logo_dark}
-                        alt="Bismillah Laundry Makkah logo"
+                        alt="Makkah Royal Premium Laundry logo"
                         width={200}
                         height={100}
                         className="w-full h-full object-contain"
@@ -205,10 +205,10 @@ const Navigation = () => {
                 >
                   <div className="space-y-2">
                     <p className="font-semibold text-foreground">
-                      Available 24/7 Every Day
+                      Open 24/7 Every Day
                     </p>
                     <p>📞 {managerInfo.whatsApp}</p>
-                    <p>⏱️ Rapid Collection Response</p>
+                    <p>⏱️ Fast Pickup at Your Hotel</p>
                   </div>
                 </motion.div>
               </div>
