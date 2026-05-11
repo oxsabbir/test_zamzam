@@ -8,34 +8,33 @@ import {
 import { Button } from "@/components/ui/button";
 import { whatsappMessages } from "@/constants/messages";
 import { handleWhatsApp } from "@/lib/utils";
-
 const pricingItems = [
   {
     emoji: "👕",
     title: "Casual Attire",
     subtitle: "Everyday shirts, trousers, and leisurewear",
-    price: "18 SAR/kg",
-    time: "Same day",
+    price: "25 SAR/kg",
+    time: "Standard",
   },
   {
     emoji: "👔",
     title: "Formal & Executive",
     subtitle: "Business suits, crisp shirts, and occasion wear",
-    price: "22 SAR/kg",
-    time: "Same day",
+    price: "30 SAR/kg",
+    time: "Urgent",
   },
   {
     emoji: "🕋",
     title: "Sacred Ihram Set",
     subtitle: "Meticulous, fragrance-free care for your sacred wear",
-    price: "12 SAR/piece",
-    time: "24 hours",
+    price: "20 SAR/kg",
+    time: "Standard",
   },
   {
     emoji: "🧥",
     title: "Bulky & Household",
     subtitle: "Heavy coats, comforters, and home linens",
-    price: "28 SAR/kg",
+    price: "25 SAR/kg",
     time: "Next day",
   },
   {
@@ -43,7 +42,7 @@ const pricingItems = [
     title: "Footwear Refresh",
     subtitle: "Deep cleaning for sneakers, dress shoes, and more",
     price: "25 SAR/pair",
-    time: "4 hours",
+    time: "Same day",
   },
   {
     emoji: "🔧",
@@ -74,7 +73,8 @@ const PricingGrid = () => {
             Bismillah Laundry Makkah Rate Card
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
-            Exceptional fabric care at rates that respect your budget. Professional cleaning from just 
+            Exceptional fabric care at rates that respect your budget.
+            Professional cleaning from just
             <span className="text-primary ml-1 font-semibold">18 SAR/kg!</span>
           </p>
         </div>

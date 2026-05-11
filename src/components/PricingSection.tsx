@@ -7,64 +7,64 @@ import { Badge } from "./ui/badge";
 const laundryPackages = [
   {
     id: 1,
-    title: "Standard Wash",
+    title: "Normal Wash + Iron",
     type: "Regular",
-    deliveryTime: "12 Hours",
-    price: 20,
-    pickup: "Included",
-    featured: false,
-  },
-  {
-    id: 2,
-    title: "Delicate Care",
-    type: "Regular",
-    deliveryTime: "10 Hours",
+    deliveryTime: "Standard",
     price: 25,
     pickup: "Included",
     featured: false,
   },
   {
-    id: 3,
-    title: "Premium Refresh",
+    id: 2,
+    title: "Normal Wash Only",
     type: "Regular",
-    deliveryTime: "8 Hours",
-    price: 30,
+    deliveryTime: "Standard",
+    price: 20,
+    pickup: "Included",
+    featured: false,
+  },
+  {
+    id: 3,
+    title: "Premium Wash + Iron",
+    type: "Regular",
+    deliveryTime: "Standard",
+    price: 25,
     pickup: "Included",
     featured: true,
   },
   {
     id: 4,
-    title: "Express Pro",
+    title: "Urgent Wash + Iron",
     type: "Urgent",
-    deliveryTime: "5 Hours",
-    price: 35,
-    pickup: "SAR 15 Extra",
-    featured: false,
-  },
-  {
-    id: 5,
-    title: "Instant Spin",
-    type: "Urgent",
-    deliveryTime: "3 Hours",
+    deliveryTime: "Priority",
     price: 30,
     pickup: "SAR 15 Extra",
     featured: false,
   },
   {
-    id: 6,
-    title: "Hyper Speed*",
+    id: 5,
+    title: "Urgent Wash Only",
     type: "Urgent",
-    deliveryTime: "1 Hour*",
-    price: 35,
+    deliveryTime: "Priority",
+    price: 25,
     pickup: "SAR 15 Extra",
     featured: false,
-    note: "*Exclusive to central Makkah and hotel districts.",
+  },
+  {
+    id: 6,
+    title: "Express Wash + Iron*",
+    type: "Urgent",
+    deliveryTime: "Same Day*",
+    price: 30,
+    pickup: "SAR 15 Extra",
+    featured: false,
+    note: "*Available in central Makkah and hotel districts only.",
   },
 ];
 
 const ironingService = {
-  title: "Professional Pressing",
-  price: 14,
+  title: "Professional Steam Ironing",
+  price: 20,
   deliveryTime: "Within 4 Hours",
   pickup: "Included",
 };
@@ -89,7 +89,8 @@ export default function PricingSection() {
             Flexible Laundry Packages
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Meticulous washing, drying, and expert ironing. Choose a plan that fits your schedule and budget perfectly.
+            Meticulous washing, drying, and expert ironing. Choose a plan that
+            fits your schedule and budget perfectly.
           </p>
         </div>
 
@@ -209,7 +210,8 @@ export default function PricingSection() {
                     {ironingService.title}
                   </h3>
                   <p className="text-muted-foreground mb-4">
-                    Expert steam pressing for crisp, sharp, and flawless results.
+                    Expert steam pressing for crisp, sharp, and flawless
+                    results.
                   </p>
                   <div className="flex flex-wrap justify-center md:justify-start gap-4">
                     <div className="flex items-center text-sm font-medium bg-background/80 px-3 py-1.5 rounded-full border">
