@@ -3,8 +3,8 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, X } from "lucide-react";
 import WhatsAppIcon from "./icons/Whatsapp";
-import logo_light from "@/assets/logo-royal.webp";
-import logo_dark from "@/assets/logo-royal.webp";
+import logo_light from "@/assets/premium-royal-logo-light.webp";
+import logo_dark from "@/assets/premium-royal-logo-dark.webp";
 
 import { motion } from "motion/react";
 import { handleWhatsApp } from "@/lib/utils";
