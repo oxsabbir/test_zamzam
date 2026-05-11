@@ -1,13 +1,13 @@
 export const managerInfo = {
-  fullName: "Md Wasim Mia",
-  phoneNumber: "+966 54 533 7362",
-  whatsApp: "+966 54 533 7362",
+  fullName: "Md Joynul Abedin",
+  phoneNumber: "+966 53 269 3746",
+  whatsApp: "+966 53 269 3746",
   onlyNumber: {
-    whatsApp: 966545337362,
-    phoneNumber: 966545337362,
+    whatsApp: 966532693746,
+    phoneNumber: 966532693746,
   },
-  address: `Ibrahim Al Khalil Rd, Saudi Arabia`,
-  email: "miawasim159@gmail.com",
+  address: `Al Aziziyah, Makkah, Saudi Arabia`,
+  email: "info@makkahroyalpremiumlaundry.com",
 };
 
 export const siteInfo = {
