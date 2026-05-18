@@ -25,15 +25,15 @@ export default function UrgentService() {
             Need it Quickly? We Offer the Fastest Return
           </h2>
           <p className="text-base sm:text-lg text-slate-700 max-w-3xl mx-auto">
-            Get your clothes cleaned and returned on the same day. Our
-            fast services are made to help you stay fresh and clean.
+            Get your clothes cleaned and returned on the same day. Our fast
+            services are made to help you stay fresh and clean.
           </p>
         </header>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 max-w-4xl mx-auto">
           <div className="rounded-lg text-card-foreground shadow-sm p-6 text-center hover:shadow-xl transition-all hover:-translate-y-1 border bg-primary/10  dark:bg-green-900/10 hover:opacity-90">
             <div className="text-5xl mb-4">⚡</div>
             <div className="text-3xl font-bold mb-2 text-foreground">
-              60-Min
+              Same Day
             </div>
             <h3 className="text-lg font-bold mb-2 text-foreground">
               Super Fast
