@@ -7,66 +7,66 @@ import { Badge } from "./ui/badge";
 const laundryPackages = [
   {
     id: 1,
-    title: "Standard Wash",
-    type: "Normal",
+    title: "Essential Clean",
+    type: "Standard",
     deliveryTime: "12 Hours",
     price: 20,
-    pickup: "Included",
+    pickup: "Complimentary",
     featured: false,
   },
   {
     id: 2,
-    title: "Soft Wash",
-    type: "Normal",
+    title: "Delicate Care",
+    type: "Standard",
     deliveryTime: "10 Hours",
     price: 25,
-    pickup: "Included",
+    pickup: "Complimentary",
     featured: false,
   },
   {
     id: 3,
-    title: "Best Quality Wash",
-    type: "Normal",
+    title: "Premium Finish",
+    type: "Standard",
     deliveryTime: "8 Hours",
     price: 30,
-    pickup: "Included",
+    pickup: "Complimentary",
     featured: true,
   },
   {
     id: 4,
-    title: "Fast Wash",
-    type: "Urgent",
+    title: "Rapid Return",
+    type: "Express",
     deliveryTime: "5 Hours",
     price: 35,
-    pickup: "SAR 15 Fee",
+    pickup: "SAR 15 Priority Fee",
     featured: false,
   },
   {
     id: 5,
-    title: "Very Fast Wash",
-    type: "Urgent",
+    title: "Instant Express",
+    type: "Express",
     deliveryTime: "3 Hours",
     price: 30,
-    pickup: "SAR 15 Fee",
+    pickup: "SAR 15 Priority Fee",
     featured: false,
   },
   {
     id: 6,
-    title: "Super Fast (1 Hour)*",
-    type: "Urgent",
+    title: "Priority 1-Hour*",
+    type: "Express",
     deliveryTime: "1 Hour*",
     price: 35,
-    pickup: "SAR 15 Fee",
+    pickup: "SAR 15 Priority Fee",
     featured: false,
-    note: "*Only for hotels near the Haram and central Makkah.",
+    note: "*Available for central Makkah and Haram-adjacent hotels.",
   },
 ];
 
 const ironingService = {
-  title: "Ironing Only (Pressing)",
+  title: "Professional Steam Pressing",
   price: 14,
-  deliveryTime: "In 4 Hours",
-  pickup: "Included",
+  deliveryTime: "Within 4 Hours",
+  pickup: "Complimentary",
 };
 
 export default function PricingSection() {
@@ -83,13 +83,13 @@ export default function PricingSection() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-10 sm:mb-16">
           <Badge className="mb-4 bg-primary/10 text-primary hover:bg-primary/20 border-none px-4 py-1">
-            Simple and Clear Prices
+            Transparent Tiered Pricing
           </Badge>
           <h2 className="text-3xl sm:text-5xl font-bold mb-4 text-foreground tracking-tight">
-            Our Laundry Packages
+            Our Service Tiers
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Good washing, drying, and ironing. Choose a plan that is best for your time and money.
+            From essential cleaning to express turnaround, select the plan that perfectly aligns with your schedule and requirements.
           </p>
         </div>
 
@@ -105,7 +105,7 @@ export default function PricingSection() {
             >
               <div
                 className={`p-6 rounded-t-[22px] ${
-                  pkg.type === "Urgent"
+                  pkg.type === "Express"
                     ? "bg-gradient-to-br from-red-50 to-orange-50/50"
                     : "bg-gradient-to-br from-primary/5 to-transparent"
                 }`}
@@ -114,7 +114,7 @@ export default function PricingSection() {
                   <div>
                     <Badge
                       className={`mb-2 font-bold px-3 ${
-                        pkg.type === "Urgent"
+                        pkg.type === "Express"
                           ? "bg-red-500 hover:bg-red-600 text-white"
                           : "bg-primary text-white hover:bg-primary/90"
                       }`}
@@ -149,7 +149,7 @@ export default function PricingSection() {
                     </div>
                     <div>
                       <p className="text-[10px] uppercase font-bold text-muted-foreground tracking-wider">
-                        Return Time
+                        Completion Time
                       </p>
                       <p className="text-sm font-bold text-foreground">
                         {pkg.deliveryTime}
@@ -163,7 +163,7 @@ export default function PricingSection() {
                     </div>
                     <div>
                       <p className="text-[10px] uppercase font-bold text-muted-foreground tracking-wider">
-                        Pickup & Delivery
+                        Logistics & Delivery
                       </p>
                       <p className="text-sm font-bold text-foreground">
                         {pkg.pickup}
@@ -192,7 +192,7 @@ export default function PricingSection() {
                       : "bg-muted text-foreground hover:bg-primary hover:text-white"
                   }`}
                 >
-                  Choose {pkg.title}
+                  Select {pkg.title}
                 </Button>
               </div>
             </div>
@@ -209,7 +209,7 @@ export default function PricingSection() {
                     {ironingService.title}
                   </h3>
                   <p className="text-muted-foreground mb-4">
-                    Good steam ironing to keep your clothes looking fresh.
+                    Expert steam pressing to ensure your attire is flawlessly maintained.
                   </p>
                   <div className="flex flex-wrap justify-center md:justify-start gap-4">
                     <div className="flex items-center text-sm font-medium bg-background/80 px-3 py-1.5 rounded-full border">
@@ -233,13 +233,13 @@ export default function PricingSection() {
                     onClick={() =>
                       handleBooking(
                         ironingService.price,
-                        "Ironing Only",
+                        "Steam Pressing",
                         ironingService.deliveryTime,
                       )
                     }
                     className="mt-4 w-full bg-primary text-white"
                   >
-                    Order Now
+                    Request Now
                   </Button>
                 </div>
               </div>

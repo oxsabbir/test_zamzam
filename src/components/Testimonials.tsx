@@ -3,55 +3,55 @@ import { Star } from "lucide-react";
 const testimonials = [
   {
     text:
-      "Makkah Royal Premium Laundry is very good. They picked up my clothes and returned them very fast. It is very helpful for everyone visiting Makkah!",
+      "Zamzam Laundry Service provides exceptional quality. Their collection process was seamless, and the turnaround time was incredibly fast. A vital service for anyone visiting Makkah!",
     author: "Abdullah Mansour",
     location: "Hotel Manager, Makkah",
   },
   {
     text:
-      "I was worried about my expensive abayas and Ihram, but they washed them very carefully. Everything was returned very clean and fresh.",
+      "I was naturally concerned about my premium abayas and Ihram, but the team handled them with meticulous care. Every item was returned pristine and smelling wonderful.",
     author: "Sarah Al-Otaibi",
     location: "Makkah Resident",
   },
   {
     text:
-      "It is hard to wash clothes for a large family, but this laundry service made it very easy. They came for free pickup and returned them quickly.",
+      "Managing laundry for a large family during Umrah can be challenging, but this service made it effortless. Prompt collection and rapid delivery saved us so much time.",
     author: "Mohammed Al-Zahrani",
     location: "Business Owner, Jeddah",
   },
   {
     text:
-      "The 24/7 service is very good. I needed my clothes ironed for a meeting late at night, and they helped me immediately. I recommend them!",
+      "The 24/7 availability is a game-changer. I needed urgent pressing for an unexpected late-night meeting, and they delivered perfectly. Highly recommended!",
     author: "Fahad Bin Khalid",
     location: "Makkah Resident",
   },
   {
     text:
-      "The quality here is the best. My clothes smell very nice and are folded perfectly. I will not use any other laundry service.",
+      "The cleaning standards here are unmatched. My garments are always perfectly folded and look brand new. I wouldn't trust any other provider in Makkah.",
     author: "Lujain Al-Harbi",
     location: "Guest House Owner, Makkah",
   },
   {
     text:
-      "I sent my best thobes to Makkah Royal Premium Laundry, and they did a great job. The ironing was perfect, and the fabric was not damaged.",
+      "I sent my finest thobes to Zamzam Laundry Service, and the results were flawless. The steam pressing was expert, and the fabric was treated with great respect.",
     author: "Sultan Al-Amri",
     location: "Riyadh (Frequent Visitor)",
   },
   {
     text:
-      "Fast, cheap, and very easy. Booking on WhatsApp was simple, and the free delivery was great. The best laundry near the Haram!",
+      "Efficient, affordable, and incredibly convenient. The WhatsApp booking was straightforward, and the free delivery is a huge plus. Definitely the best near the Haram!",
     author: "Amal Al-Dossari",
     location: "Makkah Resident",
   },
   {
     text:
-      "Washing big blankets was very easy with this service. They handled everything well and returned them clean the next day.",
+      "Laundering large bedding items was completely hassle-free. They managed the entire process professionally and returned everything clean by the following day.",
     author: "Waleed Al-Sudairi",
     location: "Makkah Resident",
   },
   {
     text:
-      "They removed a hard stain from my favorite dress. The team here is very skilled at cleaning. I am very impressed!",
+      "They successfully removed a difficult stain from a cherished dress. The expertise and skill of the cleaning team are truly impressive. I'm very satisfied!",
     author: "Nourah Al-Saud",
     location: "Local Resident, Makkah",
   },
@@ -63,10 +63,10 @@ const Testimonials = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-5xl font-bold mb-6 text-foreground tracking-tight">
-            What Our Customers Say
+            Client Experiences
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Read stories from pilgrims and residents who trust us with their laundry.
+            Discover why pilgrims and residents alike trust Zamzam Laundry Service for their garment care needs.
           </p>
         </div>
 

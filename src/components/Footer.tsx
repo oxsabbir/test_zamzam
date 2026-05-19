@@ -61,7 +61,7 @@ const Footer = () => {
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1857.132881685398!2d39.82445418878477!3d21.41879649204934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c204c82533f16f%3A0xca0cff6480eeca59!2sThe%20Clock%20Towers!5e0!3m2!1sen!2sbd!4v1778319501919!5m2!1sen!2sbd"
               className="w-full h-full opacity-60 rounded-3xl group-hover:opacity-100 border-0 transition-opacity"
-              title="Makkah Royal Premium Laundry Location"
+              title="Zamzam Laundry Service Location"
             />
           </div>
         </div>
@@ -72,31 +72,31 @@ const Footer = () => {
               <a href="/">
                 <img
                   src={logo_dark}
-                  alt="Makkah Royal Premium Laundry Logo"
+                  alt="Zamzam Laundry Service Logo"
                   className="h-[75px] w-auto object-contain brightness-110"
                 />
               </a>
 
               <p className="text-zinc-400 leading-relaxed text-sm sm:text-base max-w-sm">
-                Makkah Royal Premium Laundry provides the best washing service
-                for pilgrims and residents in Makkah. We make sure your clothes
-                are clean, fresh, and ready when you need them.
+                Zamzam Laundry Service is committed to providing top-tier garment care
+                for pilgrims and locals in Makkah. We guarantee professional washing,
+                prompt delivery, and specialized care for all your laundry needs.
               </p>
               <div className="flex space-x-4">
                 <a
-                  href="https://www.facebook.com/makkahroyalpremiumlaundry"
+                  href="https://www.facebook.com/zamzamlaundryservice"
                   className="bg-white/5 hover:bg-primary p-3 rounded-full transition-all hover:scale-110 border border-white/5"
                 >
                   <Facebook size={18} className="text-white" />
                 </a>
                 <a
-                  href="https://twitter.com/makkahroyalpremiumlaundry"
+                  href="https://twitter.com/zamzamlaundry"
                   className="bg-white/5 hover:bg-primary p-3 rounded-full transition-all hover:scale-110 border border-white/5"
                 >
                   <Twitter size={18} className="text-white" />
                 </a>
                 <a
-                  href="https://www.instagram.com/makkahroyalpremiumlaundry"
+                  href="https://www.instagram.com/zamzamlaundryservice"
                   className="bg-white/5 hover:bg-primary p-3 rounded-full transition-all hover:scale-110 border border-white/5"
                 >
                   <Instagram size={18} className="text-white" />

@@ -11,28 +11,28 @@ const steps = [
     number: "1",
     icon: MessageCircle,
     image: phone,
-    title: "Send Message",
+    title: "Connect with Us",
     description:
-      "Send your location to us on WhatsApp. We will set a time to come to your hotel or house for pickup.",
-    time: "24/7 Support",
+      "Share your location with our team via WhatsApp. We will promptly coordinate a convenient pickup time at your residence or hotel.",
+    time: "24/7 Availability",
   },
   {
     number: "2",
     icon: Truck,
     image: pickup,
-    title: "We Come for Pickup",
+    title: "Seamless Collection",
     description:
-      "Our team will come to you to collect your laundry. We make sure your clothes are handled with care.",
-    time: "Fast Pickup",
+      "Our professional staff will arrive to collect your garments, ensuring they are documented and handled with meticulous care.",
+    time: "Prompt Pickup",
   },
   {
     number: "3",
     icon: Sparkles,
     image: delivery,
-    title: "Quick Return",
+    title: "Pristine Return",
     description:
-      "Your clothes are returned clean and fresh. You can pay with cash or card when we deliver them back to you.",
-    time: "On-time Delivery",
+      "Enjoy fresh, expertly cleaned clothes delivered back to your doorstep. Flexible payment options include cash or card upon delivery.",
+    time: "Scheduled Delivery",
   },
 ];
 
@@ -49,13 +49,13 @@ const HowItWorks = () => {
             id="services-heading"
             className="text-2xl sm:text-4xl font-bold mb-4 text-foreground"
           >
-            How it Works
+            The Zamzam Experience
           </h2>
           <p className="text-base sm:text-xl font-medium mb-1 text-muted-foreground max-w-3xl mx-auto">
-            Get your laundry done easily while you are in Makkah.
+            Simplifying your laundry needs during your stay in Makkah.
             <br />
             <span className="text-primary  mt-2">
-              High-quality cleaning delivered right to your door.
+              Exceptional cleaning standards, delivered with convenience.
             </span>
           </p>
         </div>
@@ -107,12 +107,12 @@ const HowItWorks = () => {
         {/* Guarantee Box */}
         <div className="bg-gradient-to-br from-gray-900 via-indigo-500 to-gray-900 text-white rounded-2xl p-8 md:p-12 text-center max-w-3xl mx-auto shadow-xl">
           <h3 className=" text-2xl md:text-3xl font-bold mb-4">
-            Our Quality Promise
+            Our Commitment to Quality
           </h3>
           <p className="md:text-xl text-lg mb-6 opacity-95">
-            Your happiness is our priority. If you are not happy with the cleaning, we will wash your clothes again for free or give your money back.
+            Your satisfaction is our ultimate goal. If you're not completely satisfied with our service, we'll re-clean your garments at no extra cost or provide a full refund.
             <br />
-            <span className="font-bold">We stand behind our work!</span>
+            <span className="font-bold">We stand by our professional excellence!</span>
           </p>
           <Button
             size="lg"
@@ -120,7 +120,7 @@ const HowItWorks = () => {
             onClick={handleStart}
             className="bg-success hover:bg-success/90 text-white md:text-lg px-4 py-3 text-base md:px-8 md:py-6"
           >
-            Start Now - Free First Pickup
+            Get Started - Complimentary First Pickup
           </Button>
         </div>
       </div>

@@ -1,16 +1,15 @@
-User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-User-agent: Twitterbot
-Allow: /
-
-User-agent: facebookexternalhit
-Allow: /
-
+# https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Allow: /
 
-Sitemap: https://makkahroyalpremiumlaundry.com/sitemap.xml
+# Disallow specific patterns
+Disallow: /api/
+Disallow: /admin/
+Disallow: /*?
+Disallow: /temp/
+
+# Host
+Host: https://zamzamlaundryservice.com
+
+# Sitemaps
+Sitemap: https://zamzamlaundryservice.com/sitemap.xml

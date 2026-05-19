@@ -19,10 +19,10 @@ const About = () => {
               className="text-center max-w-4xl mx-auto"
             >
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 text-foreground">
-                Our Story
+                Our Journey
               </h1>
               <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-                Helping you stay fresh and clean during your Hajj and Umrah journey with professional laundry service.
+                Dedicated to providing impeccable garment care for Hajj and Umrah pilgrims through professional excellence.
               </p>
             </motion.div>
           </div>
@@ -40,28 +40,28 @@ const About = () => {
               >
                 <img
                   src={aboutImage}
-                  alt="Makkah Royal Premium Laundry Team"
+                  alt="Zamzam Laundry Service Professional Team"
                   className="w-full h-full object-cover"
                 />
               </motion.div>
               <div className="prose prose-lg max-w-none text-muted-foreground">
                 <p className="mb-6">
-                  Makkah Royal Premium Laundry is a top-quality service in the heart of the Holy City. We work hard to provide the best cleaning for every guest and resident. We want your clothes to stay clean and fresh so you can focus on your worship.
+                  Zamzam Laundry Service stands as a beacon of quality in the heart of Makkah. Our mission is to deliver superior cleaning solutions for both visitors and locals alike. We take pride in ensuring your attire remains spotless and fresh, allowing you to focus entirely on your spiritual obligations.
                 </p>
                 <p className="mb-6">
-                  We use modern washing machines and safe, gentle soaps. Every piece of clothing is washed with care. Whether it is your sacred Ihram, an abaya, or a thobe, our team makes sure it is returned to you perfectly clean.
+                  Utilizing state-of-the-art machinery and eco-friendly, hypoallergenic detergents, we treat every garment with absolute precision. Whether handling your sacred Ihram, elegant abayas, or professional thobes, our specialists ensure every item is returned in flawless condition.
                 </p>
                 <h2 className="text-2xl font-bold text-foreground mb-4">
-                  Our Promise
+                  Our Commitment
                 </h2>
                 <p className="mb-6">
-                  Our goal is to be the most trusted laundry service in Makkah. We help our community by making laundry easy and fast, so you can spend your time on prayer, reflection, and family.
+                  We strive to remain Makkah's most reliable laundry partner. By simplifying the laundering process with rapid turnaround times, we empower our clients to prioritize their time for worship, reflection, and family.
                 </p>
                 <h2 className="text-2xl font-bold text-foreground mb-4">
-                  Why We Are Different
+                  The Zamzam Distinction
                 </h2>
                 <p>
-                  We make laundry simple by using WhatsApp for easy booking and having a fast team for pickup. We are much faster than traditional services. We are open 24/7 and have simple prices, making us the best choice for people who value their time.
+                  Our seamless integration of WhatsApp for rapid booking and our highly efficient collection team sets us apart from conventional providers. Operating 24/7 with transparent, competitive pricing, we are the definitive choice for those who demand both quality and convenience.
                 </p>
               </div>
             </div>

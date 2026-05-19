@@ -12,43 +12,43 @@ import { handleWhatsApp } from "@/lib/utils";
 const pricingItems = [
   {
     emoji: "👕",
-    title: "Normal Clothes",
-    subtitle: "Everyday shirts, pants, and t-shirts",
+    title: "Daily Apparel",
+    subtitle: "Everyday shirts, trousers, and casual wear",
     price: "18 SAR/kg",
     time: "Same day",
   },
   {
     emoji: "👔",
-    title: "Formal Clothes",
-    subtitle: "Suits, shirts, and office wear",
+    title: "Executive Wear",
+    subtitle: "Suits, formal shirts, and professional attire",
     price: "22 SAR/kg",
     time: "Same day",
   },
   {
     emoji: "🕋",
-    title: "Ihram Set",
-    subtitle: "Special fragrance-free washing for your sacred Ihram",
+    title: "Sacred Ihram",
+    subtitle: "Specialized fragrance-free cleaning for pilgrims",
     price: "12 SAR/piece",
     time: "24 hours",
   },
   {
     emoji: "🧥",
-    title: "Large Items",
-    subtitle: "Coats, blankets, and home linens",
+    title: "Heavy Linens",
+    subtitle: "Coats, comforters, and domestic textiles",
     price: "28 SAR/kg",
     time: "Next day",
   },
   {
     emoji: "👟",
-    title: "Shoes Cleaning",
-    subtitle: "Deep cleaning for sneakers and formal shoes",
+    title: "Footwear Care",
+    subtitle: "Deep restoration for athletic and formal shoes",
     price: "25 SAR/pair",
     time: "4 hours",
   },
   {
     emoji: "🔧",
-    title: "Tailor Service",
-    subtitle: "Small repairs and fixing your clothes",
+    title: "Garment Repairs",
+    subtitle: "Minor alterations and precision mending",
     price: "From 12 SAR",
     time: "Same day",
   },
@@ -71,10 +71,10 @@ const PricingGrid = () => {
             id="services-heading"
             className="text-2xl sm:text-4xl font-bold mb-4 text-foreground"
           >
-            Makkah Royal Premium Price List
+            Zamzam Service Price List
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
-            Great cleaning at prices that are good for you. Washing starting from 
+            Professional cleaning solutions at highly competitive rates. Services starting from 
             <span className="text-primary ml-1 font-semibold">18 SAR/kg!</span>
           </p>
         </div>
@@ -84,8 +84,8 @@ const PricingGrid = () => {
             <Card
               key={index}
               className={`border-2 hover:border-primary transition-all duration-300 hover:shadow-xl group ${
-                item.title === "Ihram Clothes" ||
-                item.title === "Regular Clothes"
+                item.title === "Sacred Ihram" ||
+                item.title === "Daily Apparel"
                   ? "card-pulse-effect"
                   : ""
               }`}
@@ -105,7 +105,7 @@ const PricingGrid = () => {
                     {item.price}
                   </div>
                   <div className="text-sm text-muted-foreground">
-                    Ready in {item.time}
+                    Available in {item.time}
                   </div>
                 </div>
                 <Button
@@ -113,7 +113,7 @@ const PricingGrid = () => {
                   onClick={() => handleOrder(item.title, item.price)}
                   className="w-full bg-primary hover:bg-primary/90"
                 >
-                  Order Now
+                  Schedule Now
                 </Button>
               </CardContent>
             </Card>

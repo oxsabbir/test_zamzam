@@ -13,54 +13,53 @@ const PrivacyPolicy = () => {
           </h1>
           <div className="prose prose-lg max-w-none text-muted-foreground">
             <p className="mb-6">
-              At {siteInfo.siteTitle}, reachable via {siteInfo.domain}, we care about your privacy. This page explains what information we collect and how we use it.
+              At {siteInfo.siteTitle}, accessible via {siteInfo.domain}, we are committed to protecting your privacy. This policy outlines the types of data we collect and how we utilize it to enhance your experience.
             </p>
 
             <h2 className="text-2xl font-bold text-foreground mb-4">
-              Information We Collect
+              Data Collection
             </h2>
             <p className="mb-6">
-              When you use our service, we may ask for your name, phone number, and location. This is so we can pick up your laundry. If you message us on WhatsApp, we will see your number and the message you send.
+              To facilitate our services, we may require your name, contact number, and precise location for garment collection. When communicating via WhatsApp, your contact details and message history are processed to ensure efficient service delivery.
             </p>
 
             <h2 className="text-2xl font-bold text-foreground mb-4">
-              How We Use Your Information
+              Utilization of Data
             </h2>
             <ul className="list-disc pl-6 mb-6 space-y-2">
-              <li>To provide our laundry service to you</li>
-              <li>To improve our washing and pickup services</li>
-              <li>To understand how people use our website</li>
-              <li>To talk to you about your order</li>
-              <li>To deliver your clean clothes back to you</li>
-              <li>To keep our service safe and prevent fraud</li>
+              <li>Facilitating scheduled laundry collection and delivery</li>
+              <li>Enhancing our operational logistics and cleaning standards</li>
+              <li>Analyzing website traffic to improve user interface and experience</li>
+              <li>Maintaining direct communication regarding your specific orders</li>
+              <li>Ensuring the security and integrity of our service against fraudulent activities</li>
             </ul>
 
             <h2 className="text-2xl font-bold text-foreground mb-4">
-              Log Files
+              Analytical Log Files
             </h2>
             <p className="mb-6">
-              {siteInfo.siteTitle} uses standard log files. These files just log visitors to the site. This includes IP addresses, browser type, and the date and time of your visit. This helps us see how many people visit our website.
+              {siteInfo.siteTitle} employs standard analytical log files. These logs record visitor interactions, including IP addresses, browser specifications, and timestamps. This data is strictly used for internal traffic analysis and performance monitoring.
             </p>
 
             <h2 className="text-2xl font-bold text-foreground mb-4">
-              Third-Party Rules
+              External Linkages
             </h2>
             <p className="mb-6">
-              Our policy does not apply to other websites or apps. If you click on a link to another site, please check their own privacy rules.
+              Our privacy commitment extends only to our direct operations. If you navigate to external websites via links on our platform, we advise reviewing the respective privacy policies of those third-party entities.
             </p>
 
             <h2 className="text-2xl font-bold text-foreground mb-4">
-              Your Rights
+              User Rights
             </h2>
             <p className="mb-6">
-              We want you to know your rights. You can ask us what information we have about you, and you can ask us to change or delete it.
+              We respect your data rights. You are entitled to request access to the information we hold about you, as well as its rectification or deletion at your discretion.
             </p>
 
             <h2 className="text-2xl font-bold text-foreground mb-4">
-              Contact Us
+              Inquiries
             </h2>
             <p>
-              If you have any questions about your privacy, please email us at info@makkahroyalpremiumlaundry.com.
+              For any privacy-related inquiries or concerns, please contact us at info@zamzamlaundryservice.com.
             </p>
           </div>
         </div>

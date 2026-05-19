@@ -13,63 +13,63 @@ const TermsConditions = () => {
           </h1>
           <div className="prose prose-lg max-w-none text-muted-foreground">
             <p className="mb-6 italic">
-              Welcome to {siteInfo.siteTitle}. These are the rules for using our website and laundry services at {siteInfo.domain}.
+              Welcome to {siteInfo.siteTitle}. The following terms govern your use of our website and professional laundry services located at {siteInfo.domain}.
             </p>
 
             <h2 className="text-2xl font-bold text-foreground mb-4">
-              1. Agreeing to Rules
+              1. Acceptance of Terms
             </h2>
             <p className="mb-6">
-              When you use our website or our washing service, you agree to these rules. If you do not agree, please do not use our service.
+              By accessing our platform or engaging our services, you acknowledge and agree to comply with these terms. If you do not accept these conditions, please refrain from using our services.
             </p>
 
             <h2 className="text-2xl font-bold text-foreground mb-4">
-              2. Washing Services
+              2. Service Provisions
             </h2>
             <p className="mb-6">
-              We provide laundry, dry cleaning, and ironing in Makkah. We take great care of your clothes. However, we are not responsible for normal wear and tear, or if a button is already loose or the fabric is already old.
+              Zamzam Laundry Service provides comprehensive laundering, dry cleaning, and pressing solutions within Makkah. While we handle all garments with professional care, we cannot be held liable for standard wear and tear, pre-existing structural weaknesses, or delicate attachments like buttons and sequins that may be compromised due to age.
             </p>
 
             <h2 className="text-2xl font-bold text-foreground mb-4">
-              3. Pickup and Delivery
+              3. Logistics & Delivery
             </h2>
             <p className="mb-6">
-              Our team tries to be very fast, but traffic in Makkah can sometimes cause delays. Free pickup and delivery are for orders that meet our simple requirements.
+              We strive for rapid turnaround; however, logistical operations in Makkah are subject to traffic conditions and peak pilgrim seasons. Complimentary collection and delivery are provided based on our standard service parameters.
             </p>
 
             <h2 className="text-2xl font-bold text-foreground mb-4">
-              4. Prices and Payment
+              4. Pricing & Transactions
             </h2>
             <p className="mb-6">
-              All prices are in SAR (Saudi Riyal). We can change prices at any time. You usually pay when we deliver your clean laundry back to you.
+              All listed rates are in Saudi Riyals (SAR). We reserve the right to adjust pricing based on market conditions. Payment is typically settled upon the delivery of processed garments.
             </p>
 
             <h2 className="text-2xl font-bold text-foreground mb-4">
-              5. Loss or Damage
+              5. Liability for Loss or Damage
             </h2>
             <p className="mb-6">
-              If an item is lost or damaged by us, we will pay up to ten (10) times the cleaning price for that item. You must tell us about any problems within 24 hours of delivery.
+              In the rare event of loss or damage directly caused by our processing, our liability is limited to a maximum of ten (10) times the cleaning cost of the specific item. Any claims must be formally reported within 24 hours of delivery.
             </p>
 
             <h2 className="text-2xl font-bold text-foreground mb-4">
-              6. Cancelling Orders
+              6. Order Cancellations
             </h2>
             <p className="mb-6">
-              You can cancel your order before we pick it up. Once we have your clothes and start washing them, you must pay the full price.
+              Cancellations are permitted prior to garment collection. Once items have been collected and processing has commenced, the full service fee remains applicable.
             </p>
 
             <h2 className="text-2xl font-bold text-foreground mb-4">
-              7. Local Laws
+              7. Governing Law
             </h2>
             <p className="mb-6">
-              These rules follow the laws of the Kingdom of Saudi Arabia.
+              These terms and conditions are governed by and construed in accordance with the laws of the Kingdom of Saudi Arabia.
             </p>
 
             <h2 className="text-2xl font-bold text-foreground mb-4">
-              Contact Us
+              Inquiries
             </h2>
             <p>
-              If you have any questions, please email us at info@makkahroyalpremiumlaundry.com.
+              For further clarification regarding these terms, please contact us at info@zamzamlaundryservice.com.
             </p>
           </div>
         </div>

@@ -1,57 +1,57 @@
 import ServiceCard from "./ServiceCard";
 const urgentServices = [
   {
-    title: "Steam Ironing & Folding",
+    title: "Steam Pressing & Folding",
     price: "12 Riyals",
     unit: "Kg",
     description:
-      "Good steam ironing and neat folding to keep you looking great. We pick up at a time that is best for you.",
-    highlight: "Free Pickup & Delivery Included",
+      "Premium steam pressing and precise folding to ensure you look your best. We schedule collections at your convenience.",
+    highlight: "Complimentary Pickup & Delivery",
     deliveryTime: "Up to 24 Hours",
   },
   {
-    title: "Super Fast Wash & Iron",
+    title: "Express Wash & Iron",
     price: "35 Riyals",
     unit: "Kg",
     description:
-      "Our fastest service for people in a hurry. Very quick washing, drying, and ironing with high quality.",
-    highlight: "Priority Service – All Over Makkah",
+      "Our premier rapid service for those on a tight schedule. High-speed washing, drying, and pressing with uncompromising quality.",
+    highlight: "Priority Service Across Makkah",
     deliveryTime: "Within 1 Hour",
   },
   {
-    title: "Same-Day 12-Hour Service",
+    title: "12-Hour Same-Day Return",
     price: "18 Riyals",
     unit: "Kg",
     description:
-      "Fast and good care for your daily clothes. Your laundry is returned clean and ready in half a day.",
-    highlight: "Free Pickup & Delivery Included",
+      "Efficient and professional care for your everyday attire. Your garments are returned spotless within half a day.",
+    highlight: "Complimentary Pickup & Delivery",
     deliveryTime: "12 Hours",
   },
   {
-    title: "Standard 24-Hour Service",
+    title: "Standard 24-Hour Care",
     price: "30 Riyals",
     unit: "Kg",
     description:
-      "Our best standard service. Thorough cleaning and expert ironing returned to you the next day.",
-    highlight: "Free Pickup & Delivery Included",
+      "Our most popular comprehensive service. Deep cleaning and expert pressing, returned to you by the next day.",
+    highlight: "Complimentary Pickup & Delivery",
     deliveryTime: "24 Hours",
   },
   {
-    title: "Special Ihram Cleaning",
+    title: "Sacred Ihram Cleaning",
     price: "20 Riyals",
     unit: "Kg",
     description:
-      "We wash your sacred Ihram with great respect. We use gentle, fragrance-free soap to keep them pure.",
-    highlight: "Safe for Pilgrims & Respectful Care",
+      "We handle your Ihram with the highest level of reverence. Using specialized fragrance-free soaps to maintain purity.",
+    highlight: "Dedicated Care for Pilgrims",
     deliveryTime: "Same Day",
   },
   {
-    title: "Removing Hard Stains",
+    title: "Advanced Stain Removal",
     price: "20 Riyals",
     unit: "Kg",
     description:
-      "Special care for clothes with hard stains. Our team uses safe and effective ways to clean your clothes.",
-    highlight: "Expert Stain Cleaning",
+      "Expert treatment for challenging stains. Our specialists utilize safe, effective techniques to restore your garments.",
+    highlight: "Professional Stain Treatment",
     deliveryTime: "Up to 24 Hours",
   },
 ];
@@ -65,17 +65,17 @@ export default function OurServices() {
             id="areas-heading"
             className="text-2xl sm:text-4xl font-bold mb-3 sm:mb-4 text-foreground"
           >
-            All Your Washing Needs in Makkah
+            Comprehensive Laundry Solutions
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto mb-6 sm:mb-8">
-            Trust our team with your important clothes. 
+            Entrust your finest garments to our expert hands.
             <br />
             <span>
-              We provide fast{" "}
+              We offer rapid{" "}
               <strong className="text-primary font-semibold">
-                pickup and delivery
+                collection and delivery
               </strong>{" "}
-              to hotels and houses near the Holy Mosque—making laundry easy for you.
+              to all hotels and residences near Masjid al-Haram, ensuring a hassle-free experience.
             </span>
           </p>
         </div>

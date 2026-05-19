@@ -11,34 +11,34 @@ import {
 
 const comparisonData = [
   {
-    feature: "Pickup Time",
-    us: "15 Minutes",
+    feature: "Response Time",
+    us: "Instant",
     others: "2-4 Hours",
   },
   {
-    feature: "Open Hours",
-    us: "24/7 (Always Open)",
-    others: "Limited Hours",
+    feature: "Operations",
+    us: "24/7 Availability",
+    others: "Standard Hours",
   },
   {
-    feature: "Starting Price",
-    us: "From 18 SAR/kg",
-    others: "From 35 SAR/kg",
+    feature: "Value Pricing",
+    us: "Starting 18 SAR/kg",
+    others: "Starting 35 SAR/kg",
   },
   {
-    feature: "Help Support",
+    feature: "Multilingual Support",
     us: "English, Arabic, Urdu",
-    others: "Only Arabic",
+    others: "Limited Support",
   },
   {
-    feature: "Pickup Fee",
-    us: "Always Free",
-    others: "Extra Charge",
+    feature: "Collection Fee",
+    us: "Always Complimentary",
+    others: "Variable Fees",
   },
   {
-    feature: "Fast Orders",
-    us: "Ready in 1 Hour",
-    others: "24-Hour Wait",
+    feature: "Priority Return",
+    us: "Express Options",
+    others: "24-Hour Minimum",
   },
 ];
 
@@ -51,21 +51,21 @@ const Comparison = () => {
             id="benefits-heading"
             className="text-2xl sm:text-4xl font-bold mb-4 text-foreground"
           >
-            Why Choose Us Over Others?
+            The Zamzam Competitive Edge
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
-            See why we are the best choice for you. We offer better prices, faster service, and great care for every pilgrim.
+            Discover why Zamzam Laundry Service is the preferred choice for pilgrims. We combine superior value, rapid logistics, and meticulous garment care.
           </p>
         </header>
         <div className="bg-gradient-to-r from-slate-700 via-slate-800 to-slate-900 rounded-xl sm:rounded-2xl p-4 sm:p-8 mb-8 sm:mb-12 max-w-6xl mx-auto">
           <h3 className="text-xl sm:text-2xl font-bold text-center mb-6 sm:mb-8 text-white">
-            Makkah Royal Premium Laundry vs. Other Services
+            Zamzam Laundry Service vs. Standard Providers
           </h3>
           <div className="space-y-4">
             <div className="grid grid-cols-3 gap-2 sm:gap-4 text-center font-bold text-sm sm:text-base text-slate-300">
-              <div>What You Get</div>
-              <div>Makkah Royal</div>
-              <div>Other Services</div>
+              <div>Service Features</div>
+              <div>Zamzam Service</div>
+              <div>Standard Services</div>
             </div>
             {comparisonData.map((item, i) => (
               <div
@@ -94,10 +94,10 @@ const Comparison = () => {
                 <Zap className="w-8 h-8 sm:w-10 sm:h-10 text-accent" />
               </div>
               <h3 className="text-base sm:text-lg font-bold mb-2 text-foreground">
-                Very Fast
+                Rapid Logistics
               </h3>
               <p className="text-sm sm:text-base text-muted-foreground">
-                We come for pickup in just 15 minutes. We know you are busy with Hajj or Umrah.
+                We coordinate collections within minutes, respecting the tight schedules of Hajj and Umrah pilgrims.
               </p>
             </div>
           </div>
@@ -107,10 +107,10 @@ const Comparison = () => {
                 <DollarSign className="w-8 h-8 sm:w-10 sm:h-10 text-green-500" />
               </div>
               <h3 className="text-base sm:text-lg font-bold mb-2 text-foreground">
-                Best Prices
+                Exceptional Value
               </h3>
               <p className="text-sm sm:text-base text-muted-foreground">
-                High quality service starting at only 18 SAR/kg. Much cheaper than hotel laundry.
+                Professional cleaning starting at just 18 SAR/kg—providing a premium alternative to high-priced hotel services.
               </p>
             </div>
           </div>
@@ -120,10 +120,10 @@ const Comparison = () => {
                 <Clock className="w-8 h-8 sm:w-10 sm:h-10 text-primary" />
               </div>
               <h3 className="text-base sm:text-lg font-bold mb-2 text-foreground">
-                Always Open 24/7
+                Uninterrupted Service
               </h3>
               <p className="text-sm sm:text-base text-muted-foreground">
-                We are here for you day and night. Any time you need us, we are ready to help.
+                Operating 24/7, we are always available to manage your laundry needs, day or night.
               </p>
             </div>
           </div>
@@ -133,10 +133,10 @@ const Comparison = () => {
                 <Shield className="w-8 h-8 sm:w-10 sm:h-10 text-blue-500" />
               </div>
               <h3 className="text-base sm:text-lg font-bold mb-2 text-foreground">
-                Safe and Reliable
+                Guaranteed Reliability
               </h3>
               <p className="text-sm sm:text-base text-muted-foreground">
-                We take good care of your clothes. We make sure everything is returned to you perfectly.
+                We handle every garment with extreme care, ensuring everything is returned in pristine condition.
               </p>
             </div>
           </div>
@@ -146,10 +146,10 @@ const Comparison = () => {
                 <Users className="w-8 h-8 sm:w-10 sm:h-10 text-purple-500" />
               </div>
               <h3 className="text-base sm:text-lg font-bold mb-2 text-foreground">
-                Good Communication
+                Effective Communication
               </h3>
               <p className="text-sm sm:text-base text-muted-foreground">
-                Talk to us in English, Arabic, or Urdu. We follow your instructions exactly.
+                Our support team is fluent in English, Arabic, and Urdu, ensuring your specific instructions are perfectly understood.
               </p>
             </div>
           </div>
@@ -159,10 +159,10 @@ const Comparison = () => {
                 <Award className="w-8 h-8 sm:w-10 sm:h-10 text-orange-500" />
               </div>
               <h3 className="text-base sm:text-lg font-bold mb-2 text-foreground">
-                Top Quality Service
+                Trusted Excellence
               </h3>
               <p className="text-sm sm:text-base text-muted-foreground">
-                More than 12,000 pilgrims trust us. Our great rating shows our hard work and quality.
+                Over 12,000 pilgrims have entrusted us with their laundry, a testament to our commitment to quality and hard work.
               </p>
             </div>
           </div>

@@ -92,7 +92,7 @@ const Navigation = () => {
                 <a href="/">
                   <img
                     src={isScrolled ? logo_light : logo_dark}
-                    alt="Makkah Royal Premium Laundry logo"
+                    alt="Zamzam Laundry Service logo"
                     width={200}
                     height={100}
                     className="w-full h-full object-contain"
@@ -149,7 +149,7 @@ const Navigation = () => {
                     <a href="/">
                       <img
                         src={isScrolled ? logo_light : logo_dark}
-                        alt="Makkah Royal Premium Laundry logo"
+                        alt="Zamzam Laundry Service logo"
                         width={200}
                         height={100}
                         className="w-full h-full object-contain"

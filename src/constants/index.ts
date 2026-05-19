@@ -7,10 +7,10 @@ export const managerInfo = {
     phoneNumber: 966532693746,
   },
   address: `Clock Tower District, Near Masjid Al Haram, Makkah 24231`,
-  email: "info@makkahroyalpremiumlaundry.com",
+  email: "info@zamzamlaundryservice.com",
 };
 
 export const siteInfo = {
-  siteTitle: "Makkah Royal Premium Laundry",
-  domain: "https://makkahroyalpremiumlaundry.com/",
+  siteTitle: "Zamzam Laundry Service",
+  domain: "https://zamzamlaundryservice.com/",
 };
