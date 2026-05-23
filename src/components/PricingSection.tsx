@@ -64,7 +64,7 @@ const laundryPackages = [
 
 const ironingService = {
   title: "Professional Ironing",
-  price: 14,
+  price: 22,
   deliveryTime: "Within 4 Hours",
   pickup: "Included",
 };
