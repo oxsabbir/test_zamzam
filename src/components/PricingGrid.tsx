@@ -15,7 +15,7 @@ const pricingItems = [
     emoji: "👕",
     title: "Regular Clothes",
     subtitle: "Shirts, pants, casual wear",
-    price: "18 SAR/kg",
+    price: "22 SAR/kg",
     time: "Same day",
   },
   {
@@ -77,7 +77,7 @@ const PricingGrid = () => {
           <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
             Estimated rates for common garments and household items, prepared
             with practical care for daily use.
-            <span className="text-primary ml-1 font-semibold">18 SAR/kg!</span>
+            <span className="text-primary ml-1 font-semibold">22 SAR/kg!</span>
           </p>
         </div>
 

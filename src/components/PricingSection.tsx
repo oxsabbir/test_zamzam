@@ -10,7 +10,7 @@ const laundryPackages = [
     title: "Standard Care",
     type: "Normal",
     deliveryTime: "12 Hours",
-    price: 19,
+    price: 22,
     pickup: "Included",
     featured: false,
   },
@@ -112,7 +112,7 @@ export default function PricingSection() {
                   </div>
                 </div>
                 <div className="rounded-2xl bg-muted/50 p-4 text-center">
-                  <div className="text-2xl font-black text-foreground">19+</div>
+                  <div className="text-2xl font-black text-foreground">22+</div>
                   <div className="text-[11px] font-bold uppercase tracking-widest text-muted-foreground">
                     SAR / Kg
                   </div>

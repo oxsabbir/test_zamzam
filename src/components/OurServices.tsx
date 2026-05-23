@@ -20,7 +20,7 @@ const urgentServices = [
   },
   {
     title: "12 Hours Wash & Delivery",
-    price: "18 Riyals",
+    price: "22 Riyals",
     unit: "Kg",
     description:
       "Normal wash, dry, press/ironing, and folding or hanger service with delivery within 12 hours.",
@@ -38,7 +38,7 @@ const urgentServices = [
   },
   {
     title: "Premium Ihram Care",
-    price: "20 Riyals",
+    price: "22 Riyals",
     unit: "Kg",
     description:
       "Specialized washing and care for Ihram garments using gentle processes to maintain purity and fabric quality.",
@@ -47,7 +47,7 @@ const urgentServices = [
   },
   {
     title: "Stain Removal Service",
-    price: "20 Riyals",
+    price: "22 Riyals",
     unit: "Kg",
     description:
       "Advanced stain treatment for tough spots, handled carefully to protect fabric and restore cleanliness.",
