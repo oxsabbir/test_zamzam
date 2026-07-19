@@ -71,7 +71,7 @@ const PricingGrid = () => {
             id="services-heading"
             className="text-2xl sm:text-4xl font-bold mb-4 text-foreground"
           >
-            Makkah Al Baraka Laundry Pricing
+            Zamzam Laundry Nasir Pricing
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
             Premium laundry services in Makkah with competitive pricing and

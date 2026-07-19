@@ -191,7 +191,7 @@ export default function FinalCTA() {
                 <Zap className=" text-white" size={24} />
               </div>
               <h3 className="text-lg sm:text-2xl font-bold text-primary-foreground text-center">
-                Don't Wait - Experience Al Baraka Quality Today!
+                Don't Wait - Experience Zamzam Laundry Nasir Quality Today!
               </h3>
             </div>
             <p className="text-sm sm:text-base text-primary-foreground/90 mb-4 text-center">

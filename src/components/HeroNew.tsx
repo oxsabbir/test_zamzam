@@ -33,7 +33,7 @@ const HeroNew = () => {
 
       <img
         src={heroImage}
-        alt="Makkah Al Baraka Laundry - Premium laundry pickup and delivery in Makkah for pilgrims and residents"
+        alt="Zamzam Laundry Nasir - Premium laundry pickup and delivery in Makkah for pilgrims and residents"
         className="absolute inset-0 w-full h-full object-cover opacity-30 "
         loading="eager"
         width="1920"
@@ -47,8 +47,8 @@ const HeroNew = () => {
           </div>
           <h1 className="text-2xl sm:text-4xl lg:text-6xl font-bold text-primary-foreground mb-3 sm:mb-6 leading-tight">
             <span className="block text-xl sm:text-2xl lg:text-3xl mb-1 sm:mb-2 text-primary-300">
-              Makkah Al Baraka <br />
-              Laundry
+              Zamzam Laundry <br />
+              Nasir
             </span>
             <span className="text-primary-300 inline-block ">Fast Pickup</span> –
             Premium Laundry Service
@@ -136,7 +136,7 @@ const HeroNew = () => {
               with care, and returned perfectly.
               <span className="text-primary-300 font-bold">
                 {" "}
-                Makkah Al Baraka Laundry
+                Zamzam Laundry Nasir
               </span>{" "}
               is truly the best choice in Makkah!”
             </p>

@@ -64,13 +64,13 @@ const Footer = () => {
               <a href="/">
                 <img
                   src={logo_dark}
-                  alt="Al Baraka Laundry Logo"
+                  alt="Zamzam Laundry Nasir Logo"
                   className="h-[75px] w-auto object-contain brightness-110"
                 />
               </a>
 
               <p className="text-zinc-400 leading-relaxed text-sm sm:text-base max-w-sm">
-                At Makkah Al Baraka Laundry, we provide reliable, fast, and
+                At Zamzam Laundry Nasir, we provide reliable, fast, and
                 high-quality laundry services across the holy city of Makkah.
                 Trust us with your garments for a fresh and clean experience.
               </p>
@@ -187,7 +187,7 @@ const Footer = () => {
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3714.2656995945267!2d39.8231667!3d21.418799!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c204c82533f16f%3A0xca0cff6480eeca59!2sThe%20Clock%20Towers!5e0!3m2!1sen!2sbd!4v1778671743076!5m2!1sen!2sbd"
               className="w-full h-full opacity-60 rounded-3xl group-hover:opacity-100 border-0 transition-opacity"
-              title="Al Baraka Laundry Location"
+              title="Zamzam Laundry Nasir Location"
             />
           </div>
 

@@ -1,16 +1,16 @@
 export const managerInfo = {
-  fullName: "Muhammad Arif Uddin",
-  phoneNumber: "+966 53 533 7025",
-  whatsApp: "+966 53 533 7025",
+  fullName: "Nasir",
+  phoneNumber: "+966 54 508 4184",
+  whatsApp: "+966 54 508 4184",
   onlyNumber: {
-    whatsApp: 966535337025,
-    phoneNumber: 966535337025,
+    whatsApp: 966545084184,
+    phoneNumber: 966545084184,
   },
   address: `Ibrahim Al Khalil Rd, Saudi Arabia`,
-  email: "hossainmohammadm16@gmail.com",
+  email: "info@zamzamlundrynasir.com",
 };
 
 export const siteInfo = {
-  siteTitle: "Makkah Al Baraka Laundry",
-  domain: "https://makkahalbarakalaundry.com/",
+  siteTitle: "Zamzam Laundry Nasir",
+  domain: "https://zamzamlundrynasir.com/",
 };

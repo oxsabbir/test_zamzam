@@ -173,7 +173,7 @@ const Contact = () => {
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 className=" group-hover:grayscale-0 transition-all duration-500"
-                title="Makkah Al Baraka Laundry Location"
+                title="Zamzam Laundry Nasir Location"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none" />
             </div>

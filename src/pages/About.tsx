@@ -40,7 +40,7 @@ const About = () => {
               >
                 <img
                   src={aboutImage}
-                  alt="About Makkah Al Baraka Laundry"
+                  alt="About Zamzam Laundry Nasir"
                   className="w-full h-full object-cover"
                 />
               </motion.div>

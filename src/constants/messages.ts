@@ -1,11 +1,11 @@
 export const whatsappMessages = {
-  pickup: `Hi! I need laundry service in Makkah.
+  pickup: `Hi! I need laundry service at Zamzam Laundry Nasir.
 Could you please share the pickup details and timing?
 
 Thank you!`,
 
   checkPickUpTime: `Hello, 
-I would like to check the pickup time for *<location>* in Makkah. Could you please provide the details so I can confirm the schedule?
+I would like to check the pickup time for *<location>* at Zamzam Laundry Nasir. Could you please provide the details so I can confirm the schedule?
 
 Thank you.`,
 
@@ -44,7 +44,7 @@ Thank you.
 `,
 
   directManager: `Hi <manager>!  
-I need laundry pickup in Makkah. My location is: [User Location]  
+I need laundry pickup at Zamzam Laundry Nasir. My location is: [User Location]
 
 Please share the pickup details.  
 
