@@ -11,7 +11,7 @@ import {
 } from "lucide-react";
 import WhatsAppIcon from "./icons/Whatsapp";
 import { useNavigate, useLocation } from "react-router-dom";
-import logo_dark from "@/assets/al-baraka-dark.webp";
+import logo_light from "@/assets/logo-light.webp";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -54,159 +54,155 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="">
-      <div className="bg-[#0a120b] text-white pt-20 pb-10">
-        {/* Map Section - Full Width Banner Style */}
-
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
-            <div className="space-y-6">
-              <a href="/">
+    <footer className="bg-black text-white pt-20 pb-10">
+      <div className="container mx-auto px-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+          <div className="space-y-6">
+            <a href="/">
                 <img
-                  src={logo_dark}
+                  src={logo_light}
                   alt="Zamzam Laundry Nasir Logo"
-                  className="h-[75px] w-auto object-contain brightness-110"
+                  className="h-[75px] w-auto object-contain"
                 />
-              </a>
+            </a>
 
-              <p className="text-zinc-400 leading-relaxed text-sm sm:text-base max-w-sm">
-                We handle laundry so you don't have to. Fast pickup, careful cleaning, and on-time delivery — all booked through a quick WhatsApp message.
-              </p>
-              <div className="flex space-x-4">
-                <a
-                  href="#"
-                  className="bg-white/5 hover:bg-primary p-3 rounded-full transition-all hover:scale-110 border border-white/5"
-                >
-                  <Facebook size={18} className="text-white" />
-                </a>
-                <a
-                  href="#"
-                  className="bg-white/5 hover:bg-primary p-3 rounded-full transition-all hover:scale-110 border border-white/5"
-                >
-                  <Twitter size={18} className="text-white" />
-                </a>
-                <a
-                  href="#"
-                  className="bg-white/5 hover:bg-primary p-3 rounded-full transition-all hover:scale-110 border border-white/5"
-                >
-                  <Instagram size={18} className="text-white" />
-                </a>
-              </div>
-            </div>
-
-            <div className="space-y-6">
-              <h4 className="text-sm font-bold text-white uppercase tracking-[0.2em] border-l-2 border-primary pl-4">
-                Quick Links
-              </h4>
-              <ul className="space-y-3">
-                {quickLinks.map((link) => (
-                  <li key={link.label}>
-                    <button
-                      onClick={() =>
-                        link.path
-                          ? navigate(link.path)
-                          : scrollToSection(link.id!)
-                      }
-                      className="text-zinc-400 hover:text-primary flex items-center group transition-colors text-left text-sm"
-                    >
-                      <ChevronRight
-                        size={14}
-                        className="mr-2 group-hover:translate-x-1 transition-transform text-primary/50"
-                      />
-                      {link.label}
-                    </button>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div className="space-y-6">
-              <h4 className="text-sm font-bold text-white uppercase tracking-[0.2em] border-l-2 border-primary pl-4">
-                Our Services
-              </h4>
-              <ul className="space-y-3">
-                {servicesLinks.map((service) => (
-                  <li key={service.label}>
-                    <button
-                      onClick={() => scrollToSection(service.id)}
-                      className="text-zinc-400 hover:text-primary flex items-center group transition-colors text-left text-sm"
-                    >
-                      <ChevronRight
-                        size={14}
-                        className="mr-2 group-hover:translate-x-1 transition-transform text-primary/50"
-                      />
-                      {service.label}
-                    </button>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div className="space-y-6">
-              <h4 className="text-sm font-bold text-white uppercase tracking-[0.2em] border-l-2 border-primary pl-4">
-                Contact Us
-              </h4>
-              <div className="space-y-4">
-                <div className="flex items-start space-x-4 group">
-                  <div className="bg-primary/10 p-2.5 rounded-lg text-primary border border-primary/10 transition-colors">
-                    <MapPin size={18} />
-                  </div>
-                  <p className="text-zinc-400 text-sm leading-snug">
-                    {managerInfo.address}
-                  </p>
-                </div>
-                <div className="flex items-center space-x-4 group">
-                  <div className="bg-primary/10 p-2.5 rounded-lg text-primary border border-primary/10 transition-colors">
-                    <Phone size={18} />
-                  </div>
-                  <p className="text-zinc-400 text-sm">
-                    {managerInfo.phoneNumber}
-                  </p>
-                </div>
-                <div className="flex items-center space-x-4 group">
-                  <div className="bg-primary/10 p-2.5 rounded-lg text-primary border border-primary/10 transition-colors">
-                    <Mail size={18} />
-                  </div>
-                  <p className="text-zinc-400 text-sm truncate">
-                    {managerInfo.email}
-                  </p>
-                </div>
-                <div className="flex items-center space-x-4 group">
-                  <div className="bg-primary/10 p-2.5 rounded-lg text-primary border border-primary/10 transition-colors">
-                    <Clock size={18} />
-                  </div>
-                  <p className="text-zinc-400 text-sm">Open 24/7</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="w-full h-[360px] rounded-3xl relative transition-all duration-700 ease-in-out group border border-white/5 overflow-hidden mb-12">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3714.2656995945267!2d39.8231667!3d21.418799!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c204c82533f16f%3A0xca0cff6480eeca59!2sThe%20Clock%20Towers!5e0!3m2!1sen!2sbd!4v1778671743076!5m2!1sen!2sbd"
-              className="w-full h-full opacity-60 rounded-3xl group-hover:opacity-100 border-0 transition-opacity"
-              title="Zamzam Laundry Nasir Location"
-            />
-          </div>
-
-          <div className="pt-10 border-t border-white/5 text-center">
-            <p className="text-zinc-500 text-xs">
-              © {currentYear} {siteInfo.siteTitle}. All rights reserved.
+            <p className="text-gray-300 leading-relaxed text-sm sm:text-base max-w-sm">
+              We handle laundry so you don't have to. Fast pickup, careful cleaning, and on-time delivery — all booked through a quick WhatsApp message.
             </p>
-            <div className="flex justify-center space-x-6 mt-4 text-[10px] font-bold uppercase tracking-widest">
+            <div className="flex space-x-4">
               <a
-                href="/privacy-policy"
-                className="text-zinc-500 hover:text-white transition-colors"
+                href="#"
+                className="bg-white/5 hover:bg-primary p-3 rounded-full transition-all hover:scale-110 border border-white/10"
               >
-                Privacy Policy
+                <Facebook size={18} className="text-white" />
               </a>
               <a
-                href="/terms-of-service"
-                className="text-zinc-500 hover:text-white transition-colors"
+                href="#"
+                className="bg-white/5 hover:bg-primary p-3 rounded-full transition-all hover:scale-110 border border-white/10"
               >
-                Terms & Conditions
+                <Twitter size={18} className="text-white" />
+              </a>
+              <a
+                href="#"
+                className="bg-white/5 hover:bg-primary p-3 rounded-full transition-all hover:scale-110 border border-white/10"
+              >
+                <Instagram size={18} className="text-white" />
               </a>
             </div>
+          </div>
+
+          <div className="space-y-6">
+            <h4 className="text-base font-bold text-white uppercase tracking-[0.2em] border-l-2 border-primary pl-4">
+              Quick Links
+            </h4>
+            <ul className="space-y-3">
+              {quickLinks.map((link) => (
+                <li key={link.label}>
+                  <button
+                    onClick={() =>
+                      link.path
+                        ? navigate(link.path)
+                        : scrollToSection(link.id!)
+                    }
+                    className="text-gray-300 hover:text-white flex items-center group transition-colors text-left text-base"
+                  >
+                    <ChevronRight
+                      size={14}
+                      className="mr-2 group-hover:translate-x-1 transition-transform text-primary/50"
+                    />
+                    {link.label}
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="space-y-6">
+            <h4 className="text-base font-bold text-white uppercase tracking-[0.2em] border-l-2 border-primary pl-4">
+              Our Services
+            </h4>
+            <ul className="space-y-3">
+              {servicesLinks.map((service) => (
+                <li key={service.label}>
+                  <button
+                    onClick={() => scrollToSection(service.id)}
+                    className="text-gray-300 hover:text-white flex items-center group transition-colors text-left text-base"
+                  >
+                    <ChevronRight
+                      size={14}
+                      className="mr-2 group-hover:translate-x-1 transition-transform text-primary/50"
+                    />
+                    {service.label}
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="space-y-6">
+            <h4 className="text-base font-bold text-white uppercase tracking-[0.2em] border-l-2 border-primary pl-4">
+              Contact Us
+            </h4>
+            <div className="space-y-4">
+              <div className="flex items-start space-x-4 group">
+                <div className="bg-primary/10 p-2.5 rounded-lg text-primary border border-primary/10 transition-colors">
+                  <MapPin size={18} />
+                </div>
+                <p className="text-gray-300 text-sm leading-snug">
+                  {managerInfo.address}
+                </p>
+              </div>
+              <div className="flex items-center space-x-4 group">
+                <div className="bg-primary/10 p-2.5 rounded-lg text-primary border border-primary/10 transition-colors">
+                  <Phone size={18} />
+                </div>
+                <p className="text-gray-300 text-sm">
+                  {managerInfo.phoneNumber}
+                </p>
+              </div>
+              <div className="flex items-center space-x-4 group">
+                <div className="bg-primary/10 p-2.5 rounded-lg text-primary border border-primary/10 transition-colors">
+                  <Mail size={18} />
+                </div>
+                <p className="text-gray-300 text-sm truncate">
+                  {managerInfo.email}
+                </p>
+              </div>
+              <div className="flex items-center space-x-4 group">
+                <div className="bg-primary/10 p-2.5 rounded-lg text-primary border border-primary/10 transition-colors">
+                  <Clock size={18} />
+                </div>
+                <p className="text-gray-300 text-sm">Open 24/7</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="w-full h-[360px] rounded-3xl relative transition-all duration-700 ease-in-out group border border-white/5 overflow-hidden mb-12">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3714.2656995945267!2d39.8231667!3d21.418799!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c204c82533f16f%3A0xca0cff6480eeca59!2sThe%20Clock%20Towers!5e0!3m2!1sen!2sbd!4v1778671743076!5m2!1sen!2sbd"
+            className="w-full h-full opacity-60 rounded-3xl group-hover:opacity-100 border-0 transition-opacity"
+            title="Zamzam Laundry Nasir Location"
+          />
+        </div>
+
+        <div className="pt-10 border-t border-white/5 text-center">
+          <p className="text-gray-400 text-xs">
+            © {currentYear} {siteInfo.siteTitle}. All rights reserved.
+          </p>
+          <div className="flex justify-center space-x-6 mt-4 text-[10px] font-bold uppercase tracking-widest">
+            <a
+              href="/privacy-policy"
+              className="text-gray-400 hover:text-white transition-colors"
+            >
+              Privacy Policy
+            </a>
+            <a
+              href="/terms-of-service"
+              className="text-gray-400 hover:text-white transition-colors"
+            >
+              Terms & Conditions
+            </a>
           </div>
         </div>
       </div>
