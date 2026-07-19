@@ -4,44 +4,44 @@ import { whatsappMessages } from "@/constants/messages";
 
 const faqData = [
   {
-    question: "How do I schedule a pickup?",
+    question: "How do I place an order?",
     answer:
-      "You can schedule a pickup easily through our website, by calling us, or by sending a message on WhatsApp. We'll be at your location promptly across Makkah.",
+      "Just send us a WhatsApp message with your location. We'll confirm the pickup time and you're all set — takes less than a minute.",
   },
   {
-    question: "What are your operating hours?",
+    question: "Are you open on weekends and holidays?",
     answer:
-      "We are open 24/7, 365 days a year, including public holidays. We understand that your time is valuable, especially during Hajj and Umrah.",
+      "Yes, we operate every single day including weekends and public holidays. Our team is available around the clock.",
   },
   {
-    question: "How much does it cost?",
+    question: "What are your rates?",
     answer:
-      "Our pricing is simple and transparent. We charge by the kilogram, starting from 18 SAR/kg. Special garments like thobes and abayas have per-piece pricing.",
+      "We charge per kilogram starting from 15 SAR. Individual items like ihram and shoes have fixed per-piece pricing. No hidden fees.",
   },
   {
-    question: "What is the turnaround time?",
+    question: "How fast can I get my clothes back?",
     answer:
-      "For standard laundry, our turnaround time is typically same-day or 24 hours. We also offer an express service that can have your clothes ready in as little as 1-3 hours for urgent needs.",
+      "Standard orders are ready the same day or within 24 hours. Need it sooner? Our express option delivers in 3-5 hours.",
   },
   {
-    question: "Do you clean special garments like Ihram?",
+    question: "Do you handle delicate fabrics?",
     answer:
-      "Yes, we specialize in cleaning delicate and traditional clothing, including Ihram, thobes, abayas, and shemaghs. We handle them with the utmost care to maintain their quality.",
+      "Absolutely. We clean abayas, thobes, ihram, formal wear, and other delicate garments using gentle, fabric-safe methods.",
   },
   {
-    question: "Which areas in Makkah do you serve?",
+    question: "Which areas do you cover?",
     answer:
-      "We provide free pickup and delivery to all hotels and residential areas within Makkah, ensuring convenient access to our services for all pilgrims and residents.",
+      "We pick up and deliver across all of Makkah — hotels near the Haram, residential districts, and everything in between.",
   },
   {
-    question: "Is there a minimum order for pickup?",
+    question: "Is there a minimum order?",
     answer:
-      "No, there is no minimum order requirement. We are happy to serve you, whether you have a single item or a large family-sized load of laundry.",
+      "No minimum at all. Whether it's one shirt or a full bag, we'll pick it up and deliver it back to you.",
   },
   {
-    question: "What payment methods do you accept?",
+    question: "How can I pay?",
     answer:
-      "We accept cash on delivery as well as all major credit and debit cards. You can pay our delivery agent upon receiving your fresh, clean laundry.",
+      "Cash on delivery or card — whichever you prefer. Pay our driver when you receive your clean laundry.",
   },
 ];
 
@@ -51,11 +51,11 @@ export default function Faq() {
       <div className="container mx-auto px-3 sm:px-4">
         <div className="text-center mb-8 sm:mb-12">
           <h2 className="text-2xl sm:text-4xl font-bold mb-4 text-foreground">
-            Your Questions Answered
+            Frequently Asked Questions
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
-            Here are answers to some of the most common questions we receive
-            from pilgrims and residents in Makkah.
+            Got questions? We've got answers. If you don't find what you need,
+            reach out on WhatsApp anytime.
           </p>
         </div>
         <div className="max-w-4xl mx-auto">
@@ -80,8 +80,8 @@ export default function Faq() {
                 💬 Still Have Questions?
               </h3>
               <p className="text-sm sm:text-base text-muted-foreground mb-4">
-                Our friendly team is available 24/7 to answer any questions in
-                Arabic, English, or Urdu.
+                Our team speaks English, Arabic, Urdu, and Hindi. Message us
+                anytime — we reply within minutes.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <button

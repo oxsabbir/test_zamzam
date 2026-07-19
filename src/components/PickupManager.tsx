@@ -25,7 +25,7 @@ const PickupManager = () => {
                   <span className="text-primary-200">Talk to us!</span>
                 </h2>
                 <p className="text-primary-50 text-lg font-medium leading-relaxed mb-10 opacity-90">
-                  Our professional team is ready to assist you. Contact us directly for rapid response across Makkah.
+                  Send us a message or give us a call. We'll be at your doorstep in minutes — day or night.
                 </p>
 
                 <div className="space-y-6">
@@ -69,7 +69,7 @@ const PickupManager = () => {
                     ))}
                   </div>
                   <p className="text-sm font-bold text-primary-100">
-                    12,000+ Happy Customers
+                    3,000+ Happy Customers
                   </p>
                 </div>
               </div>
@@ -82,18 +82,18 @@ const PickupManager = () => {
                   <div className="w-14 h-14 rounded-2xl bg-primary-50 flex items-center justify-center text-primary-600 group-hover:bg-primary-600 group-hover:text-white transition-all duration-300">
                     <Clock className="w-7 h-7" />
                   </div>
-                  <h3 className="text-xl font-bold text-foreground">Fastest Pickup</h3>
+                  <h3 className="text-xl font-bold text-foreground">20-Min Pickup</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    We arrive at your location within minutes of your request.
+                    We reach your location in 20 minutes or less, guaranteed.
                   </p>
                 </div>
                 <div className="space-y-4 group">
                   <div className="w-14 h-14 rounded-2xl bg-primary-50 flex items-center justify-center text-primary-600 group-hover:bg-primary-600 group-hover:text-white transition-all duration-300">
                     <Truck className="w-7 h-7" />
                   </div>
-                  <h3 className="text-xl font-bold text-foreground">Free Delivery</h3>
+                  <h3 className="text-xl font-bold text-foreground">Same-Day Back</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    Always free collection and delivery for all your laundry.
+                    Most orders delivered clean and pressed the same day.
                   </p>
                 </div>
               </div>
@@ -119,15 +119,15 @@ const PickupManager = () => {
               <div className="mt-8 flex flex-wrap items-center justify-center lg:justify-start gap-x-6 gap-y-2">
                 <div className="flex items-center gap-2 text-sm font-medium text-muted-foreground">
                   <CheckCircle className="w-4 h-4 text-primary-600" />
-                  24/7 Service
+                  24/7 Availability
                 </div>
                 <div className="flex items-center gap-2 text-sm font-medium text-muted-foreground">
                   <CheckCircle className="w-4 h-4 text-primary-600" />
-                  Premium Quality
+                  No Minimum Order
                 </div>
                 <div className="flex items-center gap-2 text-sm font-medium text-muted-foreground">
                   <CheckCircle className="w-4 h-4 text-primary-600" />
-                  Trusted Service
+                  Same-Day Delivery
                 </div>
               </div>
             </div>

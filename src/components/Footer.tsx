@@ -70,9 +70,7 @@ const Footer = () => {
               </a>
 
               <p className="text-zinc-400 leading-relaxed text-sm sm:text-base max-w-sm">
-                At Zamzam Laundry Nasir, we provide reliable, fast, and
-                high-quality laundry services across the holy city of Makkah.
-                Trust us with your garments for a fresh and clean experience.
+                We handle laundry so you don't have to. Fast pickup, careful cleaning, and on-time delivery — all booked through a quick WhatsApp message.
               </p>
               <div className="flex space-x-4">
                 <a

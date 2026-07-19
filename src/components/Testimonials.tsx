@@ -3,57 +3,57 @@ import { Star } from "lucide-react";
 const testimonials = [
   {
     text:
-      "Zamzam Laundry Nasir provided an incredibly fast and reliable service. My clothes were picked up, cleaned, and delivered in just a few hours. A true blessing for anyone on a tight schedule in Makkah!",
-    author: "Abdullah Mansour",
-    location: "Hotel Manager, Makkah",
+      "Booked on WhatsApp at midnight and they picked up my clothes within 20 minutes. Delivered fresh by morning. Saved my Umrah trip!",
+    author: "Tariq Hasan",
+    location: "Pilgrim from Pakistan",
   },
   {
     text:
-      "I was worried about cleaning my premium abayas and Ihram, but Zamzam Laundry Nasir handled them perfectly. The clothes came back fresh and impeccably clean. Their attention to detail is outstanding.",
-    author: "Sarah Al-Otaibi",
+      "I use them every week for my hotel staff uniforms. Consistent quality, always on time, and the prices can't be beat.",
+    author: "Nadia Karim",
+    location: "Hotel Supervisor, Ajyad Area",
+  },
+  {
+    text:
+      "My abaya had a tough coffee stain. I thought it was done for, but they got it out completely. Really impressed.",
+    author: "Reem Al-Qahtani",
     location: "Makkah Resident",
   },
   {
     text:
-      "Managing a large household means a lot of laundry. Zamzam Laundry Nasir made it effortless with their free pickup and fast delivery. Highly recommended for families in the city!",
-    author: "Mohammed Al-Zahrani",
-    location: "Business Owner, Jeddah",
+      "We're a family of six and laundry was eating our budget. Their per-kg pricing made a huge difference. Reliable service every time.",
+    author: "Omar Siddiqui",
+    location: "Expatriate, Aziziyah",
   },
   {
     text:
-      "The 24/7 service is a game-changer. I needed my thobes pressed late at night, and Zamzam Laundry Nasir was responsive and efficient. They exceeded all my expectations.",
-    author: "Fahad Bin Khalid",
+      "Needed an emergency iron for my thobe before Friday prayer. They had it ready in one hour. Lifesavers!",
+    author: "Khalid Al-Mutairi",
     location: "Makkah Resident",
   },
   {
     text:
-      "The premium service from Zamzam Laundry Nasir is worth it. My formal wear was returned beautifully folded and smelling fresh. The quality is far better than any other service I’ve used.",
-    author: "Lujain Al-Harbi",
-    location: "Guest House Owner, Makkah",
+      "I manage a small guesthouse and send all guest laundry to Zamzam Laundry Nasir. Fast turnaround and my guests are always happy.",
+    author: "Fatima Noor",
+    location: "Guesthouse Owner, Misfalah",
   },
   {
     text:
-      "I trusted Zamzam Laundry Nasir with my high-quality formal thobes, and they did an amazing job. The pressing was perfect, and the fabric was handled with great care. A five-star experience!",
-    author: "Sultan Al-Amri",
-    location: "Riyadh (Frequent Visitor)",
+      "Tried them during Ramadan when everything was chaotic. They still picked up and delivered on time. Very professional team.",
+    author: "Asif Rahman",
+    location: "Pilgrim from Bangladesh",
   },
   {
     text:
-      "Affordable, fast, and very convenient. Booking through WhatsApp was easy, and the free pickup and delivery made everything simple. Zamzam Laundry Nasir is the best choice near the Haram.",
-    author: "Amal Al-Dossari",
+      "Affordable, quick, and the clothes come back smelling great. I've推荐 them to everyone in my building.",
+    author: "Hassan Al-Faqih",
     location: "Makkah Resident",
   },
   {
     text:
-      "Cleaning heavy blankets and linens was effortless with Zamzam Laundry Nasir. They picked them up from our residence and returned them fresh and clean the next day. Excellent service.",
-    author: "Waleed Al-Sudairi",
-    location: "Makkah Resident",
-  },
-  {
-    text:
-      "I spilled coffee on my favorite thobe, but Zamzam Laundry Nasir’s stain removal service saved it completely. The fabric looks as good as new. Truly professional work.",
-    author: "Nourah Al-Saud",
-    location: "Local Resident, Makkah",
+      "They handled 20 ihram sets for our group without a single mix-up. Perfect for large orders.",
+    author: "Ibrahim Yusuf",
+    location: "Group Leader, Jabal Omar",
   },
 ];
 
@@ -63,11 +63,11 @@ const Testimonials = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-5xl font-bold mb-6 text-foreground tracking-tight">
-            Happy Customers
+            What Our Customers Say
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            See what our customers say about our professional laundry services
-            in Makkah.
+            Real feedback from pilgrims, residents, and hotels who trust us
+            with their laundry every day.
           </p>
         </div>
 

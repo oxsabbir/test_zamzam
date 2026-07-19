@@ -21,14 +21,13 @@ export default function FinalCTA() {
       <div className="relative container mx-auto px-3 sm:px-4">
         <div className="text-center mb-6 sm:mb-12">
           <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-primary-foreground mb-4 sm:mb-6">
-            Fresh, Clean Laundry with Fast Pickup
+            Ready for Fresh, Clean Clothes?
           </h2>
           <p className="text-base sm:text-xl text-primary-foreground/95 max-w-3xl mx-auto mb-6 sm:mb-8 leading-relaxed">
-            Trusted by thousands of pilgrims and residents for premium, hygienic,
-            and reliable laundry care across Makkah.
+            Thousands of pilgrims and residents trust us with their laundry.
             <span className="text-primary-300 font-bold">
               {" "}
-              Professional garment care is just a message away.
+              Book a pickup now and see why.
             </span>
           </p>
         </div>
@@ -119,7 +118,7 @@ export default function FinalCTA() {
                         <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path>
                         <circle cx="12" cy="10" r="3"></circle>
                       </svg>
-                      <span>All Makkah Areas Covered</span>
+                      <span>Pickup Across Makkah</span>
                     </div>
                   </div>
                 </div>
@@ -191,17 +190,16 @@ export default function FinalCTA() {
                 <Zap className=" text-white" size={24} />
               </div>
               <h3 className="text-lg sm:text-2xl font-bold text-primary-foreground text-center">
-                Don't Wait - Experience Zamzam Laundry Nasir Quality Today!
+                Your Laundry. Handled.
               </h3>
             </div>
             <p className="text-sm sm:text-base text-primary-foreground/90 mb-4 text-center">
-              Our professional team is dedicated to providing the best laundry 
-              experience in Makkah with focus on hygiene and speed.
+              Fast pickup, careful cleaning, and on-time delivery — every single time.
             </p>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
               <div className="bg-primary-foreground/10 rounded-lg p-2 sm:p-3">
                 <div className="text-lg sm:text-xl font-bold text-primary-300">
-                  12,000+
+                  3,000+
                 </div>
                 <div className="text-xs text-white sm:text-sm">
                   Happy Customers
@@ -209,26 +207,26 @@ export default function FinalCTA() {
               </div>
               <div className="bg-primary-foreground/10 rounded-lg p-2 sm:p-3">
                 <div className="text-lg sm:text-xl font-bold text-primary-300">
-                  Rapid
+                  20 Min
                 </div>
                 <div className="text-xs text-white sm:text-sm">
-                  Pickup Promise
+                  Average Pickup
                 </div>
               </div>
               <div className="bg-primary-foreground/10 rounded-lg p-2 sm:p-3">
                 <div className="text-lg sm:text-xl font-bold text-primary-300">
-                  24/7
+                  Same Day
                 </div>
                 <div className="text-xs text-white sm:text-sm">
-                  Always Open
+                  Standard Delivery
                 </div>
               </div>
               <div className="bg-primary-foreground/10 rounded-lg p-2 sm:p-3">
                 <div className="text-lg sm:text-xl font-bold text-primary-300">
-                  FREE
+                  Zero Cost
                 </div>
                 <div className="text-xs text-white sm:text-sm">
-                  Pickup &amp; Delivery
+                  Pickup & Delivery
                 </div>
               </div>
             </div>

@@ -15,68 +15,68 @@ import { Button } from "./ui/button";
 const guideItems = [
   {
     icon: <Shirt className="h-7 w-7 text-primary" />,
-    title: "Proper Ihram Care",
+    title: "Washing Ihram the Right Way",
     content:
-      "Ihram garments require gentle and respectful care. Washing with fragrance-free detergents and proper drying helps maintain purity and fabric quality.",
+      "Ihram garments need special handling. Fragrance-free detergent, gentle cycles, and air drying keep them pure and intact.",
     tips: [
-      "Wash Ihram separately using a gentle cycle.",
-      "Use mild, fragrance-free detergent only.",
-      "Air dry in a shaded area to protect the fabric.",
+      "Always wash ihram separately — never mix with other laundry.",
+      "Use only mild, scent-free detergent to preserve purity.",
+      "Dry flat in shade to avoid fabric damage from direct sun.",
     ],
   },
   {
     icon: <UserCheck className="h-7 w-7 text-primary" />,
-    title: "Abaya & Thobe Maintenance",
+    title: "Caring for Abayas & Thobes",
     content:
-      "Traditional garments benefit from professional cleaning and pressing to maintain appearance, comfort, and fabric strength.",
+      "Daily wear like abayas and thobes needs proper cleaning to keep the fabric looking sharp. Professional pressing helps maintain a crisp finish.",
     tips: [
-      "Dry clean delicate or embroidered abayas.",
-      "Machine wash thobes using suitable fabric settings.",
-      "Use professional pressing for a clean finish.",
+      "Dry clean embroidered or embellished abayas to protect detailing.",
+      "Use a gentle cycle for thobes to prevent shrinkage.",
+      "Steam or press after every wash for a clean, polished look.",
     ],
   },
   {
     icon: <Clock className="h-7 w-7 text-primary" />,
-    title: "Planning Laundry Around Your Schedule",
+    title: "Timing Your Laundry Around Prayers",
     content:
-      "Laundry services in Makkah are designed to fit around prayer times and daily routines, allowing you to manage your time efficiently.",
+      "Laundry pickup works best when scheduled around your daily routine. Early drop-offs mean faster turnaround.",
     tips: [
-      "Schedule pickups early in the day for faster service.",
-      "Use express options for urgent requirements.",
-      "Plan laundry before long visits to the Haram.",
+      "Drop off in the morning for same-day evening delivery.",
+      "Use express service when you need clothes before a specific prayer.",
+      "Schedule pickups between Fajr and Dhuhr for fastest service.",
     ],
   },
   {
     icon: <Package className="h-7 w-7 text-primary" />,
-    title: "Packing Smart for Your Stay",
+    title: "Pack Light, Wash Smart",
     content:
-      "Packing wisely helps reduce laundry load and stress. Lightweight, breathable fabrics are easier to clean and dry quickly.",
+      "Bringing fewer clothes and using laundry service saves luggage space and keeps you travelling light through your stay.",
     tips: [
-      "Carry a limited number of essential garments.",
-      "Choose breathable and easy-care fabrics.",
-      "Avoid overpacking heavy clothing items.",
+      "Pack 3-4 outfits max and rotate through laundry cycles.",
+      "Choose quick-dry fabrics that wash easily.",
+      "Leave bulky jackets and blankets for professional cleaning on arrival.",
     ],
   },
   {
     icon: <DollarSign className="h-7 w-7 text-primary" />,
-    title: "Managing Laundry Costs",
+    title: "Save Money on Laundry",
     content:
-      "Understanding laundry pricing helps you plan better. Professional laundry services offer better value compared to hotel laundry options.",
+      "Professional laundry costs far less than hotel washing services. Per-kilo pricing means you only pay for what you bring in.",
     tips: [
-      "Laundry pricing is usually based on weight.",
-      "Professional services are more affordable than hotel laundry.",
-      "Plan regular laundry to avoid urgent charges.",
+      "Hotel laundry can cost 3-5x more than local services.",
+      "Combine loads with family or friends to save time.",
+      "Ask about fixed rates for ihram and shoe cleaning.",
     ],
   },
   {
     icon: <Wind className="h-7 w-7 text-primary" />,
-    title: "Keeping Clothes Fresh in Makkah",
+    title: "Keeping Clothes Fresh in the Heat",
     content:
-      "Frequent washing and proper airing help keep clothes fresh in Makkah’s warm climate. Timely laundry service ensures comfort throughout your stay.",
+      "Makkah's warm climate means sweat and odors build up fast. Regular washing and airing out keeps you comfortable all day.",
     tips: [
-      "Air garments between uses when possible.",
-      "Change clothes regularly due to heat.",
-      "Arrange laundry pickups before busy schedules.",
+      "Air out garments on the balcony between wears.",
+      "Change daily — the heat demands fresh clothes.",
+      "Book a pickup every 2-3 days to stay on top of laundry.",
     ],
   },
 ];
@@ -93,11 +93,11 @@ export default function PilgrimGuide() {
             id="guide-heading"
             className="text-3xl sm:text-4xl font-bold mb-4 text-foreground"
           >
-            Essential Laundry Guide for Pilgrims
+            Laundry Tips for Your Stay
           </h2>
           <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
-            Let Zamzam Laundry Nasir handle the work, so you can focus on your spiritual
-            journey. Here are some essential tips for Hajj & Umrah.
+            Focus on your prayers and your journey — we'll take care of the
+            laundry. Here are some practical tips to stay fresh in Makkah.
           </p>
         </header>
 
@@ -138,11 +138,11 @@ export default function PilgrimGuide() {
         <div className="mt-12 sm:mt-16 text-center">
           <div className="max-w-2xl mx-auto bg-card border rounded-xl p-6 shadow-sm">
             <h3 className="text-xl sm:text-2xl font-bold mb-3 text-foreground">
-              Have More Questions?
+              Need Help With Something Specific?
             </h3>
             <p className="text-base sm:text-lg text-muted-foreground mb-6">
-              Our team understands the unique needs of pilgrims. WhatsApp Zamzam Laundry Nasir
-              anytime for personalized laundry advice.
+              Message us on WhatsApp and we'll guide you on the best way to
+              handle any garment or laundry situation.
             </p>
             <Button
               onClick={() => handleWhatsApp(whatsappMessages.faq)}

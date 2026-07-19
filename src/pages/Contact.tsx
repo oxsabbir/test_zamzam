@@ -23,8 +23,8 @@ const Contact = () => {
               Contact Us
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              Have questions or ready to book? We're here to help with all your
-              laundry needs in Makkah, 24/7!
+              Need laundry done fast? Send us a message or give us a call — we'll
+              sort it out in minutes, any time of day.
             </p>
           </motion.div>
         </div>
@@ -121,12 +121,11 @@ const Contact = () => {
             <div className="bg-gradient-to-r from-primary/10 to-primary/20 p-10 rounded-3xl border border-border">
               <MessageCircle className="w-16 h-16 text-primary mx-auto mb-6" />
               <h2 className="text-3xl font-bold text-foreground mb-4">
-                Book Your Pickup Now
+                Book a Pickup in Seconds
               </h2>
               <p className="text-muted-foreground mb-6 leading-relaxed">
-                Ready for premium laundry service? Contact us via WhatsApp and
-                we'll be at your location promptly. Available 24/7 for your
-                convenience.
+                Message us on WhatsApp with your location and we'll send a driver
+                your way. No app needed, no forms to fill — just a quick message.
               </p>
               <a
                 href={`https://wa.me/${
@@ -181,7 +180,7 @@ const Contact = () => {
             <div className="mt-8 grid md:grid-cols-2 gap-6">
               <div className="bg-card p-6 rounded-xl border border-border">
                 <h3 className="text-lg font-bold text-foreground mb-3">
-                  Coverage Areas
+                  Where We Pick Up
                 </h3>
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2 text-muted-foreground">
@@ -198,31 +197,31 @@ const Contact = () => {
                   </li>
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></span>
-                    All areas near Masjid al-Haram
+                    Every area near Masjid al-Haram
                   </li>
                 </ul>
               </div>
 
               <div className="bg-card p-6 rounded-xl border border-border">
                 <h3 className="text-lg font-bold text-foreground mb-3">
-                  Why Choose Us?
+                  Why Customers Stay
                 </h3>
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></span>
-                    Fast express pickup guaranteed
+                    20-minute pickup, guaranteed
                   </li>
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></span>
-                    Free pickup and delivery
+                    No charges for pickup or delivery
                   </li>
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></span>
-                    Professional care for all fabrics
+                    Professional care for every fabric
                   </li>
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></span>
-                    Customer satisfaction guarantee
+                    Same-day turnaround, always
                   </li>
                 </ul>
               </div>

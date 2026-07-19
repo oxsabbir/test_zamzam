@@ -12,44 +12,44 @@ import { handleWhatsApp } from "@/lib/utils";
 const pricingItems = [
   {
     emoji: "👕",
-    title: "Regular Clothes",
-    subtitle: "Shirts, pants, casual wear",
-    price: "18 SAR/kg",
+    title: "Everyday Wear",
+    subtitle: "T-shirts, pants, casual outfits",
+    price: "15 SAR/kg",
     time: "Same day",
   },
   {
     emoji: "👔",
     title: "Formal Wear",
-    subtitle: "Suits, dress shirts, formal attire",
-    price: "22 SAR/kg",
+    subtitle: "Suits, dress shirts, blouses",
+    price: "20 SAR/kg",
     time: "Same day",
   },
   {
     emoji: "🕋",
-    title: "Ihram Clothes",
-    subtitle: "Special care for holy garments",
-    price: "12 SAR/piece",
+    title: "Ihram Garments",
+    subtitle: "Gentle wash for holy attire",
+    price: "10 SAR/piece",
     time: "24 hours",
   },
   {
     emoji: "🧥",
     title: "Heavy Items",
-    subtitle: "Jackets, blankets, curtains",
-    price: "28 SAR/kg",
+    subtitle: "Blankets, jackets, curtains",
+    price: "25 SAR/kg",
     time: "Next day",
   },
   {
     emoji: "👟",
-    title: "Shoes Cleaning",
-    subtitle: "Professional shoe cleaning service",
-    price: "25 SAR/pair",
+    title: "Shoe Cleaning",
+    subtitle: "Sneakers, sandals, formal shoes",
+    price: "20 SAR/pair",
     time: "4 hours",
   },
   {
-    emoji: "🔧",
+    emoji: "✂️",
     title: "Alterations",
-    subtitle: "Hemming, repairs, adjustments",
-    price: "From 12 SAR",
+    subtitle: "Hemming, stitching, repairs",
+    price: "From 10 SAR",
     time: "Same day",
   },
 ];
@@ -71,12 +71,11 @@ const PricingGrid = () => {
             id="services-heading"
             className="text-2xl sm:text-4xl font-bold mb-4 text-foreground"
           >
-            Zamzam Laundry Nasir Pricing
+            Per-Item Pricing
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
-            Premium laundry services in Makkah with competitive pricing and
-            expert care.
-            <span className="text-primary ml-1 font-semibold">18 SAR/kg!</span>
+            Pay only for what you need. Clear rates with no surprises.
+            <span className="text-primary ml-1 font-semibold">Starting from 10 SAR!</span>
           </p>
         </div>
 
@@ -85,8 +84,8 @@ const PricingGrid = () => {
             <Card
               key={index}
               className={`border-2 hover:border-primary transition-all duration-300 hover:shadow-xl group ${
-                item.title === "Ihram Clothes" ||
-                item.title === "Regular Clothes"
+                item.title === "Ihram Garments" ||
+                item.title === "Everyday Wear"
                   ? "card-pulse-effect"
                   : ""
               }`}

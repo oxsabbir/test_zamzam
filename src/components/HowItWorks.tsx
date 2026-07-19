@@ -13,25 +13,25 @@ const steps = [
     image: phone,
     title: "WhatsApp Us",
     description:
-      "Send a message with your location. We'll confirm pickup time (usually 15 minutes).",
+      "Send your location and laundry details. We'll confirm pickup in under a minute.",
     time: "30 seconds",
   },
   {
     number: "2",
     icon: Truck,
     image: pickup,
-    title: "We Pickup & Clean",
+    title: "We Pick Up & Clean",
     description:
-      "Our professional team collects your clothes and processes them with care.",
-    time: "15 min pickup",
+      "A driver arrives at your door. Clothes are cleaned, pressed, and packed with care.",
+    time: "20 min pickup",
   },
   {
     number: "3",
     icon: Sparkles,
     image: delivery,
-    title: "Fresh Delivery",
+    title: "Delivered Fresh",
     description:
-      "Your clothes return clean, pressed, and ready to wear. Pay on delivery.",
+      "Clean, pressed clothes back at your door — same day. Pay only when you receive them.",
     time: "Same day back",
   },
 ];
@@ -49,13 +49,13 @@ const HowItWorks = () => {
             id="services-heading"
             className="text-2xl sm:text-4xl font-bold mb-4 text-foreground"
           >
-            How Zamzam Laundry Nasir Works
+            Three Steps. Done.
           </h2>
           <p className="text-base sm:text-xl font-medium mb-1 text-muted-foreground max-w-3xl mx-auto">
-            Experience hassle-free laundry in Makkah.
+            No apps, no accounts, no hassle.
             <br />
             <span className="text-primary  mt-2">
-              Fresh, clean clothes, delivered quickly.
+              Just send a message and we handle the rest.
             </span>
           </p>
         </div>
@@ -107,13 +107,13 @@ const HowItWorks = () => {
         {/* Guarantee Box */}
         <div className="bg-gradient-to-br from-gray-900 via-indigo-500 to-gray-900 text-white rounded-2xl p-8 md:p-12 text-center max-w-3xl mx-auto shadow-xl">
           <h3 className=" text-2xl md:text-3xl font-bold mb-4">
-            Try Our Service Risk-Free!
+            Try Us Risk-Free
           </h3>
           <p className="md:text-xl text-lg mb-6 opacity-95">
-            Not satisfied? We'll redo your laundry for FREE or refund 100% of
-            your money.
+            Not satisfied? We'll redo your laundry for free or refund every
+            riyal.
             <br />
-            <span className="font-bold">That's our promise to you!</span>
+            <span className="font-bold">No questions, no hassle.</span>
           </p>
           <Button
             size="lg"

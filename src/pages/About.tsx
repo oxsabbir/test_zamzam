@@ -22,7 +22,7 @@ const About = () => {
                 About {siteInfo.siteTitle}
               </h1>
               <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-                Dedicated to providing Makkah's most reliable and professional laundry care for pilgrims and residents.
+                Fast pickup, careful cleaning, and on-time delivery — that's what we do best.
               </p>
             </motion.div>
           </div>
@@ -46,22 +46,22 @@ const About = () => {
               </motion.div>
               <div className="prose prose-lg max-w-none text-muted-foreground">
                 <p className="mb-6">
-                  {siteInfo.siteTitle} is a premier laundry service provider in Makkah, dedicated to offering top-tier garment care for both pilgrims and local residents. We understand the importance of fresh, clean clothing, especially during your spiritual journey, and we strive to make laundry the least of your concerns.
+                  {siteInfo.siteTitle} started with one idea: laundry in Makkah should be simple, fast, and affordable. We built a service around that — quick WhatsApp booking, drivers who show up in 20 minutes, and cleaning that handles everything from everyday clothes to delicate ihram garments.
                 </p>
                 <p className="mb-6">
-                  Our team utilizes advanced cleaning technologies and eco-friendly detergents to ensure your clothes are treated with the utmost care. From delicate abayas and Ihram garments to everyday wear, we handle every item with professional precision.
+                  We use professional-grade machines, gentle detergents, and careful pressing to make sure every item comes back looking right. Whether you're a pilgrim staying for a few days or a resident who needs regular service, we treat your clothes with the same attention.
                 </p>
                 <h2 className="text-2xl font-bold text-foreground mb-4">
-                  Our Mission
+                  What We Stand For
                 </h2>
                 <p className="mb-6">
-                  To provide the most reliable, efficient, and high-quality laundry service in the holy city of Makkah. We aim to support our customers by taking the burden of laundry off their shoulders, allowing them to focus on what truly matters.
+                  Fair pricing with no hidden charges. Same-day turnaround as standard. Pickup and delivery that actually arrives on time. We keep things simple so you can focus on what matters to you.
                 </p>
                 <h2 className="text-2xl font-bold text-foreground mb-4">
-                  Why We Are Different
+                  What Makes Us Different
                 </h2>
                 <p>
-                  Unlike traditional laundry services, we offer a seamless digital experience with easy WhatsApp booking and lightning-fast pickup and delivery. Our commitment to quality, transparency in pricing, and 24/7 availability sets us apart as the most trusted laundry partner in Makkah.
+                  We don't just clean clothes — we built a system around convenience. WhatsApp ordering, real-time updates, fixed pricing, and drivers who know Makkah inside out. That's why thousands of customers keep coming back.
                 </p>
               </div>
             </div>

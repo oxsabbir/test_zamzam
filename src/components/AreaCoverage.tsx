@@ -10,55 +10,57 @@ import { handleWhatsApp } from "@/lib/utils";
 const areas = [
   {
     emoji: "🕌",
-    title: "Haram Area & Abraj Al Bait",
+    title: "Haram District & Clock Tower",
     description:
-      "Rapid laundry solutions for accommodations directly adjacent to Masjid al-Haram. Catering specifically to the needs of pilgrims.",
+      "Hotels and residences steps from Masjid al-Haram. We reach your door before you finish your next prayer.",
     locations: [
-      { name: "Clock Tower Hotels", time: "5-10 min" },
-      { name: "Al Safwah Towers", time: "5-10 min" },
-      { name: "Hilton Makkah", time: "8-12 min" },
+      { name: "Clock Tower Complex", time: "5-8 min" },
+      { name: "Al Safwah Royal Orchid", time: "5-10 min" },
+      { name: "Fairmont Makkah", time: "7-10 min" },
     ],
   },
   {
     emoji: "🏨",
-    title: "Jabal Omar & Hayatt Regency",
+    title: "Jabal Omar & Surrounding Hotels",
     description:
-      "Tailored services for premium hotel districts, offering convenient 24/7 express pickup.",
+      "Premium hotel zone with 24/7 express pickup. Ideal for guests who need quick turnaround.",
     locations: [
-      { name: "Jabal Omar Towers", time: "10-15 min" },
+      { name: "Jabal Omar Hotels", time: "8-12 min" },
       { name: "Swissotel Makkah", time: "10-15 min" },
-      { name: "Aziziyah District", time: "12-18 min" },
+      { name: "Dar Al Tawhid", time: "10-15 min" },
     ],
   },
-
   {
     emoji: "🌆",
-    title: "Kudai & Misfalah",
+    title: "Misfalah & Kudai",
     description:
-      "Efficient and affordable service for mid-tier lodging areas, ensuring quick turnaround and great value.",
+      "Affordable neighborhoods with fast service. Popular with families and long-stay pilgrims.",
     locations: [
-      { name: "Kudai Area Hotels", time: "15-20 min" },
-      { name: "Misfalah District", time: "15-20 min" },
+      { name: "Misfalah District", time: "12-18 min" },
+      { name: "Kudai Hotels & Apartments", time: "15-20 min" },
+      { name: "Al Rehab District", time: "15-20 min" },
     ],
   },
   {
-    emoji: "🏨",
-    title: "Hilton Suites & Nearby Hotels",
+    emoji: "🏢",
+    title: "Ajyad & Aziziyah",
     description:
-      "Premium laundry service tailored for hotel guests, with fast pickup and reliable delivery for a comfortable stay in Makkah.",
+      "Walking-distance pickup from hotels near the Haram. Perfect for guests without transport.",
     locations: [
-      { name: "Hilton Suites Makkah", time: "10-20 min" },
-      { name: "Nearby Hotels & Residences", time: "15-25 min" },
+      { name: "Ajyad Area Hotels", time: "5-10 min" },
+      { name: "Aziziyah Commercial District", time: "10-15 min" },
+      { name: "Al Andalus District", time: "12-18 min" },
     ],
   },
   {
     emoji: "🏘️",
-    title: "Maabda, Al Rusaifah & Al Awali",
+    title: "Outer Districts & Residences",
     description:
-      "Dependable and extensive service across Makkah's diverse neighborhoods, complete with same-day delivery.",
+      "Full coverage across Makkah's wider neighborhoods. Same-day service for residential areas.",
     locations: [
-      { name: "Maabda Area", time: "15-25 min" },
-      { name: "Al Rusaifah & Al Awali", time: "20-30 min" },
+      { name: "Al Rusaifah", time: "20-25 min" },
+      { name: "Al Awali & Maabda", time: "20-30 min" },
+      { name: "Tell Al Sheraa", time: "25-30 min" },
     ],
   },
 ];
@@ -82,12 +84,11 @@ const AreaCoverage = () => {
             id="areas-heading"
             className="text-2xl sm:text-4xl font-bold mb-3 sm:mb-4 text-foreground"
           >
-            Extensive Laundry Coverage Across Makkah
+            We Cover All of Makkah
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto mb-6 sm:mb-8">
-            From bustling hotel zones to residential areas, our express pickup
-            service reaches every corner of Makkah, ensuring fresh laundry
-            wherever you are.
+            From hotels next to the Haram to residential neighborhoods — our
+            drivers reach every corner of the city within minutes.
           </p>
         </div>
 
