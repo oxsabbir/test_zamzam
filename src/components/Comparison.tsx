@@ -12,58 +12,120 @@ import {
 const comparisonData = [
   {
     feature: "Pickup Time",
-    us: "15 Minutes",
-    others: "2-4 Hours",
+    us: "20 Minutes",
+    others: "3-5 Hours",
   },
   {
     feature: "Operating Hours",
-    us: "Around the Clock (24/7)",
-    others: "Limited Hours",
+    us: "24/7 Including Holidays",
+    others: "Weekdays Only",
   },
   {
     feature: "Starting Price",
-    us: "From 20 SAR/kg",
-    others: "From 35 SAR/kg",
+    us: "From 15 SAR/kg",
+    others: "From 30 SAR/kg",
   },
   {
     feature: "Customer Support",
-    us: "Multi-language (En, Ar, Ur)",
-    others: "Primarily Arabic",
+    us: "En, Ar, Ur, Hi",
+    others: "Arabic Only",
   },
   {
     feature: "Delivery Charge",
-    us: "Always Free",
-    others: "Often Extra",
+    us: "Free on All Orders",
+    others: "Minimum Order Required",
   },
   {
-    feature: "Urgent Orders",
-    us: "Ready in 1 Hour",
-    others: "24-Hour Minimum",
+    feature: "Turnaround",
+    us: "Same Day Standard",
+    others: "24-48 Hours",
+  },
+];
+
+const features = [
+  {
+    icon: Zap,
+    title: "Lightning Pickup",
+    description:
+      "We reach your door in 20 minutes or less. Book on WhatsApp and we're already on our way.",
+    accent: "from-amber-400 to-orange-500",
+  },
+  {
+    icon: DollarSign,
+    title: "Honest Pricing",
+    description:
+      "Starting at just 15 SAR/kg with zero hidden fees. Free pickup and delivery on every order, no minimums.",
+    accent: "from-emerald-400 to-teal-500",
+  },
+  {
+    icon: Clock,
+    title: "Always Open",
+    description:
+      "Day or night, we're available 365 days a year. Late-night pickup? Early morning delivery? We've got you.",
+    accent: "from-sky-400 to-blue-500",
+  },
+  {
+    icon: Shield,
+    title: "Garment Safety",
+    description:
+      "Every item is tracked from pickup to delivery. Not happy with the result? We'll re-clean it free of charge.",
+    accent: "from-indigo-400 to-violet-500",
+  },
+  {
+    icon: Users,
+    title: "Multilingual Team",
+    description:
+      "Speak to us in English, Arabic, Urdu, or Hindi. We make ordering simple no matter where you're from.",
+    accent: "from-purple-400 to-fuchsia-500",
+  },
+  {
+    icon: Award,
+    title: "Trusted by Thousands",
+    description:
+      "Over 3,000 happy customers across Makkah. Rated 4.8 stars on Google — our work speaks for itself.",
+    accent: "from-rose-400 to-pink-500",
   },
 ];
 
 const Comparison = () => {
   return (
-    <section className="py-8 sm:py-16" aria-labelledby="benefits-heading">
-      <div className="container mx-auto px-3 sm:px-4">
-        <header className="text-center mb-8 sm:mb-12">
+    <section
+      className="relative py-16 sm:py-24 overflow-hidden"
+      aria-labelledby="benefits-heading"
+    >
+      {/* Background blobs */}
+      <div className="absolute top-20 -left-32 w-96 h-96 bg-primary/8 rounded-full blur-3xl" />
+      <div className="absolute bottom-20 -right-32 w-96 h-96 bg-emerald-500/8 rounded-full blur-3xl" />
+
+      <div className="relative container mx-auto px-4 sm:px-6">
+        {/* Header */}
+        <header className="text-center mb-12 sm:mb-16">
+          <div className="inline-flex items-center gap-2 bg-primary/10 backdrop-blur-sm border border-primary/15 rounded-full px-4 py-1.5 mb-6">
+            <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
+            <span className="text-sm font-semibold text-primary">
+              Why us over the rest
+            </span>
+          </div>
           <h2
             id="benefits-heading"
-            className="text-2xl sm:text-4xl font-bold mb-4 text-foreground"
+            className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 text-foreground tracking-tight"
           >
-            The Zamzam Laundry Nasir Difference: A Clear Choice
+            Why Book With{" "}
+            <span className="text-primary">Zamzam Laundry Nasir?</span>
           </h2>
-          <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
-            See how our service excels against standard Makkah laundry options,
-            providing unmatched value for pilgrims near Haram.
+          <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
+            Faster pickup, lower prices, and real human support — here's how we
+            stack up against other laundry services in Makkah.
           </p>
         </header>
-        <div className="bg-gradient-to-r from-slate-700 via-slate-800 to-slate-900 rounded-xl sm:rounded-2xl p-4 sm:p-8 mb-8 sm:mb-12 max-w-6xl mx-auto">
+
+        {/* Comparison Table — Blue-Purple Gradient */}
+        <div className="max-w-6xl mx-auto mb-8 sm:mb-12 rounded-xl sm:rounded-2xl overflow-hidden bg-gradient-to-r from-slate-700 via-slate-800 to-slate-900 p-4 sm:p-8 shadow-xl">
           <h3 className="text-xl sm:text-2xl font-bold text-center mb-6 sm:mb-8 text-white">
-            Zamzam Laundry Nasir vs. The Rest
+            Zamzam Laundry Nasir vs. Others
           </h3>
           <div className="space-y-4">
-            <div className="grid grid-cols-3 gap-2 sm:gap-4 text-center font-bold text-sm sm:text-base text-slate-300">
+            <div className="grid grid-cols-3 gap-2 sm:gap-4 text-center font-bold text-sm sm:text-base text-white/70">
               <div>Feature</div>
               <div>Zamzam Laundry Nasir</div>
               <div>Other Services</div>
@@ -71,12 +133,12 @@ const Comparison = () => {
             {comparisonData.map((item, i) => (
               <div
                 key={i}
-                className="grid grid-cols-3 gap-2 sm:gap-4 items-center text-center border-t border-slate-600 pt-4"
+                className="grid grid-cols-3 gap-2 sm:gap-4 items-center text-center border-t border-white/15 pt-4"
               >
-                <div className="text-sm font-semibold text-left text-slate-100">
+                <div className="text-sm font-semibold text-left text-white">
                   {item.feature}
                 </div>
-                <div className="flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 text-green-400 font-bold text-xs sm:text-sm">
+                <div className="flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 text-green-300 font-bold text-xs sm:text-sm">
                   <Check size={16} className="shrink-0" />
                   <span>{item.us}</span>
                 </div>
@@ -88,91 +150,36 @@ const Comparison = () => {
             ))}
           </div>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-6xl mx-auto">
-          <div className="rounded-lg bg-card text-card-foreground shadow-sm p-4 sm:p-6 hover:shadow-xl transition-all hover:-translate-y-1 border border-border">
-            <div className="flex flex-col items-center text-center">
-              <div className="mb-3 sm:mb-4">
-                <Zap className="w-8 h-8 sm:w-10 sm:h-10 text-accent" />
+
+        {/* Feature Cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 max-w-6xl mx-auto">
+          {features.map((feature) => {
+            const Icon = feature.icon;
+            return (
+              <div
+                key={feature.title}
+                className="group relative rounded-2xl border border-white/20 bg-white/50 backdrop-blur-xl p-6 sm:p-7 shadow-[0_4px_24px_rgba(0,0,0,0.06)] hover:shadow-[0_8px_40px_rgba(0,0,0,0.1)] hover:bg-white/70 transition-all duration-300 hover:-translate-y-1"
+              >
+                {/* Icon with gradient glow */}
+                <div className="relative mb-5">
+                  <div
+                    className={`absolute inset-0 w-12 h-12 rounded-xl bg-gradient-to-br ${feature.accent} opacity-20 blur-lg group-hover:opacity-40 transition-opacity duration-300`}
+                  />
+                  <div
+                    className={`relative w-12 h-12 rounded-xl bg-gradient-to-br ${feature.accent} flex items-center justify-center shadow-lg`}
+                  >
+                    <Icon size={22} className="text-white" />
+                  </div>
+                </div>
+                <h3 className="text-lg font-bold text-foreground mb-2">
+                  {feature.title}
+                </h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  {feature.description}
+                </p>
               </div>
-              <h3 className="text-base sm:text-lg font-bold mb-2 text-foreground">
-                Unmatched Speed
-              </h3>
-              <p className="text-sm sm:text-base text-muted-foreground">
-                Guaranteed 15-minute pickup. We operate on your schedule, not
-                ours. Ideal for time-sensitive needs.
-              </p>
-            </div>
-          </div>
-          <div className="rounded-lg bg-card text-card-foreground shadow-sm p-4 sm:p-6 hover:shadow-xl transition-all hover:-translate-y-1 border border-border">
-            <div className="flex flex-col items-center text-center">
-              <div className="mb-3 sm:mb-4">
-                <DollarSign className="w-8 h-8 sm:w-10 sm:h-10 text-green-500" />
-              </div>
-              <h3 className="text-base sm:text-lg font-bold mb-2 text-foreground">
-                Affordable Excellence
-              </h3>
-              <p className="text-sm sm:text-base text-muted-foreground">
-                Transparent pricing from 20 SAR/kg and completely free
-                pickup/delivery, offering savings up to 50% over hotels.
-              </p>
-            </div>
-          </div>
-          <div className="rounded-lg bg-card text-card-foreground shadow-sm p-4 sm:p-6 hover:shadow-xl transition-all hover:-translate-y-1 border border-border">
-            <div className="flex flex-col items-center text-center">
-              <div className="mb-3 sm:mb-4">
-                <Clock className="w-8 h-8 sm:w-10 sm:h-10 text-primary" />
-              </div>
-              <h3 className="text-base sm:text-lg font-bold mb-2 text-foreground">
-                Always Open
-              </h3>
-              <p className="text-sm sm:text-base text-muted-foreground">
-                Laundry emergencies don't wait. That's why we're here for you
-                24/7, even at 3 AM.
-              </p>
-            </div>
-          </div>
-          <div className="rounded-lg bg-card text-card-foreground shadow-sm p-4 sm:p-6 hover:shadow-xl transition-all hover:-translate-y-1 border border-border">
-            <div className="flex flex-col items-center text-center">
-              <div className="mb-3 sm:mb-4">
-                <Shield className="w-8 h-8 sm:w-10 sm:h-10 text-blue-500" />
-              </div>
-              <h3 className="text-base sm:text-lg font-bold mb-2 text-foreground">
-                Total Peace of Mind
-              </h3>
-              <p className="text-sm sm:text-base text-muted-foreground">
-                With digital tracking and professional handling, your garments
-                are secure. Backed by our money-back guarantee.
-              </p>
-            </div>
-          </div>
-          <div className="rounded-lg bg-card text-card-foreground shadow-sm p-4 sm:p-6 hover:shadow-xl transition-all hover:-translate-y-1 border border-border">
-            <div className="flex flex-col items-center text-center">
-              <div className="mb-3 sm:mb-4">
-                <Users className="w-8 h-8 sm:w-10 sm:h-10 text-purple-500" />
-              </div>
-              <h3 className="text-base sm:text-lg font-bold mb-2 text-foreground">
-                We Speak Your Language
-              </h3>
-              <p className="text-sm sm:text-base text-muted-foreground">
-                Our team is fluent in English, Arabic, and Urdu to ensure clear
-                and easy communication.
-              </p>
-            </div>
-          </div>
-          <div className="rounded-lg bg-card text-card-foreground shadow-sm p-4 sm:p-6 hover:shadow-xl transition-all hover:-translate-y-1 border border-border">
-            <div className="flex flex-col items-center text-center">
-              <div className="mb-3 sm:mb-4">
-                <Award className="w-8 h-8 sm:w-10 sm:h-10 text-orange-500" />
-              </div>
-              <h3 className="text-base sm:text-lg font-bold mb-2 text-foreground">
-                Proven & Trusted
-              </h3>
-              <p className="text-sm sm:text-base text-muted-foreground">
-                Serving over 7,500 pilgrims from 50+ countries. Our 4.9-star
-                rating speaks for itself.
-              </p>
-            </div>
-          </div>
+            );
+          })}
         </div>
       </div>
     </section>

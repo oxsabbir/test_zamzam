@@ -1,232 +1,128 @@
-import { MessageCircleMore, PhoneCallIcon, Zap } from "lucide-react";
-import { Button } from "./ui/button";
+import { MessageCircle, Phone, ArrowRight, Users, Clock, Truck, CheckCircle } from "lucide-react";
 import { managerInfo } from "@/constants";
 import WhatsAppIcon from "./icons/Whatsapp";
 import { handleCall, handleWhatsApp } from "@/lib/utils";
 import { whatsappMessages } from "@/constants/messages";
 import ctaBackground from "@/assets/cta-background.webp";
 
+const stats = [
+  { icon: Users, value: "3,000+", label: "Happy Customers", accent: "from-amber-400 to-orange-500" },
+  { icon: Clock, value: "20 Min", label: "Average Pickup", accent: "from-emerald-400 to-teal-500" },
+  { icon: Truck, value: "Same Day", label: "Standard Delivery", accent: "from-sky-400 to-blue-500" },
+  { icon: CheckCircle, value: "Zero Cost", label: "Pickup & Delivery", accent: "from-violet-400 to-purple-500" },
+];
+
 export default function FinalCTA() {
   return (
-    <section
-      style={{
-        background: `url("${ctaBackground}")`,
-        backgroundPosition: "center",
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-      }}
-      className="py-10 sm:py-16 relative bg-center overflow-hidden"
-    >
-      <div className="absolute inset-0 bg-gradient-to-tl from-primary-500/20 to-black/80 "></div>
-      <div className="relative container mx-auto px-3 sm:px-4">
-        <div className="text-center mb-6 sm:mb-12">
-          <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-primary-foreground mb-4 sm:mb-6">
-            Ready for Fresh, Clean Clothes?
+    <section className="relative py-16 sm:py-24 overflow-hidden">
+      {/* Background image + overlay */}
+      <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{ backgroundImage: `url("${ctaBackground}")` }}
+      />
+      <div className="absolute inset-0 bg-gradient-to-br from-gray-900/90 via-gray-900/80 to-gray-900/95" />
+
+      {/* Glow blobs */}
+      <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
+      <div className="absolute top-1/3 right-1/4 w-72 h-72 bg-emerald-500/8 rounded-full blur-3xl" />
+
+      <div className="relative container mx-auto px-4">
+        {/* Header */}
+        <div className="text-center mb-10 sm:mb-14">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4 tracking-tight">
+            Ready to Get Started?
           </h2>
-          <p className="text-base sm:text-xl text-primary-foreground/95 max-w-3xl mx-auto mb-6 sm:mb-8 leading-relaxed">
-            Thousands of pilgrims and residents trust us with their laundry.
-            <span className="text-primary-300 font-bold">
-              {" "}
-              Book a pickup now and see why.
-            </span>
+          <p className="text-base sm:text-lg text-white/70 max-w-xl mx-auto">
+            Message us or give us a call — we'll have a driver at your door in minutes.
           </p>
         </div>
 
-        <div className="max-w-4xl mx-auto">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-10  mb-6 sm:mb-8">
-            <button
-              id="generate_lead"
-              onClick={() => handleWhatsApp(whatsappMessages.pickup, true)}
-              className="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none duration-300 w-full text-base sm:text-xl px-6 py-4 sm:py-6 h-auto rounded-xl bg-green-600 text-white hover:bg-green-700 font-bold shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all"
-            >
-              <WhatsAppIcon size={32} />
-              <div className="text-left ml-2">
-                <div>WhatsApp Pickup</div>
-                <div className="text-xs sm:text-sm opacity-90">
-                  Rapid response
-                </div>
-              </div>
-            </button>
-            <button
-              onClick={handleCall}
-              className="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none bg-gradient-accent text-accent-foreground hover:opacity-90 duration-300 w-full text-base sm:text-xl px-6 py-4 sm:py-6 h-auto rounded-xl bg-primary-500 text-white hover:bg-primary-700 font-bold shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all"
-            >
-              <PhoneCallIcon size={32} />
-              <div className="text-left ml-2">
-                <div>Call Now</div>
-                <div className="text-xs sm:text-sm opacity-90">
-                  Instant response
-                </div>
-              </div>
-            </button>
-          </div>
-          <div className="rounded-lg border shadow-sm bg-black/30 backdrop-blur-sm border-primary-foreground/20 text-primary-foreground mb-6 sm:mb-8">
-            <div className="p-4 sm:p-6">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 text-center sm:text-left">
-                <div>
-                  <h3 className="text-lg sm:text-xl font-bold mb-2 text-primary-300 border-b border-primary-300/60 pb-2">
-                    Contact Details
-                  </h3>
-                  <div className="space-y-2 text-sm sm:text-base">
-                    <div className="flex items-center justify-center sm:justify-start">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        className="lucide lucide-message-circle w-4 h-4 mr-2 text-primary-400"
-                      >
-                        <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path>
-                      </svg>
-                      <span>WhatsApp: {managerInfo.whatsApp}</span>
-                    </div>
-                    <div className="flex items-center justify-center sm:justify-start">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        className="lucide lucide-phone w-4 h-4 mr-2 text-primary-400"
-                      >
-                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-                      </svg>
-                      <span>Call: {managerInfo.phoneNumber}</span>
-                    </div>
-                    <div className="flex items-center justify-center sm:justify-start">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        className="lucide lucide-map-pin w-4 h-4 mr-2 text-primary-400"
-                      >
-                        <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path>
-                        <circle cx="12" cy="10" r="3"></circle>
-                      </svg>
-                      <span>Pickup Across Makkah</span>
-                    </div>
+        {/* CTA Buttons */}
+        <div className="flex flex-col sm:flex-row gap-4 max-w-2xl mx-auto mb-14">
+          <button
+            id="generate_lead"
+            onClick={() => handleWhatsApp(whatsappMessages.pickup, true)}
+            className="flex-1 group inline-flex items-center justify-center gap-3 bg-green-500 hover:bg-green-600 text-white font-bold text-lg py-5 px-6 rounded-2xl transition-all duration-300 shadow-lg shadow-green-500/25 hover:shadow-xl hover:shadow-green-500/30 hover:-translate-y-0.5"
+          >
+            <WhatsAppIcon size={24} />
+            <span className="text-left">
+              <span className="block text-base">WhatsApp Pickup</span>
+              <span className="text-xs font-normal text-white/80">Instant response</span>
+            </span>
+            <ArrowRight size={18} className="ml-auto opacity-60 group-hover:translate-x-1 group-hover:opacity-100 transition-all" />
+          </button>
+          <button
+            onClick={handleCall}
+            className="flex-1 group inline-flex items-center justify-center gap-3 bg-white/10 backdrop-blur-sm border border-white/15 hover:bg-white/15 text-white font-bold text-lg py-5 px-6 rounded-2xl transition-all duration-300 hover:-translate-y-0.5"
+          >
+            <Phone size={22} />
+            <span className="text-left">
+              <span className="block text-base">Call Now</span>
+              <span className="text-xs font-normal text-white/60">Talk to a person</span>
+            </span>
+            <ArrowRight size={18} className="ml-auto opacity-60 group-hover:translate-x-1 group-hover:opacity-100 transition-all" />
+          </button>
+        </div>
+
+        {/* Stats Row */}
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 max-w-4xl mx-auto mb-14">
+          {stats.map((stat) => {
+            const Icon = stat.icon;
+            return (
+              <div
+                key={stat.label}
+                className="group text-center rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl p-5 hover:bg-white/10 transition-all duration-300"
+              >
+                <div className="relative mx-auto w-fit mb-3">
+                  <div className={`absolute inset-0 w-10 h-10 rounded-xl bg-gradient-to-br ${stat.accent} opacity-25 blur-lg`} />
+                  <div className={`relative w-10 h-10 rounded-xl bg-gradient-to-br ${stat.accent} flex items-center justify-center shadow-md`}>
+                    <Icon size={18} className="text-white" />
                   </div>
                 </div>
-                <div>
-                  <h3 className="text-lg sm:text-xl font-bold mb-2 text-primary-300 border-b border-primary-300/60 pb-2">
-                    Service Hours
-                  </h3>
-                  <div className="space-y-2 text-sm sm:text-base">
-                    <div className="flex items-center justify-center sm:justify-start">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        className="lucide lucide-clock w-4 h-4 mr-2 text-primary-400"
-                      >
-                        <circle cx="12" cy="12" r="10"></circle>
-                        <polyline points="12 6 12 12 16 14"></polyline>
-                      </svg>
-                      <span>24/7 Service Available</span>
-                    </div>
-                    <div className="flex items-center justify-center sm:justify-start">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        className="lucide lucide-zap w-4 h-4 mr-2 text-primary-300"
-                      >
-                        <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
-                      </svg>
-                      <span>Fast Pickup Guarantee</span>
-                    </div>
-                    <div className="flex items-center justify-center sm:justify-start">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        className="lucide lucide-shield w-4 h-4 mr-2 text-primary-400"
-                      >
-                        <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
-                      </svg>
-                      <span>100% Satisfaction Guarantee</span>
-                    </div>
-                  </div>
+                <div className="text-xl sm:text-2xl font-black text-white mb-0.5">
+                  {stat.value}
+                </div>
+                <div className="text-xs text-white/50 font-medium">
+                  {stat.label}
                 </div>
               </div>
-            </div>
-          </div>
-          <div className="rounded-lg border p-6 shadow-sm bg-black/30 backdrop-blur-sm border-primary-foreground/20 text-primary-foreground mb-6 sm:mb-8">
-            <div className="flex items-center flex-col gap-2 justify-center mb-3">
-              <div className="animate-pulse bg-primary-600 rounded-lg p-3 mr-3">
-                <Zap className=" text-white" size={24} />
-              </div>
-              <h3 className="text-lg sm:text-2xl font-bold text-primary-foreground text-center">
-                Your Laundry. Handled.
+            );
+          })}
+        </div>
+
+        {/* Contact Info */}
+        <div className="max-w-3xl mx-auto rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl p-6 sm:p-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
+            {/* Left */}
+            <div>
+              <h3 className="text-sm font-bold uppercase tracking-wider text-white/40 mb-4">
+                Contact
               </h3>
+              <div className="space-y-3">
+                <div className="flex items-center gap-3 text-white/80 text-sm">
+                  <MessageCircle size={16} className="text-green-400 shrink-0" />
+                  {managerInfo.whatsApp}
+                </div>
+                <div className="flex items-center gap-3 text-white/80 text-sm">
+                  <Phone size={16} className="text-white/50 shrink-0" />
+                  {managerInfo.phoneNumber}
+                </div>
+              </div>
             </div>
-            <p className="text-sm sm:text-base text-primary-foreground/90 mb-4 text-center">
-              Fast pickup, careful cleaning, and on-time delivery — every single time.
-            </p>
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
-              <div className="bg-primary-foreground/10 rounded-lg p-2 sm:p-3">
-                <div className="text-lg sm:text-xl font-bold text-primary-300">
-                  3,000+
+
+            {/* Right */}
+            <div>
+              <h3 className="text-sm font-bold uppercase tracking-wider text-white/40 mb-4">
+                Service
+              </h3>
+              <div className="space-y-3">
+                <div className="flex items-center gap-3 text-white/80 text-sm">
+                  <Clock size={16} className="text-white/50 shrink-0" />
+                  Open 24/7, including holidays
                 </div>
-                <div className="text-xs text-white sm:text-sm">
-                  Happy Customers
-                </div>
-              </div>
-              <div className="bg-primary-foreground/10 rounded-lg p-2 sm:p-3">
-                <div className="text-lg sm:text-xl font-bold text-primary-300">
-                  20 Min
-                </div>
-                <div className="text-xs text-white sm:text-sm">
-                  Average Pickup
-                </div>
-              </div>
-              <div className="bg-primary-foreground/10 rounded-lg p-2 sm:p-3">
-                <div className="text-lg sm:text-xl font-bold text-primary-300">
-                  Same Day
-                </div>
-                <div className="text-xs text-white sm:text-sm">
-                  Standard Delivery
-                </div>
-              </div>
-              <div className="bg-primary-foreground/10 rounded-lg p-2 sm:p-3">
-                <div className="text-lg sm:text-xl font-bold text-primary-300">
-                  Zero Cost
-                </div>
-                <div className="text-xs text-white sm:text-sm">
-                  Pickup & Delivery
+                <div className="flex items-center gap-3 text-white/80 text-sm">
+                  <CheckCircle size={16} className="text-white/50 shrink-0" />
+                  Satisfaction guaranteed
                 </div>
               </div>
             </div>

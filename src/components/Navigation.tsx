@@ -3,8 +3,8 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, X } from "lucide-react";
 import WhatsAppIcon from "./icons/Whatsapp";
-import logo_light from "@/assets/al-baraka-logo.webp";
-import logo_dark from "@/assets/al-baraka-dark.webp";
+import logo_light from "@/assets/logo-light.webp";
+import logo_dark from "@/assets/logo-light.webp";
 
 import { motion } from "motion/react";
 import { handleWhatsApp } from "@/lib/utils";
@@ -80,7 +80,7 @@ const Navigation = () => {
           : "bg-transparent"
       }`}
     >
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 py-2">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <button
@@ -88,7 +88,7 @@ const Navigation = () => {
             className="flex items-center gap-2 group"
           >
             <div className="py-4">
-              <div className="w-fit h-[60px] md:h-[80px]">
+              <div className="w-fit h-[80px] md:h-[100px]">
                 <a href="/">
                   <img
                     src={isScrolled ? logo_light : logo_dark}
@@ -145,7 +145,7 @@ const Navigation = () => {
               <div className="flex flex-col gap-6 mt-8">
                 {/* Mobile Logo */}
                 <div className="py-1.5">
-                  <div className="w-fit h-[60px]">
+                  <div className="w-fit h-[80px] md:h-[100px]">
                     <a href="/">
                       <img
                         src={isScrolled ? logo_light : logo_dark}
