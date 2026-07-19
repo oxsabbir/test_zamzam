@@ -72,10 +72,10 @@ const About = () => {
     <div className="min-h-screen bg-background">
       <Navigation />
       <main>
-        <section className="pt-32  bg-gradient-to-b from-primary/10 via-background to-background relative overflow-hidden">
+        <section className="pt-32 bg-gradient-to-b from-primary/70 via-background to-background relative overflow-hidden">
           <div className="absolute inset-0 overflow-hidden pointer-events-none">
-            <div className="absolute -top-40 -right-40 w-80 h-80 bg-primary/5 rounded-full blur-3xl" />
-            <div className="absolute -bottom-20 -left-20 w-60 h-60 bg-primary/5 rounded-full blur-3xl" />
+            <div className="absolute -top-40 -right-40 w-80 h-80 bg-white/10 rounded-full blur-3xl" />
+            <div className="absolute -bottom-20 -left-20 w-60 h-60 bg-white/10 rounded-full blur-3xl" />
           </div>
           <div className="container mx-auto px-4 relative z-10">
             <motion.div
