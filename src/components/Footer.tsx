@@ -152,13 +152,13 @@ const Footer = () => {
           </p>
           <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-[10px] font-bold uppercase tracking-[0.16em]">
             <Link
-              to="/"
+              to="/privacy-policy"
               className="text-muted-foreground transition-colors hover:text-primary"
             >
               Privacy Policy
             </Link>
             <Link
-              to="/"
+              to="/terms-of-service"
               className="text-muted-foreground transition-colors hover:text-primary"
             >
               Terms &amp; Conditions

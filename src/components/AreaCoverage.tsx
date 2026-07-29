@@ -159,13 +159,13 @@ const AreaCoverage = () => {
                       key={idx}
                       className="flex items-center justify-between gap-3 bg-white/60 backdrop-blur-sm border border-white/30 rounded-xl px-4 py-3"
                     >
-                      <div className="flex items-center gap-2.5">
+                      <div className="flex  bg-green-300 items-center gap-2.5">
                         <MapPin size={14} className="text-primary shrink-0" />
-                        <span className="text-sm font-medium text-foreground">
+                        <span className="text-sm   font-medium text-foreground">
                           {loc.name}
                         </span>
                       </div>
-                      <div className="flex items-center gap-1.5 bg-primary/10 text-primary text-xs font-bold px-2.5 py-1 rounded-full border border-primary/15">
+                      <div className="flex shrink-0 items-center gap-1.5 bg-primary/10 text-primary text-xs font-bold px-2.5 py-1 rounded-full border border-primary/15">
                         <Clock size={12} />
                         {loc.time}
                       </div>
