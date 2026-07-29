@@ -1,5 +1,13 @@
 import { Button } from "@/components/ui/button";
-import { MapPin, Clock, Landmark, Hotel, Home, Building2, Map } from "lucide-react";
+import {
+  MapPin,
+  Clock,
+  Landmark,
+  Hotel,
+  Home,
+  Building2,
+  Map,
+} from "lucide-react";
 import WhatsAppIcon from "./icons/Whatsapp";
 import { useState } from "react";
 import { whatsappMessages } from "@/constants/messages";
@@ -16,11 +24,14 @@ const areas = [
       { name: "Clock Tower Complex", time: "5-8 min" },
       { name: "Al Safwah Royal Orchid", time: "5-10 min" },
       { name: "Fairmont Makkah", time: "7-10 min" },
+      { name: "Hilton & DoubleTree by Hilton", time: "5-10 min" },
+      { name: "ZamZam Hotel", time: "7-12 min" },
+      { name: "Jabal Al Kaaba Area", time: "8-12 min" },
     ],
   },
   {
     icon: Hotel,
-    title: "Jabal Omar & Surrounding Hotels",
+    title: "Jabal Omar, Hilton Area & Tariq Al Hijrah",
     description:
       "Premium hotel zone with 24/7 express pickup. Ideal for guests who need quick turnaround.",
     accent: "from-indigo-400 to-violet-500",
@@ -28,6 +39,9 @@ const areas = [
       { name: "Jabal Omar Hotels", time: "8-12 min" },
       { name: "Swissotel Makkah", time: "10-15 min" },
       { name: "Dar Al Tawhid", time: "10-15 min" },
+      { name: "Anjum Hotel", time: "8-12 min" },
+      { name: "Swiss Al Maqam & Swiss Hotel Makkah", time: "10-15 min" },
+      { name: "Tariq Al Hijrah Road", time: "10-15 min" },
     ],
   },
   {
@@ -56,11 +70,13 @@ const areas = [
   },
   {
     icon: Map,
-    title: "Outer Districts & Residences",
+    title: "Al Jihad & Outer Districts",
     description:
-      "Full coverage across Makkah's wider neighborhoods. Same-day service for residential areas.",
+      "Full coverage across Makkah's wider neighborhoods and newer districts. Same-day service for residential areas.",
     accent: "from-rose-400 to-pink-500",
     locations: [
+      { name: "Al Jihad Area", time: "15-20 min" },
+      { name: "Hilton Area", time: "10-15 min" },
       { name: "Al Rusaifah", time: "20-25 min" },
       { name: "Al Awali & Maabda", time: "20-30 min" },
       { name: "Tell Al Sheraa", time: "25-30 min" },
@@ -97,8 +113,7 @@ const AreaCoverage = () => {
             id="areas-heading"
             className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 text-foreground tracking-tight"
           >
-            We Cover All of{" "}
-            <span className="text-primary">Makkah</span>
+            We Cover All of <span className="text-primary">Makkah</span>
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
             From hotels next to the Haram to residential neighborhoods — our
@@ -111,70 +126,70 @@ const AreaCoverage = () => {
           {areas.map((area, index) => {
             const Icon = area.icon;
             return (
-            <div
-              key={index}
-              className="group relative rounded-2xl sm:rounded-3xl border border-white/20 bg-white/50 backdrop-blur-xl p-6 sm:p-7 shadow-[0_4px_20px_rgba(0,0,0,0.05)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.1)] hover:bg-white/70 transition-all duration-300 hover:-translate-y-1"
-            >
-              {/* Header */}
-              <div className="flex items-start gap-4 mb-5">
-                <div className="relative">
-                  <div
-                    className={`absolute inset-0 w-12 h-12 rounded-xl bg-gradient-to-br ${area.accent} opacity-20 blur-lg group-hover:opacity-40 transition-opacity duration-300`}
-                  />
-                  <div
-                    className={`relative w-12 h-12 rounded-xl bg-gradient-to-br ${area.accent} flex items-center justify-center shadow-lg`}
-                  >
-                    <Icon size={22} className="text-white" />
-                  </div>
-                </div>
-                <div>
-                  <h3 className="text-lg sm:text-xl font-bold text-foreground mb-1">
-                    {area.title}
-                  </h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
-                    {area.description}
-                  </p>
-                </div>
-              </div>
-
-              {/* Locations */}
-              <div className="space-y-2.5 mb-5">
-                {area.locations.map((loc, idx) => (
-                  <div
-                    key={idx}
-                    className="flex items-center justify-between gap-3 bg-white/60 backdrop-blur-sm border border-white/30 rounded-xl px-4 py-3"
-                  >
-                    <div className="flex items-center gap-2.5">
-                      <MapPin size={14} className="text-primary shrink-0" />
-                      <span className="text-sm font-medium text-foreground">
-                        {loc.name}
-                      </span>
-                    </div>
-                    <div className="flex items-center gap-1.5 bg-primary/10 text-primary text-xs font-bold px-2.5 py-1 rounded-full border border-primary/15">
-                      <Clock size={12} />
-                      {loc.time}
-                    </div>
-                  </div>
-                ))}
-              </div>
-
-              {/* Button */}
-              <Button
-                onClick={() =>
-                  handleWhatsApp(
-                    `Hi I need laundry service in ${encodeURIComponent(
-                      area.title,
-                    )}. Could you please share the pickup details and timing? Thank you! `,
-                    true,
-                  )
-                }
-                id="generate_lead"
-                className="w-full bg-primary text-white hover:bg-primary/90 font-bold h-11 rounded-xl transition-all duration-300"
+              <div
+                key={index}
+                className="group relative rounded-2xl sm:rounded-3xl border border-white/20 bg-white/50 backdrop-blur-xl p-6 sm:p-7 shadow-[0_4px_20px_rgba(0,0,0,0.05)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.1)] hover:bg-white/70 transition-all duration-300 hover:-translate-y-1"
               >
-                Book Pickup
-              </Button>
-            </div>
-          );
+                {/* Header */}
+                <div className="flex items-start gap-4 mb-5">
+                  <div className="relative">
+                    <div
+                      className={`absolute inset-0 w-12 h-12 rounded-xl bg-gradient-to-br ${area.accent} opacity-20 blur-lg group-hover:opacity-40 transition-opacity duration-300`}
+                    />
+                    <div
+                      className={`relative w-12 h-12 rounded-xl bg-gradient-to-br ${area.accent} flex items-center justify-center shadow-lg`}
+                    >
+                      <Icon size={22} className="text-white" />
+                    </div>
+                  </div>
+                  <div>
+                    <h3 className="text-lg sm:text-xl font-bold text-foreground mb-1">
+                      {area.title}
+                    </h3>
+                    <p className="text-sm text-muted-foreground leading-relaxed">
+                      {area.description}
+                    </p>
+                  </div>
+                </div>
+
+                {/* Locations */}
+                <div className="space-y-2.5 mb-5">
+                  {area.locations.map((loc, idx) => (
+                    <div
+                      key={idx}
+                      className="flex items-center justify-between gap-3 bg-white/60 backdrop-blur-sm border border-white/30 rounded-xl px-4 py-3"
+                    >
+                      <div className="flex items-center gap-2.5">
+                        <MapPin size={14} className="text-primary shrink-0" />
+                        <span className="text-sm font-medium text-foreground">
+                          {loc.name}
+                        </span>
+                      </div>
+                      <div className="flex items-center gap-1.5 bg-primary/10 text-primary text-xs font-bold px-2.5 py-1 rounded-full border border-primary/15">
+                        <Clock size={12} />
+                        {loc.time}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+
+                {/* Button */}
+                <Button
+                  onClick={() =>
+                    handleWhatsApp(
+                      `Hi I need laundry service in ${encodeURIComponent(
+                        area.title,
+                      )}. Could you please share the pickup details and timing? Thank you! `,
+                      true,
+                    )
+                  }
+                  id="generate_lead"
+                  className="w-full bg-primary text-white hover:bg-primary/90 font-bold h-11 rounded-xl transition-all duration-300"
+                >
+                  Book Pickup
+                </Button>
+              </div>
+            );
           })}
         </div>
 

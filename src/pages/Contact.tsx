@@ -189,7 +189,11 @@ const Contact = () => {
                   </li>
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></span>
-                    Jabal Omar & Aziziyah (10-15 min)
+                    Jabal Omar, Hilton Area & Tariq Al Hijrah (10-15 min)
+                  </li>
+                  <li className="flex items-start gap-2 text-muted-foreground">
+                    <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></span>
+                    Dar Al Tawhid, Jabal Al Kaaba & Al Jihad (10-18 min)
                   </li>
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></span>

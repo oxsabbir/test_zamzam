@@ -12,9 +12,23 @@ import { handleWhatsApp } from "@/lib/utils";
 const pricingItems = [
   {
     emoji: "👕",
+    title: "Normal Wash",
+    subtitle: "Standard wash, dry & press per kilogram",
+    price: "20 SAR/kg",
+    time: "Same day",
+  },
+  {
+    emoji: "⚡",
+    title: "Urgent Wash",
+    subtitle: "Fast-track service — ready in hours",
+    price: "25 SAR/kg",
+    time: "Express",
+  },
+  {
+    emoji: "👕",
     title: "Everyday Wear",
     subtitle: "T-shirts, pants, casual outfits",
-    price: "15 SAR/kg",
+    price: "20 SAR/kg",
     time: "Same day",
   },
   {
@@ -23,13 +37,6 @@ const pricingItems = [
     subtitle: "Suits, dress shirts, blouses",
     price: "20 SAR/kg",
     time: "Same day",
-  },
-  {
-    emoji: "🕋",
-    title: "Ihram Garments",
-    subtitle: "Gentle wash for holy attire",
-    price: "10 SAR/piece",
-    time: "24 hours",
   },
   {
     emoji: "🧥",
@@ -44,13 +51,6 @@ const pricingItems = [
     subtitle: "Sneakers, sandals, formal shoes",
     price: "20 SAR/pair",
     time: "4 hours",
-  },
-  {
-    emoji: "✂️",
-    title: "Alterations",
-    subtitle: "Hemming, stitching, repairs",
-    price: "From 10 SAR",
-    time: "Same day",
   },
 ];
 
@@ -75,7 +75,9 @@ const PricingGrid = () => {
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
             Pay only for what you need. Clear rates with no surprises.
-            <span className="text-primary ml-1 font-semibold">Starting from 10 SAR!</span>
+            <span className="text-primary ml-1 font-semibold">
+              Starting from 10 SAR!
+            </span>
           </p>
         </div>
 

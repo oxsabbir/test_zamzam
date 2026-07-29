@@ -1,5 +1,5 @@
 import { Zap, Clock, Quote, CircleDollarSign } from "lucide-react";
-import heroImage from "@/assets/al-baraka-hero.webp";
+import heroImage from "@/assets/laundry-nasir-bg.webp";
 import WhatsAppIcon from "./icons/Whatsapp";
 import { useEffect, useState } from "react";
 import { handleWhatsApp } from "@/lib/utils";
@@ -50,8 +50,10 @@ const HeroNew = () => {
               Zamzam Laundry <br />
               Nasir
             </span>
-            <span className="text-primary-300 inline-block">Same-Day Pickup</span> &
-            Hassle-Free Delivery
+            <span className="text-primary-300 inline-block">
+              Same-Day Pickup
+            </span>{" "}
+            & Hassle-Free Delivery
           </h1>
           <div className="bg-black/30 backdrop-blur-sm rounded-xl sm:rounded-2xl p-3 sm:p-6 mb-4 sm:mb-8">
             <div className="flex items-center justify-center mb-2 sm:mb-3">
@@ -143,7 +145,7 @@ const HeroNew = () => {
             <div className="grid grid-cols-2  sm:grid-cols-3 gap-2 sm:gap-4 text-center">
               <div className="bg-primary-400/20 rounded-lg p-2 sm:p-3">
                 <div className="text-lg sm:text-2xl font-bold text-primary-300">
-                  From 18 SAR
+                  From 20 SAR
                 </div>
                 <div className="text-xs sm:text-sm text-primary-foreground/80">
                   Per Kilogram

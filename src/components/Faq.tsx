@@ -16,7 +16,7 @@ const faqData = [
   {
     question: "What are your rates?",
     answer:
-      "We charge per kilogram starting from 15 SAR. Individual items like ihram and shoes have fixed per-piece pricing. No hidden fees.",
+      "We charge per kilogram starting from 20 SAR. Individual items like ihram and shoes have fixed per-piece pricing. No hidden fees.",
   },
   {
     question: "How fast can I get my clothes back?",
