@@ -1,6 +1,6 @@
 {
-  "name": "Zamzam Laundry Nasir",
-  "short_name": "Zamzam Laundry",
+  "name": "MyWebSite",
+  "short_name": "MySite",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",

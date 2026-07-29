@@ -39,7 +39,6 @@ const Index = () => {
       </div>
       <Faq />
       <EmergencyService />
-      <FinalCTA />
       <div id="contact">
         <PickupManager />
       </div>

@@ -1,5 +1,5 @@
 import { Zap, Clock, Quote, CircleDollarSign } from "lucide-react";
-import heroImage from "@/assets/laundry-nasir-bg.webp";
+import heroImage from "@/assets/hero-nasir.webp";
 import WhatsAppIcon from "./icons/Whatsapp";
 import { useEffect, useState } from "react";
 import { handleWhatsApp } from "@/lib/utils";
@@ -27,7 +27,7 @@ const HeroNew = () => {
   return (
     <section
       id="hero"
-      className="relative overflow-hidden bg-gradient-to-r from-gray-900 via-primary-950 to-gray-900 min-h-screen flex items-center pt-16"
+      className="relative overflow-hidden bg-gradient-to-r from-black via-primary-900 to-black min-h-screen flex items-center pt-16"
     >
       <FloatingCTA />
 
