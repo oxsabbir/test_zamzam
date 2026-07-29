@@ -23,8 +23,8 @@ const Contact = () => {
               Contact Us
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              Need laundry done fast? Send us a message or give us a call — we'll
-              sort it out in minutes, any time of day.
+              Need laundry done fast? Send us a message or give us a call —
+              we'll sort it out in minutes, any time of day.
             </p>
           </motion.div>
         </div>
@@ -124,8 +124,9 @@ const Contact = () => {
                 Book a Pickup in Seconds
               </h2>
               <p className="text-muted-foreground mb-6 leading-relaxed">
-                Message us on WhatsApp with your location and we'll send a driver
-                your way. No app needed, no forms to fill — just a quick message.
+                Message us on WhatsApp with your location and we'll send a
+                driver your way. No app needed, no forms to fill — just a quick
+                message.
               </p>
               <a
                 href={`https://wa.me/${
@@ -157,14 +158,21 @@ const Contact = () => {
               </h2>
               <div className="flex items-center justify-center gap-2 text-muted-foreground">
                 <MapPin className="w-5 h-5 text-primary" />
-                <p className="text-lg">{managerInfo.address}</p>
+                <a
+                  href={managerInfo.mapsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-lg transition-colors hover:text-primary"
+                >
+                  {managerInfo.address}
+                </a>
               </div>
             </div>
 
             {/* Map */}
             <div className="relative h-[400px] rounded-2xl overflow-hidden border border-border shadow-lg group">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3714.2656995945267!2d39.8231667!3d21.418799!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c204c82533f16f%3A0xca0cff6480eeca59!2sThe%20Clock%20Towers!5e0!3m2!1sen!2sbd!4v1778671743076!5m2!1sen!2sbd"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1979.3644204237482!2d39.82072576811591!3d21.420916207388423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c211b18290643d%3A0x11bfd8def5f60de0!2sZamzam%20Laundry%20Nasir!5e0!3m2!1sen!2sbd!4v1785322884917!5m2!1sen!2sbd"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

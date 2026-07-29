@@ -11,17 +11,8 @@ import {
   MessageCircle,
   Sparkles,
 } from "lucide-react";
+import { siteInfo, managerInfo } from "@/constants";
 import logo from "@/assets/logo-light.webp";
-
-const siteInfo = {
-  siteTitle: "Zamzam Laundry Nasir",
-};
-
-const managerInfo = {
-  address: "Al Aziziyah, Makkah, Saudi Arabia",
-  phoneNumber: "+966 55 000 0000",
-  email: "hello@zamzamlaundry.com",
-};
 
 const quickLinks = [
   { label: "Home", href: "#hero" },
@@ -47,7 +38,7 @@ const socials = [
 ];
 
 const contactItems = [
-  { Icon: MapPin, text: managerInfo.address },
+  { Icon: MapPin, text: managerInfo.address, href: managerInfo.mapsUrl },
   { Icon: Phone, text: managerInfo.phoneNumber },
   { Icon: Mail, text: managerInfo.email },
   { Icon: Clock, text: "Open 24/7, including holidays" },
@@ -130,14 +121,25 @@ const Footer = () => {
               Contact Us
             </h3>
             <ul className="mt-5 space-y-4">
-              {contactItems.map(({ Icon, text }) => (
+              {contactItems.map(({ Icon, text, href }) => (
                 <li key={text} className="flex min-w-0 items-start gap-3">
                   <span className="mt-0.5 grid h-8 w-8 shrink-0 place-items-center rounded-lg bg-primary/10 text-primary">
                     <Icon className="h-4 w-4" />
                   </span>
-                  <span className="min-w-0 break-words text-sm leading-relaxed text-muted-foreground">
-                    {text}
-                  </span>
+                  {href ? (
+                    <a
+                      href={href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="min-w-0 break-words text-sm leading-relaxed text-muted-foreground transition-colors hover:text-primary"
+                    >
+                      {text}
+                    </a>
+                  ) : (
+                    <span className="min-w-0 break-words text-sm leading-relaxed text-muted-foreground">
+                      {text}
+                    </span>
+                  )}
                 </li>
               ))}
             </ul>

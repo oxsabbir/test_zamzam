@@ -6,7 +6,8 @@ export const managerInfo = {
     whatsApp: 966545084184,
     phoneNumber: 966545084184,
   },
-  address: `Ibrahim Al Khalil Rd, Saudi Arabia`,
+  address: `Ibrahim Al Khalil Rd, Ash Shubaikah, Makkah`,
+  mapsUrl: "https://maps.app.goo.gl/837W1n63T6WGk85CA",
   email: "info@zamzamlundrynasir.com",
 };
 

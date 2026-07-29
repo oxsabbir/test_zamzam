@@ -44,7 +44,14 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-bold text-lg mb-1">Location</h3>
-                  <p className="text-muted-foreground">{managerInfo.address}</p>
+                  <a
+                    href={managerInfo.mapsUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-muted-foreground transition-colors hover:text-primary"
+                  >
+                    {managerInfo.address}
+                  </a>
                 </div>
               </div>
 

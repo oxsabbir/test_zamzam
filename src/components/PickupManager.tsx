@@ -89,7 +89,7 @@ const PickupManager = () => {
                 press, and deliver without pickup fees or complicated booking.
               </p>
             </div>
-
+            {/* 
             <div className="mb-8 grid gap-3 sm:grid-cols-2">
               {features.map((feat) => {
                 const Icon = feat.icon;
@@ -115,7 +115,7 @@ const PickupManager = () => {
                   </div>
                 );
               })}
-            </div>
+            </div> */}
 
             <div className="mb-8 grid gap-3 rounded-2xl border border-border bg-muted/60 p-4 grid-cols-1">
               <a
