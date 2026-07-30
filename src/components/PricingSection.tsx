@@ -10,7 +10,7 @@ const laundryPackages = [
     title: "Standard Care",
     type: "Normal",
     deliveryTime: "12 Hours",
-    price: 22,
+    price: 18,
     pickup: "Included",
     featured: false,
   },
@@ -19,7 +19,7 @@ const laundryPackages = [
     title: "Eco Wash",
     type: "Normal",
     deliveryTime: "10 Hours",
-    price: 24,
+    price: 20,
     pickup: "Included",
     featured: false,
   },
@@ -28,7 +28,7 @@ const laundryPackages = [
     title: "Premium Clean",
     type: "Normal",
     deliveryTime: "8 Hours",
-    price: 29,
+    price: 24,
     pickup: "Included",
     featured: true,
   },
@@ -37,7 +37,7 @@ const laundryPackages = [
     title: "Express",
     type: "Urgent",
     deliveryTime: "5 Hours",
-    price: 32,
+    price: 27,
     pickup: "SAR 15 Extra",
     featured: false,
   },
@@ -46,7 +46,7 @@ const laundryPackages = [
     title: "Flash",
     type: "Urgent",
     deliveryTime: "3 Hours",
-    price: 38,
+    price: 32,
     pickup: "SAR 15 Extra",
     featured: false,
   },
@@ -55,7 +55,7 @@ const laundryPackages = [
     title: "Instant*",
     type: "Urgent",
     deliveryTime: "1 Hour*",
-    price: 45,
+    price: 38,
     pickup: "SAR 15 Extra",
     featured: false,
     note: "*Subject to availability in Makkah central area",
@@ -64,7 +64,7 @@ const laundryPackages = [
 
 const ironingService = {
   title: "Professional Ironing",
-  price: 22,
+  price: 18,
   deliveryTime: "Within 4 Hours",
   pickup: "Included",
 };
@@ -112,7 +112,7 @@ export default function PricingSection() {
                   </div>
                 </div>
                 <div className="rounded-2xl bg-muted/50 p-4 text-center">
-                  <div className="text-2xl font-black text-foreground">22+</div>
+                  <div className="text-2xl font-black text-foreground">18+</div>
                   <div className="text-[11px] font-bold uppercase tracking-widest text-muted-foreground">
                     SAR / Kg
                   </div>

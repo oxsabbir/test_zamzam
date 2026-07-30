@@ -11,7 +11,7 @@ const urgentServices = [
   },
   {
     title: "Urgent Wash, Dry & Iron",
-    price: "35 Riyals",
+    price: "30 Riyals",
     unit: "Kg",
     description:
       "Urgent wash, dry, and press/ironing service with folding or hanger option. Fast delivery available across Makkah.",
@@ -20,7 +20,7 @@ const urgentServices = [
   },
   {
     title: "12 Hours Wash & Delivery",
-    price: "22 Riyals",
+    price: "18 Riyals",
     unit: "Kg",
     description:
       "Normal wash, dry, press/ironing, and folding or hanger service with delivery within 12 hours.",
@@ -29,7 +29,7 @@ const urgentServices = [
   },
   {
     title: "24 Hours Wash & Delivery",
-    price: "30 Riyals",
+    price: "25 Riyals",
     unit: "Kg",
     description:
       "Wash, dry, press/ironing, and folding or hanger service with express delivery within 24 hours.",
@@ -38,7 +38,7 @@ const urgentServices = [
   },
   {
     title: "Premium Ihram Care",
-    price: "22 Riyals",
+    price: "18 Riyals",
     unit: "Kg",
     description:
       "Specialized washing and care for Ihram garments using gentle processes to maintain purity and fabric quality.",
@@ -47,7 +47,7 @@ const urgentServices = [
   },
   {
     title: "Stain Removal Service",
-    price: "22 Riyals",
+    price: "18 Riyals",
     unit: "Kg",
     description:
       "Advanced stain treatment for tough spots, handled carefully to protect fabric and restore cleanliness.",
