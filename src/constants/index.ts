@@ -17,4 +17,6 @@ export const siteInfo = {
   domainName: "laundrymakkahpremium.com",
   contactEmail: "info@laundrymakkahpremium.com",
   ogImage: "https://laundrymakkahpremium.com/og-image.png",
+  mapEmbedUrl:
+    "https://www.google.com/maps?q=Makkah%20Al%20Safwa%20Commercial%20Tower%2C%20Makkah%2C%20Saudi%20Arabia&output=embed",
 };
