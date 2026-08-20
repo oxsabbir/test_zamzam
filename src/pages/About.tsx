@@ -1,7 +1,7 @@
 import { siteInfo } from "@/constants";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import aboutImage from "@/assets/about-laundry-premium.webp";
+import aboutImage from "@/assets/about-us.webp";
 import { motion } from "motion/react";
 
 const About = () => {

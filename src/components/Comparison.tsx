@@ -10,6 +10,7 @@ import {
 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { siteInfo } from "@/constants";
+import featureImage from "@/assets/feature-laundry.webp";
 
 const comparisonFeatures = [
   {
@@ -109,42 +110,19 @@ const Comparison = () => {
 
           <div className="overflow-hidden rounded-xl border border-primary/10 bg-card shadow-[0_24px_70px_rgba(15,23,42,0.07)]">
             <div className="grid gap-0 lg:grid-cols-[0.78fr_1.22fr]">
-              <div className="border-b border-primary/10 bg-[linear-gradient(145deg,hsl(var(--primary-50)),#fff_62%,hsl(var(--primary-100)))] p-6 sm:p-8 lg:border-b-0 lg:border-r">
-                <div className="mb-7 flex h-14 w-14 items-center justify-center rounded-xl bg-primary text-white shadow-lg shadow-primary/20">
-                  <ShieldCheck className="h-7 w-7" aria-hidden="true" />
+              <div className="border-b border-primary/10 relative lg:border-b-0 lg:border-r">
+                <div className="mb-7 absolute top-5 left-5 flex h-14 w-14 items-center justify-center rounded-xl bg-primary text-white shadow-lg shadow-primary/20">
+                  <ShieldCheck
+                    className="h-7 w-7 shadow-md"
+                    aria-hidden="true"
+                  />
                 </div>
-                <h3 className="text-2xl font-black tracking-tight text-foreground">
-                  Built around pickup convenience.
-                </h3>
-                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                  The difference is not just washing clothes. It is clear
-                  pricing, responsive support, and careful handling from pickup
-                  to return.
-                </p>
 
-                <div className="mt-8 space-y-3">
-                  {comparisonFeatures.slice(0, 3).map((item) => {
-                    const Icon = item.icon;
-                    return (
-                      <div
-                        key={item.feature}
-                        className="flex items-center gap-3 rounded-lg border border-primary/10 bg-white/80 p-3 shadow-sm"
-                      >
-                        <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
-                          <Icon className="h-5 w-5" aria-hidden="true" />
-                        </div>
-                        <div>
-                          <p className="font-bold text-foreground">
-                            {item.feature}
-                          </p>
-                          <p className="text-sm text-muted-foreground">
-                            {item.ours}
-                          </p>
-                        </div>
-                      </div>
-                    );
-                  })}
-                </div>
+                <img
+                  src={featureImage}
+                  alt="Feature Image"
+                  className="w-full h-full"
+                />
               </div>
 
               <div className="p-4 sm:p-6 lg:p-8">
@@ -178,7 +156,10 @@ const Comparison = () => {
                             <th scope="row" className="py-5 pr-4">
                               <div className="flex items-center gap-3">
                                 <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-muted text-primary">
-                                  <Icon className="h-5 w-5" aria-hidden="true" />
+                                  <Icon
+                                    className="h-5 w-5"
+                                    aria-hidden="true"
+                                  />
                                 </div>
                                 <span className="font-black text-foreground">
                                   {item.feature}
@@ -188,7 +169,10 @@ const Comparison = () => {
                             <td className="py-5 pr-4">
                               <div className="flex items-center gap-2 font-bold text-foreground">
                                 <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-primary text-white">
-                                  <Check className="h-4 w-4" aria-hidden="true" />
+                                  <Check
+                                    className="h-4 w-4"
+                                    aria-hidden="true"
+                                  />
                                 </span>
                                 {item.ours}
                               </div>
