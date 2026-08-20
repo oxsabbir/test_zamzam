@@ -1,20 +1,20 @@
 export const managerInfo = {
-  fullName: "Muhammad Arif Uddin",
-  phoneNumber: "+966 55 268 4159",
-  whatsApp: "+966 55 268 4159",
+  fullName: "Laundry Makkah Premium",
+  phoneNumber: "+966 53 770 1185",
+  whatsApp: "+966 53 770 1185",
   onlyNumber: {
-    whatsApp: 966552684159,
-    phoneNumber: 966552684159,
+    whatsApp: 966537701185,
+    phoneNumber: 966537701185,
   },
-  address: `Misfalah, Near Hilton Convention Jabal Omar, Makkah, Saudi Arabia`,
-  email: "foysalmiyazi61@gmail.com",
+  address: `Makkah Al Safwa Commercial Tower, Makkah, Saudi Arabia`,
+  email: "info@laundrymakkahpremium.com",
 };
 
 export const siteInfo = {
-  siteTitle: "ZamZam Laundry Makkah",
-  shortName: "ZamZam Laundry",
-  domain: "https://zamzamlaundrymakkah.com/",
-  domainName: "zamzamlaundrymakkah.com",
-  contactEmail: "info@zamzamlaundrymakkah.com",
-  ogImage: "https://zamzamlaundrymakkah.com/og-image.png",
+  siteTitle: "Laundry Makkah Premium",
+  shortName: "Laundry Makkah Premium",
+  domain: "https://laundrymakkahpremium.com/",
+  domainName: "laundrymakkahpremium.com",
+  contactEmail: "info@laundrymakkahpremium.com",
+  ogImage: "https://laundrymakkahpremium.com/og-image.png",
 };

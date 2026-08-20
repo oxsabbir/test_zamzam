@@ -6,42 +6,42 @@ const faqData = [
   {
     question: "How do I schedule a pickup?",
     answer:
-      "You can schedule a pickup easily through our website, by calling us, or by sending a message on WhatsApp. We'll be at your location promptly across Makkah.",
+      "Send us a WhatsApp message with your location. We confirm the pickup time and collect from your hotel, apartment, or residence.",
   },
   {
-    question: "What are your operating hours?",
+    question: "What are your hours?",
     answer:
-      "We are open 24/7, 365 days a year, including public holidays. We understand that your time is valuable, especially during Hajj and Umrah.",
+      "We are open 24/7, including weekends and public holidays. You can book a pickup at any time.",
   },
   {
     question: "How much does it cost?",
     answer:
-      "Our pricing is simple and transparent. We charge by the kilogram, starting from 18 SAR/kg. Special garments like thobes and abayas have per-piece pricing.",
+      "Standard laundry starts at 18 SAR per kilogram. Ihram, thobes, and abayas have per-piece pricing. See our pricing section for full details.",
   },
   {
-    question: "What is the turnaround time?",
+    question: "How fast is the turnaround?",
     answer:
-      "For standard laundry, our turnaround time is typically same-day or 24 hours. We also offer an express service that can have your clothes ready in as little as 1-3 hours for urgent needs.",
+      "Same-day and next-day options are available. We also offer 1-hour, 3-hour, and 5-hour express service for urgent orders.",
   },
   {
-    question: "Do you clean special garments like Ihram?",
+    question: "Do you wash Ihram and abayas?",
     answer:
-      "Yes, we specialize in cleaning delicate and traditional clothing, including Ihram, thobes, abayas, and shemaghs. We handle them with the utmost care to maintain their quality.",
+      "Yes. We handle Ihram, thobes, abayas, shemaghs, and other traditional garments with appropriate cleaning methods.",
   },
   {
-    question: "Which areas in Makkah do you serve?",
+    question: "Which areas do you cover?",
     answer:
-      "We provide free pickup and delivery to all hotels and residential areas within Makkah, ensuring convenient access to our services for all pilgrims and residents.",
+      "We cover all of Makkah — hotels near Haram, Jabal Omar, Aziziyah, Misfalah, Kudai, and all residential areas.",
   },
   {
-    question: "Is there a minimum order for pickup?",
+    question: "Is there a minimum order?",
     answer:
-      "No, there is no minimum order requirement. We are happy to serve you, whether you have a single item or a large family-sized load of laundry.",
+      "No minimum order. We pick up a single item or a full load — whatever you need.",
   },
   {
-    question: "What payment methods do you accept?",
+    question: "How do I pay?",
     answer:
-      "We accept cash on delivery as well as all major credit and debit cards. You can pay our delivery agent upon receiving your fresh, clean laundry.",
+      "Cash on delivery or card payment when your laundry is returned. No prepayment required.",
   },
 ];
 
@@ -51,11 +51,10 @@ export default function Faq() {
       <div className="container mx-auto px-3 sm:px-4">
         <div className="text-center mb-8 sm:mb-12">
           <h2 className="text-2xl sm:text-4xl font-bold mb-4 text-foreground">
-            Common Questions
+            Frequently Asked Questions
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
-            Here are quick answers about pickup, timing, pricing, and garment
-            care for customers in Makkah.
+            Quick answers about our laundry service in Makkah.
           </p>
         </div>
         <div className="max-w-4xl mx-auto">

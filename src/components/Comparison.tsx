@@ -4,33 +4,33 @@ import { siteInfo } from "@/constants";
 const comparisonFeatures = [
   {
     feature: "Pickup & Delivery",
-    ours: "Fast & Free Across Makkah",
-    others: "Slow or Not Available",
+    ours: "Free Across Makkah",
+    others: "Limited or Extra Cost",
   },
   {
-    feature: "24/7 Availability",
-    ours: "Yes, Anytime Anywhere",
+    feature: "24/7 Service",
+    ours: "Always Available",
     others: "Limited Hours",
   },
   {
-    feature: "Garment Protection",
-    ours: "Expert Cleaning Guarantee",
-    others: "Standard Washing",
+    feature: "Garment Handling",
+    ours: "Professional Care",
+    others: "Basic Washing",
   },
   {
-    feature: "Transparent Pricing",
-    ours: "Honest Rates No Extra Costs",
-    others: "Hidden Fees",
+    feature: "Pricing",
+    ours: "Clear Per-KG Rates",
+    others: "Hidden Charges",
   },
   {
-    feature: "Service Support",
-    ours: "Multi-language Support",
-    others: "Limited Support",
+    feature: "Language Support",
+    ours: "Arabic, English, Urdu",
+    others: "Limited",
   },
   {
-    feature: "Stain Removal",
-    ours: "Special Stain Treatments",
-    others: "Standard Wash Only",
+    feature: "Stain Treatment",
+    ours: "Included",
+    others: "Extra or Not Offered",
   },
 ];
 
@@ -40,11 +40,11 @@ const Comparison = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-5xl font-bold mb-6 text-foreground tracking-tight">
-            Why Customers Book With {siteInfo.shortName}
+            Why Book With {siteInfo.shortName}
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            A quick look at the service details people usually compare before
-            booking their laundry pickup in Makkah.
+            A quick comparison of what matters when choosing a laundry service
+            in Makkah.
           </p>
         </div>
 

@@ -72,7 +72,7 @@ const Footer = () => {
               <p className="text-zinc-400 leading-relaxed text-sm sm:text-base max-w-sm">
                 At {siteInfo.siteTitle}, we provide reliable, fast, and
                 high-quality laundry services across the holy city of Makkah.
-                Trust us with your garments for a fresh and clean experience.
+                Trust us to care for your garments with professionalism and attention to detail.
               </p>
               <div className="flex space-x-4">
                 <a

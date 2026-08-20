@@ -21,14 +21,14 @@ export default function FinalCTA() {
       <div className="relative container mx-auto px-3 sm:px-4">
         <div className="text-center mb-6 sm:mb-12">
           <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-primary-foreground mb-4 sm:mb-6">
-            Book a Pickup Without Leaving Your Hotel or Home
+            Book a Pickup — We Come to You
           </h2>
           <p className="text-base sm:text-xl text-primary-foreground/95 max-w-3xl mx-auto mb-6 sm:mb-8 leading-relaxed">
-            Reliable collection, careful cleaning, and timely delivery for daily
-            wear, travel clothing, and family laundry across Makkah.
+            Free collection and delivery for laundry, dry cleaning, and ironing
+            across Makkah.
             <span className="text-primary-300 font-bold">
               {" "}
-              A clean return starts with one message.
+              Send one WhatsApp message to get started.
             </span>
           </p>
         </div>
@@ -119,12 +119,12 @@ export default function FinalCTA() {
                         <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path>
                         <circle cx="12" cy="10" r="3"></circle>
                       </svg>
-                      <span>All Makkah Areas Covered</span>
+                  <span>All Makkah Areas Covered</span>
                     </div>
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-lg sm:text-xl font-bold mb-2 text-primary-300 border-b border-primary-300/60 pb-2">
+                <h3 className="text-lg sm:text-xl font-bold mb-2 text-primary-300 border-b border-primary-300/60 pb-2">
                     Service Info
                   </h3>
                   <div className="space-y-2 text-sm sm:text-base">

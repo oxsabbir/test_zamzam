@@ -94,12 +94,11 @@ export default function PilgrimGuide() {
             id="guide-heading"
             className="text-3xl sm:text-4xl font-bold mb-4 text-foreground"
           >
-            Helpful Laundry Tips for Visitors and Pilgrims
+            Laundry Tips for Makkah Visitors
           </h2>
           <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
-            A few practical care tips can make clothing easier to manage during
-            a busy stay in Makkah. Here are simple ideas for Hajj and Umrah
-            travel.
+            Simple advice to keep your clothes clean and fresh during your stay
+            in Makkah — whether you are here for Umrah, Hajj, or business.
           </p>
         </header>
 

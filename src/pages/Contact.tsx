@@ -23,7 +23,7 @@ const Contact = () => {
               Contact Us
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              Ask about coverage, pricing, or turnaround times, or contact us
+              Ask about coverage, pricing, or turnaround times — or contact us
               directly to arrange your laundry pickup in Makkah.
             </p>
           </motion.div>

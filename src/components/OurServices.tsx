@@ -5,7 +5,7 @@ const urgentServices = [
     price: "12 Riyals",
     unit: "Kg",
     description:
-      "Professional pressing, ironing, and folding service with delivery within 24 hours or as per client’s request.",
+      "Professional pressing, ironing, and folding service with delivery within 24 hours or as arranged with you.",
     highlight: "Free Pickup & Delivery Included",
     deliveryTime: "Up to 24 Hours",
   },
@@ -14,7 +14,7 @@ const urgentServices = [
     price: "30 Riyals",
     unit: "Kg",
     description:
-      "Urgent wash, dry, and press/ironing service with folding or hanger option. Fast delivery available across Makkah.",
+      "Fast wash, dry, and press/ironing with folding or hanger option. Quick delivery available across Makkah.",
     highlight: "Urgent Service – Around Makkah Only",
     deliveryTime: "Within 1 Hour",
   },
@@ -23,7 +23,7 @@ const urgentServices = [
     price: "18 Riyals",
     unit: "Kg",
     description:
-      "Normal wash, dry, press/ironing, and folding or hanger service with delivery within 12 hours.",
+      "Thorough wash, dry, press/ironing, and folding or hanger service delivered back to you within 12 hours.",
     highlight: "Free Pickup & Delivery Included",
     deliveryTime: "12 Hours",
   },
@@ -32,7 +32,7 @@ const urgentServices = [
     price: "25 Riyals",
     unit: "Kg",
     description:
-      "Wash, dry, press/ironing, and folding or hanger service with express delivery within 24 hours.",
+      "Complete wash, dry, press/ironing, and folding or hanger service with guaranteed delivery within 24 hours.",
     highlight: "Free Pickup & Delivery Included",
     deliveryTime: "24 Hours",
   },
@@ -41,7 +41,7 @@ const urgentServices = [
     price: "18 Riyals",
     unit: "Kg",
     description:
-      "Specialized washing and care for Ihram garments using gentle processes to maintain purity and fabric quality.",
+      "Gentle, fragrance-free washing and care for Ihram garments — preserving both purity and fabric integrity.",
     highlight: "Pilgrim-Safe & Gentle Care",
     deliveryTime: "Same Day",
   },
@@ -50,7 +50,7 @@ const urgentServices = [
     price: "18 Riyals",
     unit: "Kg",
     description:
-      "Advanced stain treatment for tough spots, handled carefully to protect fabric and restore cleanliness.",
+      "Targeted stain treatment for stubborn marks, handled carefully to protect fabric and restore cleanliness.",
     highlight: "Deep Cleaning Expertise",
     deliveryTime: "Up to 24 Hours",
   },
@@ -65,20 +65,11 @@ export default function OurServices() {
             id="areas-heading"
             className="text-2xl sm:text-4xl font-bold mb-3 sm:mb-4 text-foreground"
           >
-            Laundry Services Across Makkah
+            Our Laundry Services
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto mb-6 sm:mb-8">
-            We provide reliable and professional laundry services throughout
-            Makkah.
-            <br />
-            <span>
-              Enjoy fast{" "}
-              <strong className="text-primary font-semibold">
-                pickup and delivery
-              </strong>{" "}
-              for hotels, apartments, and areas near Masjid Al-Haram—making
-              laundry simple and stress-free.
-            </span>
+            Professional washing, dry cleaning, ironing, and express service
+            with free pickup and delivery across Makkah.
           </p>
         </div>
 

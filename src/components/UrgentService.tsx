@@ -22,11 +22,11 @@ export default function UrgentService() {
             id="emergency-times-heading"
             className="text-2xl sm:text-4xl font-bold mb-4 text-foreground"
           >
-            Need Clean Clothes Soon? Choose a Faster Turnaround
+            Need Laundry Done Fast? Choose Your Turnaround
           </h2>
           <p className="text-base sm:text-lg text-slate-700 max-w-3xl mx-auto">
-            Pick the service speed that matches your plans, whether you need a
-            quick refresh, same-day return, or a rush order in central Makkah.
+            From 1-hour express to same-day return — pick the speed that works
+            for your schedule in Makkah.
           </p>
         </header>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 max-w-4xl mx-auto">
@@ -38,7 +38,7 @@ export default function UrgentService() {
             <h3 className="text-lg font-bold mb-2 text-foreground">
               Rush Response
             </h3>
-            <p className="text-sm text-slate-700 mb-4">Best for last-minute needs</p>
+            <p className="text-sm text-slate-700 mb-4">For urgent situations</p>
             <button
               id="generate_lead"
               onClick={() => handleBooking("1 Hour", "Emergency Service")}
@@ -55,7 +55,7 @@ export default function UrgentService() {
             <h3 className="text-lg font-bold mb-2 text-foreground">
               Express Care
             </h3>
-            <p className="text-sm text-slate-700 mb-4">Great for packed schedules</p>
+            <p className="text-sm text-slate-700 mb-4">Deep cleaning, fast return</p>
             <button
               id="generate_lead"
               onClick={() => handleBooking("24 Hour", "Express Service")}

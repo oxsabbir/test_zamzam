@@ -4,27 +4,27 @@ import { siteInfo } from "@/constants";
 const steps = [
   {
     icon: <MessageCircle className="w-10 h-10" />,
-    title: "1. Request Pickup",
+    title: "1. Send WhatsApp",
     description:
-      "Send us a quick message on WhatsApp with your location in Makkah. We'll confirm the pickup instantly.",
+      "Message us your location and we confirm pickup within minutes. Available across all Makkah areas.",
   },
   {
     icon: <Truck className="w-10 h-10" />,
-    title: "2. We Collect",
+    title: "2. We Pick Up",
     description:
-      "Our professional driver will arrive at your hotel or residence within minutes to collect your laundry.",
+      "Our team arrives at your hotel, apartment, or residence to collect your laundry on time.",
   },
   {
     icon: <Sparkles className="w-10 h-10" />,
-    title: "3. Professional Cleaning",
+    title: "3. We Clean",
     description:
-      "Your clothes are washed, dried, and pressed using the best equipment and eco-friendly products.",
+      "Every garment is washed, dried, and pressed using professional equipment and quality detergents.",
   },
   {
     icon: <ShoppingBag className="w-10 h-10" />,
-    title: "4. Delivered to You",
+    title: "4. We Deliver",
     description:
-      "We deliver your fresh, clean garments back to you at your preferred time, anywhere in Makkah.",
+      "Clean, fresh clothes delivered back to your door — on schedule, anywhere in Makkah.",
   },
 ];
 
@@ -34,11 +34,11 @@ const HowItWorks = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-5xl font-bold mb-6 text-foreground tracking-tight">
-            How Pickup Laundry Works
+            How It Works
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Send your location, hand over your laundry, and receive it back
-            fresh without making time for a laundry stop.
+            Book in seconds, get your laundry picked up, cleaned, and delivered
+            — without leaving your hotel or home.
           </p>
         </div>
 

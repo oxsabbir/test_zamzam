@@ -88,12 +88,11 @@ export default function PricingSection() {
                 Service Options
               </Badge>
               <h2 className="text-3xl sm:text-5xl font-black mb-4 text-foreground tracking-tight leading-tight">
-                Laundry Packages for Different Timelines
+                Laundry Packages
               </h2>
               <p className="max-w-2xl text-base sm:text-lg text-muted-foreground leading-relaxed">
-                Choose from standard, express, and urgent turnaround packages
-                with clear per-kilogram pricing and pickup details shown up
-                front.
+                Wash, dry, and press by the kilogram. Choose your turnaround
+                time and see pickup details before you book.
               </p>
             </div>
 
@@ -165,7 +164,7 @@ export default function PricingSection() {
                     </h3>
                     <p className="mt-2 text-sm text-muted-foreground">
                       {pkg.type === "Urgent"
-                        ? "Priority turnaround for tighter schedules."
+                        ? "Priority turnaround when time is tight."
                         : "Reliable everyday cleaning with a practical return window."}
                     </p>
                   </div>

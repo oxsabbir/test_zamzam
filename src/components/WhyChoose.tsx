@@ -6,25 +6,25 @@ const features = [
     icon: <Clock className="w-8 h-8 text-primary" />,
     title: "Fast Pickup & Delivery",
     description:
-      "We offer the quickest turnaround in Makkah. Your laundry is picked up promptly and returned fresh and clean in record time.",
+      "Same-day turnaround available. We collect and return your laundry on your schedule, not ours.",
   },
   {
     icon: <Sparkles className="w-8 h-8 text-primary" />,
-    title: "Premium Quality Care",
+    title: "Quality Cleaning",
     description:
-      "Your clothes are treated with the utmost care using professional cleaning techniques and high-quality, eco-friendly detergents.",
+      "Modern equipment, professional detergents, and trained staff. Every item handled with care.",
   },
   {
     icon: <Truck className="w-8 h-8 text-primary" />,
-    title: "Free Collection",
+    title: "Free Pickup & Delivery",
     description:
-      "Enjoy the convenience of free laundry collection and delivery across Makkah. No hidden fees, just pure service.",
+      "We come to you anywhere in Makkah. No transport fees, no minimum order requirements.",
   },
   {
     icon: <ShieldCheck className="w-8 h-8 text-primary" />,
-    title: "Hygienic Cleaning",
+    title: "Hygienic Process",
     description:
-      "We maintain strict hygiene standards. Each order is processed individually to ensure your garments are safe and clean.",
+      "Individual handling per order. Sanitized equipment and strict quality checks on every load.",
   },
 ];
 
@@ -34,11 +34,11 @@ const WhyChoose = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-5xl font-bold mb-6 text-foreground tracking-tight">
-            Why Choose {siteInfo.siteTitle}?
+            Why Choose {siteInfo.siteTitle}
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Experience the gold standard in professional laundry services in
-            Makkah. We combine efficiency with top-tier care for your garments.
+            Trusted by pilgrims, families, and hotel guests across Makkah for
+            reliable laundry service with no surprises.
           </p>
         </div>
 

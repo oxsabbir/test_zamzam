@@ -30,8 +30,8 @@ Thank you.
 `,
 
   faq: `Hello, 
-I have a few questions regarding your laundry services and would like some information. 
-Could you please provide answers or direct me to the relevant details?
+I have a few questions about your laundry services and would appreciate some information. 
+Could you please provide answers or point me to the relevant details?
 
 Thank you.
 `,

@@ -64,11 +64,11 @@ const AreaCoverage = () => {
             Service Coverage
           </Badge>
           <h2 className="text-3xl sm:text-5xl font-black mb-5 text-foreground tracking-tight">
-            Pickup Coverage Across Makkah
+            Pickup Areas in Makkah
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-            {siteInfo.siteTitle} reaches hotels, apartments, and residential
-            neighborhoods across the city with dependable collection windows.
+            We collect laundry from hotels, apartments, and residences across
+            all major areas in Makkah.
           </p>
         </div>
 
@@ -79,7 +79,7 @@ const AreaCoverage = () => {
                 Popular Pickup Zones
               </h3>
               <p className="mt-1 text-sm sm:text-base text-muted-foreground">
-                Clean, simple coverage cards with typical pickup times by area.
+                Typical pickup times by area.
               </p>
             </div>
             <div className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-2 text-sm font-semibold text-primary">

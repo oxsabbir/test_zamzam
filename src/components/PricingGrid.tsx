@@ -75,9 +75,9 @@ const PricingGrid = () => {
             Popular Laundry Categories
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
-            Estimated rates for common garments and household items, prepared
-            with practical care for daily use.
-            <span className="text-primary ml-1 font-semibold">18 SAR/kg!</span>
+            Per-item and per-kilogram rates for common garments and household
+            items.
+            <span className="text-primary ml-1 font-semibold">From 18 SAR/kg!</span>
           </p>
         </div>
 

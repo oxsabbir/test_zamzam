@@ -18,19 +18,19 @@ export default function EmergencyService() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
               </span>
-              Urgent laundry support when timing really matters
+              Priority laundry support when timing matters most
             </div>
 
             <h2 className="text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight mb-4">
               Last-Minute Laundry in Makkah? <br className="hidden sm:block" />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-rose-500">
-                We Can Move Quickly.
+                We Can Handle It.
               </span>
             </h2>
 
             <p className="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
-              When plans change suddenly, our rush team can help with quick
-              cleaning, pressing, and return options for important garments.
+              Urgent washing, pressing, or ironing — our rush team handles
+              time-sensitive laundry across Makkah, day or night.
             </p>
           </div>
 

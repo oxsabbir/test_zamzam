@@ -44,16 +44,16 @@ const HeroNew = () => {
         <div className="max-w-4xl mx-auto text-center">
           <div className="inline-flex items-center rounded-full border font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent hover:bg-primary/80 mb-4 sm:mb-6 bg-primary-500 text-white text-xs sm:text-base px-3 sm:px-4 py-2 animate-pulse">
             <Zap size={20} className="mr-1" />
-            CLEAN CLOTHES, COLLECTED FAST
+            FAST PICKUP & DELIVERY IN MAKKAH
           </div>
           <h1 className="text-2xl sm:text-4xl lg:text-6xl font-bold text-primary-foreground mb-3 sm:mb-6 leading-tight">
             <span className="block text-xl sm:text-2xl lg:text-3xl mb-1 sm:mb-2 text-primary-300">
               {siteInfo.siteTitle}
             </span>
             <span className="text-primary-300 inline-block ">
-              Doorstep Pickup
+              Trusted Laundry
             </span>{" "}
-            for Laundry That Fits Your Day
+            for Pilgrims, Hotels & Residents
           </h1>
           <div className="bg-black/30 backdrop-blur-sm rounded-xl sm:rounded-2xl p-3 sm:p-6 mb-4 sm:mb-8">
             <div className="flex items-center flex-col gap-2 justify-center mb-2 sm:mb-3">
@@ -134,13 +134,13 @@ const HeroNew = () => {
               </span>
             </div>
             <p className="text-sm sm:text-xl text-primary-foreground/95 font-medium mb-3 sm:mb-4 px-2">
-              “Smooth pickup, careful washing, and neatly returned clothes made
-              the whole process simple.
+              Professional laundry service with fast pickup, expert cleaning,
+              and on-time delivery across Makkah.
               <span className="text-primary-300 font-bold">
                 {" "}
                 {siteInfo.siteTitle}
               </span>{" "}
-              made laundry one less thing to worry about in Makkah.”
+              — trusted by pilgrims and residents.
             </p>
             <div className="grid grid-cols-2  sm:grid-cols-3 gap-2 sm:gap-4 text-center">
               <div className="bg-primary-400/20 rounded-lg p-2 sm:p-3">
@@ -183,16 +183,16 @@ const HeroNew = () => {
 
             <div className="text-primary-foreground/90 flex flex-wrap pt-4 items-center justify-center gap-4 text-xs sm:text-base">
               <span className="flex items-center gap-2">
-                <Clock size={18} /> Open Daily
+                <Clock size={18} /> 24/7 Available
               </span>
               <span>|</span>
               <span className="flex items-center gap-2">
-                <Quote size={18} /> Clear Pricing
+                <Quote size={18} /> No Hidden Fees
               </span>
               <span>|</span>
               <span className="flex items-center gap-2">
                 <CircleDollarSign size={18} />
-                Careful Handling
+                Professional Care
               </span>
             </div>
           </div>

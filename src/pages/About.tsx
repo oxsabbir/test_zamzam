@@ -22,8 +22,8 @@ const About = () => {
                 About {siteInfo.siteTitle}
               </h1>
               <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-                Built to make laundry pickup in Makkah more practical,
-                dependable, and easy to arrange for both visitors and locals.
+                Professional laundry service in Makkah with fast pickup,
+                expert cleaning, and reliable delivery.
               </p>
             </motion.div>
           </div>
@@ -47,35 +47,34 @@ const About = () => {
               </motion.div>
               <div className="prose prose-lg max-w-none text-muted-foreground">
                 <p className="mb-6">
-                  {siteInfo.siteTitle} was created to offer a smoother laundry
-                  experience in Makkah for pilgrims, families, hotel guests, and
-                  local residents. We focus on simple booking, dependable
-                  pickup, and consistent garment care so customers can spend
-                  less time managing laundry logistics.
+                  {siteInfo.siteTitle} is a professional laundry service in
+                  Makkah offering pickup, cleaning, and delivery for pilgrims,
+                  hotel guests, families, and local residents. We handle all
+                  types of garments — from everyday clothing to Ihram, abayas,
+                  thobes, and household linens.
                 </p>
                 <p className="mb-6">
-                  Our service is designed around the clothing people wear most
-                  here, from Ihram, abayas, and thobes to daily garments and
-                  larger household items. Each order is handled with attention
-                  to fabric type, finish, and the turnaround the customer
-                  selects.
+                  Every order is cleaned individually using modern machines and
+                  quality detergents. We offer standard, express, and urgent
+                  turnaround options so you get your clothes back when you need
+                  them.
                 </p>
                 <h2 className="text-2xl font-bold text-foreground mb-4">
-                  Our Mission
+                  What We Do
                 </h2>
                 <p className="mb-6">
-                  To deliver a laundry service people can book with confidence:
-                  clear communication, fair pricing, reliable pickup, and clean
-                  results returned on time.
+                  Wash and fold, dry cleaning, ironing, stain removal, and
+                  express laundry — with free pickup and delivery across Makkah.
+                  Book through WhatsApp in seconds.
                 </p>
                 <h2 className="text-2xl font-bold text-foreground mb-4">
-                  Why We Are Different
+                  Who We Serve
                 </h2>
                 <p>
-                  We combine WhatsApp-first booking with practical service
-                  options for standard, express, and urgent laundry needs. That
-                  balance of convenience, garment care, and citywide pickup
-                  makes our service a useful everyday choice in Makkah.
+                  Pilgrims visiting Masjid al-Haram, hotel guests, apartment
+                  residents, families, and anyone in Makkah who needs reliable
+                  laundry service without the hassle. Open 24/7, including
+                  holidays.
                 </p>
               </div>
             </div>

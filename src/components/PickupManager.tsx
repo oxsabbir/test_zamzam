@@ -22,11 +22,11 @@ const PickupManager = () => {
                 </div>
 
                 <h2 className="max-w-md text-3xl sm:text-[2.6rem] font-black leading-[1.08] tracking-tight mb-4">
-                  Arrange pickup in minutes with a cleaner, faster process.
+                  Book your laundry pickup in under a minute.
                 </h2>
                 <p className="max-w-md text-sm sm:text-base text-white/82 leading-relaxed mb-8">
-                  We help guests and residents book pickups, confirm timing,
-                  and choose the right service for their garments.
+                  WhatsApp or call us to schedule a pickup. We handle
+                  hotels, apartments, and residences across Makkah.
                 </p>
 
                 <div className="space-y-4">
@@ -81,10 +81,10 @@ const PickupManager = () => {
                       </svg>
                     ))}
                   </div>
-                  <p className="text-sm font-bold text-white/90">Trusted every day in Makkah</p>
+                  <p className="text-sm font-bold text-white/90">Trusted across Makkah</p>
                 </div>
                 <p className="text-sm text-white/72 leading-relaxed">
-                  Friendly support, practical pickup windows, and clear updates
+                  Friendly support, flexible pickup windows, and clear updates
                   from booking to delivery.
                 </p>
               </div>
@@ -97,7 +97,7 @@ const PickupManager = () => {
                   Booking Support
                 </p>
                 <h3 className="text-3xl sm:text-4xl font-black tracking-tight text-foreground leading-tight">
-                  Choose the quickest way to arrange your laundry pickup.
+                  Book your laundry pickup in under a minute.
                 </h3>
                 <p className="mt-3 text-base text-muted-foreground leading-relaxed">
                   Message us for the fastest response, or call directly if you
