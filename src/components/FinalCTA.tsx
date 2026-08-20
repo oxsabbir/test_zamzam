@@ -4,7 +4,7 @@ import { managerInfo, siteInfo } from "@/constants";
 import WhatsAppIcon from "./icons/Whatsapp";
 import { handleCall, handleWhatsApp } from "@/lib/utils";
 import { whatsappMessages } from "@/constants/messages";
-import ctaBackground from "@/assets/about-us-premium.webp";
+import ctaBackground from "@/assets/final-cta-bg.webp";
 
 export default function FinalCTA() {
   return (
