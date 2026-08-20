@@ -1,30 +1,12 @@
 import { Zap, Clock, Quote, CircleDollarSign } from "lucide-react";
 import heroImage from "@/assets/hero-premium.webp";
 import WhatsAppIcon from "./icons/Whatsapp";
-import { useEffect, useState } from "react";
 import { handleWhatsApp } from "@/lib/utils";
 import { whatsappMessages } from "@/constants/messages";
 import FloatingCTA from "./FloatingCTA";
 import { siteInfo } from "@/constants";
 
 const HeroNew = () => {
-  const [displayedText, setDisplayedText] = useState("");
-  const fullText = "Fresh";
-
-  useEffect(() => {
-    let currentIndex = 0;
-    const interval = setInterval(() => {
-      if (currentIndex <= fullText.length) {
-        setDisplayedText(fullText.slice(0, currentIndex));
-        currentIndex++;
-      } else {
-        clearInterval(interval);
-      }
-    }, 100);
-
-    return () => clearInterval(interval);
-  }, []);
-
   return (
     <section
       id="hero"
@@ -145,10 +127,10 @@ const HeroNew = () => {
             <div className="grid grid-cols-2  sm:grid-cols-3 gap-2 sm:gap-4 text-center">
               <div className="bg-primary-400/20 rounded-lg p-2 sm:p-3">
                 <div className="text-lg sm:text-2xl font-bold text-primary-300">
-                  From 18 SAR
+                  From 25 SAR
                 </div>
                 <div className="text-xs sm:text-sm text-primary-foreground/80">
-                  Per Kilogram
+                  SAR / KG
                 </div>
               </div>
               <div className="bg-primary-400/20 rounded-lg p-2 sm:p-3">
@@ -177,7 +159,7 @@ const HeroNew = () => {
               className="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none  bg-primary-600 text-white hover:bg-primary-700 hover:shadow-xl transition-all w-full text-base sm:text-xl px-6 py-4 sm:py-6 h-auto rounded-xl font-bold shadow-lg"
             >
               <WhatsAppIcon size={24} />
-              WhatsApp for Pickup Booking
+              Book Pickup on WhatsApp
             </button>
 
             <div className="text-primary-foreground/90 flex flex-wrap pt-4 items-center justify-center gap-4 text-xs sm:text-base">
