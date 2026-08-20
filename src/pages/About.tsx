@@ -1,7 +1,7 @@
 import { siteInfo } from "@/constants";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import aboutImage from "@/assets/about.webp";
+import aboutImage from "@/assets/about-us-premium.webp";
 import { motion } from "motion/react";
 
 const About = () => {
@@ -22,8 +22,8 @@ const About = () => {
                 About {siteInfo.siteTitle}
               </h1>
               <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-                Professional laundry service in Makkah with fast pickup,
-                expert cleaning, and reliable delivery.
+                Professional laundry service in Makkah with fast pickup, expert
+                cleaning, and reliable delivery.
               </p>
             </motion.div>
           </div>

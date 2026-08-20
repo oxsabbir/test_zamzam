@@ -4,7 +4,7 @@ import { managerInfo, siteInfo } from "@/constants";
 import WhatsAppIcon from "./icons/Whatsapp";
 import { handleCall, handleWhatsApp } from "@/lib/utils";
 import { whatsappMessages } from "@/constants/messages";
-import ctaBackground from "@/assets/cta-background.webp";
+import ctaBackground from "@/assets/about-us-premium.webp";
 
 export default function FinalCTA() {
   return (
@@ -15,9 +15,9 @@ export default function FinalCTA() {
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
       }}
-      className="py-10 sm:py-16 relative bg-center overflow-hidden"
+      className="py-10 sm:py-16 md:py-20 relative bg-center  overflow-hidden"
     >
-      <div className="absolute inset-0 bg-gradient-to-tl from-primary-500/20 to-black/80 "></div>
+      <div className="absolute inset-0 bg-gradient-to-t from-primary-500/10 to-black/80 backdrop-blur-sm"></div>
       <div className="relative container mx-auto px-3 sm:px-4">
         <div className="text-center mb-6 sm:mb-12">
           <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-primary-foreground mb-4 sm:mb-6">
@@ -119,12 +119,12 @@ export default function FinalCTA() {
                         <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path>
                         <circle cx="12" cy="10" r="3"></circle>
                       </svg>
-                  <span>All Makkah Areas Covered</span>
+                      <span>All Makkah Areas Covered</span>
                     </div>
                   </div>
                 </div>
                 <div>
-                <h3 className="text-lg sm:text-xl font-bold mb-2 text-primary-300 border-b border-primary-300/60 pb-2">
+                  <h3 className="text-lg sm:text-xl font-bold mb-2 text-primary-300 border-b border-primary-300/60 pb-2">
                     Service Info
                   </h3>
                   <div className="space-y-2 text-sm sm:text-base">
