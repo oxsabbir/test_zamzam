@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://makkahalbarakalaundry.com/sitemap.xml
+Sitemap: https://laundrymakkahpremium.com/sitemap.xml
