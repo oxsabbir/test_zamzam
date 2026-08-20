@@ -37,12 +37,7 @@ const serviceCards = [
       "We coordinate pickup windows based on your area and selected service.",
     icon: Clock,
   },
-  {
-    title: "Careful Handling",
-    description:
-      "Garments are collected, tracked, cleaned, and returned neatly packed.",
-    icon: ShieldCheck,
-  },
+
   {
     title: "Simple Return",
     description:
@@ -65,7 +60,7 @@ const PickupManager = () => {
                 <div>
                   <div className="mb-7 inline-flex w-fit items-center gap-2 rounded-full border border-primary/15 bg-white/80 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.18em] text-primary shadow-sm">
                     <span className="h-2 w-2 rounded-full bg-primary" />
-                  Available 24/7
+                    Available 24/7
                   </div>
 
                   <h2 className="max-w-md text-3xl font-black leading-[1.08] tracking-tight sm:text-[2.6rem]">
@@ -125,8 +120,8 @@ const PickupManager = () => {
                     </p>
                   </div>
                   <p className="text-sm leading-relaxed text-muted-foreground">
-                    Friendly support, flexible pickup windows, and clear
-                    updates from booking to delivery.
+                    Friendly support, flexible pickup windows, and clear updates
+                    from booking to delivery.
                   </p>
                 </div>
               </div>
@@ -146,7 +141,7 @@ const PickupManager = () => {
                 </p>
               </div>
 
-              <div className="mb-8 grid gap-4 lg:grid-cols-3">
+              <div className="mb-8 grid gap-4 lg:grid-cols-2">
                 {serviceCards.map((card) => {
                   const Icon = card.icon;
                   return (
@@ -191,17 +186,19 @@ const PickupManager = () => {
                 </div>
 
                 <div className="mt-5 grid gap-3 border-t border-border/70 pt-5 sm:grid-cols-3">
-                  {["24/7 Service", "Flexible Options", "Clear Communication"].map(
-                    (item) => (
-                      <div
-                        key={item}
-                        className="flex items-center gap-2 text-sm font-medium text-muted-foreground"
-                      >
-                        <CheckCircle className="h-4 w-4 shrink-0 text-primary" />
-                        {item}
-                      </div>
-                    ),
-                  )}
+                  {[
+                    "24/7 Service",
+                    "Flexible Options",
+                    "Clear Communication",
+                  ].map((item) => (
+                    <div
+                      key={item}
+                      className="flex items-center gap-2 text-sm font-medium text-muted-foreground"
+                    >
+                      <CheckCircle className="h-4 w-4 shrink-0 text-primary" />
+                      {item}
+                    </div>
+                  ))}
                 </div>
               </div>
 
