@@ -1,5 +1,5 @@
 import { Zap, Clock, Quote, CircleDollarSign } from "lucide-react";
-import heroImage from "@/assets/hero-zamzam.webp";
+import heroImage from "@/assets/hero-laundry-makkah.webp";
 import WhatsAppIcon from "./icons/Whatsapp";
 import { useEffect, useState } from "react";
 import { handleWhatsApp } from "@/lib/utils";
@@ -146,7 +146,6 @@ const HeroNew = () => {
               <div className="bg-primary-400/20 rounded-lg p-2 sm:p-3">
                 <div className="text-lg sm:text-2xl font-bold text-primary-300">
                   From 18 SAR
-
                 </div>
                 <div className="text-xs sm:text-sm text-primary-foreground/80">
                   Per Kilogram

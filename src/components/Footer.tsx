@@ -11,7 +11,7 @@ import {
 } from "lucide-react";
 import WhatsAppIcon from "./icons/Whatsapp";
 import { useNavigate, useLocation } from "react-router-dom";
-import logo_dark from "@/assets/zamzam-laundry-logo-dark.webp";
+import logo_dark from "@/assets/logo-premium-dark.webp";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -65,14 +65,15 @@ const Footer = () => {
                 <img
                   src={logo_dark}
                   alt={`${siteInfo.shortName} Laundry Logo`}
-                  className="h-[75px] w-auto object-contain brightness-110"
+                  className="h-[80px] w-auto object-contain brightness-110"
                 />
               </a>
 
               <p className="text-zinc-400 leading-relaxed text-sm sm:text-base max-w-sm">
                 At {siteInfo.siteTitle}, we provide reliable, fast, and
                 high-quality laundry services across the holy city of Makkah.
-                Trust us to care for your garments with professionalism and attention to detail.
+                Trust us to care for your garments with professionalism and
+                attention to detail.
               </p>
               <div className="flex space-x-4">
                 <a

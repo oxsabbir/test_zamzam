@@ -3,8 +3,8 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, X } from "lucide-react";
 import WhatsAppIcon from "./icons/Whatsapp";
-import logo_light from "@/assets/zamzam-laundry-logo.webp";
-import logo_dark from "@/assets/zamzam-laundry-logo-dark.webp";
+import logo_light from "@/assets/logo-premium-light.webp";
+import logo_dark from "@/assets/logo-premium-dark.webp";
 
 import { motion } from "motion/react";
 import { handleWhatsApp } from "@/lib/utils";
@@ -80,7 +80,7 @@ const Navigation = () => {
           : "bg-transparent"
       }`}
     >
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto py-1.5 px-4">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <button
@@ -95,7 +95,7 @@ const Navigation = () => {
                     alt={`${siteInfo.shortName} Laundry logo`}
                     width={200}
                     height={100}
-                    className="w-full h-full object-contain"
+                    className={`w-full h-full object-contain ${isScrolled ? "brightness-100" : "brightness-110"}`}
                   />
                 </a>
               </div>

@@ -2,7 +2,6 @@ import Navigation from "@/components/Navigation";
 import HeroNew from "@/components/HeroNew";
 import AreaCoverage from "@/components/AreaCoverage";
 import Comparison from "@/components/Comparison";
-import PricingGrid from "@/components/PricingGrid";
 import HowItWorks from "@/components/HowItWorks";
 import Testimonials from "@/components/Testimonials";
 import Footer from "@/components/Footer";
@@ -31,12 +30,11 @@ const Index = () => {
       </div>
       <AreaCoverage />
 
-      <PricingSection />
       <Comparison />
       {/* <OurServices /> */}
 
       <div id="pricing">
-        <PricingGrid />
+        <PricingSection />
       </div>
       <HowItWorks />
       <PilgrimGuide />
