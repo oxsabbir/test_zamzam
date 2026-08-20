@@ -187,7 +187,7 @@ const Footer = () => {
           <div className="w-full h-[360px] rounded-3xl relative transition-all duration-700 ease-in-out group border border-white/5 overflow-hidden mb-12">
             <iframe
               src={siteInfo.mapEmbedUrl}
-              className="w-full h-full opacity-60 rounded-3xl group-hover:opacity-100 border-0 transition-opacity"
+              className="w-full h-full rounded-3xl  border-0 transition-opacity"
               title={`${siteInfo.shortName} Laundry Location`}
             />
           </div>
