@@ -127,7 +127,7 @@ const HeroNew = () => {
             <div className="grid grid-cols-2  sm:grid-cols-3 gap-2 sm:gap-4 text-center">
               <div className="bg-primary-400/20 rounded-lg p-2 sm:p-3">
                 <div className="text-lg sm:text-2xl font-bold text-primary-300">
-                  From 18 SAR
+                  From 20 SAR
                 </div>
                 <div className="text-xs sm:text-sm text-primary-foreground/80">
                   SAR / KG
