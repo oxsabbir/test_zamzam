@@ -1,6 +1,6 @@
 {
-  "name": "Laundry Makkah Premium",
-  "short_name": "Laundry Makkah Premium",
+  "name": "MyWebSite",
+  "short_name": "MySite",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",
