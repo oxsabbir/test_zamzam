@@ -3,19 +3,19 @@ import { Star } from "lucide-react";
 const testimonials = [
   {
     text:
-      "Bismillah Laundry Makkah provided a truly efficient and reliable service. My clothes were picked up and returned in record time. It's a game-changer for anyone visiting Makkah!",
+      "Makkah Laundry Service Al Haram provided a truly efficient and reliable service. My clothes were picked up and returned in record time. It's a game-changer for anyone visiting Makkah!",
     author: "Abdullah Mansour",
     location: "Hotel Manager, Makkah",
   },
   {
     text:
-      "I was hesitant about sending my expensive abayas and Ihram out, but Bismillah Laundry Makkah handled them with such care. Everything came back fresh and spotless.",
+      "I was hesitant about sending my expensive abayas and Ihram out, but Makkah Laundry Service Al Haram handled them with such care. Everything came back fresh and spotless.",
     author: "Sarah Al-Otaibi",
     location: "Makkah Resident",
   },
   {
     text:
-      "Managing laundry for a large family is tough, but Bismillah Laundry Makkah made it so easy. Their free collection and fast turnaround saved us so much stress.",
+      "Managing laundry for a large family is tough, but Makkah Laundry Service Al Haram made it so easy. Their free collection and fast turnaround saved us so much stress.",
     author: "Mohammed Al-Zahrani",
     location: "Business Owner, Jeddah",
   },
@@ -27,13 +27,13 @@ const testimonials = [
   },
   {
     text:
-      "The quality at Bismillah Laundry Makkah is unmatched. My clothes came back smelling wonderful and perfectly folded. I won't use any other service.",
+      "The quality at Makkah Laundry Service Al Haram is unmatched. My clothes came back smelling wonderful and perfectly folded. I won't use any other service.",
     author: "Lujain Al-Harbi",
     location: "Guest House Owner, Makkah",
   },
   {
     text:
-      "I sent my best formal thobes to Bismillah Laundry Makkah, and the results were spectacular. The pressing was sharp, and the fabric was handled perfectly.",
+      "I sent my best formal thobes to Makkah Laundry Service Al Haram, and the results were spectacular. The pressing was sharp, and the fabric was handled perfectly.",
     author: "Sultan Al-Amri",
     location: "Riyadh (Frequent Visitor)",
   },
@@ -45,13 +45,13 @@ const testimonials = [
   },
   {
     text:
-      "Cleaning bulky linens was a breeze with Bismillah Laundry Makkah. They handled everything professionally and returned them fresh the next day.",
+      "Cleaning bulky linens was a breeze with Makkah Laundry Service Al Haram. They handled everything professionally and returned them fresh the next day.",
     author: "Waleed Al-Sudairi",
     location: "Makkah Resident",
   },
   {
     text:
-      "They managed to remove a tough stain from my favorite garment. Bismillah Laundry Makkah's stain removal team is truly skilled. Very impressive!",
+      "They managed to remove a tough stain from my favorite garment. Makkah Laundry Service Al Haram's stain removal team is truly skilled. Very impressive!",
     author: "Nourah Al-Saud",
     location: "Local Resident, Makkah",
   },
@@ -66,7 +66,7 @@ const Testimonials = () => {
             Client Experiences
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Read the stories of pilgrims and residents who trust Bismillah Laundry Makkah for their premium fabric care.
+            Read the stories of pilgrims and residents who trust Makkah Laundry Service Al Haram for their premium fabric care.
           </p>
         </div>
 

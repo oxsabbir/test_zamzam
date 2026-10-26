@@ -3,8 +3,8 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, X } from "lucide-react";
 import WhatsAppIcon from "./icons/Whatsapp";
-import logo_light from "@/assets/bismillah-logo-dark.webp";
-import logo_dark from "@/assets/bismillah-logo-light.png";
+import logo_light from "@/assets/makkah-laundry-logo-dark.webp";
+import logo_dark from "@/assets/makkah-laundry-logo-light.png";
 
 import { motion } from "motion/react";
 import { handleWhatsApp } from "@/lib/utils";
@@ -92,7 +92,7 @@ const Navigation = () => {
                 <a href="/">
                   <img
                     src={isScrolled ? logo_light : logo_dark}
-                    alt="Bismillah Laundry Makkah logo"
+                    alt="Makkah Laundry Service Al Haram logo"
                     width={200}
                     height={100}
                     className="w-full h-full object-contain"
@@ -149,7 +149,7 @@ const Navigation = () => {
                     <a href="/">
                       <img
                         src={isScrolled ? logo_light : logo_dark}
-                        alt="Bismillah Laundry Makkah logo"
+                        alt="Makkah Laundry Service Al Haram logo"
                         width={200}
                         height={100}
                         className="w-full h-full object-contain"
