@@ -1,5 +1,5 @@
 export const managerInfo = {
-  fullName: "Md Wasim Mia",
+  fullName: "Pickup Manager",
   phoneNumber: "+966 54 767 1681",
   whatsApp: "+966 54 767 1681",
   onlyNumber: {
@@ -7,7 +7,7 @@ export const managerInfo = {
     phoneNumber: 966547671681,
   },
   address: `Al Haram, Makkah 24236, Saudi Arabia`,
-  email: "miawasim159@gmail.com",
+  email: "info@makkahlaundryservicealharam.com",
 };
 
 export const siteInfo = {
