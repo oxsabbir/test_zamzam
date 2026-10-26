@@ -70,7 +70,7 @@ const PricingGrid = () => {
             id="services-heading"
             className="text-2xl sm:text-4xl font-bold mb-4 text-foreground"
           >
-            Bismillah Laundry Makkah Rate Card
+            Makkah Laundry Service Al Haram Rate Card
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
             Exceptional fabric care at rates that respect your budget.

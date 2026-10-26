@@ -1,5 +1,5 @@
 import { Zap, Clock, Quote, CircleDollarSign } from "lucide-react";
-import heroImage from "@/assets/hero-bismillah.webp";
+import heroImage from "@/assets/hero-makkah-laundry.webp";
 import WhatsAppIcon from "./icons/Whatsapp";
 import { useEffect, useState } from "react";
 import { handleWhatsApp } from "@/lib/utils";
@@ -33,7 +33,7 @@ const HeroNew = () => {
 
       <img
         src={heroImage}
-        alt="Bismillah Laundry Makkah - Premium laundry and delivery services for pilgrims and Makkah residents"
+        alt="Makkah Laundry Service Al Haram - Premium laundry and delivery services for pilgrims and Makkah residents"
         className="absolute inset-0 w-full h-full object-cover opacity-30 "
         loading="eager"
         width="1920"
@@ -47,8 +47,8 @@ const HeroNew = () => {
           </div>
           <h1 className="text-2xl sm:text-4xl lg:text-6xl font-bold text-primary-foreground mb-3 sm:mb-6 leading-tight">
             <span className="block text-xl sm:text-2xl lg:text-3xl mb-1 sm:mb-2 text-primary-300">
-              Bismillah Laundry <br />
-              Makkah
+              Makkah Laundry Service <br />
+              Al Haram
             </span>
             <span className="text-primary-300 inline-block ">
               Superior Care
@@ -69,7 +69,7 @@ const HeroNew = () => {
               returned perfectly clean within hours.
               <span className="text-primary-300 font-bold">
                 {" "}
-                Bismillah Laundry Makkah
+                Makkah Laundry Service Al Haram
               </span>{" "}
               is truly the best in the city!”
             </p>
