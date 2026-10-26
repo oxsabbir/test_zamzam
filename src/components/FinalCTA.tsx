@@ -17,24 +17,25 @@ export default function FinalCTA() {
       }}
       className="py-10 sm:py-16 relative bg-center overflow-hidden"
     >
-      <div className="absolute inset-0 bg-gradient-to-tl from-primary-500/20 to-black/80 "></div>
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-black/70 via-black/50 to-primary-950/70"></div>
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(255,255,255,0.18),transparent_55%)]"></div>
       <div className="relative container mx-auto px-3 sm:px-4">
-        <div className="text-center mb-6 sm:mb-12">
-          <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-primary-foreground mb-4 sm:mb-6">
-            Pristine Cleaning with Rapid Collection
-          </h2>
-          <p className="text-base sm:text-xl text-primary-foreground/95 max-w-3xl mx-auto mb-6 sm:mb-8 leading-relaxed">
-            The preferred choice for pilgrims and Makkah residents who value
-            hygiene, speed, and reliability.
-            <span className="text-primary-300 font-bold">
-              {" "}
-              Your fresh wardrobe is just one tap away.
-            </span>
-          </p>
-        </div>
-
         <div className="max-w-4xl mx-auto">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-10  mb-6 sm:mb-8">
+          <div className="mb-6 sm:mb-8 rounded-2xl border border-white/15 bg-black/35 p-5 sm:p-8 shadow-2xl shadow-black/50 backdrop-blur-md">
+            <div className="text-center mb-6 sm:mb-8">
+              <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-primary-foreground mb-4 sm:mb-6 drop-shadow-[0_2px_18px_rgba(0,0,0,0.9)]">
+                Pristine Cleaning with Rapid Collection
+              </h2>
+              <p className="text-base sm:text-xl text-primary-foreground/95 max-w-3xl mx-auto leading-relaxed">
+                The preferred choice for pilgrims and Makkah residents who value
+                hygiene, speed, and reliability.
+                <span className="text-primary-300 font-bold">
+                  {" "}
+                  Your fresh wardrobe is just one tap away.
+                </span>
+              </p>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-6">
             <button
               id="generate_lead"
               onClick={() => handleWhatsApp(whatsappMessages.pickup, true)}
@@ -60,8 +61,9 @@ export default function FinalCTA() {
                 </div>
               </div>
             </button>
+            </div>
           </div>
-          <div className="rounded-lg border shadow-sm bg-black/30 backdrop-blur-sm border-primary-foreground/20 text-primary-foreground mb-6 sm:mb-8">
+          <div className="rounded-2xl border bg-black/35 backdrop-blur-md border-white/15 shadow-2xl shadow-black/40 text-primary-foreground mb-6 sm:mb-8">
             <div className="p-4 sm:p-6">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 text-center sm:text-left">
                 <div>
@@ -185,12 +187,12 @@ export default function FinalCTA() {
               </div>
             </div>
           </div>
-          <div className="rounded-lg border p-6 shadow-sm bg-black/30 backdrop-blur-sm border-primary-foreground/20 text-primary-foreground mb-6 sm:mb-8">
+          <div className="rounded-2xl border p-6 sm:p-8 bg-black/35 backdrop-blur-md border-white/15 shadow-2xl shadow-black/40 text-primary-foreground mb-6 sm:mb-8">
             <div className="flex items-center flex-col gap-2 justify-center mb-3">
               <div className="animate-pulse bg-primary-600 rounded-lg p-3 mr-3">
                 <Zap className=" text-white" size={24} />
               </div>
-              <h3 className="text-lg sm:text-2xl font-bold text-primary-foreground text-center">
+              <h3 className="text-lg sm:text-2xl font-bold text-primary-foreground text-center drop-shadow-[0_2px_12px_rgba(0,0,0,0.85)]">
                 Don't Wait – Experience Makkah Laundry Service Quality Today!
               </h3>
             </div>
@@ -199,7 +201,7 @@ export default function FinalCTA() {
               laundry experience with a focus on deep cleaning and rapid speed.
             </p>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
-              <div className="bg-primary-foreground/10 rounded-lg p-2 sm:p-3">
+              <div className="rounded-xl border border-white/10 bg-white/10 p-2 sm:p-3 backdrop-blur-sm">
                 <div className="text-lg sm:text-xl font-bold text-primary-300">
                   12K+
                 </div>
@@ -207,7 +209,7 @@ export default function FinalCTA() {
                   Satisfied Clients
                 </div>
               </div>
-              <div className="bg-primary-foreground/10 rounded-lg p-2 sm:p-3">
+              <div className="rounded-xl border border-white/10 bg-white/10 p-2 sm:p-3 backdrop-blur-sm">
                 <div className="text-lg sm:text-xl font-bold text-primary-300">
                   Rapid
                 </div>
@@ -215,51 +217,19 @@ export default function FinalCTA() {
                   Pickup Promise
                 </div>
               </div>
-              <div className="bg-primary-foreground/10 rounded-lg p-2 sm:p-3">
+              <div className="rounded-xl border border-white/10 bg-white/10 p-2 sm:p-3 backdrop-blur-sm">
                 <div className="text-lg sm:text-xl font-bold text-primary-300">
                   24/7
                 </div>
                 <div className="text-xs text-white sm:text-sm">Always Open</div>
               </div>
-              <div className="bg-primary-foreground/10 rounded-lg p-2 sm:p-3">
+              <div className="rounded-xl border border-white/10 bg-white/10 p-2 sm:p-3 backdrop-blur-sm">
                 <div className="text-lg sm:text-xl font-bold text-primary-300">
                   FREE
                 </div>
                 <div className="text-xs text-white sm:text-sm">
                   Pickup &amp; Delivery
                 </div>
-              </div>
-            </div>
-          </div>
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
-            <div className="bg-primary-foreground/10 rounded-lg p-2 sm:p-3">
-              <div className="text-lg sm:text-xl font-bold text-primary-300">
-                12,000+
-              </div>
-              <div className="text-xs text-white sm:text-sm">
-                Happy Customers
-              </div>
-            </div>
-            <div className="bg-primary-foreground/10 rounded-lg p-2 sm:p-3">
-              <div className="text-lg sm:text-xl font-bold text-primary-300">
-                Rapid
-              </div>
-              <div className="text-xs text-white sm:text-sm">
-                Pickup Promise
-              </div>
-            </div>
-            <div className="bg-primary-foreground/10 rounded-lg p-2 sm:p-3">
-              <div className="text-lg sm:text-xl font-bold text-primary-300">
-                24/7
-              </div>
-              <div className="text-xs text-white sm:text-sm">Always Open</div>
-            </div>
-            <div className="bg-primary-foreground/10 rounded-lg p-2 sm:p-3">
-              <div className="text-lg sm:text-xl font-bold text-primary-300">
-                FREE
-              </div>
-              <div className="text-xs text-white sm:text-sm">
-                Pickup &amp; Delivery
               </div>
             </div>
           </div>
