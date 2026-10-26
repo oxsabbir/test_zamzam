@@ -11,7 +11,7 @@ import {
 } from "lucide-react";
 import WhatsAppIcon from "./icons/Whatsapp";
 import { useNavigate, useLocation } from "react-router-dom";
-import logo_dark from "@/assets/makkah-laundry-logo-light.png";
+import logo_dark from "@/assets/al-haram-logo-dark.webp";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -87,10 +87,10 @@ const Footer = () => {
               </a>
 
               <p className="text-zinc-400 leading-relaxed text-sm sm:text-base max-w-sm">
-                At Makkah Laundry Service Al Haram, we are dedicated to providing the
-                highest quality cleaning services for the pilgrims and residents
-                of Makkah. We ensure your garments are fresh, pristine, and
-                ready whenever you need them.
+                At Makkah Laundry Service Al Haram, we are dedicated to
+                providing the highest quality cleaning services for the pilgrims
+                and residents of Makkah. We ensure your garments are fresh,
+                pristine, and ready whenever you need them.
               </p>
               <div className="flex space-x-4">
                 <a

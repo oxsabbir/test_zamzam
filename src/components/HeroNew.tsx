@@ -1,5 +1,5 @@
 import { Zap, Clock, Quote, CircleDollarSign } from "lucide-react";
-import heroImage from "@/assets/hero-makkah-laundry.webp";
+import heroImage from "@/assets/hero-al-haram.webp";
 import WhatsAppIcon from "./icons/Whatsapp";
 import { useEffect, useState } from "react";
 import { handleWhatsApp } from "@/lib/utils";
@@ -27,14 +27,14 @@ const HeroNew = () => {
   return (
     <section
       id="hero"
-      className="relative overflow-hidden bg-gradient-to-r from-gray-900 via-primary-950 to-gray-900 min-h-screen flex items-center pt-16"
+      className="relative overflow-hidden bg-black min-h-screen flex items-center pt-16"
     >
       <FloatingCTA />
 
       <img
         src={heroImage}
         alt="Makkah Laundry Service Al Haram - Premium laundry and delivery services for pilgrims and Makkah residents"
-        className="absolute inset-0 w-full h-full object-cover opacity-30 "
+        className="absolute inset-0 w-full h-full object-cover opacity-75"
         loading="eager"
         width="1920"
         height="1080"
