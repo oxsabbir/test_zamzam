@@ -11,7 +11,7 @@ import {
 } from "lucide-react";
 import WhatsAppIcon from "./icons/Whatsapp";
 import { useNavigate, useLocation } from "react-router-dom";
-import logo_dark from "@/assets/al-haram-logo-dark.webp";
+import logo_dark from "@/assets/al-haram-logo-darks.webp";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
